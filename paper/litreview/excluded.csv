@@ -1,0 +1,11 @@
+short,year,source_url,reason
+Serpens (Song et al.),2022,https://arxiv.org/abs/2111.12555,no CPU baseline (GPU-only comparison)
+Sextans (Song et al.),2022,https://arxiv.org/abs/2109.11081,no CPU baseline (GPU-only comparison)
+TopSort,2022,arXiv,peer-reviewed venue not verified
+FPGA virtual screening,2022,arXiv,peer-reviewed venue not verified
+AHA (MDPI),2022,MDPI,no CPU comparison
+HLSTransform,2024,https://arxiv.org/abs/2405.00738,no peer-reviewed venue found
+PQC-HA,2023,https://arxiv.org/abs/2308.06621,peer-reviewed venue not verified
+Zohouri et al. (stencil FPGA'18),2018,https://arxiv.org/abs/1802.00438,no CPU baseline (GPU comparison only)
+ACM TACO data offloading (Mbakoyiannis et al.),2018,https://dl.acm.org/doi/10.1145/3180263,full text not openly accessible
+Li et al. (JPEG preprocessing accelerator; J. Eng.),2022,https://doi.org/10.1049/tje2.12174,full text blocked (403) for the fetch tool

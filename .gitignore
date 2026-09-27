@@ -1,0 +1,18 @@
+# build outputs and run data (the data are on Zenodo)
+build/
+build_*/
+_x/
+*.xclbin
+*.xo
+*.o
+*.so
+*.log
+*.lock
+results*/
+paper/inputs/
+paper/data/
+paper/figures/
+__pycache__/
+*.pyc
+.Xil/
+.ipcache/

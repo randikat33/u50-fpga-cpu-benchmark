@@ -1,0 +1,17 @@
+item,description,count,denominator,percent
+C1,CPU baseline multithreaded,20,30,67
+C1,CPU SIMD / tuned library stated,10,30,33
+C1,both multithreaded and SIMD stated,7,30,23
+C2,CPU cores/threads stated,26,30,87
+C3,transfer treatment stated,20,30,67
+C3,transfers excluded from FPGA time,7,30,23
+C4,power/energy reported,16,30,53
+C4,measured on both sides,14,30,47
+C4b,measurement boundary fully stated,7,16,44
+C4b,idle vs dynamic separated,2,16,12
+C4b,host counted during FPGA runs,3,16,19
+C5,CPU frequency / turbo / warm-up controlled,1,30,3
+C6,run-to-run variability reported,3,30,10
+C6,variability reported (energy papers),3,16,19
+C7,output equivalence checked,10,30,33
+C8,code/artefact available,15,30,50
