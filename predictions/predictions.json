@@ -1,0 +1,266 @@
+{
+ "created_utc": "2026-09-29T12:44:59Z",
+ "model_constants": {
+  "_what": "Frozen inputs of the time-energy model (paper Section 6.4), taken from the paper's data before any round-6 run. predict_round6.py uses only these constants, the routed designs and CPU-only runs.",
+  "_source": "paper/data/rev_te_model.csv and rev_te_summary.json (JSA revision round 4); H = mean measured host power of the two workloads of each class while their card runs",
+  "B_GBps": 12.2,
+  "P0_W": 17.0,
+  "P_card_naive_W": 75.0,
+  "H_W": {
+   "polling": {
+    "socket": 49.151,
+    "server": 92.94
+   },
+   "streaming": {
+    "socket": 81.993,
+    "server": 147.327
+   }
+  },
+  "boundary_cpu_config": {
+   "socket": "s0_c24",
+   "server": "s01_t96"
+  },
+  "tie_band_S": [
+   0.8,
+   1.2
+  ]
+ },
+ "design": {
+  "fir": {
+   "f_mhz": 300.0,
+   "f_source": "per-CU clock requested in the v++ link (unscalable, met timing)",
+   "f_mhz_link_log": 300.0,
+   "f_mhz_xclbin_data_clk": 300.0,
+   "cus": [
+    "fir_v2_1",
+    "fir_v2_2"
+   ],
+   "P_viv_W": 24.534,
+   "wns_ns": 0.04,
+   "loops": {
+    "RD": {
+     "target_ii": "1",
+     "ii": 1,
+     "depth": 3
+    },
+    "FIR_MAIN": {
+     "target_ii": "1",
+     "ii": 1,
+     "depth": 8
+    },
+    "WR": {
+     "target_ii": "1",
+     "ii": 1,
+     "depth": 3
+    }
+   },
+   "ii": 1,
+   "ii_source": "HLS log",
+   "reports": {
+    "info": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/xclbin_info.txt",
+    "power": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/hw_bb_locked_power_routed.rpt",
+    "timing": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/hw_bb_locked_timing_summary_routed.rpt",
+    "link_log": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/v++_link.log"
+   },
+   "n_cu": 2
+  },
+  "asian": {
+   "f_mhz": 250.0,
+   "f_source": "per-CU clock requested in the v++ link (unscalable, met timing)",
+   "f_mhz_link_log": 250.0,
+   "f_mhz_xclbin_data_clk": 300.0,
+   "cus": [
+    "mc_asian_1"
+   ],
+   "P_viv_W": 23.336,
+   "wns_ns": 0.031,
+   "loops": {
+    "RING_INIT": {
+     "target_ii": "1",
+     "ii": 1,
+     "depth": 1
+    },
+    "RING": {
+     "target_ii": "1",
+     "ii": 1,
+     "depth": 59
+    },
+    "MERGE": {
+     "target_ii": "1",
+     "ii": 1,
+     "depth": 3
+    },
+    "SETTLE": {
+     "target_ii": "1",
+     "ii": 1,
+     "depth": 23
+    }
+   },
+   "ii": 1,
+   "ii_source": "HLS log",
+   "reports": {
+    "info": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/xclbin_info.txt",
+    "power": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/hw_bb_locked_power_routed.rpt",
+    "timing": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/hw_bb_locked_timing_summary_routed.rpt",
+    "link_log": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/v++_link.log"
+   },
+   "n_cu": 1,
+   "lanes": 24
+  },
+  "problems": []
+ },
+ "predictions": [
+  {
+   "workload": "fir",
+   "label": "int16 FIR (32 taps)",
+   "host_class": "streaming",
+   "boundary": "socket",
+   "cpu_config": "s0_c24",
+   "unit": "Gsample/s",
+   "R_k": 9.6,
+   "R_F_pred": 2.3146245059288533,
+   "R_F_upper": 6.1,
+   "duty": 0.2411067193675889,
+   "P_viv_W": 24.534,
+   "P_card_pred_W": 18.816498023715415,
+   "H_pred_W": 81.993,
+   "P_F_pred_W": 100.8094980237154,
+   "R_C": 6.121593383321044,
+   "R_C_range": [
+    6.096685701714045,
+    6.123317070474326
+   ],
+   "P_C_W": 164.8640450791673,
+   "cpu_runs": 5,
+   "cpu_run_dirs": [
+    "pred/fir/s0_c24/rep1",
+    "pred/fir/s0_c24/rep2",
+    "pred/fir/s0_c24/rep3",
+    "pred/fir/s0_c24/rep4",
+    "pred/fir/s0_c24/rep5"
+   ],
+   "S_pred": 0.37810817559939586,
+   "S_upper": 0.9964725877775747,
+   "Sstar_pred": 0.6114704875481305,
+   "A_pred": 0.6183588305553895,
+   "time_verdict": "CPU faster",
+   "energy_verdict": "CPU less energy",
+   "S_naive": 1.5682191545351996,
+   "A_naive": 1.646843829898816
+  },
+  {
+   "workload": "fir",
+   "label": "int16 FIR (32 taps)",
+   "host_class": "streaming",
+   "boundary": "server",
+   "cpu_config": "s01_t96",
+   "unit": "Gsample/s",
+   "R_k": 9.6,
+   "R_F_pred": 2.3146245059288533,
+   "R_F_upper": 6.1,
+   "duty": 0.2411067193675889,
+   "P_viv_W": 24.534,
+   "P_card_pred_W": 18.816498023715415,
+   "H_pred_W": 147.327,
+   "P_F_pred_W": 166.1434980237154,
+   "R_C": 16.29399500963979,
+   "R_C_range": [
+    15.972493861556998,
+    16.449608431385624
+   ],
+   "P_C_W": 329.29063259952136,
+   "cpu_runs": 5,
+   "cpu_run_dirs": [
+    "pred/fir/s01_t96/rep1",
+    "pred/fir/s01_t96/rep2",
+    "pred/fir/s01_t96/rep3",
+    "pred/fir/s01_t96/rep4",
+    "pred/fir/s01_t96/rep5"
+   ],
+   "S_pred": 0.14205383667783647,
+   "S_upper": 0.37437104874471494,
+   "Sstar_pred": 0.5045497246979898,
+   "A_pred": 0.28154576194222714,
+   "time_verdict": "CPU faster",
+   "energy_verdict": "CPU less energy",
+   "S_naive": 0.5891741094998793,
+   "A_naive": 0.8726313728358449
+  },
+  {
+   "workload": "asian",
+   "label": "MC Asian option (GBM)",
+   "host_class": "polling",
+   "boundary": "socket",
+   "cpu_config": "s0_c24",
+   "unit": "G path-steps/s",
+   "R_k": 12.0,
+   "R_F_pred": 12.0,
+   "R_F_upper": 12.0,
+   "duty": 1.0,
+   "P_viv_W": 23.336,
+   "P_card_pred_W": 23.336,
+   "H_pred_W": 49.151,
+   "P_F_pred_W": 72.487,
+   "R_C": 5.450411983737317,
+   "R_C_range": [
+    5.446973577359846,
+    5.461096594489993
+   ],
+   "P_C_W": 165.25120527954832,
+   "cpu_runs": 5,
+   "cpu_run_dirs": [
+    "pred/asian/s0_c24/rep1",
+    "pred/asian/s0_c24/rep2",
+    "pred/asian/s0_c24/rep3",
+    "pred/asian/s0_c24/rep4",
+    "pred/asian/s0_c24/rep5"
+   ],
+   "S_pred": 2.2016684309011936,
+   "S_upper": 2.2016684309011936,
+   "Sstar_pred": 0.43864733015034213,
+   "A_pred": 5.019222230639345,
+   "time_verdict": "FPGA faster",
+   "energy_verdict": "FPGA less energy",
+   "S_naive": 2.2016684309011936,
+   "A_naive": 2.93053106162942
+  },
+  {
+   "workload": "asian",
+   "label": "MC Asian option (GBM)",
+   "host_class": "polling",
+   "boundary": "server",
+   "cpu_config": "s01_t96",
+   "unit": "G path-steps/s",
+   "R_k": 12.0,
+   "R_F_pred": 12.0,
+   "R_F_upper": 12.0,
+   "duty": 1.0,
+   "P_viv_W": 23.336,
+   "P_card_pred_W": 23.336,
+   "H_pred_W": 92.94,
+   "P_F_pred_W": 116.276,
+   "R_C": 17.245832590752418,
+   "R_C_range": [
+    17.224791461354695,
+    17.534704875947845
+   ],
+   "P_C_W": 351.6274536064756,
+   "cpu_runs": 5,
+   "cpu_run_dirs": [
+    "pred/asian/s01_t96/rep1",
+    "pred/asian/s01_t96/rep2",
+    "pred/asian/s01_t96/rep3",
+    "pred/asian/s01_t96/rep4",
+    "pred/asian/s01_t96/rep5"
+   ],
+   "S_pred": 0.6958202763973631,
+   "S_upper": 0.6958202763973631,
+   "Sstar_pred": 0.33067952688964514,
+   "A_pred": 2.1042133540658337,
+   "time_verdict": "CPU faster",
+   "energy_verdict": "FPGA less energy",
+   "S_naive": 0.6958202763973631,
+   "A_naive": 1.4568864591958965
+  }
+ ]
+}

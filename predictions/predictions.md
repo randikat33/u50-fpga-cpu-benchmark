@@ -1,0 +1,13 @@
+# Round 6: predictions made before the new kernels ran on the card
+
+Created (UTC): 2026-09-29T12:44:59Z
+
+| Workload | Boundary | R_k | R_F pred | R_C (CPU) | S pred | S* pred | A pred | Time verdict | Energy verdict | naive S / A |
+|---|---|---|---|---|---|---|---|---|---|---|
+| int16 FIR (32 taps) | socket | 9.600 | 2.315 | 6.122 | 0.38 | 0.61 | 0.62 | CPU faster | CPU less energy | 1.57 / 1.65 |
+| int16 FIR (32 taps) | server | 9.600 | 2.315 | 16.294 | 0.14 | 0.50 | 0.28 | CPU faster | CPU less energy | 0.59 / 0.87 |
+| MC Asian option (GBM) | socket | 12.000 | 12.000 | 5.450 | 2.20 | 0.44 | 5.02 | FPGA faster | FPGA less energy | 2.20 / 2.93 |
+| MC Asian option (GBM) | server | 12.000 | 12.000 | 17.246 | 0.70 | 0.33 | 2.10 | CPU faster | FPGA less energy | 0.70 / 1.46 |
+
+Units: Gsample/s (FIR), G path-steps/s (MC Asian).
+Design facts: {"fir": {"f_mhz": 300.0, "f_source": "per-CU clock requested in the v++ link (unscalable, met timing)", "f_mhz_link_log": 300.0, "f_mhz_xclbin_data_clk": 300.0, "cus": ["fir_v2_1", "fir_v2_2"], "P_viv_W": 24.534, "wns_ns": 0.04, "loops": {"RD": {"target_ii": "1", "ii": 1, "depth": 3}, "FIR_MAIN": {"target_ii": "1", "ii": 1, "depth": 8}, "WR": {"target_ii": "1", "ii": 1, "depth": 3}}, "ii": 1, "ii_source": "HLS log", "reports": {"info": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/xclbin_info.txt", "power": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/hw_bb_locked_power_routed.rpt", "timing": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/hw_bb_locked_timing_summary_routed.rpt", "link_log": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/v++_link.log"}, "n_cu": 2}, "asian": {"f_mhz": 250.0, "f_source": "per-CU clock requested in the v++ link (unscalable, met timing)", "f_mhz_link_log": 250.0, "f_mhz_xclbin_data_clk": 300.0, "cus": ["mc_asian_1"], "P_viv_W": 23.336, "wns_ns": 0.031, "loops": {"RING_INIT": {"target_ii": "1", "ii": 1, "depth": 1}, "RING": {"target_ii": "1", "ii": 1, "depth": 59}, "MERGE": {"target_ii": "1", "ii": 1, "depth": 3}, "SETTLE": {"target_ii": "1", "ii": 1, "depth": 23}}, "ii": 1, "ii_source": "HLS log", "reports": {"info": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/xclbin_info.txt", "power": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/hw_bb_locked_power_routed.rpt", "timing": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/hw_bb_locked_timing_summary_routed.rpt", "link_log": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/v++_link.log"}, "n_cu": 1, "lanes": 24}, "problems": []}

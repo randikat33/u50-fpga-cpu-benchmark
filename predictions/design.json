@@ -1,0 +1,84 @@
+{
+ "fir": {
+  "f_mhz": 300.0,
+  "f_source": "per-CU clock requested in the v++ link (unscalable, met timing)",
+  "f_mhz_link_log": 300.0,
+  "f_mhz_xclbin_data_clk": 300.0,
+  "cus": [
+   "fir_v2_1",
+   "fir_v2_2"
+  ],
+  "P_viv_W": 24.534,
+  "wns_ns": 0.04,
+  "loops": {
+   "RD": {
+    "target_ii": "1",
+    "ii": 1,
+    "depth": 3
+   },
+   "FIR_MAIN": {
+    "target_ii": "1",
+    "ii": 1,
+    "depth": 8
+   },
+   "WR": {
+    "target_ii": "1",
+    "ii": 1,
+    "depth": 3
+   }
+  },
+  "ii": 1,
+  "ii_source": "HLS log",
+  "reports": {
+   "info": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/xclbin_info.txt",
+   "power": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/hw_bb_locked_power_routed.rpt",
+   "timing": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/hw_bb_locked_timing_summary_routed.rpt",
+   "link_log": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/07_FIR/build/reports/v++_link.log"
+  },
+  "n_cu": 2
+ },
+ "asian": {
+  "f_mhz": 250.0,
+  "f_source": "per-CU clock requested in the v++ link (unscalable, met timing)",
+  "f_mhz_link_log": 250.0,
+  "f_mhz_xclbin_data_clk": 300.0,
+  "cus": [
+   "mc_asian_1"
+  ],
+  "P_viv_W": 23.336,
+  "wns_ns": 0.031,
+  "loops": {
+   "RING_INIT": {
+    "target_ii": "1",
+    "ii": 1,
+    "depth": 1
+   },
+   "RING": {
+    "target_ii": "1",
+    "ii": 1,
+    "depth": 59
+   },
+   "MERGE": {
+    "target_ii": "1",
+    "ii": 1,
+    "depth": 3
+   },
+   "SETTLE": {
+    "target_ii": "1",
+    "ii": 1,
+    "depth": 23
+   }
+  },
+  "ii": 1,
+  "ii_source": "HLS log",
+  "reports": {
+   "info": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/xclbin_info.txt",
+   "power": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/hw_bb_locked_power_routed.rpt",
+   "timing": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/hw_bb_locked_timing_summary_routed.rpt",
+   "link_log": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/08_MC_Asian/build/reports/v++_link.log"
+  },
+  "n_cu": 1,
+  "lanes": 24
+ },
+ "problems": []
+}
