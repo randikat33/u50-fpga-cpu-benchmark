@@ -6,6 +6,10 @@
 // with counter offset = chunk_offset / 16. Chunks are written with pwrite at their own
 // offsets, so the CUs overlap freely (H2D of one CU while the other computes / D2H's).
 // Every BO is <= 1 GiB and allocated once.
+// --streams S (default 1 = the paper's host): S workers per CU, each with its own BOs and xrt::run on
+// the same CU, so the upload of one chunk, the kernel of another and the download of a third overlap
+// on each CU (the CU executes the queued runs one after another). The default chunk size is then
+// 256/S MiB so that the S buffers of a CU still fit into its HBM pseudo-channel (256 MiB).
 #include <xrt/xrt_bo.h>
 #include <xrt/xrt_device.h>
 #include <xrt/xrt_kernel.h>
@@ -40,9 +44,10 @@ void usage() {
         "aes_fpga - AES-256-CTR on Alveo U50 (v2 host, XRT native API)\n"
         "usage: aes_fpga --xclbin X --mode enc|dec (--in FILE [--out FILE] | --no-io --size-mb N)\n"
         "                [--key HEX64] [--iv HEX32] [--chunk-mb 256] [--device 0] [--cus N]\n"
-        "                [--verify] [--checksum] [--fsync]\n"
+        "                [--verify] [--checksum] [--fsync] [--streams S]\n"
         "  --chunk-mb  chunk size per kernel call (<= 1024; each BO has this size)\n"
         "  --cus N     use at most N compute units (default: all found)\n"
+        "  --streams S workers (buffer sets) per CU, overlapping upload, kernel and download (default 1)\n"
         "  --no-io     every chunk carries the same generated data (filled once, untimed)\n"
         "  --verify    compare with the CPU T-table reference (file mode: after the run,\n"
         "              untimed; --no-io: per chunk inside the window -> verify_in_window=1)\n"
@@ -104,7 +109,10 @@ int main(int argc, char** argv) {
         const std::string in_path = a.str("in"), out_path = a.str("out");
         if (!noio && in_path.empty()) throw std::runtime_error("--in FILE or --no-io --size-mb N required");
         const bool verify = a.has("verify");
-        const long long chunk_mb = a.i64("chunk-mb", 256);
+        const long long streams = std::max<long long>(1, a.i64("streams", 1));
+        long long chunk_default = 256;
+        while (chunk_default * streams > 256 && chunk_default > 1) chunk_default /= 2;
+        const long long chunk_mb = a.i64("chunk-mb", chunk_default);
         if (chunk_mb < 1 || chunk_mb > 1024) throw std::runtime_error("--chunk-mb must be in [1, 1024] (BO limit 1 GiB)");
         const size_t chunk = size_t(chunk_mb) * MiB;   // multiple of 64 -> block/word aligned
         uint8_t key[32], iv[16];
@@ -140,7 +148,17 @@ int main(int argc, char** argv) {
             } catch (const std::exception&) { break; }
         }
         if (cus.empty()) throw std::runtime_error(std::string("no ") + KNAME + " CU found in " + xclbin_path);
-        const size_t ncu = std::min(cus.size(), nchunks);
+        const size_t n_cu_found = cus.size();
+        const size_t ncu_used = std::min(n_cu_found, nchunks);
+        cus.resize(ncu_used);
+        // worker slots: stream-major, so with fewer chunks than slots every CU still gets work first
+        {
+            std::vector<Cu> slots;
+            for (long long st = 0; st < streams; ++st)
+                for (size_t i = 0; i < ncu_used; ++i) { Cu c; c.k = cus[i].k; slots.push_back(std::move(c)); }
+            cus = std::move(slots);
+        }
+        const size_t ncu = std::min(cus.size(), nchunks);     // number of worker slots
         cus.resize(ncu);
 
         // ---- buffers (once) ----
@@ -299,8 +317,10 @@ int main(int argc, char** argv) {
         }
         rep.set("mode", mode);
         rep.set("xclbin", xclbin_path);
-        rep.set("n_cu", static_cast<unsigned long long>(ncu));
-        rep.set("n_cu_found", static_cast<unsigned long long>(cus.size()));
+        rep.set("n_cu", static_cast<unsigned long long>(ncu_used));
+        rep.set("n_cu_found", static_cast<unsigned long long>(n_cu_found));
+        rep.set("streams", static_cast<unsigned long long>(streams));
+        rep.set("n_workers", static_cast<unsigned long long>(ncu));
         rep.set("io", noio ? 0 : 1);
         rep.set("bytes", static_cast<unsigned long long>(n));
         rep.set("size_mb", static_cast<double>(n) / MiB);

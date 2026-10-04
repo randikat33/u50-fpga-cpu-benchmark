@@ -1,0 +1,157 @@
+{
+ "papers": 30,
+ "years": [
+  2018,
+  2025
+ ],
+ "items": [
+  {
+   "item": "C1",
+   "description": "CPU baseline multithreaded",
+   "count": 20,
+   "of": 30,
+   "pct": 67
+  },
+  {
+   "item": "C1",
+   "description": "CPU SIMD / tuned library stated",
+   "count": 10,
+   "of": 30,
+   "pct": 33
+  },
+  {
+   "item": "C1",
+   "description": "both multithreaded and SIMD stated",
+   "count": 7,
+   "of": 30,
+   "pct": 23
+  },
+  {
+   "item": "C2",
+   "description": "CPU cores/threads stated",
+   "count": 26,
+   "of": 30,
+   "pct": 87
+  },
+  {
+   "item": "C3",
+   "description": "transfer treatment stated",
+   "count": 20,
+   "of": 30,
+   "pct": 67
+  },
+  {
+   "item": "C3",
+   "description": "transfers excluded from FPGA time",
+   "count": 7,
+   "of": 30,
+   "pct": 23
+  },
+  {
+   "item": "C4",
+   "description": "power/energy reported",
+   "count": 16,
+   "of": 30,
+   "pct": 53
+  },
+  {
+   "item": "C4",
+   "description": "measured on both sides",
+   "count": 14,
+   "of": 30,
+   "pct": 47
+  },
+  {
+   "item": "C4b",
+   "description": "measurement boundary fully stated",
+   "count": 7,
+   "of": 16,
+   "pct": 44
+  },
+  {
+   "item": "C4b",
+   "description": "idle vs dynamic separated",
+   "count": 2,
+   "of": 16,
+   "pct": 12
+  },
+  {
+   "item": "C4b",
+   "description": "host counted during FPGA runs",
+   "count": 3,
+   "of": 16,
+   "pct": 19
+  },
+  {
+   "item": "C5",
+   "description": "CPU frequency / turbo / warm-up controlled",
+   "count": 1,
+   "of": 30,
+   "pct": 3
+  },
+  {
+   "item": "C6",
+   "description": "run-to-run variability reported",
+   "count": 3,
+   "of": 30,
+   "pct": 10
+  },
+  {
+   "item": "C6",
+   "description": "variability reported (energy papers)",
+   "count": 3,
+   "of": 16,
+   "pct": 19
+  },
+  {
+   "item": "C7",
+   "description": "output equivalence checked",
+   "count": 10,
+   "of": 30,
+   "pct": 33
+  },
+  {
+   "item": "C8",
+   "description": "code/artefact available",
+   "count": 15,
+   "of": 30,
+   "pct": 50
+  }
+ ],
+ "score_max": 9,
+ "score_median": 4.0,
+ "score_max_seen": 6,
+ "papers_with_all_9": 0,
+ "scores": {
+  "Q19": 4,
+  "N22": 4,
+  "K22": 5,
+  "Bw21": 3,
+  "Br20": 4,
+  "GL21": 6,
+  "HS22": 4,
+  "HX20": 1,
+  "FB23": 0,
+  "FL20": 6,
+  "KP21": 5,
+  "BM21": 5,
+  "BN20": 5,
+  "BO20": 1,
+  "AB25": 4,
+  "GA20": 5,
+  "GI20": 0,
+  "HP24": 2,
+  "NE21": 4,
+  "FA20": 3,
+  "OW19": 2,
+  "HJ20": 2,
+  "HC20": 6,
+  "CM18": 4,
+  "MM23": 4,
+  "SS20": 4,
+  "PQ20": 3,
+  "MD19": 2,
+  "MR21": 2,
+  "DB24": 3
+ }
+}

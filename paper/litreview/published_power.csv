@@ -1,0 +1,12 @@
+id,bibkey,study,card,cpu,workload,metric,higher_is_better,cpu_value,fpga_value,P_C,P_F,E_C_J,E_F_J,power_derived,printed_ratio,fpga_power_scope,cpu_power_scope,transfer,source,source_url
+BN20,aud_brown2020nekbone,Brown (Nekbone),Alveo U280,24-core Xeon Platinum 8260M,"Nekbone, 4 kernels",GFLOPS,1,65.74,289.02,176.65,71.98,,,0,10.86,card,RAPL,negligible,Table II,https://arxiv.org/pdf/2011.04981
+Br20,brown2020vitis,Brown (Himeno),Alveo U280,1 Skylake Xeon core,Himeno,MFLOPS,1,3754.49,8658.42,42.30,33.90,,,0,,card,CPU,included,Fig. 1 (table),https://arxiv.org/pdf/2010.00289
+GL21,aud_hu2021graphlily,Hu et al. (GraphLily),Alveo U280,2x Xeon Gold 6242,"PageRank, orkut",MTEPS,1,2151,5940,268,49,,,0,15.15,card,powerstat,excluded,Table I,https://www.csl.cornell.edu/~zhiruz/pdfs/graphlily-iccad2021.pdf
+K22a,klaisoongnoen2022greeks,Klaisoongnoen et al.,Alveo U280,2x Xeon Platinum 8260M,"Greeks, float",time_ms,0,15825.42,5838.23,,,5011.16,510.49,1,,"card, whole run",RAPL,included,Table A1,https://arxiv.org/pdf/2206.03719
+K22b,klaisoongnoen2022greeks,Klaisoongnoen et al.,Alveo U280,2x Xeon Platinum 8260M,"Greeks, double",time_ms,0,15561.09,10644.86,,,4900.16,835.14,1,,"card, whole run",RAPL,included,Table A1,https://arxiv.org/pdf/2206.03719
+HCa,meyer2020hpcc,Meyer et al. (HPCC FPGA),Alveo U280 (HBM2),2x Xeon Gold 6148,STREAM Triad,GB/s,1,183.40,378.55,344.91,59.98,,,0,11.9,board,CPU + DDR (peak),excluded,Table XVIII,https://arxiv.org/pdf/2004.11059
+HCb,meyer2020hpcc,Meyer et al. (HPCC FPGA),Stratix 10 (520N),2x Xeon Gold 6148,STREAM Triad,GB/s,1,183.40,70.02,344.91,76.78,,,0,1.7,board,CPU + DDR (peak),excluded,Table XVIII,https://arxiv.org/pdf/2004.11059
+HCc,meyer2020hpcc,Meyer et al. (HPCC FPGA),Alveo U280 (DDR),2x Xeon Gold 6148,STREAM Triad,GB/s,1,183.40,34.66,344.91,47.09,,,0,,board,CPU + DDR (peak),excluded,Table XVIII,https://arxiv.org/pdf/2004.11059
+FLa,aud_dematteis2020fblas,De Matteis et al. (FBLAS),Stratix 10 GX 2800,10-core Xeon E5-2630 v4,"GEMM, single",time_s,0,300.7,181,81.6,70.3,,,0,,board,CPU + DRAM,excluded,Table IV,https://arxiv.org/pdf/1907.07929
+FLb,aud_dematteis2020fblas,De Matteis et al. (FBLAS),Stratix 10 GX 2800,10-core Xeon E5-2630 v4,"GEMM, double",time_s,0,75.78,203,88.4,67.3,,,0,,board,CPU + DRAM,excluded,Table IV,https://arxiv.org/pdf/1907.07929
+FA20,aud_zhang2020lsm,Zhang et al.,VU9P,2x Xeon Platinum 8163,key-value store,Mtxn/s,1,0.90,1.11,636.54,590.78,,,0,1.317,machine,machine,in system,Table 3,https://www.usenix.org/system/files/fast20-zhang_teng.pdf

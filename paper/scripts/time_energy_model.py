@@ -19,10 +19,12 @@ Inputs and where they come from
   H                 host power while the card runs; two host classes, each value taken from the
                     OTHER workload of its class (leave-one-out): polling (portfolio <-> MC) and
                     streaming (AES <-> convolution). Pipelines: H = P_C(pipeline) + polling increment,
-                    S = 1 because the offloaded stage is not on the critical path.
+                    S = 1 because the offloaded stage is not on the critical path (tuned CPU pipeline).
 Outputs
   paper/data/rev_te_model.csv       one row per workload x boundary, predicted and measured
   paper/data/rev_te_summary.json    error summary quoted in the paper
+Also computed: a naive estimate (S = R_k / R_C without the PCIe bound, card at its 75 W rating) for
+comparison, and the pipelines against the tuned CPU pipeline (8 workers x 1 thread) of the later session.
 """
 import json, os
 import numpy as np
@@ -107,32 +109,55 @@ for wl, m in WL.items():
                          A_pred=s_pred * P_C / P_F_pred, A_meas=a_meas,
                          A_meas_check=s_meas * P_C / P_F_meas))
 
-# pipelines: S = 1 (offloaded stage is off the critical path), card at idle, host = CPU pipeline + polling increment
+# pipelines: S = 1 (offloaded stage is off the critical path), card at idle, host = CPU pipeline + polling increment.
+# Evaluated against the tuned CPU pipeline of the later session (8 workers x 1 OpenCV thread, the most
+# energy-efficient CPU setting for all three pipelines and the fastest at 1080p and 240p) with FPGA reference
+# runs from the same session (rev_video_tuning.csv). Power = energy per frame x frame rate over the window.
 poll_inc = np.mean([boundary_power(power("short runs", w, "fpga"), "socket", card=False) for w in
                     ("pf_131072", "mc_67108864x128")]) - FLOOR_SOCKET
-for wl, lab, vd in (("live_single_1080p", "Live, 1 output", "live_single"),
-                    ("live_multi_all5", "Live, 5 outputs", "live_multi")):
-    g = brk[brk.workload == wl].set_index("platform")
-    P_C = g.loc["cpu", "pkg0_W"] + g.loc["cpu", "dram0_W"]
-    P_F_meas = g.loc["fpga", "pkg0_W"] + g.loc["fpga", "dram0_W"] + g.loc["fpga", "card_W"]
-    t = t4[(t4.panel == "D") & (t4.workload == wl)].iloc[0]
+VT = pd.read_csv(os.path.join(D, "rev_video_tuning.csv"))
+CPU_REF = "cpu_w8c1"
+for wl, pipe, lab, variant, vd in (("live_single_1080p", "q4", "Live, 1 output", "1080p", "live_single"),
+                                    ("live_single_240p", "q0", "Live, 1 output", "240p", "live_single"),
+                                    ("live_multi_all5", "all5", "Live, 5 outputs", "5 outputs", "live_multi")):
+    f = VT[(VT["pipe"] == pipe) & (VT["config"] == "fpga")].iloc[0]
+    c = VT[(VT["pipe"] == pipe) & (VT["config"] == CPU_REF)].iloc[0]
+    P_C = c.E_frame * c.fps_window
+    P_F_meas = f.E_frame * f.fps_window
     P_F_pred = P_C + poll_inc + P0
-    rows.append(dict(workload=wl, label=lab, boundary="socket", cpu_config="cpu (4 workers)",
+    rows.append(dict(workload=wl, label=lab, variant=variant, boundary="socket", cpu_config=CPU_REF,
                      host_class="pipeline", R_k=np.nan, R_F_pred=np.nan, R_F_upper=np.nan, R_F_meas=np.nan,
                      duty=0.0, P_vivado=float(viv.loc[vd, "total_W"]), P_card_pred=P0,
-                     P_card_meas=g.loc["fpga", "card_W"], H_pred=P_C + poll_inc,
-                     H_meas=P_F_meas - g.loc["fpga", "card_W"], P_C=P_C, P_F_pred=P_F_pred, P_F_meas=P_F_meas,
-                     S_pred=1.0, S_upper=np.nan, S_meas=t.speedup,
+                     P_card_meas=np.nan, H_pred=P_C + poll_inc,
+                     H_meas=np.nan, P_C=P_C, P_F_pred=P_F_pred, P_F_meas=P_F_meas,
+                     S_pred=1.0, S_upper=np.nan, S_meas=c.fpga_speedup,
+                     S_meas_lo=c.sp_lo, S_meas_hi=c.sp_hi,
                      Sstar_pred=P_F_pred / P_C, Sstar_meas=P_F_meas / P_C,
-                     A_pred=P_C / P_F_pred, A_meas=t.energy, A_meas_check=t.speedup * P_C / P_F_meas))
+                     A_pred=P_C / P_F_pred, A_meas=c.fpga_energy_adv,
+                     A_meas_check=c.fpga_speedup * P_C / P_F_meas))
 
 df = pd.DataFrame(rows)
 df["S_err_pct"] = 100 * (df.S_pred / df.S_meas - 1)
 df["A_err_pct"] = 100 * (df.A_pred / df.A_meas - 1)
 df["Pcard_err_pct"] = 100 * (df.P_card_pred / df.P_card_meas - 1)
 df["Pviv_raw_err_pct"] = 100 * (df.P_vivado / df.P_card_meas - 1)
-df["time_verdict_ok"] = (df.S_pred > 1) == (df.S_meas > 1)
+# naive estimate for comparison: S = kernel peak / CPU rate (no PCIe bound), card at its 75 W rating,
+# host power as in the model (kernels only)
+R_C = df.R_F_meas / df.S_meas
+df["S_naive"] = df.R_k / R_C
+df["P_F_naive"] = df.H_pred + 75.0
+df["A_naive"] = df.S_naive * df.P_C / df.P_F_naive
+# verdicts. Speedups within 20% of parity are not counted as a win for either side (Section 5.2), so a
+# predicted S = 1 is correct when the measured S lies in [0.8, 1.2].
+def side(x, tie=False):
+    if tie and 0.8 <= x <= 1.2:
+        return 0
+    return 1 if x > 1 else -1
+pipe = df.host_class == "pipeline"
+df["time_verdict_ok"] = [side(p, q) == side(m, q) for p, m, q in zip(df.S_pred, df.S_meas, pipe)]
 df["energy_verdict_ok"] = (df.A_pred > 1) == (df.A_meas > 1)
+df["time_verdict_naive_ok"] = (df.S_naive > 1) == (df.S_meas > 1)
+df["energy_verdict_naive_ok"] = (df.A_naive > 1) == (df.A_meas > 1)
 df.to_csv(os.path.join(D, "rev_te_model.csv"), index=False)
 
 k = df[df.host_class != "pipeline"]
@@ -146,8 +171,15 @@ summ = dict(
     A_abs_err_pct_all=df.A_err_pct.abs().round(1).tolist(),
     Pcard_duty_err_pct=k.drop_duplicates("workload").set_index("workload").Pcard_err_pct.round(1).to_dict(),
     Pcard_raw_err_pct=k.drop_duplicates("workload").set_index("workload").Pviv_raw_err_pct.round(1).to_dict(),
-    time_verdicts_ok=int(df.time_verdict_ok.sum()), energy_verdicts_ok=int(df.energy_verdict_ok.sum()),
+    kernel_time_verdicts_ok=int(k.time_verdict_ok.sum()), kernel_energy_verdicts_ok=int(k.energy_verdict_ok.sum()),
+    kernel_verdicts=2 * len(k),
+    naive_time_verdicts_ok=int(k.time_verdict_naive_ok.sum()), naive_energy_verdicts_ok=int(k.energy_verdict_naive_ok.sum()),
+    pipeline_time_verdicts_ok=int(df[pipe].time_verdict_ok.sum()),
+    pipeline_energy_verdicts_ok=int(df[pipe].energy_verdict_ok.sum()), pipeline_points=int(pipe.sum()),
+    A_abs_err_pct_pipelines=df[pipe].A_err_pct.abs().round(1).tolist(),
     check_max_rel_diff_A=float((df.A_meas_check / df.A_meas - 1).abs().max()),
+    naive_S=k.assign(key=k.workload + "/" + k.boundary).set_index("key").S_naive.round(2).to_dict(),
+    naive_A=k.assign(key=k.workload + "/" + k.boundary).set_index("key").A_naive.round(2).to_dict(),
 )
 json.dump(summ, open(os.path.join(D, "rev_te_summary.json"), "w"), indent=1)
 

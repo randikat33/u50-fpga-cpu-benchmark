@@ -51,6 +51,12 @@ def boot_ratio(num, den, n=N_BOOT, seed=SEED):
     return np.median(num) / np.median(den), np.percentile(s, 2.5), np.percentile(s, 97.5)
 
 
+def range_ratio(num, den):
+    """full range of the ratio over all pairs of runs: [min(num)/max(den), max(num)/min(den)]"""
+    num, den = np.asarray(num, float), np.asarray(den, float)
+    return float(np.min(num) / np.max(den)), float(np.max(num) / np.min(den))
+
+
 def integrate(p, t0, t1, col):
     """exact energy (J) in [t0, t1]: row i is the mean power over (t_{i-1}, t_i]"""
     t = p.t_unix.values
@@ -350,8 +356,11 @@ pd.DataFrame(G).to_csv(os.path.join(OUT, "rev_v1v2_gains.csv"), index=False)
 T4 = []
 
 
-def put(panel, wl, label, cfg, bnd, sp, e, n_c, n_f, smin, note="", es=None):
+def put(panel, wl, label, cfg, bnd, sp, e, n_c, n_f, smin, note="", es=None, sp_rng=None, e_rng=None):
+    sp_rng = sp_rng or (np.nan, np.nan)
+    e_rng = e_rng or (np.nan, np.nan)
     T4.append(dict(panel=panel, workload=wl, label=label, cpu_config=cfg, boundary=bnd,
+                   sp_min=sp_rng[0], sp_max=sp_rng[1], e_min=e_rng[0], e_max=e_rng[1],
                    speedup=sp[0], sp_lo=sp[1], sp_hi=sp[2],
                    energy=e[0] if e else np.nan, e_lo=e[1] if e else np.nan, e_hi=e[2] if e else np.nan,
                    energy_server=es[0] if es else np.nan, es_lo=es[1] if es else np.nan, es_hi=es[2] if es else np.nan,
@@ -369,7 +378,9 @@ for wl, label in (("pf_131072", "Portfolio, 131,072 stage-2 paths"), ("mc_671088
         smin = int(min(c.samples.min(), f.samples.min()))
         e = boot_ratio(c[f"E_{bnd}_exact"], f[f"E_{bnd}_exact"]) if smin >= 20 else None
         es = boot_ratio(c["E_server_exact"], f["E_server_exact"]) if smin >= 20 else None
-        put("A", wl, label, cfg, bnd, boot_ratio(c.t_compute_s, f.t_compute_s), e, len(c), len(f), smin, es=es)
+        put("A", wl, label, cfg, bnd, boot_ratio(c.t_compute_s, f.t_compute_s), e, len(c), len(f), smin, es=es,
+            sp_rng=range_ratio(c.t_compute_s, f.t_compute_s),
+            e_rng=range_ratio(c[f"E_{bnd}_exact"], f[f"E_{bnd}_exact"]) if smin >= 20 else None)
 # B: long-window runs (energy protocol); time per unit of work = median pass time / work per pass
 for wl, label in (("mc_4194304x64", "MC Heston, 4.2M x 64 (40 passes)"),
                   ("aes_noio", "AES-256-CTR (CPU 60 x 1 GiB; FPGA one 16 GiB stream)"),
@@ -381,7 +392,9 @@ for wl, label in (("mc_4194304x64", "MC Heston, 4.2M x 64 (40 passes)"),
         smin = int(min(c.samples.min(), f.samples.min()))
         put("B", wl, label, cfg, bnd, boot_ratio(c.t_compute_s / c.wpp, f.t_compute_s / f.wpp),
             boot_ratio(c[f"E_{bnd}_exact"], f[f"E_{bnd}_exact"]), len(c), len(f), smin,
-            es=boot_ratio(c["E_server_exact"], f["E_server_exact"]))
+            es=boot_ratio(c["E_server_exact"], f["E_server_exact"]),
+            sp_rng=range_ratio(c.t_compute_s / c.wpp, f.t_compute_s / f.wpp),
+            e_rng=range_ratio(c[f"E_{bnd}_exact"], f[f"E_{bnd}_exact"]))
 # C: MC steady-clock sweep, sizes >= 8 M path-steps (time only; windows too short for energy)
 big = mc[mc.msteps >= 8]
 for cfg, col in (("s0_c24", "sp_s0_c24"), ("s01_t96", "sp_s01_t96")):
@@ -393,7 +406,9 @@ for wl in ("live_single_1080p", "live_multi_all5"):
     f, c = g[g.platform == "fpga"], g[g.platform == "cpu"]
     smin = int(min(c.samples.min(), f.samples.min()))
     put("D", wl, wl, "cpu (4 workers)", "socket", boot_ratio(c.window_s / c.frames, f.window_s / f.frames),
-        boot_ratio(c.E_socket_exact, f.E_socket_exact), len(c), len(f), smin)
+        boot_ratio(c.E_socket_exact, f.E_socket_exact), len(c), len(f), smin,
+        sp_rng=range_ratio(c.window_s / c.frames, f.window_s / f.frames),
+        e_rng=range_ratio(c.E_socket_exact, f.E_socket_exact))
 T4 = pd.DataFrame(T4)
 T4.to_csv(os.path.join(OUT, "rev_table4.csv"), index=False)
 

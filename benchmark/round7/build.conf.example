@@ -1,0 +1,7 @@
+# round7/build.conf - lane-sweep build settings (copy to build.conf and edit; read by round7_sweep.sh)
+# Changing a value makes the next 'build' start the sweep design from scratch.
+SWEEP_LANES=16                              # lanes built into the kernel (the sweep uses 1..SWEEP_LANES of them)
+SWEEP_FREQS="300000000 250000000"           # clocks tried in this order; the next one only if timing fails
+SWEEP_STRATEGY=Congestion_SpreadLogic_high  # Vivado implementation strategy
+SWEEP_SLR=1                                 # 1 = place the compute unit in SLR1 (empty = let Vivado choose)
+SWEEP_LANES_SET=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16   # active-lane counts measured (and predicted)

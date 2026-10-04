@@ -1,0 +1,6 @@
+# round6/build.conf - MC Asian build settings (copy to build.conf and edit; read by round6_new_kernels.sh)
+# Changing any value makes the next 'build' start the MC Asian design from scratch.
+ASIAN_LANES=24                              # interleaved lanes (32 = default; fewer = smaller, easier to route)
+ASIAN_FREQ_HZ=300000000                     # requested kernel clock (Vivado lowers it by itself if needed)
+ASIAN_STRATEGY=Congestion_SpreadLogic_high  # Vivado implementation strategy
+ASIAN_SLR=1                                 # 1 = place the compute unit in SLR1 (empty = let Vivado choose)

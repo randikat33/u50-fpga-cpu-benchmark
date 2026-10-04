@@ -5,6 +5,7 @@
 #   make host                build/mc_fpga against real XRT ($XILINX_XRT)
 #   make csynth|xo|xclbin|fpga_reports    Vitis flow (../common/fpga_flow.mk)
 #   make all                 cpu host xclbin
+#   make native              build/mc_native (CPU-native numerics, not bit-identical; make native_check)
 # Variables: LANES (interleaved lanes per CU, default 6), NCU (1 -> cfg/link.cfg, 2 -> cfg/link_2cu.cfg),
 #            PERIOD (HLS clock, 3.333 ns), SHIM (sandbox shims)
 .DEFAULT_GOAL := all
@@ -25,12 +26,9 @@ CPU_FLAGS := -std=c++17 -O3 -march=native -mprefer-vector-width=512 -fopenmp -fn
              -Wall -Wno-unknown-pragmas -I$(V2_ROOT)/common -Icommon -Icpu
 HOST_FLAGS := -std=c++17 -O2 -march=native -ffp-contract=off -Wall -I$(V2_ROOT)/common -Icommon -Ikernel
 
-# 300 MHz missed timing by 12 ps on this part -> build at 275 MHz
-FREQ_HZ   ?= 300000000
-
 include ../common/fpga_flow.mk
 
-.PHONY: all cpu host sim_test tables clean
+.PHONY: all cpu host sim_test tables clean native native_check
 all: cpu host xclbin
 
 cpu: build/mc_cpu
@@ -42,6 +40,16 @@ host: build/mc_fpga
 build/mc_fpga: host/mc_fpga.cpp common/mc_model.hpp common/mc_cli.hpp
 	@mkdir -p build
 	$(CXX) $(HOST_FLAGS) -I$(XILINX_XRT)/include $< -o $@ -L$(XILINX_XRT)/lib -lxrt_coreutil -l:libuuid.so.1 -pthread
+
+# CPU-native variant (review round 6): Box-Muller + libmvec + fast-math; NOT bit-identical to the card
+NATIVE_FLAGS := -std=c++17 -O3 -march=native -mprefer-vector-width=512 -fopenmp -ffast-math \
+             -Wall -Wno-unknown-pragmas -I$(V2_ROOT)/common -Icommon -Icpu
+native: build/mc_native
+build/mc_native: cpu/mc_native.cpp common/mc_model.hpp common/mc_cli.hpp
+	@mkdir -p build
+	$(CXX) $(NATIVE_FLAGS) $< -o $@
+native_check: build/mc_native build/mc_cpu
+	bash test/native_check.sh build/mc_native build/mc_cpu
 
 # regenerate the ICDF / exp ROM header (deterministic; sim_test checks it is up to date)
 tables:

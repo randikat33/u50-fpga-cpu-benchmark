@@ -449,9 +449,17 @@ def fig_v1v2():
 # =============================================================================
 def fig_te_map():
     T = pd.read_csv(os.path.join(D, "rev_te_model.csv"))
+    if "variant" not in T:
+        T["variant"] = ""
+    T["variant"] = T["variant"].fillna("")
     order = ["Portfolio", "MC Heston", "AES-256-CTR", "3x3 convolution", "Live, 1 output", "Live, 5 outputs"]
     col = dict(zip(order, C))
-    fig, axes = plt.subplots(1, 2, figsize=(FULL, 3.2), sharey=True)
+    mk = lambda r: "s" if r.variant == "240p" else "o"
+    fo = os.path.join(D, "r6_model_test.csv")
+    OOS = pd.read_csv(fo) if os.path.exists(fo) else None
+    OCOL = {"fir": "#7a5230", "asian": "#0e8a8a"}
+    OMK = {"fir": "^", "asian": "D"}
+    fig, axes = plt.subplots(1, 2, figsize=(FULL, 3.5), sharey=True)
     xs = np.array([0.1, 10])
     for ax, b, title in zip(axes, ("socket", "server"),
                             ("(a) One socket (per-socket boundary)", "(b) Whole server, 96 threads")):
@@ -463,11 +471,20 @@ def fig_te_map():
             c = col[r.label]
             ax.annotate("", xy=(r.S_meas, r.Sstar_meas), xytext=(r.S_pred, r.Sstar_pred),
                         arrowprops=dict(arrowstyle="-", color=c, lw=0.8, shrinkA=2, shrinkB=2), zorder=2)
-            ax.scatter(r.S_pred, r.Sstar_pred, s=30, facecolors="white", edgecolors=c, lw=1.1, zorder=3)
-            ax.scatter(r.S_meas, r.Sstar_meas, s=30, color=c, zorder=4)
+            ax.scatter(r.S_pred, r.Sstar_pred, s=30, marker=mk(r), facecolors="white", edgecolors=c, lw=1.1,
+                       zorder=3)
+            ax.scatter(r.S_meas, r.Sstar_meas, s=30, marker=mk(r), color=c, zorder=4)
+        if OOS is not None:                     # out-of-sample kernels (predicted before any card run)
+            for _, r in OOS[OOS.boundary == b].iterrows():
+                c, m = OCOL[r.workload], OMK[r.workload]
+                ax.annotate("", xy=(r.S_meas, r.Sstar_meas), xytext=(r.S_pred, r.Sstar_pred),
+                            arrowprops=dict(arrowstyle="-", color=c, lw=0.8, shrinkA=2, shrinkB=2), zorder=2)
+                ax.scatter(r.S_pred, r.Sstar_pred, s=34, marker=m, facecolors="white", edgecolors=c, lw=1.1,
+                           zorder=3)
+                ax.scatter(r.S_meas, r.Sstar_meas, s=34, marker=m, color=c, zorder=4)
         logx(ax, [0.2, 0.5, 1, 2, 5])
         logy(ax, [0.3, 0.5, 1, 1.5])
-        ax.set_xlim(0.15, 7)
+        ax.set_xlim(0.12, 7)
         ax.set_ylim(0.3, 1.8)
         ax.set_title(title, loc="left")
         ax.set_xlabel("Speedup $S$ (> 1: card faster)")
@@ -480,21 +497,28 @@ def fig_te_map():
             ax.text(xl, yl, f"A = {A:g}", fontsize=6, color=INK if A == 1 else MUTED, ha=ha, va=va, zorder=5,
                     bbox=dict(boxstyle="square,pad=0.08", fc="white", ec="none"))
     axes[0].set_ylabel("Power ratio $P_F/P_C$ = break-even $S^*$")
+    names = {"Live, 1 output": "Live, 1 output (1080p)"}
     h = [Line2D([], [], color=col[k], marker="o", ls="", ms=5) for k in order]
-    l = list(order)
+    l = [names.get(k, k) for k in order]
+    h.insert(5, Line2D([], [], color=col["Live, 1 output"], marker="s", ls="", ms=5))
+    l.insert(5, "Live, 1 output (240p)")
+    if OOS is not None:
+        h += [Line2D([], [], color=OCOL["fir"], marker="^", ls="", ms=5),
+              Line2D([], [], color=OCOL["asian"], marker="D", ls="", ms=4.5)]
+        l += ["FIR (out-of-sample)", "MC Asian (out-of-sample)"]
     h += [Line2D([], [], color=MUTED, marker="o", ls="", ms=5, mfc="white"),
           Line2D([], [], color=MUTED, marker="o", ls="", ms=5)]
     h += [Patch(color="#eeeeee")]
     l += ["predicted (workload never run on the card)", "measured", "card needs less energy (A > 1)"]
-    idx = [0, 3, 6, 1, 4, 7, 2, 5, 8]          # column-major fill -> rows of three
-    fig.legend([h[i] for i in idx], [l[i] for i in idx], loc="outside lower center", ncol=3)
+    fig.legend(h, l, loc="outside lower center", ncol=4)
     save(fig, "fig11_time_energy_map",
          "Time-energy map. Each point is a workload: speedup S on the x-axis, the ratio of FPGA-side to "
          "CPU-side power on the y-axis. Energy advantage A = S / (P_F/P_C), so lines of equal A are "
          "diagonals; below the dashed line (A = 1) the card needs less energy, whether or not it is faster. "
-         "Open circles: model prediction from the design, the Vivado power estimate, a PCIe micro-benchmark "
-         "and CPU-only runs; filled circles: measurement; lines join the two. Pipelines were measured "
-         "against one socket only.")
+         "Open markers: model prediction from the design, the Vivado power estimate, a PCIe micro-benchmark "
+         "and CPU-only runs; filled markers: measurement; lines join the two. Pipelines: against the tuned CPU "
+         "pipeline (8 workers x 1 thread), one socket only. Triangles and diamonds: the two out-of-sample "
+         "kernels, predicted before any card run.")
 
 
 # =============================================================================
@@ -534,9 +558,49 @@ def fig_core_equivalents(path=None):
          "session). Where a curve crosses 1, k cores match the card.")
 
 
+# =============================================================================
+# Fig. 13 - round 7: active-lane sweep through break-even (predicted lines, measured points)
+# =============================================================================
+def fig_lane_sweep():
+    f = os.path.join(D, "r7_sweep.csv")
+    if not os.path.exists(f):
+        print("  (skipped fig13_lane_sweep: run round7_analysis.py)")
+        return
+    T = pd.read_csv(f)
+    X = pd.read_csv(os.path.join(D, "r7_crossovers.csv"))
+    fig, axes = plt.subplots(1, 2, figsize=(FULL, 2.7), sharey=True)
+    for ax, b, title in zip(axes, ("socket", "server"),
+                            ("(a) One socket (per-socket boundary)", "(b) Whole server, 96 threads")):
+        g = T[T.boundary == b].sort_values("active_lanes")
+        ax.axhspan(1 / 1.2, 1.2, color="#eeeeee", lw=0, zorder=0)
+        parity(ax)
+        for key, c, m, name in (("S", C[0], "o", "speedup $S$"), ("A", C[1], "s", "energy advantage $A$")):
+            ax.plot(g.active_lanes, g[f"{key}_pred"], color=c, lw=1.1, zorder=2, label=f"{name}, predicted")
+            ax.errorbar(g.active_lanes, g[f"{key}_meas"],
+                        yerr=[g[f"{key}_meas"] - g[f"{key}_lo"], g[f"{key}_hi"] - g[f"{key}_meas"]],
+                        fmt=m, ms=3.6, color=c, mec="white", mew=0.5, elinewidth=0.8, capsize=0, zorder=3,
+                        label=f"{name}, measured")
+        logy(ax, [0.05, 0.1, 0.2, 0.5, 1, 2, 4])
+        ax.set_ylim(0.03, 5)
+        ax.set_xlim(0.4, 16.6)
+        ax.xaxis.set_major_locator(FixedLocator([1, 2, 4, 6, 8, 10, 12, 14, 16]))
+        ax.set_xlabel("Active lanes (of 16)")
+        ax.set_title(title, loc="left")
+    axes[0].set_ylabel("Ratio (> 1 favours the card)")
+    h, l = axes[0].get_legend_handles_labels()
+    h += [Patch(color="#eeeeee")]
+    l += ["time tie band (0.83-1.2)"]
+    fig.legend(h, l, loc="outside lower center", ncol=3)
+    save(fig, "fig13_lane_sweep",
+         "Sweep through break-even: the MC Asian kernel with 16 lanes, of which 1 to 16 receive work. Lines: "
+         "speedup S and energy advantage A predicted before the design ran on the card; markers: measured "
+         "medians of 5 card and 5 CPU runs with 95% bootstrap intervals (mostly smaller than the markers). "
+         "Dashed line: parity; grey band: tie band for time.")
+
+
 def main():
     for fn in (fig_headline, fig_mc_protocols, fig_power_trace, fig_scaling, fig_bandwidth_kernels,
-               fig_stages, fig_live, fig_v1v2, fig_te_map, fig_core_equivalents):
+               fig_stages, fig_live, fig_v1v2, fig_te_map, fig_core_equivalents, fig_lane_sweep):
         fn()
     figdata.build_workbook(OUT, os.path.join(OUT, "figure_data.xlsx"), CAPTIONS)
     json.dump(CAPTIONS, open(os.path.join(OUT, "captions.json"), "w"), indent=1)

@@ -1,22 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this dataset, please cite it and the paper."
-type: dataset
-title: "FPGA-CPU whole-system benchmark dataset: AMD Alveo U50 vs. dual Intel Xeon Gold 5318Y (per-rail power traces, run metadata, code and analysis for six workloads)"
-version: "1.0"
-date-released: "2026-10-01"          # TODO: set to the deposit date
-doi: "10.5281/zenodo.XXXXXXX"        # TODO: Zenodo DOI
-license: CC-BY-4.0
+message: "If you use this software, please cite it and the dataset. The paper is submitted (not yet published)."
+type: software
+title: "u50-fpga-cpu-benchmark: measurement harness, FPGA designs, CPU baselines and analysis for an Alveo U50 vs. Xeon Gold 5318Y comparison"
+version: "1.0.0"
+date-released: "2026-09-27"
+license: MIT
+repository-code: "https://github.com/randikat33/u50-fpga-cpu-benchmark"
 authors:
   - family-names: "Pathirana Godauda Pathiranage"
     given-names: "Randika Thiyunuwan"
     affiliation: "Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka"
-    orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO
   - family-names: "Hettiarachchi"
     given-names: "Chathuranga"
     affiliation: "Department of Computer Science and Engineering, University of Moratuwa, Sri Lanka"
-  - family-names: "Hewawasam"
-    given-names: "Dasuni"
-    affiliation: "Department of Mechanical Engineering, University of Moratuwa, Sri Lanka"
 keywords:
   - FPGA
   - Alveo U50
@@ -24,16 +20,23 @@ keywords:
   - RAPL
   - benchmarking
   - high-level synthesis
-  - heterogeneous computing
-preferred-citation:
-  type: article
-  title: "Faster is not greener: predicting when a PCIe FPGA card beats its host server in time and energy"
-  journal: "Journal of Systems Architecture"
-  year: 2026
-  authors:
-    - family-names: "Pathirana Godauda Pathiranage"
-      given-names: "Randika Thiyunuwan"
-    - family-names: "Hettiarachchi"
-      given-names: "Chathuranga"
-    - family-names: "Hewawasam"
-      given-names: "Dasuni"
+references:
+  - type: data
+    title: "FPGA-CPU whole-system benchmark dataset: AMD Alveo U50 vs. dual Intel Xeon Gold 5318Y (per-rail power traces, run metadata, code and analysis for six workloads and two model-test kernels)"
+    doi: "10.5281/zenodo.23133623"
+    year: 2026
+    authors:
+      - family-names: "Pathirana Godauda Pathiranage"
+        given-names: "Randika Thiyunuwan"
+      - family-names: "Hettiarachchi"
+        given-names: "Chathuranga"
+  - type: article
+    status: submitted
+    title: "Slower can be greener: predicting when a PCIe FPGA card beats its host server in time and energy"
+    journal: "Journal of Systems Architecture"
+    year: 2026
+    authors:
+      - family-names: "Pathirana Godauda Pathiranage"
+        given-names: "Randika Thiyunuwan"
+      - family-names: "Hettiarachchi"
+        given-names: "Chathuranga"

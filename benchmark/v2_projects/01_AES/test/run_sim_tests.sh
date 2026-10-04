@@ -98,6 +98,14 @@ H --mode dec --iv $IVC --in "$T/f_3145735.bin" --out "$T/fd.bin" > "$T/fd.log" 2
 chk "host dec(enc(x)) == x (3 MiB+7, 4 chunks, carry IV)" cmp -s "$T/fd.bin" "$T/in_3145735.bin"
 H --mode enc --iv $IV --no-io --size-mb 5 --verify > "$T/fn.log" 2>&1
 if [ "$(res "$T/fn.log" ok)" = 1 ] && [ "$(res "$T/fn.log" verified)" = 1 ]; then ok "host --no-io 5 MiB (5 chunks, 2 CUs) verified"; else bad "host --no-io"; fi
+for st in 2 3; do
+    H --mode enc --iv $IV --no-io --size-mb 8 --verify --streams $st > "$T/fs$st.log" 2>&1
+    if [ "$(res "$T/fs$st.log" ok)" = 1 ] && [ "$(res "$T/fs$st.log" verified)" = 1 ] && [ "$(res "$T/fs$st.log" n_workers)" = $((2*st)) ]; then
+        ok "host --streams $st: $((2*st)) workers on 2 CUs, --no-io 8 MiB verified"; else bad "host --streams $st"; fi
+done
+H --mode enc --iv $IVC --in "$T/in_3145735.bin" --out "$T/fs_file.bin" --streams 3 > "$T/fs_file.log" 2>&1
+cmp -s "$T/fs_file.bin" "$T/f_3145735.bin" && [ "$(res "$T/fs_file.log" ok)" = 1 ] \
+    && ok "host --streams 3 file mode == --streams 1 output (3 MiB+7, carry IV)" || bad "host --streams 3 file mode"
 missing=""
 for k in project platform impl ok mode t_xclbin_s t_alloc_s t_read_s t_h2d_s t_kernel_s t_d2h_s t_write_s \
          t_compute_s t_accel_window_s t_total_s n_cu bytes chunk_mb throughput_gbps e2e_gbps; do

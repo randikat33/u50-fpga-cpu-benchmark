@@ -1,0 +1,13 @@
+{
+  "_what": "Frozen inputs of the time-energy model (paper Section 6.4), taken from the paper's data before any round-6 run. predict_round6.py uses only these constants, the routed designs and CPU-only runs.",
+  "_source": "paper/data/rev_te_model.csv and rev_te_summary.json (JSA revision round 4); H = mean measured host power of the two workloads of each class while their card runs",
+  "B_GBps": 12.2,
+  "P0_W": 17.0,
+  "P_card_naive_W": 75.0,
+  "H_W": {
+    "polling":   {"socket": 49.151, "server": 92.940},
+    "streaming": {"socket": 81.993, "server": 147.327}
+  },
+  "boundary_cpu_config": {"socket": "s0_c24", "server": "s01_t96"},
+  "tie_band_S": [0.8, 1.2]
+}
