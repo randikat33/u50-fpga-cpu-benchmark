@@ -1,0 +1,60 @@
+FT bias fit |b| = c h^p (K = 100):
+    I: c = 8.459, p = 1.016 +- 0.009 (9 points)
+   II: c = 9.962, p = 1.027 +- 0.011 (9 points)
+  III: c = 5.113, p = 1.127 +- 0.025 (7 points)
+   P1: c = 1.202, p = 1.672 +- 0.086 (3 points)
+
+settings (pairs = antithetic pairs; path-steps = 2 x pairs x steps):
+  case target scheme      rule steps/yr          pairs  path-steps RMSE/eps
+     I     1%     ft empirical      128         14,464     3.7e+07     0.76
+     I     1%     ft     model      128         10,752    2.75e+07     0.86
+     I   0.3%     ft empirical      512        159,488    1.63e+09     0.74
+     I   0.3%     ft     model      512        118,976    1.22e+09     0.84
+     I   0.1%     ft empirical     2048      1,433,152    5.87e+10     0.72
+     I   0.1%     ft     model     1024      1,070,400    2.19e+10     0.92
+     I     1%     qe empirical        4         14,336    1.15e+06     0.73
+     I   0.3%     qe empirical        8        158,976    2.54e+07     0.72
+     I   0.1%     qe empirical       32      1,433,408    9.17e+08     0.71
+    II     1%     ft empirical      128         46,016    1.77e+08     0.75
+    II     1%     ft     model      128         34,240    1.31e+08     0.86
+    II   0.3%     ft empirical      512        509,632    7.83e+09     0.73
+    II   0.3%     ft     model      512        378,880    5.82e+09     0.84
+    II   0.1%     ft empirical     2048      4,584,000    2.82e+11     0.76
+    II   0.1%     ft     model     1024      3,409,024    1.05e+11     0.93
+    II     1%     qe empirical        4         44,672    5.36e+06     0.71
+    II   0.3%     qe empirical        4        495,808    5.95e+07     0.78
+    II   0.1%     qe empirical       16      4,556,096    2.19e+09     0.71
+   III     1%     ft empirical       32         25,280    8.09e+06     0.82
+   III     1%     ft     model       32         18,240    5.84e+06     0.93
+   III   0.3%     ft empirical      128        279,808    3.58e+08     0.79
+   III   0.3%     ft     model      128        201,984    2.59e+08     0.90
+   III   0.1%     ft empirical      512      2,515,008    1.29e+10     0.71
+   III   0.1%     ft     model      256      1,816,384    4.65e+09     0.92
+   III     1%     qe empirical        4         23,552    9.42e+05     0.72
+   III   0.3%     qe empirical        4        261,248    1.04e+07     0.86
+   III   0.1%     qe empirical        8      2,408,448    1.93e+08     0.73
+    P1     1%     ft empirical        8         10,304    1.65e+05     0.83
+    P1     1%     ft     model        8          6,656    1.06e+05     0.98
+    P1   0.3%     ft empirical       16        108,032    3.46e+06     0.87
+    P1   0.3%     ft     model       32         68,480    4.38e+06     0.89
+    P1   0.1%     ft empirical       64        938,560     1.2e+08     0.77
+    P1   0.1%     ft     model       32        616,192    3.94e+07     1.03  ! above target
+    P1     1%     qe empirical        1          9,472    1.89e+04     0.71
+    P1   0.3%     qe empirical        4        100,864    8.07e+05     0.80
+    P1   0.1%     qe empirical        8        914,688    1.46e+07     0.71
+
+work ratio, empirical rule (settings that meet the target at all three strikes):
+     I     1%: path-steps FT/QE = 32.3
+     I   0.3%: path-steps FT/QE = 64.2
+     I   0.1%: path-steps FT/QE = 64.0
+    II     1%: path-steps FT/QE = 33.0
+    II   0.3%: path-steps FT/QE = 131.6
+    II   0.1%: path-steps FT/QE = 128.8
+   III     1%: path-steps FT/QE = 8.6
+   III   0.3%: path-steps FT/QE = 34.3
+   III   0.1%: path-steps FT/QE = 66.8
+    P1     1%: path-steps FT/QE = 8.7
+    P1   0.3%: path-steps FT/QE = 4.3
+    P1   0.1%: path-steps FT/QE = 8.2
+
+written to /home/cse/Desktop/Thesis_and_jounal_data/v2_projects/10_Heston_Accuracy/results: bias_fit.csv, settings.csv, float_vs_double.csv
