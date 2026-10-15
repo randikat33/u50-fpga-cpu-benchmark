@@ -1,0 +1,12 @@
+M=12  K=90: plain 12.92629 cv 12.92007  sd pair plain 2.845 cv 0.2093  var ratio 185  beta 1.0338  geo mc 12.64900 cf 12.64297
+M=12  K=100: plain 6.16605 cv 6.15616  sd pair plain 4.182 cv 0.1754  var ratio 569  beta 1.0275  geo mc 5.94983 cf 5.94020
+M=12  K=110: plain 2.29827 cv 2.29053  sd pair plain 3.473 cv 0.1517  var ratio 524  beta 1.0502  geo mc 2.15169 cf 2.14433
+  0s
+M=52  K=90: plain 12.66872 cv 12.67072  sd pair plain 2.627 cv 0.1975  var ratio 177  beta 1.0406  geo mc 12.39002 cf 12.39194
+M=52  K=100: plain 5.85222 cv 5.85400  sd pair plain 3.971 cv 0.1653  var ratio 577  beta 1.0313  geo mc 5.63570 cf 5.63743
+M=52  K=110: plain 2.05513 cv 2.05847  sd pair plain 3.222 cv 0.1419  var ratio 515  beta 1.0571  geo mc 1.90959 cf 1.91275
+  1s
+M=250 K=90: plain 12.60586 cv 12.61121  sd pair plain 2.561 cv 0.1942  var ratio 174  beta 1.0422  geo mc 12.32796 cf 12.33309
+M=250 K=100: plain 5.77088 cv 5.78192  sd pair plain 3.915 cv 0.1623  var ratio 582  beta 1.0320  geo mc 5.55496 cf 5.56566
+M=250 K=110: plain 1.99654 cv 2.00387  sd pair plain 3.151 cv 0.1388  var ratio 516  beta 1.0588  geo mc 1.85186 cf 1.85879
+  3s
