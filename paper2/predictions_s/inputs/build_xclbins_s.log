@@ -1,0 +1,52 @@
+=== build_xclbins_s started 2026-10-15T18:36:46Z: asian bqe bft
+=== asian (ha_asian, 14 lanes per CU, 2 CUs): HLS (18:36:46)
+  HLS estimate per CU: DSP 2230, LUT 405543  ->  card (2 CUs): DSP 4460 of 5952 (74%), LUT after implementation ~413653 of 743637 (55%)
+=== asian: Vitis link at 250 MHz (synthesis, place, route): 4-20 h (18:43:42)
+=== asian: did not meet timing at 250 MHz (WNS -0.390 ns); trying the next lower clock
+=== asian: Vitis link at 225 MHz (synthesis, place, route): 4-20 h (02:59:15)
+=== asian: did not meet timing at 225 MHz (WNS -0.055 ns); trying the next lower clock
+=== asian: Vitis link at 200 MHz (synthesis, place, route): 4-20 h (09:35:11)
+=== build_xclbins_s started 2026-10-16T11:49:46Z: bft
+=== bft (hb_ft, 14 lanes per CU, 2 CUs): HLS (11:49:46)
+  HLS estimate per CU: DSP 2177, LUT 364083  ->  card (2 CUs): DSP 4354 of 5952 (73%), LUT after implementation ~371364 of 743637 (49%)
+=== bft: Vitis link at 225 MHz (synthesis, place, route): 4-20 h (11:55:10)
+=== asian: built at 200 MHz in 21 h 20 min
+  | Design Timing Summary
+  | ---------------------
+  ------------------------------------------------------------------------------------------------
+  
+  --
+  | Design Timing Summary
+  | ---------------------
+  ------------------------------------------------------------------------------------------------
+=== bqe (hb_qe, 7 lanes per CU, 2 CUs): HLS (16:04:22)
+  HLS estimate per CU: DSP 1999, LUT 247185  ->  card (2 CUs): DSP 3998 of 5952 (67%), LUT after implementation ~252128 of 743637 (33%)
+=== bqe: Vitis link at 225 MHz (synthesis, place, route): 4-20 h (16:08:03)
+=== bft: built at 225 MHz in 6 h 51 min
+  | Design Timing Summary
+  | ---------------------
+  ------------------------------------------------------------------------------------------------
+  
+  --
+  | Design Timing Summary
+  | ---------------------
+  ------------------------------------------------------------------------------------------------
+=== ALL REQUESTED XCLBINS BUILT 2026-10-16T18:47:02Z
+-rw-rw-r-- 1 cse cse 55466025 Oct 16 16:04 build/asian/ha_asian.xclbin
+-rw-rw-r-- 1 cse cse 54914165 Oct 16 18:46 build/bft/hb_ft.xclbin
+=== bqe: did not meet timing at 225 MHz (WNS -0.067 ns); trying the next lower clock
+=== bqe: Vitis link at 200 MHz (synthesis, place, route): 4-20 h (23:39:33)
+=== bqe: built at 200 MHz in 12 h 47 min
+  | Design Timing Summary
+  | ---------------------
+  ------------------------------------------------------------------------------------------------
+  
+  --
+  | Design Timing Summary
+  | ---------------------
+  ------------------------------------------------------------------------------------------------
+=== bft: build/bft/hb_ft.xclbin exists, skipped
+=== ALL REQUESTED XCLBINS BUILT 2026-10-17T04:55:45Z
+-rw-rw-r-- 1 cse cse 55466025 Oct 16 16:04 build/asian/ha_asian.xclbin
+-rw-rw-r-- 1 cse cse 54914165 Oct 16 18:46 build/bft/hb_ft.xclbin
+-rw-rw-r-- 1 cse cse 54988045 Oct 17 04:55 build/bqe/hb_qe.xclbin
