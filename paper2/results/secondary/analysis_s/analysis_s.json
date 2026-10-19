@@ -1,0 +1,1035 @@
+{
+ "sessions": [
+  "phase5s_summary_s1.csv",
+  "phase5s_summary_s2.csv"
+ ],
+ "prediction_created": "2026-10-18T07:19:36Z",
+ "variants": {
+  "same": {
+   "n": 72,
+   "within20": 68,
+   "median_abs_err": 0.0060318682805404755,
+   "max_abs_err": 0.6298277083153618,
+   "within20_steady": 72,
+   "card_within20": 20,
+   "card_n": 24,
+   "winners": [
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "socket",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "socket",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "socket",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "socket",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "socket",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "socket",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    }
+   ],
+   "winners_ok": 12,
+   "winners_steady": [
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "socket",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "server",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "socket",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "socket",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "socket",
+     "measured": "card_cv",
+     "predicted": "card_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "socket",
+     "measured": "card_cv",
+     "predicted": "card_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "socket",
+     "measured": "card_cv",
+     "predicted": "card_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    }
+   ],
+   "winners_steady_ok": 12,
+   "pairs": 180,
+   "pairs_ok": 179
+  },
+  "informed": {
+   "n": 72,
+   "within20": 59,
+   "median_abs_err": 0.0060318682805404755,
+   "max_abs_err": 0.5193439838226515,
+   "within20_steady": 72,
+   "card_within20": 11,
+   "card_n": 24,
+   "winners": [
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "socket",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "socket",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "socket",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "socket",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "socket",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "socket",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    }
+   ],
+   "winners_ok": 12,
+   "winners_steady": [
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "socket",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "server",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "socket",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "card_qe",
+     "ok": false
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "socket",
+     "measured": "card_qe",
+     "predicted": "card_qe",
+     "ok": true
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "server",
+     "measured": "cpu_native_qe",
+     "predicted": "cpu_native_qe",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "socket",
+     "measured": "card_cv",
+     "predicted": "card_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "socket",
+     "measured": "card_cv",
+     "predicted": "card_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "socket",
+     "measured": "card_cv",
+     "predicted": "card_cv",
+     "ok": true
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "server",
+     "measured": "cpu_native_cv",
+     "predicted": "cpu_native_cv",
+     "ok": true
+    }
+   ],
+   "winners_steady_ok": 11,
+   "pairs": 180,
+   "pairs_ok": 179
+  }
+ },
+ "rmse": [
+  {
+   "case": "A",
+   "target": "0.1%",
+   "platform": "card",
+   "scheme": "cv",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6476198471390956,
+   "rmse_over_eps": [
+    0.578,
+    0.648,
+    0.415
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.1%",
+   "platform": "card",
+   "scheme": "plain",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.4854199144114772,
+   "rmse_over_eps": [
+    0.385,
+    0.485,
+    0.43
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.1%",
+   "platform": "cpu_matched",
+   "scheme": "cv",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6476198471390956,
+   "rmse_over_eps": [
+    0.578,
+    0.648,
+    0.415
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.1%",
+   "platform": "cpu_matched",
+   "scheme": "plain",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.4854199144114772,
+   "rmse_over_eps": [
+    0.385,
+    0.485,
+    0.43
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.1%",
+   "platform": "cpu_native",
+   "scheme": "cv",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.7045666192756197,
+   "rmse_over_eps": [
+    0.705,
+    0.578,
+    0.467
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.1%",
+   "platform": "cpu_native",
+   "scheme": "plain",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.9273075345621884,
+   "rmse_over_eps": [
+    0.625,
+    0.927,
+    0.76
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.3%",
+   "platform": "card",
+   "scheme": "cv",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6165906284584083,
+   "rmse_over_eps": [
+    0.617,
+    0.492,
+    0.387
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.3%",
+   "platform": "card",
+   "scheme": "plain",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.9160489211952613,
+   "rmse_over_eps": [
+    0.564,
+    0.916,
+    0.707
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.3%",
+   "platform": "cpu_matched",
+   "scheme": "cv",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6165906284584083,
+   "rmse_over_eps": [
+    0.617,
+    0.492,
+    0.387
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.3%",
+   "platform": "cpu_matched",
+   "scheme": "plain",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.9160489211952613,
+   "rmse_over_eps": [
+    0.564,
+    0.916,
+    0.707
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.3%",
+   "platform": "cpu_native",
+   "scheme": "cv",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6316445690174606,
+   "rmse_over_eps": [
+    0.578,
+    0.632,
+    0.41
+   ]
+  },
+  {
+   "case": "A",
+   "target": "0.3%",
+   "platform": "cpu_native",
+   "scheme": "plain",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.49148555661742455,
+   "rmse_over_eps": [
+    0.404,
+    0.483,
+    0.491
+   ]
+  },
+  {
+   "case": "A",
+   "target": "1%",
+   "platform": "card",
+   "scheme": "cv",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.46530144053927375,
+   "rmse_over_eps": [
+    0.465,
+    0.409,
+    0.21
+   ]
+  },
+  {
+   "case": "A",
+   "target": "1%",
+   "platform": "card",
+   "scheme": "plain",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.7702686565916974,
+   "rmse_over_eps": [
+    0.542,
+    0.77,
+    0.67
+   ]
+  },
+  {
+   "case": "A",
+   "target": "1%",
+   "platform": "cpu_matched",
+   "scheme": "cv",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.46530144053927375,
+   "rmse_over_eps": [
+    0.465,
+    0.409,
+    0.21
+   ]
+  },
+  {
+   "case": "A",
+   "target": "1%",
+   "platform": "cpu_matched",
+   "scheme": "plain",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.7702686565916974,
+   "rmse_over_eps": [
+    0.542,
+    0.77,
+    0.67
+   ]
+  },
+  {
+   "case": "A",
+   "target": "1%",
+   "platform": "cpu_native",
+   "scheme": "cv",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.539836863747523,
+   "rmse_over_eps": [
+    0.54,
+    0.457,
+    0.245
+   ]
+  },
+  {
+   "case": "A",
+   "target": "1%",
+   "platform": "cpu_native",
+   "scheme": "plain",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.5840277076308827,
+   "rmse_over_eps": [
+    0.343,
+    0.584,
+    0.411
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "platform": "card",
+   "scheme": "ft",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 1.0008530739220778,
+   "rmse_over_eps": [
+    0.214,
+    1.001,
+    0.319
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "platform": "card",
+   "scheme": "qe",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6371547621906136,
+   "rmse_over_eps": [
+    0.176,
+    0.637,
+    0.188
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "platform": "cpu_matched",
+   "scheme": "ft",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 1.0008530739220778,
+   "rmse_over_eps": [
+    0.214,
+    1.001,
+    0.319
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "platform": "cpu_matched",
+   "scheme": "qe",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6371547621906136,
+   "rmse_over_eps": [
+    0.176,
+    0.637,
+    0.188
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "platform": "cpu_native",
+   "scheme": "ft",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.7265196957876984,
+   "rmse_over_eps": [
+    0.183,
+    0.727,
+    0.312
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "platform": "cpu_native",
+   "scheme": "qe",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6143540896754327,
+   "rmse_over_eps": [
+    0.138,
+    0.614,
+    0.336
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "platform": "card",
+   "scheme": "ft",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 1.0796335544107145,
+   "rmse_over_eps": [
+    0.166,
+    1.08,
+    0.39
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "platform": "card",
+   "scheme": "qe",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.9298174735306456,
+   "rmse_over_eps": [
+    0.224,
+    0.93,
+    0.603
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "platform": "cpu_matched",
+   "scheme": "ft",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 1.0796335544107145,
+   "rmse_over_eps": [
+    0.166,
+    1.08,
+    0.39
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "platform": "cpu_matched",
+   "scheme": "qe",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.9298174735306456,
+   "rmse_over_eps": [
+    0.224,
+    0.93,
+    0.603
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "platform": "cpu_native",
+   "scheme": "ft",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.9379405085405296,
+   "rmse_over_eps": [
+    0.248,
+    0.938,
+    0.545
+   ]
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "platform": "cpu_native",
+   "scheme": "qe",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 1.292881931206566,
+   "rmse_over_eps": [
+    0.255,
+    1.293,
+    0.497
+   ]
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "platform": "card",
+   "scheme": "ft",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6634854403982468,
+   "rmse_over_eps": [
+    0.286,
+    0.663,
+    0.38
+   ]
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "platform": "card",
+   "scheme": "qe",
+   "cfg": "card",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6003061558884106,
+   "rmse_over_eps": [
+    0.212,
+    0.6,
+    0.263
+   ]
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "platform": "cpu_matched",
+   "scheme": "ft",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6634854403982468,
+   "rmse_over_eps": [
+    0.286,
+    0.663,
+    0.38
+   ]
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "platform": "cpu_matched",
+   "scheme": "qe",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6003061558884106,
+   "rmse_over_eps": [
+    0.212,
+    0.6,
+    0.263
+   ]
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "platform": "cpu_native",
+   "scheme": "ft",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.6326719639030148,
+   "rmse_over_eps": [
+    0.144,
+    0.633,
+    0.327
+   ]
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "platform": "cpu_native",
+   "scheme": "qe",
+   "cfg": "s0_c24",
+   "runs": 10,
+   "rmse_over_eps_max": 0.9711521243607804,
+   "rmse_over_eps": [
+    0.214,
+    0.971,
+    0.32
+   ]
+  }
+ ],
+ "rmse_within_1_1": 35,
+ "hypotheses_measured": {
+  "HB2": {
+   "algorithm_factor_steady_socket": {
+    "1%": 3.8022889851604265,
+    "0.3%": 3.46795670750869,
+    "0.1%": 3.248530772292184
+   },
+   "holds": true
+  },
+  "HA2": {
+   "per": {
+    "1% socket primary": {
+     "algorithm_factor": 20.16625266789069,
+     "platform_gain": 29.38311158369554,
+     "holds": false
+    },
+    "1% socket steady": {
+     "algorithm_factor": 144.81410043596912,
+     "platform_gain": 1.2561070141111343,
+     "holds": true
+    },
+    "1% server primary": {
+     "algorithm_factor": 3.694921757900466,
+     "platform_gain": 9.312630769870667,
+     "holds": false
+    },
+    "1% server steady": {
+     "algorithm_factor": 123.61306779919748,
+     "platform_gain": 1.9061360963776353,
+     "holds": true
+    },
+    "1% socket CPU-CV < card-plain": {
+     "holds": true
+    },
+    "0.3% socket primary": {
+     "algorithm_factor": 177.71945466124933,
+     "platform_gain": 24.744350638252534,
+     "holds": true
+    },
+    "0.3% socket steady": {
+     "algorithm_factor": 399.7368530999768,
+     "platform_gain": 1.2561070141111343,
+     "holds": true
+    },
+    "0.3% server primary": {
+     "algorithm_factor": 29.458475340078945,
+     "platform_gain": 8.824533910579001,
+     "holds": true
+    },
+    "0.3% server steady": {
+     "algorithm_factor": 341.21469232157784,
+     "platform_gain": 1.9061360963776348,
+     "holds": true
+    },
+    "0.3% socket CPU-CV < card-plain": {
+     "holds": true
+    },
+    "0.1% socket primary": {
+     "algorithm_factor": 303.48386846414905,
+     "platform_gain": 5.395856173771288,
+     "holds": true
+    },
+    "0.1% socket steady": {
+     "algorithm_factor": 399.7368530999768,
+     "platform_gain": 1.2561070141111343,
+     "holds": true
+    },
+    "0.1% server primary": {
+     "algorithm_factor": 160.87074406901678,
+     "platform_gain": 5.675904832540402,
+     "holds": true
+    },
+    "0.1% server steady": {
+     "algorithm_factor": 341.2146923215779,
+     "platform_gain": 1.9061360963776353,
+     "holds": true
+    },
+    "0.1% socket CPU-CV < card-plain": {
+     "holds": true
+    }
+   },
+   "holds": false
+  },
+  "HA3": {
+   "per_target": {
+    "1%": {
+     "ratio_cpu_over_card": 1.2561070141111343,
+     "holds": true
+    },
+    "0.3%": {
+     "ratio_cpu_over_card": 1.2561070141111343,
+     "holds": true
+    },
+    "0.1%": {
+     "ratio_cpu_over_card": 1.2561070141111343,
+     "holds": true
+    }
+   },
+   "holds": true
+  }
+ }
+}

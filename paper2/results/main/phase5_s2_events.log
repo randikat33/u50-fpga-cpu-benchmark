@@ -1,0 +1,2155 @@
+[04:34:24] phase 5, session 2: 1075 jobs; wall power not available
+[04:34:24] s2/fpga/card/set_I_ft_1pct/rep1 (1074 left)
+[04:34:25] waiting: other processes use 0.0 cores
+[04:35:00]   s2/fpga/card/set_I_ft_1pct/rep1: 2163 runs, 4.624 ms/run, card 29.8 W, socket 50 W, server 94 W, ok 1
+[04:35:00] s2/fpga/card/set_I_ft_0.3pct/rep1 (1073 left)
+[04:35:21]   s2/fpga/card/set_I_ft_0.3pct/rep1: 76 runs, 132.035 ms/run, card 32.6 W, socket 49 W, server 93 W, ok 1
+[04:35:21] s2/fpga/card/set_I_ft_0.1pct/rep1 (1072 left)
+[04:35:48]   s2/fpga/card/set_I_ft_0.1pct/rep1: 3 runs, 4661.488 ms/run, card 33.3 W, socket 49 W, server 94 W, ok 1
+[04:35:48] s2/fpga/card/set_I_qe_1pct/rep1 (1071 left)
+[04:36:15]   s2/fpga/card/set_I_qe_1pct/rep1: 20739 runs, 0.482 ms/run, card 25.9 W, socket 51 W, server 96 W, ok 1
+[04:36:15] s2/fpga/card/set_I_qe_0.3pct/rep1 (1070 left)
+[04:36:36]   s2/fpga/card/set_I_qe_0.3pct/rep1: 1933 runs, 5.175 ms/run, card 31.8 W, socket 49 W, server 94 W, ok 1
+[04:36:36] s2/fpga/card/set_I_qe_0.1pct/rep1 (1069 left)
+[04:36:57]   s2/fpga/card/set_I_qe_0.1pct/rep1: 68 runs, 147.279 ms/run, card 36.2 W, socket 49 W, server 93 W, ok 1
+[04:36:57] s2/fpga/card/set_II_ft_1pct/rep1 (1068 left)
+[04:37:24]   s2/fpga/card/set_II_ft_1pct/rep1: 657 runs, 15.223 ms/run, card 31.5 W, socket 50 W, server 94 W, ok 1
+[04:37:24] s2/fpga/card/set_II_ft_0.3pct/rep1 (1067 left)
+[04:37:45]   s2/fpga/card/set_II_ft_0.3pct/rep1: 16 runs, 625.916 ms/run, card 32.6 W, socket 49 W, server 94 W, ok 1
+[04:37:45] s2/fpga/card/set_II_ft_0.1pct/rep1 (1066 left)
+[04:38:38]   s2/fpga/card/set_II_ft_0.1pct/rep1: 1 runs, 22371.788 ms/run, card 33.3 W, socket 49 W, server 93 W, ok 1
+[04:38:38] s2/fpga/card/set_II_qe_1pct/rep1 (1065 left)
+[04:39:04]   s2/fpga/card/set_II_qe_1pct/rep1: 5669 runs, 1.764 ms/run, card 27.4 W, socket 50 W, server 94 W, ok 1
+[04:39:04] s2/fpga/card/set_II_qe_0.3pct/rep1 (1064 left)
+[04:39:25]   s2/fpga/card/set_II_qe_0.3pct/rep1: 938 runs, 10.665 ms/run, card 31.9 W, socket 49 W, server 93 W, ok 1
+[04:39:25] s2/fpga/card/set_II_qe_0.1pct/rep1 (1063 left)
+[04:39:47]   s2/fpga/card/set_II_qe_0.1pct/rep1: 29 runs, 350.003 ms/run, card 34.5 W, socket 49 W, server 93 W, ok 1
+[04:39:47] s2/fpga/card/set_III_ft_1pct/rep1 (1062 left)
+[04:40:13]   s2/fpga/card/set_III_ft_1pct/rep1: 6039 runs, 1.656 ms/run, card 27.4 W, socket 50 W, server 94 W, ok 1
+[04:40:13] s2/fpga/card/set_III_ft_0.3pct/rep1 (1061 left)
+[04:40:34]   s2/fpga/card/set_III_ft_0.3pct/rep1: 335 runs, 29.881 ms/run, card 34.8 W, socket 49 W, server 93 W, ok 1
+[04:40:34] s2/fpga/card/set_III_ft_0.1pct/rep1 (1060 left)
+[04:40:56]   s2/fpga/card/set_III_ft_0.1pct/rep1: 10 runs, 1023.695 ms/run, card 35.5 W, socket 49 W, server 93 W, ok 1
+[04:40:56] s2/fpga/card/set_III_qe_1pct/rep1 (1059 left)
+[04:41:22]   s2/fpga/card/set_III_qe_1pct/rep1: 12006 runs, 0.833 ms/run, card 25.8 W, socket 50 W, server 95 W, ok 1
+[04:41:22] s2/fpga/card/set_III_qe_0.3pct/rep1 (1058 left)
+[04:41:43]   s2/fpga/card/set_III_qe_0.3pct/rep1: 3739 runs, 2.675 ms/run, card 35.1 W, socket 50 W, server 94 W, ok 1
+[04:41:43] s2/fpga/card/set_III_qe_0.1pct/rep1 (1057 left)
+[04:42:04]   s2/fpga/card/set_III_qe_0.1pct/rep1: 308 runs, 32.571 ms/run, card 43.8 W, socket 49 W, server 93 W, ok 1
+[04:42:04] s2/fpga/card/set_P1_ft_1pct/rep1 (1056 left)
+[04:42:31]   s2/fpga/card/set_P1_ft_1pct/rep1: 60183 runs, 0.166 ms/run, card 22.7 W, socket 62 W, server 115 W, ok 1
+[04:42:31] s2/fpga/card/set_P1_ft_0.3pct/rep1 (1055 left)
+[04:42:52]   s2/fpga/card/set_P1_ft_0.3pct/rep1: 10526 runs, 0.950 ms/run, card 25.6 W, socket 50 W, server 94 W, ok 1
+[04:42:52] s2/fpga/card/set_P1_ft_0.1pct/rep1 (1054 left)
+[04:43:13]   s2/fpga/card/set_P1_ft_0.1pct/rep1: 943 runs, 10.615 ms/run, card 33.5 W, socket 49 W, server 93 W, ok 1
+[04:43:13] s2/fpga/card/set_P1_qe_1pct/rep1 (1053 left)
+[04:43:41]   s2/fpga/card/set_P1_qe_1pct/rep1: 14382 runs, 0.695 ms/run, card 21.7 W, socket 50 W, server 95 W, ok 1
+[04:43:41] s2/fpga/card/set_P1_qe_0.3pct/rep1 (1052 left)
+[04:44:02]   s2/fpga/card/set_P1_qe_0.3pct/rep1: 11596 runs, 0.862 ms/run, card 25.3 W, socket 50 W, server 95 W, ok 1
+[04:44:02] s2/fpga/card/set_P1_qe_0.1pct/rep1 (1051 left)
+[04:44:23]   s2/fpga/card/set_P1_qe_0.1pct/rep1: 2730 runs, 3.664 ms/run, card 37.8 W, socket 49 W, server 93 W, ok 1
+[04:44:23] s2/fpga/card/ss_I_ft_M1280/rep1 (1050 left)
+[04:44:51]   s2/fpga/card/ss_I_ft_M1280/rep1: 13 runs, 795.582 ms/run, card 32.8 W, socket 49 W, server 93 W, ok 1
+[04:44:51] s2/fpga/card/ss_I_ft_M5120/rep1 (1049 left)
+[04:45:13]   s2/fpga/card/ss_I_ft_M5120/rep1: 13 runs, 796.558 ms/run, card 33.3 W, socket 49 W, server 93 W, ok 1
+[04:45:13] s2/fpga/card/ss_I_qe_M40/rep1 (1048 left)
+[04:45:42]   s2/fpga/card/ss_I_qe_M40/rep1: 7 runs, 1637.813 ms/run, card 33.5 W, socket 49 W, server 93 W, ok 1
+[04:45:42] s2/fpga/card/ss_I_qe_M80/rep1 (1047 left)
+[04:46:05]   s2/fpga/card/ss_I_qe_M80/rep1: 7 runs, 1613.211 ms/run, card 34.8 W, socket 49 W, server 93 W, ok 1
+[04:46:05] s2/fpga/card/ss_I_qe_M320/rep1 (1046 left)
+[04:46:27]   s2/fpga/card/ss_I_qe_M320/rep1: 7 runs, 1594.839 ms/run, card 36.7 W, socket 49 W, server 93 W, ok 1
+[04:46:27] s2/fpga/card/ss_II_ft_M1920/rep1 (1045 left)
+[04:46:55]   s2/fpga/card/ss_II_ft_M1920/rep1: 13 runs, 795.708 ms/run, card 32.6 W, socket 49 W, server 93 W, ok 1
+[04:46:55] s2/fpga/card/ss_II_ft_M7680/rep1 (1044 left)
+[04:47:16]   s2/fpga/card/ss_II_ft_M7680/rep1: 13 runs, 796.433 ms/run, card 33.0 W, socket 49 W, server 93 W, ok 1
+[04:47:16] s2/fpga/card/ss_II_qe_M60/rep1 (1043 left)
+[04:47:46]   s2/fpga/card/ss_II_qe_M60/rep1: 7 runs, 1621.549 ms/run, card 33.0 W, socket 49 W, server 93 W, ok 1
+[04:47:46] s2/fpga/card/ss_II_qe_M240/rep1 (1042 left)
+[04:48:08]   s2/fpga/card/ss_II_qe_M240/rep1: 7 runs, 1596.774 ms/run, card 34.7 W, socket 49 W, server 93 W, ok 1
+[04:48:08] s2/fpga/card/ss_III_ft_M160/rep1 (1041 left)
+[04:48:36]   s2/fpga/card/ss_III_ft_M160/rep1: 13 runs, 800.560 ms/run, card 35.1 W, socket 51 W, server 98 W, ok 1
+[04:48:36] s2/fpga/card/ss_III_ft_M640/rep1 (1040 left)
+[04:48:58]   s2/fpga/card/ss_III_ft_M640/rep1: 13 runs, 796.390 ms/run, card 35.5 W, socket 49 W, server 93 W, ok 1
+[04:48:58] s2/fpga/card/ss_III_qe_M20/rep1 (1039 left)
+[04:49:26]   s2/fpga/card/ss_III_qe_M20/rep1: 6 runs, 1687.680 ms/run, card 42.3 W, socket 49 W, server 93 W, ok 1
+[04:49:26] s2/fpga/card/ss_III_qe_M40/rep1 (1038 left)
+[04:49:49]   s2/fpga/card/ss_III_qe_M40/rep1: 7 runs, 1638.049 ms/run, card 44.8 W, socket 49 W, server 93 W, ok 1
+[04:49:49] s2/fpga/card/ss_P1_ft_M8/rep1 (1037 left)
+[04:50:17]   s2/fpga/card/ss_P1_ft_M8/rep1: 11 runs, 913.379 ms/run, card 34.6 W, socket 49 W, server 93 W, ok 1
+[04:50:17] s2/fpga/card/ss_P1_ft_M16/rep1 (1036 left)
+[04:50:39]   s2/fpga/card/ss_P1_ft_M16/rep1: 12 runs, 854.143 ms/run, card 34.9 W, socket 49 W, server 93 W, ok 1
+[04:50:39] s2/fpga/card/ss_P1_ft_M64/rep1 (1035 left)
+[04:51:01]   s2/fpga/card/ss_P1_ft_M64/rep1: 13 runs, 809.660 ms/run, card 35.1 W, socket 49 W, server 93 W, ok 1
+[04:51:01] s2/fpga/card/ss_P1_qe_M1/rep1 (1034 left)
+[04:51:29]   s2/fpga/card/ss_P1_qe_M1/rep1: 5 runs, 2046.130 ms/run, card 29.1 W, socket 49 W, server 93 W, ok 1
+[04:51:29] s2/fpga/card/ss_P1_qe_M4/rep1 (1033 left)
+[04:51:52]   s2/fpga/card/ss_P1_qe_M4/rep1: 5 runs, 2084.533 ms/run, card 40.7 W, socket 49 W, server 93 W, ok 1
+[04:51:52] s2/fpga/card/ss_P1_qe_M8/rep1 (1032 left)
+[04:52:15]   s2/fpga/card/ss_P1_qe_M8/rep1: 6 runs, 1836.451 ms/run, card 44.3 W, socket 49 W, server 93 W, ok 1
+[04:52:15] s2/avx512/s0_c24/set_I_ft_1pct/rep1 (1031 left)
+[04:52:35]   s2/avx512/s0_c24/set_I_ft_1pct/rep1: 1569 runs, 6.376 ms/run, card 22.1 W, socket 157 W, server 225 W, ok 1
+[04:52:35] s2/avx512/s0_c24/set_I_ft_0.3pct/rep1 (1030 left)
+[04:52:56]   s2/avx512/s0_c24/set_I_ft_0.3pct/rep1: 60 runs, 168.450 ms/run, card 22.0 W, socket 175 W, server 243 W, ok 1
+[04:52:56] s2/avx512/s0_c24/set_I_ft_0.1pct/rep1 (1029 left)
+[04:53:20]   s2/avx512/s0_c24/set_I_ft_0.1pct/rep1: 2 runs, 5707.478 ms/run, card 21.8 W, socket 179 W, server 247 W, ok 1
+[04:53:20] s2/avx512/s0_c24/set_I_qe_1pct/rep1 (1028 left)
+[04:53:41]   s2/avx512/s0_c24/set_I_qe_1pct/rep1: 10913 runs, 0.916 ms/run, card 21.8 W, socket 154 W, server 222 W, ok 1
+[04:53:41] s2/avx512/s0_c24/set_I_qe_0.3pct/rep1 (1027 left)
+[04:54:01]   s2/avx512/s0_c24/set_I_qe_0.3pct/rep1: 852 runs, 11.742 ms/run, card 21.7 W, socket 170 W, server 238 W, ok 1
+[04:54:01] s2/avx512/s0_c24/set_I_qe_0.1pct/rep1 (1026 left)
+[04:54:22]   s2/avx512/s0_c24/set_I_qe_0.1pct/rep1: 26 runs, 393.791 ms/run, card 21.7 W, socket 173 W, server 241 W, ok 1
+[04:54:22] s2/avx512/s0_c24/set_II_ft_1pct/rep1 (1025 left)
+[04:54:42]   s2/avx512/s0_c24/set_II_ft_1pct/rep1: 545 runs, 18.367 ms/run, card 21.6 W, socket 177 W, server 245 W, ok 1
+[04:54:42] s2/avx512/s0_c24/set_II_ft_0.3pct/rep1 (1024 left)
+[04:55:04]   s2/avx512/s0_c24/set_II_ft_0.3pct/rep1: 14 runs, 763.834 ms/run, card 21.6 W, socket 179 W, server 247 W, ok 1
+[04:55:04] s2/avx512/s0_c24/set_II_ft_0.1pct/rep1 (1023 left)
+[04:56:06]   s2/avx512/s0_c24/set_II_ft_0.1pct/rep1: 1 runs, 27210.383 ms/run, card 21.6 W, socket 167 W, server 220 W, ok 1
+[04:56:06] s2/avx512/s0_c24/set_II_qe_1pct/rep1 (1022 left)
+[04:56:26]   s2/avx512/s0_c24/set_II_qe_1pct/rep1: 4094 runs, 2.443 ms/run, card 21.6 W, socket 171 W, server 238 W, ok 1
+[04:56:26] s2/avx512/s0_c24/set_II_qe_0.3pct/rep1 (1021 left)
+[04:56:46]   s2/avx512/s0_c24/set_II_qe_0.3pct/rep1: 391 runs, 25.599 ms/run, card 21.6 W, socket 173 W, server 241 W, ok 1
+[04:56:46] s2/avx512/s0_c24/set_II_qe_0.1pct/rep1 (1020 left)
+[04:57:09]   s2/avx512/s0_c24/set_II_qe_0.1pct/rep1: 12 runs, 908.684 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[04:57:09] s2/avx512/s0_c24/set_III_ft_1pct/rep1 (1019 left)
+[04:57:29]   s2/avx512/s0_c24/set_III_ft_1pct/rep1: 7339 runs, 1.363 ms/run, card 21.5 W, socket 163 W, server 231 W, ok 1
+[04:57:29] s2/avx512/s0_c24/set_III_ft_0.3pct/rep1 (1018 left)
+[04:57:49]   s2/avx512/s0_c24/set_III_ft_0.3pct/rep1: 271 runs, 36.918 ms/run, card 21.5 W, socket 179 W, server 246 W, ok 1
+[04:57:49] s2/avx512/s0_c24/set_III_ft_0.1pct/rep1 (1017 left)
+[04:58:11]   s2/avx512/s0_c24/set_III_ft_0.1pct/rep1: 8 runs, 1251.041 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[04:58:11] s2/avx512/s0_c24/set_III_qe_1pct/rep1 (1016 left)
+[04:58:31]   s2/avx512/s0_c24/set_III_qe_1pct/rep1: 20842 runs, 0.480 ms/run, card 21.5 W, socket 171 W, server 238 W, ok 1
+[04:58:31] s2/avx512/s0_c24/set_III_qe_0.3pct/rep1 (1015 left)
+[04:58:51]   s2/avx512/s0_c24/set_III_qe_0.3pct/rep1: 1944 runs, 5.146 ms/run, card 21.5 W, socket 172 W, server 239 W, ok 1
+[04:58:51] s2/avx512/s0_c24/set_III_qe_0.1pct/rep1 (1014 left)
+[04:59:12]   s2/avx512/s0_c24/set_III_qe_0.1pct/rep1: 115 runs, 87.252 ms/run, card 21.5 W, socket 174 W, server 241 W, ok 1
+[04:59:12] s2/avx512/s0_c24/set_P1_ft_1pct/rep1 (1013 left)
+[04:59:32]   s2/avx512/s0_c24/set_P1_ft_1pct/rep1: 105486 runs, 0.095 ms/run, card 21.5 W, socket 146 W, server 214 W, ok 1
+[04:59:32] s2/avx512/s0_c24/set_P1_ft_0.3pct/rep1 (1012 left)
+[04:59:52]   s2/avx512/s0_c24/set_P1_ft_0.3pct/rep1: 16112 runs, 0.621 ms/run, card 21.5 W, socket 170 W, server 237 W, ok 1
+[04:59:52] s2/avx512/s0_c24/set_P1_ft_0.1pct/rep1 (1011 left)
+[05:00:13]   s2/avx512/s0_c24/set_P1_ft_0.1pct/rep1: 733 runs, 13.643 ms/run, card 21.5 W, socket 179 W, server 246 W, ok 1
+[05:00:13] s2/avx512/s0_c24/set_P1_qe_1pct/rep1 (1010 left)
+[05:00:33]   s2/avx512/s0_c24/set_P1_qe_1pct/rep1: 130957 runs, 0.076 ms/run, card 21.5 W, socket 143 W, server 211 W, ok 1
+[05:00:33] s2/avx512/s0_c24/set_P1_qe_0.3pct/rep1 (1009 left)
+[05:00:54]   s2/avx512/s0_c24/set_P1_qe_0.3pct/rep1: 15100 runs, 0.662 ms/run, card 21.5 W, socket 163 W, server 231 W, ok 1
+[05:00:54] s2/avx512/s0_c24/set_P1_qe_0.1pct/rep1 (1008 left)
+[05:01:14]   s2/avx512/s0_c24/set_P1_qe_0.1pct/rep1: 1225 runs, 8.170 ms/run, card 21.5 W, socket 171 W, server 238 W, ok 1
+[05:01:14] s2/avx512/s0_c24/ss_I_ft_M1280/rep1 (1007 left)
+[05:01:35]   s2/avx512/s0_c24/ss_I_ft_M1280/rep1: 11 runs, 972.259 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[05:01:35] s2/avx512/s0_c24/ss_I_ft_M5120/rep1 (1006 left)
+[05:01:57]   s2/avx512/s0_c24/ss_I_ft_M5120/rep1: 11 runs, 971.683 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[05:01:57] s2/avx512/s0_c24/ss_I_qe_M40/rep1 (1005 left)
+[05:02:21]   s2/avx512/s0_c24/ss_I_qe_M40/rep1: 3 runs, 4307.786 ms/run, card 21.5 W, socket 174 W, server 241 W, ok 1
+[05:02:21] s2/avx512/s0_c24/ss_I_qe_M80/rep1 (1004 left)
+[05:02:46]   s2/avx512/s0_c24/ss_I_qe_M80/rep1: 3 runs, 4260.902 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[05:02:46] s2/avx512/s0_c24/ss_I_qe_M320/rep1 (1003 left)
+[05:03:11]   s2/avx512/s0_c24/ss_I_qe_M320/rep1: 3 runs, 4246.805 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[05:03:11] s2/avx512/s0_c24/ss_II_ft_M1920/rep1 (1002 left)
+[05:03:32]   s2/avx512/s0_c24/ss_II_ft_M1920/rep1: 11 runs, 970.301 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[05:03:32] s2/avx512/s0_c24/ss_II_ft_M7680/rep1 (1001 left)
+[05:03:53]   s2/avx512/s0_c24/ss_II_ft_M7680/rep1: 11 runs, 978.999 ms/run, card 21.5 W, socket 179 W, server 246 W, ok 1
+[05:03:53] s2/avx512/s0_c24/ss_II_qe_M60/rep1 (1000 left)
+[05:04:17]   s2/avx512/s0_c24/ss_II_qe_M60/rep1: 3 runs, 4111.912 ms/run, card 21.5 W, socket 175 W, server 242 W, ok 1
+[05:04:17] s2/avx512/s0_c24/ss_II_qe_M240/rep1 (999 left)
+[05:04:42]   s2/avx512/s0_c24/ss_II_qe_M240/rep1: 3 runs, 4146.031 ms/run, card 21.5 W, socket 175 W, server 242 W, ok 1
+[05:04:42] s2/avx512/s0_c24/ss_III_ft_M160/rep1 (998 left)
+[05:05:03]   s2/avx512/s0_c24/ss_III_ft_M160/rep1: 10 runs, 1025.955 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[05:05:03] s2/avx512/s0_c24/ss_III_ft_M640/rep1 (997 left)
+[05:05:24]   s2/avx512/s0_c24/ss_III_ft_M640/rep1: 11 runs, 978.619 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[05:05:24] s2/avx512/s0_c24/ss_III_qe_M20/rep1 (996 left)
+[05:05:51]   s2/avx512/s0_c24/ss_III_qe_M20/rep1: 3 runs, 4755.792 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[05:05:51] s2/avx512/s0_c24/ss_III_qe_M40/rep1 (995 left)
+[05:06:16]   s2/avx512/s0_c24/ss_III_qe_M40/rep1: 3 runs, 4515.909 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[05:06:16] s2/avx512/s0_c24/ss_P1_ft_M8/rep1 (994 left)
+[05:06:39]   s2/avx512/s0_c24/ss_P1_ft_M8/rep1: 5 runs, 2153.922 ms/run, card 21.5 W, socket 172 W, server 239 W, ok 1
+[05:06:39] s2/avx512/s0_c24/ss_P1_ft_M16/rep1 (993 left)
+[05:07:01]   s2/avx512/s0_c24/ss_P1_ft_M16/rep1: 7 runs, 1568.617 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[05:07:01] s2/avx512/s0_c24/ss_P1_ft_M64/rep1 (992 left)
+[05:07:22]   s2/avx512/s0_c24/ss_P1_ft_M64/rep1: 9 runs, 1112.239 ms/run, card 21.4 W, socket 179 W, server 247 W, ok 1
+[05:07:22] s2/avx512/s0_c24/ss_P1_qe_M1/rep1 (991 left)
+[05:07:47]   s2/avx512/s0_c24/ss_P1_qe_M1/rep1: 2 runs, 5930.473 ms/run, card 21.4 W, socket 165 W, server 233 W, ok 1
+[05:07:47] s2/avx512/s0_c24/ss_P1_qe_M4/rep1 (990 left)
+[05:08:15]   s2/avx512/s0_c24/ss_P1_qe_M4/rep1: 2 runs, 6662.080 ms/run, card 21.4 W, socket 170 W, server 237 W, ok 1
+[05:08:15] s2/avx512/s0_c24/ss_P1_qe_M8/rep1 (989 left)
+[05:08:39]   s2/avx512/s0_c24/ss_P1_qe_M8/rep1: 2 runs, 5464.172 ms/run, card 21.4 W, socket 172 W, server 239 W, ok 1
+[05:08:39] s2/avx512/s01_t96/set_I_ft_1pct/rep1 (988 left)
+[05:08:59]   s2/avx512/s01_t96/set_I_ft_1pct/rep1: 1105 runs, 9.056 ms/run, card 21.4 W, socket 146 W, server 261 W, ok 1
+[05:08:59] s2/avx512/s01_t96/set_I_ft_0.3pct/rep1 (987 left)
+[05:09:20]   s2/avx512/s01_t96/set_I_ft_0.3pct/rep1: 119 runs, 84.280 ms/run, card 21.4 W, socket 165 W, server 318 W, ok 1
+[05:09:20] s2/avx512/s01_t96/set_I_ft_0.1pct/rep1 (986 left)
+[05:09:42]   s2/avx512/s01_t96/set_I_ft_0.1pct/rep1: 5 runs, 2084.660 ms/run, card 21.4 W, socket 177 W, server 355 W, ok 1
+[05:09:42] s2/avx512/s01_t96/set_I_qe_1pct/rep1 (985 left)
+[05:10:02]   s2/avx512/s01_t96/set_I_qe_1pct/rep1: 7774 runs, 1.287 ms/run, card 21.4 W, socket 145 W, server 273 W, ok 1
+[05:10:02] s2/avx512/s01_t96/set_I_qe_0.3pct/rep1 (984 left)
+[05:10:23]   s2/avx512/s01_t96/set_I_qe_0.3pct/rep1: 2082 runs, 4.805 ms/run, card 21.4 W, socket 177 W, server 353 W, ok 1
+[05:10:23] s2/avx512/s01_t96/set_I_qe_0.1pct/rep1 (983 left)
+[05:10:43]   s2/avx512/s01_t96/set_I_qe_0.1pct/rep1: 71 runs, 141.070 ms/run, card 21.4 W, socket 178 W, server 357 W, ok 1
+[05:10:43] s2/avx512/s01_t96/set_II_ft_1pct/rep1 (982 left)
+[05:11:04]   s2/avx512/s01_t96/set_II_ft_1pct/rep1: 394 runs, 25.407 ms/run, card 21.4 W, socket 115 W, server 205 W, ok 1
+[05:11:04] s2/avx512/s01_t96/set_II_ft_0.3pct/rep1 (981 left)
+[05:11:25]   s2/avx512/s01_t96/set_II_ft_0.3pct/rep1: 29 runs, 353.584 ms/run, card 21.4 W, socket 169 W, server 314 W, ok 1
+[05:11:25] s2/avx512/s01_t96/set_II_ft_0.1pct/rep1 (980 left)
+[05:12:02]   s2/avx512/s01_t96/set_II_ft_0.1pct/rep1: 2 runs, 9920.622 ms/run, card 21.4 W, socket 173 W, server 347 W, ok 1
+[05:12:02] s2/avx512/s01_t96/set_II_qe_1pct/rep1 (979 left)
+[05:12:22]   s2/avx512/s01_t96/set_II_qe_1pct/rep1: 5433 runs, 1.841 ms/run, card 21.4 W, socket 163 W, server 316 W, ok 1
+[05:12:22] s2/avx512/s01_t96/set_II_qe_0.3pct/rep1 (978 left)
+[05:12:43]   s2/avx512/s01_t96/set_II_qe_0.3pct/rep1: 972 runs, 10.295 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[05:12:43] s2/avx512/s01_t96/set_II_qe_0.1pct/rep1 (977 left)
+[05:13:03]   s2/avx512/s01_t96/set_II_qe_0.1pct/rep1: 32 runs, 321.077 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:13:03] s2/avx512/s01_t96/set_III_ft_1pct/rep1 (976 left)
+[05:13:24]   s2/avx512/s01_t96/set_III_ft_1pct/rep1: 8003 runs, 1.250 ms/run, card 21.4 W, socket 160 W, server 294 W, ok 1
+[05:13:24] s2/avx512/s01_t96/set_III_ft_0.3pct/rep1 (975 left)
+[05:13:44]   s2/avx512/s01_t96/set_III_ft_0.3pct/rep1: 726 runs, 13.781 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[05:13:44] s2/avx512/s01_t96/set_III_ft_0.1pct/rep1 (974 left)
+[05:14:05]   s2/avx512/s01_t96/set_III_ft_0.1pct/rep1: 22 runs, 456.213 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[05:14:05] s2/avx512/s01_t96/set_III_qe_1pct/rep1 (973 left)
+[05:14:25]   s2/avx512/s01_t96/set_III_qe_1pct/rep1: 12672 runs, 0.789 ms/run, card 21.4 W, socket 144 W, server 283 W, ok 1
+[05:14:25] s2/avx512/s01_t96/set_III_qe_0.3pct/rep1 (972 left)
+[05:14:45]   s2/avx512/s01_t96/set_III_qe_0.3pct/rep1: 4908 runs, 2.038 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[05:14:45] s2/avx512/s01_t96/set_III_qe_0.1pct/rep1 (971 left)
+[05:15:06]   s2/avx512/s01_t96/set_III_qe_0.1pct/rep1: 323 runs, 30.966 ms/run, card 21.4 W, socket 180 W, server 358 W, ok 1
+[05:15:06] s2/avx512/s01_t96/set_P1_ft_1pct/rep1 (970 left)
+[05:15:26]   s2/avx512/s01_t96/set_P1_ft_1pct/rep1: 48807 runs, 0.205 ms/run, card 21.4 W, socket 140 W, server 266 W, ok 1
+[05:15:26] s2/avx512/s01_t96/set_P1_ft_0.3pct/rep1 (969 left)
+[05:15:46]   s2/avx512/s01_t96/set_P1_ft_0.3pct/rep1: 26261 runs, 0.381 ms/run, card 21.4 W, socket 169 W, server 328 W, ok 1
+[05:15:46] s2/avx512/s01_t96/set_P1_ft_0.1pct/rep1 (968 left)
+[05:16:07]   s2/avx512/s01_t96/set_P1_ft_0.1pct/rep1: 1943 runs, 5.148 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[05:16:07] s2/avx512/s01_t96/set_P1_qe_1pct/rep1 (967 left)
+[05:16:27]   s2/avx512/s01_t96/set_P1_qe_1pct/rep1: 61173 runs, 0.163 ms/run, card 21.4 W, socket 139 W, server 263 W, ok 1
+[05:16:27] s2/avx512/s01_t96/set_P1_qe_0.3pct/rep1 (966 left)
+[05:16:47]   s2/avx512/s01_t96/set_P1_qe_0.3pct/rep1: 18524 runs, 0.540 ms/run, card 21.4 W, socket 147 W, server 286 W, ok 1
+[05:16:47] s2/avx512/s01_t96/set_P1_qe_0.1pct/rep1 (965 left)
+[05:17:08]   s2/avx512/s01_t96/set_P1_qe_0.1pct/rep1: 3319 runs, 3.014 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[05:17:08] s2/avx512/s01_t96/ss_I_ft_M1280/rep1 (964 left)
+[05:17:29]   s2/avx512/s01_t96/ss_I_ft_M1280/rep1: 29 runs, 354.734 ms/run, card 21.4 W, socket 180 W, server 358 W, ok 1
+[05:17:29] s2/avx512/s01_t96/ss_I_ft_M5120/rep1 (963 left)
+[05:17:49]   s2/avx512/s01_t96/ss_I_ft_M5120/rep1: 29 runs, 355.547 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[05:17:49] s2/avx512/s01_t96/ss_I_qe_M40/rep1 (962 left)
+[05:18:11]   s2/avx512/s01_t96/ss_I_qe_M40/rep1: 7 runs, 1513.098 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:18:11] s2/avx512/s01_t96/ss_I_qe_M80/rep1 (961 left)
+[05:18:32]   s2/avx512/s01_t96/ss_I_qe_M80/rep1: 7 runs, 1491.341 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:18:32] s2/avx512/s01_t96/ss_I_qe_M320/rep1 (960 left)
+[05:18:53]   s2/avx512/s01_t96/ss_I_qe_M320/rep1: 7 runs, 1486.095 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:18:53] s2/avx512/s01_t96/ss_II_ft_M1920/rep1 (959 left)
+[05:19:13]   s2/avx512/s01_t96/ss_II_ft_M1920/rep1: 29 runs, 351.717 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[05:19:13] s2/avx512/s01_t96/ss_II_ft_M7680/rep1 (958 left)
+[05:19:34]   s2/avx512/s01_t96/ss_II_ft_M7680/rep1: 28 runs, 367.583 ms/run, card 21.4 W, socket 178 W, server 353 W, ok 1
+[05:19:34] s2/avx512/s01_t96/ss_II_qe_M60/rep1 (957 left)
+[05:19:55]   s2/avx512/s01_t96/ss_II_qe_M60/rep1: 7 runs, 1447.327 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:19:55] s2/avx512/s01_t96/ss_II_qe_M240/rep1 (956 left)
+[05:20:16]   s2/avx512/s01_t96/ss_II_qe_M240/rep1: 7 runs, 1459.755 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:20:16] s2/avx512/s01_t96/ss_III_ft_M160/rep1 (955 left)
+[05:20:36]   s2/avx512/s01_t96/ss_III_ft_M160/rep1: 28 runs, 364.877 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:20:36] s2/avx512/s01_t96/ss_III_ft_M640/rep1 (954 left)
+[05:20:57]   s2/avx512/s01_t96/ss_III_ft_M640/rep1: 29 runs, 352.462 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:20:57] s2/avx512/s01_t96/ss_III_qe_M20/rep1 (953 left)
+[05:21:19]   s2/avx512/s01_t96/ss_III_qe_M20/rep1: 7 runs, 1635.543 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:21:19] s2/avx512/s01_t96/ss_III_qe_M40/rep1 (952 left)
+[05:21:41]   s2/avx512/s01_t96/ss_III_qe_M40/rep1: 7 runs, 1564.596 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[05:21:41] s2/avx512/s01_t96/ss_P1_ft_M8/rep1 (951 left)
+[05:22:02]   s2/avx512/s01_t96/ss_P1_ft_M8/rep1: 14 runs, 733.912 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:22:02] s2/avx512/s01_t96/ss_P1_ft_M16/rep1 (950 left)
+[05:22:23]   s2/avx512/s01_t96/ss_P1_ft_M16/rep1: 19 runs, 539.989 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[05:22:23] s2/avx512/s01_t96/ss_P1_ft_M64/rep1 (949 left)
+[05:22:43]   s2/avx512/s01_t96/ss_P1_ft_M64/rep1: 26 runs, 395.065 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:22:43] s2/avx512/s01_t96/ss_P1_qe_M1/rep1 (948 left)
+[05:23:06]   s2/avx512/s01_t96/ss_P1_qe_M1/rep1: 6 runs, 1918.639 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:23:06] s2/avx512/s01_t96/ss_P1_qe_M4/rep1 (947 left)
+[05:23:30]   s2/avx512/s01_t96/ss_P1_qe_M4/rep1: 5 runs, 2214.072 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[05:23:30] s2/avx512/s01_t96/ss_P1_qe_M8/rep1 (946 left)
+[05:23:52]   s2/avx512/s01_t96/ss_P1_qe_M8/rep1: 6 runs, 1847.611 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[05:23:52] s2/native/s0_c24/set_I_ft_1pct/rep1 (945 left)
+[05:24:12]   s2/native/s0_c24/set_I_ft_1pct/rep1: 6572 runs, 1.522 ms/run, card 21.4 W, socket 180 W, server 243 W, ok 1
+[05:24:12] s2/native/s0_c24/set_I_ft_0.3pct/rep1 (944 left)
+[05:24:33]   s2/native/s0_c24/set_I_ft_0.3pct/rep1: 153 runs, 65.568 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[05:24:33] s2/native/s0_c24/set_I_ft_0.1pct/rep1 (943 left)
+[05:24:57]   s2/native/s0_c24/set_I_ft_0.1pct/rep1: 5 runs, 2342.710 ms/run, card 21.4 W, socket 179 W, server 231 W, ok 1
+[05:24:57] s2/native/s0_c24/set_I_qe_1pct/rep1 (942 left)
+[05:25:17]   s2/native/s0_c24/set_I_qe_1pct/rep1: 55998 runs, 0.179 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[05:25:17] s2/native/s0_c24/set_I_qe_0.3pct/rep1 (941 left)
+[05:25:38]   s2/native/s0_c24/set_I_qe_0.3pct/rep1: 2625 runs, 3.810 ms/run, card 21.5 W, socket 178 W, server 245 W, ok 1
+[05:25:38] s2/native/s0_c24/set_I_qe_0.1pct/rep1 (940 left)
+[05:25:58]   s2/native/s0_c24/set_I_qe_0.1pct/rep1: 72 runs, 140.282 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[05:25:58] s2/native/s0_c24/set_II_ft_1pct/rep1 (939 left)
+[05:26:18]   s2/native/s0_c24/set_II_ft_1pct/rep1: 1373 runs, 7.286 ms/run, card 21.4 W, socket 180 W, server 234 W, ok 1
+[05:26:18] s2/native/s0_c24/set_II_ft_0.3pct/rep1 (938 left)
+[05:26:39]   s2/native/s0_c24/set_II_ft_0.3pct/rep1: 33 runs, 312.290 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[05:26:39] s2/native/s0_c24/set_II_ft_0.1pct/rep1 (937 left)
+[05:27:10]   s2/native/s0_c24/set_II_ft_0.1pct/rep1: 1 runs, 11301.431 ms/run, card 21.4 W, socket 174 W, server 222 W, ok 1
+[05:27:10] s2/native/s0_c24/set_II_qe_1pct/rep1 (936 left)
+[05:27:30]   s2/native/s0_c24/set_II_qe_1pct/rep1: 12780 runs, 0.783 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[05:27:30] s2/native/s0_c24/set_II_qe_0.3pct/rep1 (935 left)
+[05:27:50]   s2/native/s0_c24/set_II_qe_0.3pct/rep1: 1158 runs, 8.641 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[05:27:50] s2/native/s0_c24/set_II_qe_0.1pct/rep1 (934 left)
+[05:28:11]   s2/native/s0_c24/set_II_qe_0.1pct/rep1: 31 runs, 325.012 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[05:28:11] s2/native/s0_c24/set_III_ft_1pct/rep1 (933 left)
+[05:28:31]   s2/native/s0_c24/set_III_ft_1pct/rep1: 29552 runs, 0.338 ms/run, card 21.4 W, socket 180 W, server 234 W, ok 1
+[05:28:31] s2/native/s0_c24/set_III_ft_0.3pct/rep1 (932 left)
+[05:28:51]   s2/native/s0_c24/set_III_ft_0.3pct/rep1: 695 runs, 14.392 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[05:28:51] s2/native/s0_c24/set_III_ft_0.1pct/rep1 (931 left)
+[05:29:13]   s2/native/s0_c24/set_III_ft_0.1pct/rep1: 20 runs, 516.654 ms/run, card 21.4 W, socket 179 W, server 231 W, ok 1
+[05:29:13] s2/native/s0_c24/set_III_qe_1pct/rep1 (930 left)
+[05:29:33]   s2/native/s0_c24/set_III_qe_1pct/rep1: 63087 runs, 0.159 ms/run, card 21.4 W, socket 176 W, server 243 W, ok 1
+[05:29:33] s2/native/s0_c24/set_III_qe_0.3pct/rep1 (929 left)
+[05:29:53]   s2/native/s0_c24/set_III_qe_0.3pct/rep1: 5888 runs, 1.699 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[05:29:53] s2/native/s0_c24/set_III_qe_0.1pct/rep1 (928 left)
+[05:30:14]   s2/native/s0_c24/set_III_qe_0.1pct/rep1: 323 runs, 31.058 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[05:30:14] s2/native/s0_c24/set_P1_ft_1pct/rep1 (927 left)
+[05:30:34]   s2/native/s0_c24/set_P1_ft_1pct/rep1: 658687 runs, 0.015 ms/run, card 21.4 W, socket 171 W, server 239 W, ok 1
+[05:30:34] s2/native/s0_c24/set_P1_ft_0.3pct/rep1 (926 left)
+[05:30:54]   s2/native/s0_c24/set_P1_ft_0.3pct/rep1: 56101 runs, 0.178 ms/run, card 21.4 W, socket 180 W, server 240 W, ok 1
+[05:30:54] s2/native/s0_c24/set_P1_ft_0.1pct/rep1 (925 left)
+[05:31:15]   s2/native/s0_c24/set_P1_ft_0.1pct/rep1: 1940 runs, 5.156 ms/run, card 21.4 W, socket 180 W, server 234 W, ok 1
+[05:31:15] s2/native/s0_c24/set_P1_qe_1pct/rep1 (924 left)
+[05:31:35]   s2/native/s0_c24/set_P1_qe_1pct/rep1: 884143 runs, 0.011 ms/run, card 21.4 W, socket 157 W, server 225 W, ok 1
+[05:31:35] s2/native/s0_c24/set_P1_qe_0.3pct/rep1 (923 left)
+[05:31:56]   s2/native/s0_c24/set_P1_qe_0.3pct/rep1: 79295 runs, 0.126 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[05:31:56] s2/native/s0_c24/set_P1_qe_0.1pct/rep1 (922 left)
+[05:32:16]   s2/native/s0_c24/set_P1_qe_0.1pct/rep1: 5208 runs, 1.920 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[05:32:16] s2/native/s0_c24/ss_I_ft_M1280/rep1 (921 left)
+[05:32:36]   s2/native/s0_c24/ss_I_ft_M1280/rep1: 25 runs, 400.499 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[05:32:36] s2/native/s0_c24/ss_I_ft_M5120/rep1 (920 left)
+[05:32:57]   s2/native/s0_c24/ss_I_ft_M5120/rep1: 26 runs, 399.332 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[05:32:57] s2/native/s0_c24/ss_I_qe_M40/rep1 (919 left)
+[05:33:19]   s2/native/s0_c24/ss_I_qe_M40/rep1: 7 runs, 1512.759 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[05:33:19] s2/native/s0_c24/ss_I_qe_M80/rep1 (918 left)
+[05:33:40]   s2/native/s0_c24/ss_I_qe_M80/rep1: 7 runs, 1483.508 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[05:33:40] s2/native/s0_c24/ss_I_qe_M320/rep1 (917 left)
+[05:34:01]   s2/native/s0_c24/ss_I_qe_M320/rep1: 7 runs, 1515.916 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[05:34:01] s2/native/s0_c24/ss_II_ft_M1920/rep1 (916 left)
+[05:34:22]   s2/native/s0_c24/ss_II_ft_M1920/rep1: 25 runs, 409.095 ms/run, card 21.4 W, socket 178 W, server 232 W, ok 1
+[05:34:22] s2/native/s0_c24/ss_II_ft_M7680/rep1 (915 left)
+[05:34:43]   s2/native/s0_c24/ss_II_ft_M7680/rep1: 26 runs, 398.902 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[05:34:43] s2/native/s0_c24/ss_II_qe_M60/rep1 (914 left)
+[05:35:04]   s2/native/s0_c24/ss_II_qe_M60/rep1: 7 runs, 1439.473 ms/run, card 21.4 W, socket 179 W, server 246 W, ok 1
+[05:35:04] s2/native/s0_c24/ss_II_qe_M240/rep1 (913 left)
+[05:35:25]   s2/native/s0_c24/ss_II_qe_M240/rep1: 7 runs, 1512.366 ms/run, card 21.4 W, socket 176 W, server 243 W, ok 1
+[05:35:25] s2/native/s0_c24/ss_III_ft_M160/rep1 (912 left)
+[05:35:46]   s2/native/s0_c24/ss_III_ft_M160/rep1: 25 runs, 407.786 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[05:35:46] s2/native/s0_c24/ss_III_ft_M640/rep1 (911 left)
+[05:36:06]   s2/native/s0_c24/ss_III_ft_M640/rep1: 25 runs, 401.083 ms/run, card 21.4 W, socket 180 W, server 231 W, ok 1
+[05:36:06] s2/native/s0_c24/ss_III_qe_M20/rep1 (910 left)
+[05:36:29]   s2/native/s0_c24/ss_III_qe_M20/rep1: 7 runs, 1612.559 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[05:36:29] s2/native/s0_c24/ss_III_qe_M40/rep1 (909 left)
+[05:36:51]   s2/native/s0_c24/ss_III_qe_M40/rep1: 7 runs, 1572.718 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[05:36:51] s2/native/s0_c24/ss_P1_ft_M8/rep1 (908 left)
+[05:37:12]   s2/native/s0_c24/ss_P1_ft_M8/rep1: 18 runs, 582.820 ms/run, card 21.4 W, socket 179 W, server 240 W, ok 1
+[05:37:12] s2/native/s0_c24/ss_P1_ft_M16/rep1 (907 left)
+[05:37:33]   s2/native/s0_c24/ss_P1_ft_M16/rep1: 21 runs, 490.771 ms/run, card 21.4 W, socket 180 W, server 236 W, ok 1
+[05:37:33] s2/native/s0_c24/ss_P1_ft_M64/rep1 (906 left)
+[05:37:53]   s2/native/s0_c24/ss_P1_ft_M64/rep1: 24 runs, 421.468 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[05:37:53] s2/native/s0_c24/ss_P1_qe_M1/rep1 (905 left)
+[05:38:15]   s2/native/s0_c24/ss_P1_qe_M1/rep1: 8 runs, 1258.134 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[05:38:15] s2/native/s0_c24/ss_P1_qe_M4/rep1 (904 left)
+[05:38:36]   s2/native/s0_c24/ss_P1_qe_M4/rep1: 7 runs, 1495.478 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[05:38:36] s2/native/s0_c24/ss_P1_qe_M8/rep1 (903 left)
+[05:38:58]   s2/native/s0_c24/ss_P1_qe_M8/rep1: 8 runs, 1281.741 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[05:38:58] s2/native/s01_t96/set_I_ft_1pct/rep1 (902 left)
+[05:39:18]   s2/native/s01_t96/set_I_ft_1pct/rep1: 13177 runs, 0.759 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[05:39:18] s2/native/s01_t96/set_I_ft_0.3pct/rep1 (901 left)
+[05:39:39]   s2/native/s01_t96/set_I_ft_0.3pct/rep1: 333 runs, 30.066 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[05:39:39] s2/native/s01_t96/set_I_ft_0.1pct/rep1 (900 left)
+[05:40:00]   s2/native/s01_t96/set_I_ft_0.1pct/rep1: 10 runs, 1071.808 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[05:40:00] s2/native/s01_t96/set_I_qe_1pct/rep1 (899 left)
+[05:40:21]   s2/native/s01_t96/set_I_qe_1pct/rep1: 89285 runs, 0.112 ms/run, card 21.4 W, socket 166 W, server 322 W, ok 1
+[05:40:21] s2/native/s01_t96/set_I_qe_0.3pct/rep1 (898 left)
+[05:40:41]   s2/native/s01_t96/set_I_qe_0.3pct/rep1: 5189 runs, 1.928 ms/run, card 21.4 W, socket 173 W, server 338 W, ok 1
+[05:40:41] s2/native/s01_t96/set_I_qe_0.1pct/rep1 (897 left)
+[05:41:01]   s2/native/s01_t96/set_I_qe_0.1pct/rep1: 146 runs, 68.731 ms/run, card 21.4 W, socket 174 W, server 342 W, ok 1
+[05:41:01] s2/native/s01_t96/set_II_ft_1pct/rep1 (896 left)
+[05:41:22]   s2/native/s01_t96/set_II_ft_1pct/rep1: 3015 runs, 3.318 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[05:41:22] s2/native/s01_t96/set_II_ft_0.3pct/rep1 (895 left)
+[05:41:42]   s2/native/s01_t96/set_II_ft_0.3pct/rep1: 70 runs, 144.649 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[05:41:42] s2/native/s01_t96/set_II_ft_0.1pct/rep1 (894 left)
+[05:42:05]   s2/native/s01_t96/set_II_ft_0.1pct/rep1: 2 runs, 5117.552 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[05:42:05] s2/native/s01_t96/set_II_qe_1pct/rep1 (893 left)
+[05:42:25]   s2/native/s01_t96/set_II_qe_1pct/rep1: 24343 runs, 0.411 ms/run, card 21.4 W, socket 172 W, server 337 W, ok 1
+[05:42:25] s2/native/s01_t96/set_II_qe_0.3pct/rep1 (892 left)
+[05:42:46]   s2/native/s01_t96/set_II_qe_0.3pct/rep1: 2341 runs, 4.272 ms/run, card 21.4 W, socket 175 W, server 343 W, ok 1
+[05:42:46] s2/native/s01_t96/set_II_qe_0.1pct/rep1 (891 left)
+[05:43:06]   s2/native/s01_t96/set_II_qe_0.1pct/rep1: 64 runs, 158.408 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[05:43:06] s2/native/s01_t96/set_III_ft_1pct/rep1 (890 left)
+[05:43:27]   s2/native/s01_t96/set_III_ft_1pct/rep1: 54766 runs, 0.183 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[05:43:27] s2/native/s01_t96/set_III_ft_0.3pct/rep1 (889 left)
+[05:43:47]   s2/native/s01_t96/set_III_ft_0.3pct/rep1: 1469 runs, 6.812 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[05:43:47] s2/native/s01_t96/set_III_ft_0.1pct/rep1 (888 left)
+[05:44:08]   s2/native/s01_t96/set_III_ft_0.1pct/rep1: 43 runs, 234.114 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[05:44:08] s2/native/s01_t96/set_III_qe_1pct/rep1 (887 left)
+[05:44:28]   s2/native/s01_t96/set_III_qe_1pct/rep1: 97660 runs, 0.102 ms/run, card 21.4 W, socket 165 W, server 321 W, ok 1
+[05:44:28] s2/native/s01_t96/set_III_qe_0.3pct/rep1 (886 left)
+[05:44:48]   s2/native/s01_t96/set_III_qe_0.3pct/rep1: 11720 runs, 0.853 ms/run, card 21.4 W, socket 173 W, server 339 W, ok 1
+[05:44:48] s2/native/s01_t96/set_III_qe_0.1pct/rep1 (885 left)
+[05:45:09]   s2/native/s01_t96/set_III_qe_0.1pct/rep1: 670 runs, 14.944 ms/run, card 21.4 W, socket 174 W, server 341 W, ok 1
+[05:45:09] s2/native/s01_t96/set_P1_ft_1pct/rep1 (884 left)
+[05:45:29]   s2/native/s01_t96/set_P1_ft_1pct/rep1: 319890 runs, 0.031 ms/run, card 21.4 W, socket 145 W, server 280 W, ok 1
+[05:45:29] s2/native/s01_t96/set_P1_ft_0.3pct/rep1 (883 left)
+[05:45:49]   s2/native/s01_t96/set_P1_ft_0.3pct/rep1: 96849 runs, 0.103 ms/run, card 21.4 W, socket 177 W, server 349 W, ok 1
+[05:45:49] s2/native/s01_t96/set_P1_ft_0.1pct/rep1 (882 left)
+[05:46:10]   s2/native/s01_t96/set_P1_ft_0.1pct/rep1: 4239 runs, 2.360 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[05:46:10] s2/native/s01_t96/set_P1_qe_1pct/rep1 (881 left)
+[05:46:30]   s2/native/s01_t96/set_P1_qe_1pct/rep1: 343699 runs, 0.029 ms/run, card 21.4 W, socket 138 W, server 268 W, ok 1
+[05:46:30] s2/native/s01_t96/set_P1_qe_0.3pct/rep1 (880 left)
+[05:46:50]   s2/native/s01_t96/set_P1_qe_0.3pct/rep1: 83604 runs, 0.120 ms/run, card 21.4 W, socket 148 W, server 289 W, ok 1
+[05:46:50] s2/native/s01_t96/set_P1_qe_0.1pct/rep1 (879 left)
+[05:47:11]   s2/native/s01_t96/set_P1_qe_0.1pct/rep1: 10971 runs, 0.912 ms/run, card 21.4 W, socket 177 W, server 348 W, ok 1
+[05:47:11] s2/native/s01_t96/ss_I_ft_M1280/rep1 (878 left)
+[05:47:31]   s2/native/s01_t96/ss_I_ft_M1280/rep1: 55 runs, 183.248 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[05:47:31] s2/native/s01_t96/ss_I_ft_M5120/rep1 (877 left)
+[05:47:52]   s2/native/s01_t96/ss_I_ft_M5120/rep1: 55 runs, 181.921 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[05:47:52] s2/native/s01_t96/ss_I_qe_M40/rep1 (876 left)
+[05:48:12]   s2/native/s01_t96/ss_I_qe_M40/rep1: 15 runs, 693.929 ms/run, card 21.4 W, socket 177 W, server 348 W, ok 1
+[05:48:12] s2/native/s01_t96/ss_I_qe_M80/rep1 (875 left)
+[05:48:33]   s2/native/s01_t96/ss_I_qe_M80/rep1: 14 runs, 717.453 ms/run, card 21.4 W, socket 176 W, server 345 W, ok 1
+[05:48:33] s2/native/s01_t96/ss_I_qe_M320/rep1 (874 left)
+[05:48:54]   s2/native/s01_t96/ss_I_qe_M320/rep1: 14 runs, 739.381 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[05:48:54] s2/native/s01_t96/ss_II_ft_M1920/rep1 (873 left)
+[05:49:15]   s2/native/s01_t96/ss_II_ft_M1920/rep1: 55 runs, 182.818 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[05:49:15] s2/native/s01_t96/ss_II_ft_M7680/rep1 (872 left)
+[05:49:35]   s2/native/s01_t96/ss_II_ft_M7680/rep1: 55 runs, 182.807 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[05:49:35] s2/native/s01_t96/ss_II_qe_M60/rep1 (871 left)
+[05:49:56]   s2/native/s01_t96/ss_II_qe_M60/rep1: 15 runs, 690.370 ms/run, card 21.4 W, socket 177 W, server 347 W, ok 1
+[05:49:56] s2/native/s01_t96/ss_II_qe_M240/rep1 (870 left)
+[05:50:17]   s2/native/s01_t96/ss_II_qe_M240/rep1: 14 runs, 722.158 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[05:50:17] s2/native/s01_t96/ss_III_ft_M160/rep1 (869 left)
+[05:50:37]   s2/native/s01_t96/ss_III_ft_M160/rep1: 54 runs, 185.472 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[05:50:37] s2/native/s01_t96/ss_III_ft_M640/rep1 (868 left)
+[05:50:58]   s2/native/s01_t96/ss_III_ft_M640/rep1: 55 runs, 183.792 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[05:50:58] s2/native/s01_t96/ss_III_qe_M20/rep1 (867 left)
+[05:51:19]   s2/native/s01_t96/ss_III_qe_M20/rep1: 14 runs, 761.679 ms/run, card 21.4 W, socket 176 W, server 346 W, ok 1
+[05:51:19] s2/native/s01_t96/ss_III_qe_M40/rep1 (866 left)
+[05:51:41]   s2/native/s01_t96/ss_III_qe_M40/rep1: 14 runs, 762.354 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[05:51:41] s2/native/s01_t96/ss_P1_ft_M8/rep1 (865 left)
+[05:52:01]   s2/native/s01_t96/ss_P1_ft_M8/rep1: 40 runs, 252.777 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[05:52:01] s2/native/s01_t96/ss_P1_ft_M16/rep1 (864 left)
+[05:52:22]   s2/native/s01_t96/ss_P1_ft_M16/rep1: 47 runs, 216.940 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[05:52:22] s2/native/s01_t96/ss_P1_ft_M64/rep1 (863 left)
+[05:52:42]   s2/native/s01_t96/ss_P1_ft_M64/rep1: 53 runs, 192.105 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[05:52:42] s2/native/s01_t96/ss_P1_qe_M1/rep1 (862 left)
+[05:53:03]   s2/native/s01_t96/ss_P1_qe_M1/rep1: 20 runs, 506.779 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[05:53:03] s2/native/s01_t96/ss_P1_qe_M4/rep1 (861 left)
+[05:53:24]   s2/native/s01_t96/ss_P1_qe_M4/rep1: 16 runs, 650.780 ms/run, card 21.4 W, socket 179 W, server 354 W, ok 1
+[05:53:24] s2/native/s01_t96/ss_P1_qe_M8/rep1 (860 left)
+[05:53:44]   s2/native/s01_t96/ss_P1_qe_M8/rep1: 17 runs, 588.673 ms/run, card 21.4 W, socket 179 W, server 353 W, ok 1
+[05:53:44] s2/fpga/card/set_I_ft_1pct/rep2 (859 left)
+[05:54:10]   s2/fpga/card/set_I_ft_1pct/rep2: 2214 runs, 4.517 ms/run, card 30.4 W, socket 58 W, server 113 W, ok 1
+[05:54:10] s2/fpga/card/set_I_ft_0.3pct/rep2 (858 left)
+[05:54:31]   s2/fpga/card/set_I_ft_0.3pct/rep2: 76 runs, 132.087 ms/run, card 33.0 W, socket 51 W, server 95 W, ok 1
+[05:54:31] s2/fpga/card/set_I_ft_0.1pct/rep2 (857 left)
+[05:54:58]   s2/fpga/card/set_I_ft_0.1pct/rep2: 3 runs, 4661.768 ms/run, card 33.7 W, socket 50 W, server 94 W, ok 1
+[05:54:58] s2/fpga/card/set_I_qe_1pct/rep2 (856 left)
+[05:55:25]   s2/fpga/card/set_I_qe_1pct/rep2: 27717 runs, 0.361 ms/run, card 27.7 W, socket 52 W, server 97 W, ok 1
+[05:55:25] s2/fpga/card/set_I_qe_0.3pct/rep2 (855 left)
+[05:55:46]   s2/fpga/card/set_I_qe_0.3pct/rep2: 1950 runs, 5.130 ms/run, card 32.2 W, socket 50 W, server 94 W, ok 1
+[05:55:46] s2/fpga/card/set_I_qe_0.1pct/rep2 (854 left)
+[05:56:07]   s2/fpga/card/set_I_qe_0.1pct/rep2: 68 runs, 147.368 ms/run, card 36.5 W, socket 50 W, server 94 W, ok 1
+[05:56:07] s2/fpga/card/set_II_ft_1pct/rep2 (853 left)
+[05:56:34]   s2/fpga/card/set_II_ft_1pct/rep2: 655 runs, 15.285 ms/run, card 31.7 W, socket 50 W, server 94 W, ok 1
+[05:56:34] s2/fpga/card/set_II_ft_0.3pct/rep2 (852 left)
+[05:56:55]   s2/fpga/card/set_II_ft_0.3pct/rep2: 16 runs, 625.933 ms/run, card 32.8 W, socket 49 W, server 93 W, ok 1
+[05:56:55] s2/fpga/card/set_II_ft_0.1pct/rep2 (851 left)
+[05:57:48]   s2/fpga/card/set_II_ft_0.1pct/rep2: 1 runs, 22371.596 ms/run, card 33.4 W, socket 49 W, server 93 W, ok 1
+[05:57:48] s2/fpga/card/set_II_qe_1pct/rep2 (850 left)
+[05:58:15]   s2/fpga/card/set_II_qe_1pct/rep2: 5512 runs, 1.814 ms/run, card 27.3 W, socket 51 W, server 95 W, ok 1
+[05:58:15] s2/fpga/card/set_II_qe_0.3pct/rep2 (849 left)
+[05:58:36]   s2/fpga/card/set_II_qe_0.3pct/rep2: 937 runs, 10.675 ms/run, card 31.9 W, socket 50 W, server 94 W, ok 1
+[05:58:36] s2/fpga/card/set_II_qe_0.1pct/rep2 (848 left)
+[05:58:57]   s2/fpga/card/set_II_qe_0.1pct/rep2: 29 runs, 350.196 ms/run, card 34.6 W, socket 49 W, server 93 W, ok 1
+[05:58:57] s2/fpga/card/set_III_ft_1pct/rep2 (847 left)
+[05:59:24]   s2/fpga/card/set_III_ft_1pct/rep2: 6240 runs, 1.603 ms/run, card 27.6 W, socket 51 W, server 95 W, ok 1
+[05:59:24] s2/fpga/card/set_III_ft_0.3pct/rep2 (846 left)
+[05:59:45]   s2/fpga/card/set_III_ft_0.3pct/rep2: 335 runs, 29.858 ms/run, card 34.8 W, socket 49 W, server 93 W, ok 1
+[05:59:45] s2/fpga/card/set_III_ft_0.1pct/rep2 (845 left)
+[06:00:06]   s2/fpga/card/set_III_ft_0.1pct/rep2: 10 runs, 1023.937 ms/run, card 35.5 W, socket 49 W, server 93 W, ok 1
+[06:00:06] s2/fpga/card/set_III_qe_1pct/rep2 (844 left)
+[06:00:33]   s2/fpga/card/set_III_qe_1pct/rep2: 34757 runs, 0.288 ms/run, card 33.6 W, socket 84 W, server 152 W, ok 1
+[06:00:33] s2/fpga/card/set_III_qe_0.3pct/rep2 (843 left)
+[06:00:54]   s2/fpga/card/set_III_qe_0.3pct/rep2: 3697 runs, 2.705 ms/run, card 35.0 W, socket 50 W, server 94 W, ok 1
+[06:00:54] s2/fpga/card/set_III_qe_0.1pct/rep2 (842 left)
+[06:01:15]   s2/fpga/card/set_III_qe_0.1pct/rep2: 309 runs, 32.411 ms/run, card 43.9 W, socket 49 W, server 94 W, ok 1
+[06:01:15] s2/fpga/card/set_P1_ft_1pct/rep2 (841 left)
+[06:01:42]   s2/fpga/card/set_P1_ft_1pct/rep2: 68205 runs, 0.147 ms/run, card 22.8 W, socket 62 W, server 114 W, ok 1
+[06:01:42] s2/fpga/card/set_P1_ft_0.3pct/rep2 (840 left)
+[06:02:03]   s2/fpga/card/set_P1_ft_0.3pct/rep2: 11477 runs, 0.871 ms/run, card 25.9 W, socket 56 W, server 103 W, ok 1
+[06:02:03] s2/fpga/card/set_P1_ft_0.1pct/rep2 (839 left)
+[06:02:24]   s2/fpga/card/set_P1_ft_0.1pct/rep2: 932 runs, 10.735 ms/run, card 33.3 W, socket 50 W, server 94 W, ok 1
+[06:02:24] s2/fpga/card/set_P1_qe_1pct/rep2 (838 left)
+[06:02:51]   s2/fpga/card/set_P1_qe_1pct/rep2: 71166 runs, 0.141 ms/run, card 22.0 W, socket 52 W, server 96 W, ok 1
+[06:02:51] s2/fpga/card/set_P1_qe_0.3pct/rep2 (837 left)
+[06:03:12]   s2/fpga/card/set_P1_qe_0.3pct/rep2: 13010 runs, 0.769 ms/run, card 25.6 W, socket 51 W, server 95 W, ok 1
+[06:03:12] s2/fpga/card/set_P1_qe_0.1pct/rep2 (836 left)
+[06:03:33]   s2/fpga/card/set_P1_qe_0.1pct/rep2: 2732 runs, 3.661 ms/run, card 37.7 W, socket 50 W, server 94 W, ok 1
+[06:03:33] s2/fpga/card/ss_I_ft_M1280/rep2 (835 left)
+[06:04:00]   s2/fpga/card/ss_I_ft_M1280/rep2: 13 runs, 795.645 ms/run, card 32.7 W, socket 49 W, server 93 W, ok 1
+[06:04:00] s2/fpga/card/ss_I_ft_M5120/rep2 (834 left)
+[06:04:22]   s2/fpga/card/ss_I_ft_M5120/rep2: 13 runs, 796.438 ms/run, card 33.2 W, socket 49 W, server 93 W, ok 1
+[06:04:22] s2/fpga/card/ss_I_qe_M40/rep2 (833 left)
+[06:04:50]   s2/fpga/card/ss_I_qe_M40/rep2: 7 runs, 1637.794 ms/run, card 33.4 W, socket 49 W, server 93 W, ok 1
+[06:04:50] s2/fpga/card/ss_I_qe_M80/rep2 (832 left)
+[06:05:13]   s2/fpga/card/ss_I_qe_M80/rep2: 7 runs, 1613.248 ms/run, card 34.6 W, socket 49 W, server 93 W, ok 1
+[06:05:13] s2/fpga/card/ss_I_qe_M320/rep2 (831 left)
+[06:05:35]   s2/fpga/card/ss_I_qe_M320/rep2: 7 runs, 1594.673 ms/run, card 36.6 W, socket 49 W, server 93 W, ok 1
+[06:05:35] s2/fpga/card/ss_II_ft_M1920/rep2 (830 left)
+[06:06:02]   s2/fpga/card/ss_II_ft_M1920/rep2: 13 runs, 795.705 ms/run, card 32.4 W, socket 49 W, server 93 W, ok 1
+[06:06:02] s2/fpga/card/ss_II_ft_M7680/rep2 (829 left)
+[06:06:24]   s2/fpga/card/ss_II_ft_M7680/rep2: 13 runs, 796.483 ms/run, card 32.8 W, socket 49 W, server 93 W, ok 1
+[06:06:24] s2/fpga/card/ss_II_qe_M60/rep2 (828 left)
+[06:06:52]   s2/fpga/card/ss_II_qe_M60/rep2: 7 runs, 1621.293 ms/run, card 32.8 W, socket 49 W, server 93 W, ok 1
+[06:06:52] s2/fpga/card/ss_II_qe_M240/rep2 (827 left)
+[06:07:15]   s2/fpga/card/ss_II_qe_M240/rep2: 7 runs, 1596.748 ms/run, card 34.5 W, socket 49 W, server 93 W, ok 1
+[06:07:15] s2/fpga/card/ss_III_ft_M160/rep2 (826 left)
+[06:07:42]   s2/fpga/card/ss_III_ft_M160/rep2: 13 runs, 800.620 ms/run, card 34.9 W, socket 49 W, server 93 W, ok 1
+[06:07:42] s2/fpga/card/ss_III_ft_M640/rep2 (825 left)
+[06:08:04]   s2/fpga/card/ss_III_ft_M640/rep2: 13 runs, 796.349 ms/run, card 35.3 W, socket 49 W, server 93 W, ok 1
+[06:08:04] s2/fpga/card/ss_III_qe_M20/rep2 (824 left)
+[06:08:31]   s2/fpga/card/ss_III_qe_M20/rep2: 6 runs, 1687.573 ms/run, card 42.1 W, socket 49 W, server 93 W, ok 1
+[06:08:31] s2/fpga/card/ss_III_qe_M40/rep2 (823 left)
+[06:08:54]   s2/fpga/card/ss_III_qe_M40/rep2: 7 runs, 1637.883 ms/run, card 44.6 W, socket 49 W, server 93 W, ok 1
+[06:08:54] s2/fpga/card/ss_P1_ft_M8/rep2 (822 left)
+[06:09:21]   s2/fpga/card/ss_P1_ft_M8/rep2: 11 runs, 912.818 ms/run, card 34.4 W, socket 80 W, server 147 W, ok 1
+[06:09:21] s2/fpga/card/ss_P1_ft_M16/rep2 (821 left)
+[06:09:43]   s2/fpga/card/ss_P1_ft_M16/rep2: 12 runs, 854.119 ms/run, card 34.6 W, socket 49 W, server 94 W, ok 1
+[06:09:43] s2/fpga/card/ss_P1_ft_M64/rep2 (820 left)
+[06:10:05]   s2/fpga/card/ss_P1_ft_M64/rep2: 13 runs, 809.675 ms/run, card 34.8 W, socket 49 W, server 93 W, ok 1
+[06:10:05] s2/fpga/card/ss_P1_qe_M1/rep2 (819 left)
+[06:10:33]   s2/fpga/card/ss_P1_qe_M1/rep2: 5 runs, 2046.234 ms/run, card 28.9 W, socket 49 W, server 93 W, ok 1
+[06:10:33] s2/fpga/card/ss_P1_qe_M4/rep2 (818 left)
+[06:10:56]   s2/fpga/card/ss_P1_qe_M4/rep2: 5 runs, 2084.350 ms/run, card 40.4 W, socket 49 W, server 93 W, ok 1
+[06:10:56] s2/fpga/card/ss_P1_qe_M8/rep2 (817 left)
+[06:11:19]   s2/fpga/card/ss_P1_qe_M8/rep2: 6 runs, 1836.476 ms/run, card 44.0 W, socket 49 W, server 93 W, ok 1
+[06:11:19] s2/avx512/s0_c24/set_I_ft_1pct/rep2 (816 left)
+[06:11:39]   s2/avx512/s0_c24/set_I_ft_1pct/rep2: 1591 runs, 6.289 ms/run, card 21.9 W, socket 158 W, server 225 W, ok 1
+[06:11:39] s2/avx512/s0_c24/set_I_ft_0.3pct/rep2 (815 left)
+[06:12:00]   s2/avx512/s0_c24/set_I_ft_0.3pct/rep2: 60 runs, 167.843 ms/run, card 21.7 W, socket 176 W, server 243 W, ok 1
+[06:12:00] s2/avx512/s0_c24/set_I_ft_0.1pct/rep2 (814 left)
+[06:12:24]   s2/avx512/s0_c24/set_I_ft_0.1pct/rep2: 2 runs, 5709.284 ms/run, card 21.6 W, socket 179 W, server 247 W, ok 1
+[06:12:24] s2/avx512/s0_c24/set_I_qe_1pct/rep2 (813 left)
+[06:12:45]   s2/avx512/s0_c24/set_I_qe_1pct/rep2: 10949 runs, 0.913 ms/run, card 21.6 W, socket 154 W, server 222 W, ok 1
+[06:12:45] s2/avx512/s0_c24/set_I_qe_0.3pct/rep2 (812 left)
+[06:13:05]   s2/avx512/s0_c24/set_I_qe_0.3pct/rep2: 852 runs, 11.743 ms/run, card 21.5 W, socket 170 W, server 238 W, ok 1
+[06:13:05] s2/avx512/s0_c24/set_I_qe_0.1pct/rep2 (811 left)
+[06:13:26]   s2/avx512/s0_c24/set_I_qe_0.1pct/rep2: 26 runs, 393.778 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[06:13:26] s2/avx512/s0_c24/set_II_ft_1pct/rep2 (810 left)
+[06:13:46]   s2/avx512/s0_c24/set_II_ft_1pct/rep2: 546 runs, 18.334 ms/run, card 21.5 W, socket 177 W, server 245 W, ok 1
+[06:13:46] s2/avx512/s0_c24/set_II_ft_0.3pct/rep2 (809 left)
+[06:14:08]   s2/avx512/s0_c24/set_II_ft_0.3pct/rep2: 14 runs, 764.165 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[06:14:08] s2/avx512/s0_c24/set_II_ft_0.1pct/rep2 (808 left)
+[06:15:10]   s2/avx512/s0_c24/set_II_ft_0.1pct/rep2: 1 runs, 27218.172 ms/run, card 21.4 W, socket 167 W, server 221 W, ok 1
+[06:15:10] s2/avx512/s0_c24/set_II_qe_1pct/rep2 (807 left)
+[06:15:30]   s2/avx512/s0_c24/set_II_qe_1pct/rep2: 4100 runs, 2.439 ms/run, card 21.4 W, socket 171 W, server 239 W, ok 1
+[06:15:30] s2/avx512/s0_c24/set_II_qe_0.3pct/rep2 (806 left)
+[06:15:50]   s2/avx512/s0_c24/set_II_qe_0.3pct/rep2: 393 runs, 25.458 ms/run, card 21.4 W, socket 173 W, server 241 W, ok 1
+[06:15:50] s2/avx512/s0_c24/set_II_qe_0.1pct/rep2 (805 left)
+[06:16:12]   s2/avx512/s0_c24/set_II_qe_0.1pct/rep2: 12 runs, 908.734 ms/run, card 21.4 W, socket 175 W, server 242 W, ok 1
+[06:16:12] s2/avx512/s0_c24/set_III_ft_1pct/rep2 (804 left)
+[06:16:32]   s2/avx512/s0_c24/set_III_ft_1pct/rep2: 7339 runs, 1.363 ms/run, card 21.5 W, socket 163 W, server 231 W, ok 1
+[06:16:32] s2/avx512/s0_c24/set_III_ft_0.3pct/rep2 (803 left)
+[06:16:52]   s2/avx512/s0_c24/set_III_ft_0.3pct/rep2: 271 runs, 36.908 ms/run, card 21.5 W, socket 179 W, server 246 W, ok 1
+[06:16:52] s2/avx512/s0_c24/set_III_ft_0.1pct/rep2 (802 left)
+[06:17:14]   s2/avx512/s0_c24/set_III_ft_0.1pct/rep2: 8 runs, 1251.218 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[06:17:14] s2/avx512/s0_c24/set_III_qe_1pct/rep2 (801 left)
+[06:17:34]   s2/avx512/s0_c24/set_III_qe_1pct/rep2: 18522 runs, 0.540 ms/run, card 21.5 W, socket 167 W, server 235 W, ok 1
+[06:17:34] s2/avx512/s0_c24/set_III_qe_0.3pct/rep2 (800 left)
+[06:17:54]   s2/avx512/s0_c24/set_III_qe_0.3pct/rep2: 1944 runs, 5.145 ms/run, card 21.5 W, socket 172 W, server 239 W, ok 1
+[06:17:54] s2/avx512/s0_c24/set_III_qe_0.1pct/rep2 (799 left)
+[06:18:15]   s2/avx512/s0_c24/set_III_qe_0.1pct/rep2: 115 runs, 87.402 ms/run, card 21.5 W, socket 174 W, server 241 W, ok 1
+[06:18:15] s2/avx512/s0_c24/set_P1_ft_1pct/rep2 (798 left)
+[06:18:35]   s2/avx512/s0_c24/set_P1_ft_1pct/rep2: 106302 runs, 0.094 ms/run, card 21.5 W, socket 146 W, server 214 W, ok 1
+[06:18:35] s2/avx512/s0_c24/set_P1_ft_0.3pct/rep2 (797 left)
+[06:18:56]   s2/avx512/s0_c24/set_P1_ft_0.3pct/rep2: 16136 runs, 0.620 ms/run, card 21.5 W, socket 170 W, server 243 W, ok 1
+[06:18:56] s2/avx512/s0_c24/set_P1_ft_0.1pct/rep2 (796 left)
+[06:18:57] waiting: other processes use 0.8 cores
+[06:19:22]   s2/avx512/s0_c24/set_P1_ft_0.1pct/rep2: 734 runs, 13.642 ms/run, card 21.5 W, socket 179 W, server 250 W, ok 1
+[06:19:22] s2/avx512/s0_c24/set_P1_qe_1pct/rep2 (795 left)
+[06:19:42]   s2/avx512/s0_c24/set_P1_qe_1pct/rep2: 131179 runs, 0.076 ms/run, card 21.5 W, socket 143 W, server 214 W, ok 1
+[06:19:42] s2/avx512/s0_c24/set_P1_qe_0.3pct/rep2 (794 left)
+[06:19:43] waiting: other processes use 0.8 cores
+[06:20:09]   s2/avx512/s0_c24/set_P1_qe_0.3pct/rep2: 15121 runs, 0.661 ms/run, card 21.5 W, socket 163 W, server 233 W, ok 1
+[06:20:09] s2/avx512/s0_c24/set_P1_qe_0.1pct/rep2 (793 left)
+[06:20:29]   s2/avx512/s0_c24/set_P1_qe_0.1pct/rep2: 1225 runs, 8.168 ms/run, card 21.5 W, socket 171 W, server 240 W, ok 1
+[06:20:29] s2/avx512/s0_c24/ss_I_ft_M1280/rep2 (792 left)
+[06:20:50]   s2/avx512/s0_c24/ss_I_ft_M1280/rep2: 11 runs, 972.608 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[06:20:50] s2/avx512/s0_c24/ss_I_ft_M5120/rep2 (791 left)
+[06:21:12]   s2/avx512/s0_c24/ss_I_ft_M5120/rep2: 11 runs, 971.232 ms/run, card 21.4 W, socket 180 W, server 249 W, ok 1
+[06:21:12] s2/avx512/s0_c24/ss_I_qe_M40/rep2 (790 left)
+[06:21:36]   s2/avx512/s0_c24/ss_I_qe_M40/rep2: 3 runs, 4312.385 ms/run, card 21.5 W, socket 174 W, server 244 W, ok 1
+[06:21:36] s2/avx512/s0_c24/ss_I_qe_M80/rep2 (789 left)
+[06:22:01]   s2/avx512/s0_c24/ss_I_qe_M80/rep2: 3 runs, 4261.775 ms/run, card 21.5 W, socket 174 W, server 244 W, ok 1
+[06:22:01] s2/avx512/s0_c24/ss_I_qe_M320/rep2 (788 left)
+[06:22:26]   s2/avx512/s0_c24/ss_I_qe_M320/rep2: 3 runs, 4250.477 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[06:22:26] s2/avx512/s0_c24/ss_II_ft_M1920/rep2 (787 left)
+[06:22:47]   s2/avx512/s0_c24/ss_II_ft_M1920/rep2: 11 runs, 969.220 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[06:22:47] s2/avx512/s0_c24/ss_II_ft_M7680/rep2 (786 left)
+[06:23:09]   s2/avx512/s0_c24/ss_II_ft_M7680/rep2: 11 runs, 981.586 ms/run, card 21.5 W, socket 179 W, server 246 W, ok 1
+[06:23:09] s2/avx512/s0_c24/ss_II_qe_M60/rep2 (785 left)
+[06:23:33]   s2/avx512/s0_c24/ss_II_qe_M60/rep2: 3 runs, 4110.353 ms/run, card 21.5 W, socket 175 W, server 242 W, ok 1
+[06:23:33] s2/avx512/s0_c24/ss_II_qe_M240/rep2 (784 left)
+[06:23:57]   s2/avx512/s0_c24/ss_II_qe_M240/rep2: 3 runs, 4143.969 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[06:23:57] s2/avx512/s0_c24/ss_III_ft_M160/rep2 (783 left)
+[06:24:18]   s2/avx512/s0_c24/ss_III_ft_M160/rep2: 10 runs, 1022.425 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[06:24:18] s2/avx512/s0_c24/ss_III_ft_M640/rep2 (782 left)
+[06:24:39]   s2/avx512/s0_c24/ss_III_ft_M640/rep2: 11 runs, 977.799 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[06:24:39] s2/avx512/s0_c24/ss_III_qe_M20/rep2 (781 left)
+[06:25:06]   s2/avx512/s0_c24/ss_III_qe_M20/rep2: 3 runs, 4752.804 ms/run, card 21.5 W, socket 174 W, server 241 W, ok 1
+[06:25:06] s2/avx512/s0_c24/ss_III_qe_M40/rep2 (780 left)
+[06:25:32]   s2/avx512/s0_c24/ss_III_qe_M40/rep2: 3 runs, 4512.802 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[06:25:32] s2/avx512/s0_c24/ss_P1_ft_M8/rep2 (779 left)
+[06:25:54]   s2/avx512/s0_c24/ss_P1_ft_M8/rep2: 5 runs, 2152.222 ms/run, card 21.5 W, socket 172 W, server 239 W, ok 1
+[06:25:54] s2/avx512/s0_c24/ss_P1_ft_M16/rep2 (778 left)
+[06:26:16]   s2/avx512/s0_c24/ss_P1_ft_M16/rep2: 7 runs, 1558.373 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[06:26:16] s2/avx512/s0_c24/ss_P1_ft_M64/rep2 (777 left)
+[06:26:37]   s2/avx512/s0_c24/ss_P1_ft_M64/rep2: 9 runs, 1112.518 ms/run, card 21.4 W, socket 179 W, server 247 W, ok 1
+[06:26:37] s2/avx512/s0_c24/ss_P1_qe_M1/rep2 (776 left)
+[06:27:02]   s2/avx512/s0_c24/ss_P1_qe_M1/rep2: 2 runs, 5928.870 ms/run, card 21.4 W, socket 165 W, server 233 W, ok 1
+[06:27:02] s2/avx512/s0_c24/ss_P1_qe_M4/rep2 (775 left)
+[06:27:30]   s2/avx512/s0_c24/ss_P1_qe_M4/rep2: 2 runs, 6665.523 ms/run, card 21.4 W, socket 170 W, server 237 W, ok 1
+[06:27:30] s2/avx512/s0_c24/ss_P1_qe_M8/rep2 (774 left)
+[06:27:54]   s2/avx512/s0_c24/ss_P1_qe_M8/rep2: 2 runs, 5466.331 ms/run, card 21.4 W, socket 172 W, server 239 W, ok 1
+[06:27:54] s2/avx512/s01_t96/set_I_ft_1pct/rep2 (773 left)
+[06:28:14]   s2/avx512/s01_t96/set_I_ft_1pct/rep2: 1105 runs, 9.056 ms/run, card 21.4 W, socket 146 W, server 262 W, ok 1
+[06:28:14] s2/avx512/s01_t96/set_I_ft_0.3pct/rep2 (772 left)
+[06:28:35]   s2/avx512/s01_t96/set_I_ft_0.3pct/rep2: 122 runs, 82.151 ms/run, card 21.4 W, socket 172 W, server 316 W, ok 1
+[06:28:35] s2/avx512/s01_t96/set_I_ft_0.1pct/rep2 (771 left)
+[06:28:57]   s2/avx512/s01_t96/set_I_ft_0.1pct/rep2: 5 runs, 2087.320 ms/run, card 21.4 W, socket 176 W, server 355 W, ok 1
+[06:28:57] s2/avx512/s01_t96/set_I_qe_1pct/rep2 (770 left)
+[06:29:17]   s2/avx512/s01_t96/set_I_qe_1pct/rep2: 7800 runs, 1.282 ms/run, card 21.4 W, socket 147 W, server 274 W, ok 1
+[06:29:17] s2/avx512/s01_t96/set_I_qe_0.3pct/rep2 (769 left)
+[06:29:38]   s2/avx512/s01_t96/set_I_qe_0.3pct/rep2: 2083 runs, 4.803 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[06:29:38] s2/avx512/s01_t96/set_I_qe_0.1pct/rep2 (768 left)
+[06:29:58]   s2/avx512/s01_t96/set_I_qe_0.1pct/rep2: 71 runs, 141.600 ms/run, card 21.4 W, socket 178 W, server 357 W, ok 1
+[06:29:58] s2/avx512/s01_t96/set_II_ft_1pct/rep2 (767 left)
+[06:30:19]   s2/avx512/s01_t96/set_II_ft_1pct/rep2: 401 runs, 24.966 ms/run, card 21.4 W, socket 122 W, server 217 W, ok 1
+[06:30:19] s2/avx512/s01_t96/set_II_ft_0.3pct/rep2 (766 left)
+[06:30:40]   s2/avx512/s01_t96/set_II_ft_0.3pct/rep2: 33 runs, 310.084 ms/run, card 21.4 W, socket 170 W, server 341 W, ok 1
+[06:30:40] s2/avx512/s01_t96/set_II_ft_0.1pct/rep2 (765 left)
+[06:31:17]   s2/avx512/s01_t96/set_II_ft_0.1pct/rep2: 2 runs, 9930.238 ms/run, card 21.4 W, socket 171 W, server 343 W, ok 1
+[06:31:17] s2/avx512/s01_t96/set_II_qe_1pct/rep2 (764 left)
+[06:31:37]   s2/avx512/s01_t96/set_II_qe_1pct/rep2: 5395 runs, 1.854 ms/run, card 21.4 W, socket 171 W, server 314 W, ok 1
+[06:31:37] s2/avx512/s01_t96/set_II_qe_0.3pct/rep2 (763 left)
+[06:31:58]   s2/avx512/s01_t96/set_II_qe_0.3pct/rep2: 840 runs, 11.909 ms/run, card 21.4 W, socket 171 W, server 340 W, ok 1
+[06:31:58] s2/avx512/s01_t96/set_II_qe_0.1pct/rep2 (762 left)
+[06:32:19]   s2/avx512/s01_t96/set_II_qe_0.1pct/rep2: 32 runs, 319.439 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:32:19] s2/avx512/s01_t96/set_III_ft_1pct/rep2 (761 left)
+[06:32:39]   s2/avx512/s01_t96/set_III_ft_1pct/rep2: 8013 runs, 1.248 ms/run, card 21.4 W, socket 159 W, server 294 W, ok 1
+[06:32:39] s2/avx512/s01_t96/set_III_ft_0.3pct/rep2 (760 left)
+[06:32:59]   s2/avx512/s01_t96/set_III_ft_0.3pct/rep2: 727 runs, 13.757 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[06:32:59] s2/avx512/s01_t96/set_III_ft_0.1pct/rep2 (759 left)
+[06:33:20]   s2/avx512/s01_t96/set_III_ft_0.1pct/rep2: 22 runs, 456.374 ms/run, card 21.4 W, socket 178 W, server 357 W, ok 1
+[06:33:20] s2/avx512/s01_t96/set_III_qe_1pct/rep2 (758 left)
+[06:33:40]   s2/avx512/s01_t96/set_III_qe_1pct/rep2: 12828 runs, 0.780 ms/run, card 21.4 W, socket 154 W, server 286 W, ok 1
+[06:33:40] s2/avx512/s01_t96/set_III_qe_0.3pct/rep2 (757 left)
+[06:34:00]   s2/avx512/s01_t96/set_III_qe_0.3pct/rep2: 4925 runs, 2.031 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[06:34:00] s2/avx512/s01_t96/set_III_qe_0.1pct/rep2 (756 left)
+[06:34:21]   s2/avx512/s01_t96/set_III_qe_0.1pct/rep2: 320 runs, 31.340 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[06:34:21] s2/avx512/s01_t96/set_P1_ft_1pct/rep2 (755 left)
+[06:34:41]   s2/avx512/s01_t96/set_P1_ft_1pct/rep2: 49284 runs, 0.203 ms/run, card 21.4 W, socket 139 W, server 267 W, ok 1
+[06:34:41] s2/avx512/s01_t96/set_P1_ft_0.3pct/rep2 (754 left)
+[06:35:02]   s2/avx512/s01_t96/set_P1_ft_0.3pct/rep2: 26363 runs, 0.379 ms/run, card 21.4 W, socket 169 W, server 329 W, ok 1
+[06:35:02] s2/avx512/s01_t96/set_P1_ft_0.1pct/rep2 (753 left)
+[06:35:22]   s2/avx512/s01_t96/set_P1_ft_0.1pct/rep2: 1946 runs, 5.140 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[06:35:22] s2/avx512/s01_t96/set_P1_qe_1pct/rep2 (752 left)
+[06:35:42]   s2/avx512/s01_t96/set_P1_qe_1pct/rep2: 64447 runs, 0.155 ms/run, card 21.4 W, socket 139 W, server 264 W, ok 1
+[06:35:42] s2/avx512/s01_t96/set_P1_qe_0.3pct/rep2 (751 left)
+[06:36:03]   s2/avx512/s01_t96/set_P1_qe_0.3pct/rep2: 26257 runs, 0.381 ms/run, card 21.4 W, socket 164 W, server 319 W, ok 1
+[06:36:03] s2/avx512/s01_t96/set_P1_qe_0.1pct/rep2 (750 left)
+[06:36:23]   s2/avx512/s01_t96/set_P1_qe_0.1pct/rep2: 3323 runs, 3.010 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[06:36:23] s2/avx512/s01_t96/ss_I_ft_M1280/rep2 (749 left)
+[06:36:44]   s2/avx512/s01_t96/ss_I_ft_M1280/rep2: 29 runs, 356.186 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[06:36:44] s2/avx512/s01_t96/ss_I_ft_M5120/rep2 (748 left)
+[06:37:05]   s2/avx512/s01_t96/ss_I_ft_M5120/rep2: 29 runs, 354.562 ms/run, card 21.4 W, socket 180 W, server 358 W, ok 1
+[06:37:05] s2/avx512/s01_t96/ss_I_qe_M40/rep2 (747 left)
+[06:37:26]   s2/avx512/s01_t96/ss_I_qe_M40/rep2: 7 runs, 1503.078 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[06:37:26] s2/avx512/s01_t96/ss_I_qe_M80/rep2 (746 left)
+[06:37:47]   s2/avx512/s01_t96/ss_I_qe_M80/rep2: 7 runs, 1493.859 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:37:47] s2/avx512/s01_t96/ss_I_qe_M320/rep2 (745 left)
+[06:38:08]   s2/avx512/s01_t96/ss_I_qe_M320/rep2: 7 runs, 1487.649 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[06:38:08] s2/avx512/s01_t96/ss_II_ft_M1920/rep2 (744 left)
+[06:38:28]   s2/avx512/s01_t96/ss_II_ft_M1920/rep2: 28 runs, 358.630 ms/run, card 21.4 W, socket 180 W, server 358 W, ok 1
+[06:38:28] s2/avx512/s01_t96/ss_II_ft_M7680/rep2 (743 left)
+[06:38:49]   s2/avx512/s01_t96/ss_II_ft_M7680/rep2: 28 runs, 365.064 ms/run, card 21.4 W, socket 176 W, server 354 W, ok 1
+[06:38:49] s2/avx512/s01_t96/ss_II_qe_M60/rep2 (742 left)
+[06:39:10]   s2/avx512/s01_t96/ss_II_qe_M60/rep2: 7 runs, 1446.621 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:39:10] s2/avx512/s01_t96/ss_II_qe_M240/rep2 (741 left)
+[06:39:31]   s2/avx512/s01_t96/ss_II_qe_M240/rep2: 7 runs, 1457.292 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:39:31] s2/avx512/s01_t96/ss_III_ft_M160/rep2 (740 left)
+[06:39:51]   s2/avx512/s01_t96/ss_III_ft_M160/rep2: 28 runs, 364.808 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[06:39:51] s2/avx512/s01_t96/ss_III_ft_M640/rep2 (739 left)
+[06:40:12]   s2/avx512/s01_t96/ss_III_ft_M640/rep2: 29 runs, 355.623 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:40:12] s2/avx512/s01_t96/ss_III_qe_M20/rep2 (738 left)
+[06:40:35]   s2/avx512/s01_t96/ss_III_qe_M20/rep2: 7 runs, 1642.512 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:40:35] s2/avx512/s01_t96/ss_III_qe_M40/rep2 (737 left)
+[06:40:56]   s2/avx512/s01_t96/ss_III_qe_M40/rep2: 7 runs, 1564.366 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:40:56] s2/avx512/s01_t96/ss_P1_ft_M8/rep2 (736 left)
+[06:41:17]   s2/avx512/s01_t96/ss_P1_ft_M8/rep2: 14 runs, 735.950 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:41:17] s2/avx512/s01_t96/ss_P1_ft_M16/rep2 (735 left)
+[06:41:38]   s2/avx512/s01_t96/ss_P1_ft_M16/rep2: 19 runs, 539.885 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[06:41:38] s2/avx512/s01_t96/ss_P1_ft_M64/rep2 (734 left)
+[06:41:59]   s2/avx512/s01_t96/ss_P1_ft_M64/rep2: 26 runs, 394.439 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[06:41:59] s2/avx512/s01_t96/ss_P1_qe_M1/rep2 (733 left)
+[06:42:22]   s2/avx512/s01_t96/ss_P1_qe_M1/rep2: 6 runs, 1919.439 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[06:42:22] s2/avx512/s01_t96/ss_P1_qe_M4/rep2 (732 left)
+[06:42:45]   s2/avx512/s01_t96/ss_P1_qe_M4/rep2: 5 runs, 2209.199 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[06:42:45] s2/avx512/s01_t96/ss_P1_qe_M8/rep2 (731 left)
+[06:43:08]   s2/avx512/s01_t96/ss_P1_qe_M8/rep2: 6 runs, 1846.679 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[06:43:08] s2/native/s0_c24/set_I_ft_1pct/rep2 (730 left)
+[06:43:28]   s2/native/s0_c24/set_I_ft_1pct/rep2: 6556 runs, 1.525 ms/run, card 21.4 W, socket 180 W, server 244 W, ok 1
+[06:43:28] s2/native/s0_c24/set_I_ft_0.3pct/rep2 (729 left)
+[06:43:48]   s2/native/s0_c24/set_I_ft_0.3pct/rep2: 153 runs, 65.648 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[06:43:48] s2/native/s0_c24/set_I_ft_0.1pct/rep2 (728 left)
+[06:44:13]   s2/native/s0_c24/set_I_ft_0.1pct/rep2: 5 runs, 2348.537 ms/run, card 21.4 W, socket 179 W, server 232 W, ok 1
+[06:44:13] s2/native/s0_c24/set_I_qe_1pct/rep2 (727 left)
+[06:44:33]   s2/native/s0_c24/set_I_qe_1pct/rep2: 56481 runs, 0.177 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[06:44:33] s2/native/s0_c24/set_I_qe_0.3pct/rep2 (726 left)
+[06:44:53]   s2/native/s0_c24/set_I_qe_0.3pct/rep2: 2625 runs, 3.810 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[06:44:53] s2/native/s0_c24/set_I_qe_0.1pct/rep2 (725 left)
+[06:45:14]   s2/native/s0_c24/set_I_qe_0.1pct/rep2: 72 runs, 140.313 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[06:45:14] s2/native/s0_c24/set_II_ft_1pct/rep2 (724 left)
+[06:45:34]   s2/native/s0_c24/set_II_ft_1pct/rep2: 1406 runs, 7.117 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[06:45:34] s2/native/s0_c24/set_II_ft_0.3pct/rep2 (723 left)
+[06:45:55]   s2/native/s0_c24/set_II_ft_0.3pct/rep2: 33 runs, 312.379 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[06:45:55] s2/native/s0_c24/set_II_ft_0.1pct/rep2 (722 left)
+[06:46:25]   s2/native/s0_c24/set_II_ft_0.1pct/rep2: 1 runs, 11312.791 ms/run, card 21.4 W, socket 173 W, server 221 W, ok 1
+[06:46:25] s2/native/s0_c24/set_II_qe_1pct/rep2 (721 left)
+[06:46:46]   s2/native/s0_c24/set_II_qe_1pct/rep2: 12680 runs, 0.789 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[06:46:46] s2/native/s0_c24/set_II_qe_0.3pct/rep2 (720 left)
+[06:47:06]   s2/native/s0_c24/set_II_qe_0.3pct/rep2: 1154 runs, 8.672 ms/run, card 21.4 W, socket 178 W, server 247 W, ok 1
+[06:47:06] s2/native/s0_c24/set_II_qe_0.1pct/rep2 (719 left)
+[06:47:27]   s2/native/s0_c24/set_II_qe_0.1pct/rep2: 31 runs, 326.505 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[06:47:27] s2/native/s0_c24/set_III_ft_1pct/rep2 (718 left)
+[06:47:47]   s2/native/s0_c24/set_III_ft_1pct/rep2: 29467 runs, 0.339 ms/run, card 21.4 W, socket 180 W, server 234 W, ok 1
+[06:47:47] s2/native/s0_c24/set_III_ft_0.3pct/rep2 (717 left)
+[06:48:07]   s2/native/s0_c24/set_III_ft_0.3pct/rep2: 695 runs, 14.400 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[06:48:07] s2/native/s0_c24/set_III_ft_0.1pct/rep2 (716 left)
+[06:48:28]   s2/native/s0_c24/set_III_ft_0.1pct/rep2: 20 runs, 518.069 ms/run, card 21.4 W, socket 179 W, server 232 W, ok 1
+[06:48:28] s2/native/s0_c24/set_III_qe_1pct/rep2 (715 left)
+[06:48:49]   s2/native/s0_c24/set_III_qe_1pct/rep2: 62788 runs, 0.159 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[06:48:49] s2/native/s0_c24/set_III_qe_0.3pct/rep2 (714 left)
+[06:49:09]   s2/native/s0_c24/set_III_qe_0.3pct/rep2: 5933 runs, 1.686 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[06:49:09] s2/native/s0_c24/set_III_qe_0.1pct/rep2 (713 left)
+[06:49:30]   s2/native/s0_c24/set_III_qe_0.1pct/rep2: 322 runs, 31.090 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[06:49:30] s2/native/s0_c24/set_P1_ft_1pct/rep2 (712 left)
+[06:49:50]   s2/native/s0_c24/set_P1_ft_1pct/rep2: 656140 runs, 0.015 ms/run, card 21.4 W, socket 171 W, server 239 W, ok 1
+[06:49:50] s2/native/s0_c24/set_P1_ft_0.3pct/rep2 (711 left)
+[06:50:10]   s2/native/s0_c24/set_P1_ft_0.3pct/rep2: 56879 runs, 0.176 ms/run, card 21.4 W, socket 180 W, server 238 W, ok 1
+[06:50:10] s2/native/s0_c24/set_P1_ft_0.1pct/rep2 (710 left)
+[06:50:31]   s2/native/s0_c24/set_P1_ft_0.1pct/rep2: 1935 runs, 5.169 ms/run, card 21.4 W, socket 180 W, server 235 W, ok 1
+[06:50:31] s2/native/s0_c24/set_P1_qe_1pct/rep2 (709 left)
+[06:50:51]   s2/native/s0_c24/set_P1_qe_1pct/rep2: 889964 runs, 0.011 ms/run, card 21.4 W, socket 157 W, server 225 W, ok 1
+[06:50:51] s2/native/s0_c24/set_P1_qe_0.3pct/rep2 (708 left)
+[06:51:11]   s2/native/s0_c24/set_P1_qe_0.3pct/rep2: 79119 runs, 0.126 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[06:51:11] s2/native/s0_c24/set_P1_qe_0.1pct/rep2 (707 left)
+[06:51:32]   s2/native/s0_c24/set_P1_qe_0.1pct/rep2: 5188 runs, 1.928 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[06:51:32] s2/native/s0_c24/ss_I_ft_M1280/rep2 (706 left)
+[06:51:53]   s2/native/s0_c24/ss_I_ft_M1280/rep2: 26 runs, 399.818 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[06:51:53] s2/native/s0_c24/ss_I_ft_M5120/rep2 (705 left)
+[06:52:13]   s2/native/s0_c24/ss_I_ft_M5120/rep2: 25 runs, 400.494 ms/run, card 21.4 W, socket 179 W, server 231 W, ok 1
+[06:52:13] s2/native/s0_c24/ss_I_qe_M40/rep2 (704 left)
+[06:52:35]   s2/native/s0_c24/ss_I_qe_M40/rep2: 7 runs, 1513.444 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[06:52:35] s2/native/s0_c24/ss_I_qe_M80/rep2 (703 left)
+[06:52:56]   s2/native/s0_c24/ss_I_qe_M80/rep2: 7 runs, 1483.920 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[06:52:56] s2/native/s0_c24/ss_I_qe_M320/rep2 (702 left)
+[06:53:17]   s2/native/s0_c24/ss_I_qe_M320/rep2: 7 runs, 1524.739 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[06:53:17] s2/native/s0_c24/ss_II_ft_M1920/rep2 (701 left)
+[06:53:38]   s2/native/s0_c24/ss_II_ft_M1920/rep2: 25 runs, 408.439 ms/run, card 21.4 W, socket 178 W, server 233 W, ok 1
+[06:53:38] s2/native/s0_c24/ss_II_ft_M7680/rep2 (700 left)
+[06:53:59]   s2/native/s0_c24/ss_II_ft_M7680/rep2: 25 runs, 400.139 ms/run, card 21.4 W, socket 179 W, server 231 W, ok 1
+[06:53:59] s2/native/s0_c24/ss_II_qe_M60/rep2 (699 left)
+[06:54:19]   s2/native/s0_c24/ss_II_qe_M60/rep2: 7 runs, 1450.659 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[06:54:19] s2/native/s0_c24/ss_II_qe_M240/rep2 (698 left)
+[06:54:41]   s2/native/s0_c24/ss_II_qe_M240/rep2: 7 runs, 1506.602 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[06:54:41] s2/native/s0_c24/ss_III_ft_M160/rep2 (697 left)
+[06:55:01]   s2/native/s0_c24/ss_III_ft_M160/rep2: 25 runs, 409.383 ms/run, card 21.4 W, socket 179 W, server 232 W, ok 1
+[06:55:01] s2/native/s0_c24/ss_III_ft_M640/rep2 (696 left)
+[06:55:22]   s2/native/s0_c24/ss_III_ft_M640/rep2: 25 runs, 400.977 ms/run, card 21.4 W, socket 180 W, server 231 W, ok 1
+[06:55:22] s2/native/s0_c24/ss_III_qe_M20/rep2 (695 left)
+[06:55:44]   s2/native/s0_c24/ss_III_qe_M20/rep2: 7 runs, 1607.684 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[06:55:44] s2/native/s0_c24/ss_III_qe_M40/rep2 (694 left)
+[06:56:06]   s2/native/s0_c24/ss_III_qe_M40/rep2: 7 runs, 1580.624 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[06:56:06] s2/native/s0_c24/ss_P1_ft_M8/rep2 (693 left)
+[06:56:27]   s2/native/s0_c24/ss_P1_ft_M8/rep2: 18 runs, 584.203 ms/run, card 21.4 W, socket 179 W, server 240 W, ok 1
+[06:56:27] s2/native/s0_c24/ss_P1_ft_M16/rep2 (692 left)
+[06:56:48]   s2/native/s0_c24/ss_P1_ft_M16/rep2: 21 runs, 491.949 ms/run, card 21.4 W, socket 179 W, server 236 W, ok 1
+[06:56:48] s2/native/s0_c24/ss_P1_ft_M64/rep2 (691 left)
+[06:57:09]   s2/native/s0_c24/ss_P1_ft_M64/rep2: 24 runs, 421.809 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[06:57:09] s2/native/s0_c24/ss_P1_qe_M1/rep2 (690 left)
+[06:57:30]   s2/native/s0_c24/ss_P1_qe_M1/rep2: 8 runs, 1258.266 ms/run, card 21.4 W, socket 175 W, server 242 W, ok 1
+[06:57:30] s2/native/s0_c24/ss_P1_qe_M4/rep2 (689 left)
+[06:57:52]   s2/native/s0_c24/ss_P1_qe_M4/rep2: 7 runs, 1494.338 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[06:57:52] s2/native/s0_c24/ss_P1_qe_M8/rep2 (688 left)
+[06:58:12]   s2/native/s0_c24/ss_P1_qe_M8/rep2: 8 runs, 1280.724 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[06:58:12] s2/native/s01_t96/set_I_ft_1pct/rep2 (687 left)
+[06:58:33]   s2/native/s01_t96/set_I_ft_1pct/rep2: 13141 runs, 0.761 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[06:58:33] s2/native/s01_t96/set_I_ft_0.3pct/rep2 (686 left)
+[06:58:53]   s2/native/s01_t96/set_I_ft_0.3pct/rep2: 334 runs, 30.026 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[06:58:53] s2/native/s01_t96/set_I_ft_0.1pct/rep2 (685 left)
+[06:59:15]   s2/native/s01_t96/set_I_ft_0.1pct/rep2: 10 runs, 1070.526 ms/run, card 21.4 W, socket 180 W, server 355 W, ok 1
+[06:59:15] s2/native/s01_t96/set_I_qe_1pct/rep2 (684 left)
+[06:59:35]   s2/native/s01_t96/set_I_qe_1pct/rep2: 89063 runs, 0.112 ms/run, card 21.4 W, socket 166 W, server 321 W, ok 1
+[06:59:35] s2/native/s01_t96/set_I_qe_0.3pct/rep2 (683 left)
+[06:59:55]   s2/native/s01_t96/set_I_qe_0.3pct/rep2: 5278 runs, 1.896 ms/run, card 21.4 W, socket 174 W, server 340 W, ok 1
+[06:59:55] s2/native/s01_t96/set_I_qe_0.1pct/rep2 (682 left)
+[07:00:16]   s2/native/s01_t96/set_I_qe_0.1pct/rep2: 144 runs, 69.612 ms/run, card 21.4 W, socket 173 W, server 340 W, ok 1
+[07:00:16] s2/native/s01_t96/set_II_ft_1pct/rep2 (681 left)
+[07:00:36]   s2/native/s01_t96/set_II_ft_1pct/rep2: 3014 runs, 3.318 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[07:00:36] s2/native/s01_t96/set_II_ft_0.3pct/rep2 (680 left)
+[07:00:57]   s2/native/s01_t96/set_II_ft_0.3pct/rep2: 70 runs, 144.248 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[07:00:57] s2/native/s01_t96/set_II_ft_0.1pct/rep2 (679 left)
+[07:01:19]   s2/native/s01_t96/set_II_ft_0.1pct/rep2: 2 runs, 5083.273 ms/run, card 21.4 W, socket 180 W, server 356 W, ok 1
+[07:01:19] s2/native/s01_t96/set_II_qe_1pct/rep2 (678 left)
+[07:01:40]   s2/native/s01_t96/set_II_qe_1pct/rep2: 24228 runs, 0.413 ms/run, card 21.4 W, socket 171 W, server 336 W, ok 1
+[07:01:40] s2/native/s01_t96/set_II_qe_0.3pct/rep2 (677 left)
+[07:02:00]   s2/native/s01_t96/set_II_qe_0.3pct/rep2: 1734 runs, 5.773 ms/run, card 21.4 W, socket 157 W, server 308 W, ok 1
+[07:02:00] s2/native/s01_t96/set_II_qe_0.1pct/rep2 (676 left)
+[07:02:21]   s2/native/s01_t96/set_II_qe_0.1pct/rep2: 64 runs, 158.659 ms/run, card 21.4 W, socket 175 W, server 343 W, ok 1
+[07:02:21] s2/native/s01_t96/set_III_ft_1pct/rep2 (675 left)
+[07:02:41]   s2/native/s01_t96/set_III_ft_1pct/rep2: 54611 runs, 0.183 ms/run, card 21.4 W, socket 178 W, server 354 W, ok 1
+[07:02:41] s2/native/s01_t96/set_III_ft_0.3pct/rep2 (674 left)
+[07:03:01]   s2/native/s01_t96/set_III_ft_0.3pct/rep2: 1470 runs, 6.805 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[07:03:01] s2/native/s01_t96/set_III_ft_0.1pct/rep2 (673 left)
+[07:03:22]   s2/native/s01_t96/set_III_ft_0.1pct/rep2: 43 runs, 233.700 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[07:03:22] s2/native/s01_t96/set_III_qe_1pct/rep2 (672 left)
+[07:03:42]   s2/native/s01_t96/set_III_qe_1pct/rep2: 98131 runs, 0.102 ms/run, card 21.4 W, socket 164 W, server 321 W, ok 1
+[07:03:42] s2/native/s01_t96/set_III_qe_0.3pct/rep2 (671 left)
+[07:04:03]   s2/native/s01_t96/set_III_qe_0.3pct/rep2: 11665 runs, 0.857 ms/run, card 21.4 W, socket 172 W, server 338 W, ok 1
+[07:04:03] s2/native/s01_t96/set_III_qe_0.1pct/rep2 (670 left)
+[07:04:23]   s2/native/s01_t96/set_III_qe_0.1pct/rep2: 672 runs, 14.898 ms/run, card 21.4 W, socket 174 W, server 342 W, ok 1
+[07:04:23] s2/native/s01_t96/set_P1_ft_1pct/rep2 (669 left)
+[07:04:44]   s2/native/s01_t96/set_P1_ft_1pct/rep2: 319672 runs, 0.031 ms/run, card 21.4 W, socket 145 W, server 281 W, ok 1
+[07:04:44] s2/native/s01_t96/set_P1_ft_0.3pct/rep2 (668 left)
+[07:05:04]   s2/native/s01_t96/set_P1_ft_0.3pct/rep2: 97203 runs, 0.103 ms/run, card 21.4 W, socket 177 W, server 349 W, ok 1
+[07:05:04] s2/native/s01_t96/set_P1_ft_0.1pct/rep2 (667 left)
+[07:05:24]   s2/native/s01_t96/set_P1_ft_0.1pct/rep2: 4230 runs, 2.364 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[07:05:24] s2/native/s01_t96/set_P1_qe_1pct/rep2 (666 left)
+[07:05:45]   s2/native/s01_t96/set_P1_qe_1pct/rep2: 345415 runs, 0.029 ms/run, card 21.4 W, socket 138 W, server 269 W, ok 1
+[07:05:45] s2/native/s01_t96/set_P1_qe_0.3pct/rep2 (665 left)
+[07:06:05]   s2/native/s01_t96/set_P1_qe_0.3pct/rep2: 123516 runs, 0.081 ms/run, card 21.4 W, socket 166 W, server 324 W, ok 1
+[07:06:05] s2/native/s01_t96/set_P1_qe_0.1pct/rep2 (664 left)
+[07:06:25]   s2/native/s01_t96/set_P1_qe_0.1pct/rep2: 11068 runs, 0.904 ms/run, card 21.4 W, socket 177 W, server 349 W, ok 1
+[07:06:25] s2/native/s01_t96/ss_I_ft_M1280/rep2 (663 left)
+[07:06:46]   s2/native/s01_t96/ss_I_ft_M1280/rep2: 55 runs, 183.237 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[07:06:46] s2/native/s01_t96/ss_I_ft_M5120/rep2 (662 left)
+[07:07:06]   s2/native/s01_t96/ss_I_ft_M5120/rep2: 56 runs, 181.615 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[07:07:06] s2/native/s01_t96/ss_I_qe_M40/rep2 (661 left)
+[07:07:27]   s2/native/s01_t96/ss_I_qe_M40/rep2: 15 runs, 693.899 ms/run, card 21.4 W, socket 177 W, server 348 W, ok 1
+[07:07:27] s2/native/s01_t96/ss_I_qe_M80/rep2 (660 left)
+[07:07:48]   s2/native/s01_t96/ss_I_qe_M80/rep2: 14 runs, 717.525 ms/run, card 21.4 W, socket 176 W, server 345 W, ok 1
+[07:07:48] s2/native/s01_t96/ss_I_qe_M320/rep2 (659 left)
+[07:08:09]   s2/native/s01_t96/ss_I_qe_M320/rep2: 14 runs, 740.218 ms/run, card 21.4 W, socket 175 W, server 343 W, ok 1
+[07:08:09] s2/native/s01_t96/ss_II_ft_M1920/rep2 (658 left)
+[07:08:30]   s2/native/s01_t96/ss_II_ft_M1920/rep2: 55 runs, 182.454 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[07:08:30] s2/native/s01_t96/ss_II_ft_M7680/rep2 (657 left)
+[07:08:50]   s2/native/s01_t96/ss_II_ft_M7680/rep2: 55 runs, 183.102 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[07:08:50] s2/native/s01_t96/ss_II_qe_M60/rep2 (656 left)
+[07:09:11]   s2/native/s01_t96/ss_II_qe_M60/rep2: 15 runs, 689.376 ms/run, card 21.4 W, socket 176 W, server 347 W, ok 1
+[07:09:11] s2/native/s01_t96/ss_II_qe_M240/rep2 (655 left)
+[07:09:32]   s2/native/s01_t96/ss_II_qe_M240/rep2: 14 runs, 721.280 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[07:09:32] s2/native/s01_t96/ss_III_ft_M160/rep2 (654 left)
+[07:09:52]   s2/native/s01_t96/ss_III_ft_M160/rep2: 54 runs, 185.425 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[07:09:52] s2/native/s01_t96/ss_III_ft_M640/rep2 (653 left)
+[07:10:13]   s2/native/s01_t96/ss_III_ft_M640/rep2: 55 runs, 183.773 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[07:10:13] s2/native/s01_t96/ss_III_qe_M20/rep2 (652 left)
+[07:10:34]   s2/native/s01_t96/ss_III_qe_M20/rep2: 14 runs, 765.378 ms/run, card 21.4 W, socket 176 W, server 346 W, ok 1
+[07:10:34] s2/native/s01_t96/ss_III_qe_M40/rep2 (651 left)
+[07:10:56]   s2/native/s01_t96/ss_III_qe_M40/rep2: 14 runs, 762.439 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[07:10:56] s2/native/s01_t96/ss_P1_ft_M8/rep2 (650 left)
+[07:11:16]   s2/native/s01_t96/ss_P1_ft_M8/rep2: 40 runs, 252.481 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[07:11:16] s2/native/s01_t96/ss_P1_ft_M16/rep2 (649 left)
+[07:11:37]   s2/native/s01_t96/ss_P1_ft_M16/rep2: 47 runs, 217.036 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[07:11:37] s2/native/s01_t96/ss_P1_ft_M64/rep2 (648 left)
+[07:11:57]   s2/native/s01_t96/ss_P1_ft_M64/rep2: 53 runs, 191.473 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[07:11:57] s2/native/s01_t96/ss_P1_qe_M1/rep2 (647 left)
+[07:12:18]   s2/native/s01_t96/ss_P1_qe_M1/rep2: 20 runs, 505.408 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[07:12:18] s2/native/s01_t96/ss_P1_qe_M4/rep2 (646 left)
+[07:12:39]   s2/native/s01_t96/ss_P1_qe_M4/rep2: 16 runs, 650.005 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[07:12:39] s2/native/s01_t96/ss_P1_qe_M8/rep2 (645 left)
+[07:13:00]   s2/native/s01_t96/ss_P1_qe_M8/rep2: 17 runs, 590.328 ms/run, card 21.4 W, socket 179 W, server 353 W, ok 1
+[07:13:00] s2/fpga/card/set_I_ft_1pct/rep3 (644 left)
+[07:13:25]   s2/fpga/card/set_I_ft_1pct/rep3: 2194 runs, 4.559 ms/run, card 30.3 W, socket 56 W, server 108 W, ok 1
+[07:13:25] s2/fpga/card/set_I_ft_0.3pct/rep3 (643 left)
+[07:13:46]   s2/fpga/card/set_I_ft_0.3pct/rep3: 76 runs, 132.194 ms/run, card 33.0 W, socket 50 W, server 95 W, ok 1
+[07:13:46] s2/fpga/card/set_I_ft_0.1pct/rep3 (642 left)
+[07:14:13]   s2/fpga/card/set_I_ft_0.1pct/rep3: 3 runs, 4661.629 ms/run, card 33.7 W, socket 50 W, server 94 W, ok 1
+[07:14:13] s2/fpga/card/set_I_qe_1pct/rep3 (641 left)
+[07:14:40]   s2/fpga/card/set_I_qe_1pct/rep3: 23048 runs, 0.434 ms/run, card 26.8 W, socket 54 W, server 101 W, ok 1
+[07:14:40] s2/fpga/card/set_I_qe_0.3pct/rep3 (640 left)
+[07:15:01]   s2/fpga/card/set_I_qe_0.3pct/rep3: 1938 runs, 5.161 ms/run, card 32.1 W, socket 51 W, server 95 W, ok 1
+[07:15:01] s2/fpga/card/set_I_qe_0.1pct/rep3 (639 left)
+[07:15:22]   s2/fpga/card/set_I_qe_0.1pct/rep3: 69 runs, 146.875 ms/run, card 36.5 W, socket 50 W, server 94 W, ok 1
+[07:15:22] s2/fpga/card/set_II_ft_1pct/rep3 (638 left)
+[07:15:50]   s2/fpga/card/set_II_ft_1pct/rep3: 656 runs, 15.266 ms/run, card 31.7 W, socket 51 W, server 95 W, ok 1
+[07:15:50] s2/fpga/card/set_II_ft_0.3pct/rep3 (637 left)
+[07:16:11]   s2/fpga/card/set_II_ft_0.3pct/rep3: 16 runs, 626.001 ms/run, card 32.8 W, socket 50 W, server 94 W, ok 1
+[07:16:11] s2/fpga/card/set_II_ft_0.1pct/rep3 (636 left)
+[07:17:04]   s2/fpga/card/set_II_ft_0.1pct/rep3: 1 runs, 22371.712 ms/run, card 33.4 W, socket 52 W, server 96 W, ok 1
+[07:17:04] s2/fpga/card/set_II_qe_1pct/rep3 (635 left)
+[07:17:30]   s2/fpga/card/set_II_qe_1pct/rep3: 6237 runs, 1.603 ms/run, card 28.1 W, socket 57 W, server 106 W, ok 1
+[07:17:30] s2/fpga/card/set_II_qe_0.3pct/rep3 (634 left)
+[07:17:51]   s2/fpga/card/set_II_qe_0.3pct/rep3: 955 runs, 10.472 ms/run, card 32.1 W, socket 51 W, server 95 W, ok 1
+[07:17:51] s2/fpga/card/set_II_qe_0.1pct/rep3 (633 left)
+[07:18:13]   s2/fpga/card/set_II_qe_0.1pct/rep3: 29 runs, 350.245 ms/run, card 34.6 W, socket 50 W, server 94 W, ok 1
+[07:18:13] s2/fpga/card/set_III_ft_1pct/rep3 (632 left)
+[07:18:40]   s2/fpga/card/set_III_ft_1pct/rep3: 6300 runs, 1.587 ms/run, card 27.7 W, socket 51 W, server 96 W, ok 1
+[07:18:40] s2/fpga/card/set_III_ft_0.3pct/rep3 (631 left)
+[07:19:01]   s2/fpga/card/set_III_ft_0.3pct/rep3: 336 runs, 29.824 ms/run, card 34.8 W, socket 50 W, server 94 W, ok 1
+[07:19:01] s2/fpga/card/set_III_ft_0.1pct/rep3 (630 left)
+[07:19:22]   s2/fpga/card/set_III_ft_0.1pct/rep3: 10 runs, 1024.008 ms/run, card 35.5 W, socket 50 W, server 94 W, ok 1
+[07:19:22] s2/fpga/card/set_III_qe_1pct/rep3 (629 left)
+[07:19:49]   s2/fpga/card/set_III_qe_1pct/rep3: 33979 runs, 0.294 ms/run, card 33.3 W, socket 83 W, server 155 W, ok 1
+[07:19:49] s2/fpga/card/set_III_qe_0.3pct/rep3 (628 left)
+[07:20:10]   s2/fpga/card/set_III_qe_0.3pct/rep3: 3761 runs, 2.659 ms/run, card 35.2 W, socket 51 W, server 95 W, ok 1
+[07:20:10] s2/fpga/card/set_III_qe_0.1pct/rep3 (627 left)
+[07:20:31]   s2/fpga/card/set_III_qe_0.1pct/rep3: 307 runs, 32.607 ms/run, card 43.8 W, socket 50 W, server 94 W, ok 1
+[07:20:31] s2/fpga/card/set_P1_ft_1pct/rep3 (626 left)
+[07:20:58]   s2/fpga/card/set_P1_ft_1pct/rep3: 32369 runs, 0.309 ms/run, card 22.1 W, socket 51 W, server 95 W, ok 1
+[07:20:58] s2/fpga/card/set_P1_ft_0.3pct/rep3 (625 left)
+[07:21:19]   s2/fpga/card/set_P1_ft_0.3pct/rep3: 10538 runs, 0.949 ms/run, card 25.5 W, socket 51 W, server 95 W, ok 1
+[07:21:19] s2/fpga/card/set_P1_ft_0.1pct/rep3 (624 left)
+[07:21:40]   s2/fpga/card/set_P1_ft_0.1pct/rep3: 927 runs, 10.793 ms/run, card 33.3 W, socket 50 W, server 94 W, ok 1
+[07:21:40] s2/fpga/card/set_P1_qe_1pct/rep3 (623 left)
+[07:22:07]   s2/fpga/card/set_P1_qe_1pct/rep3: 30907 runs, 0.324 ms/run, card 21.8 W, socket 51 W, server 95 W, ok 1
+[07:22:07] s2/fpga/card/set_P1_qe_0.3pct/rep3 (622 left)
+[07:22:28]   s2/fpga/card/set_P1_qe_0.3pct/rep3: 13747 runs, 0.727 ms/run, card 25.9 W, socket 51 W, server 95 W, ok 1
+[07:22:28] s2/fpga/card/set_P1_qe_0.1pct/rep3 (621 left)
+[07:22:49]   s2/fpga/card/set_P1_qe_0.1pct/rep3: 2745 runs, 3.644 ms/run, card 37.7 W, socket 51 W, server 95 W, ok 1
+[07:22:49] s2/fpga/card/ss_I_ft_M1280/rep3 (620 left)
+[07:23:17]   s2/fpga/card/ss_I_ft_M1280/rep3: 13 runs, 795.562 ms/run, card 32.7 W, socket 50 W, server 94 W, ok 1
+[07:23:17] s2/fpga/card/ss_I_ft_M5120/rep3 (619 left)
+[07:23:38]   s2/fpga/card/ss_I_ft_M5120/rep3: 13 runs, 796.544 ms/run, card 33.2 W, socket 50 W, server 94 W, ok 1
+[07:23:38] s2/fpga/card/ss_I_qe_M40/rep3 (618 left)
+[07:24:07]   s2/fpga/card/ss_I_qe_M40/rep3: 7 runs, 1637.984 ms/run, card 33.4 W, socket 50 W, server 94 W, ok 1
+[07:24:07] s2/fpga/card/ss_I_qe_M80/rep3 (617 left)
+[07:24:29]   s2/fpga/card/ss_I_qe_M80/rep3: 7 runs, 1613.187 ms/run, card 34.6 W, socket 49 W, server 93 W, ok 1
+[07:24:29] s2/fpga/card/ss_I_qe_M320/rep3 (616 left)
+[07:24:52]   s2/fpga/card/ss_I_qe_M320/rep3: 7 runs, 1594.661 ms/run, card 36.6 W, socket 50 W, server 94 W, ok 1
+[07:24:52] s2/fpga/card/ss_II_ft_M1920/rep3 (615 left)
+[07:25:19]   s2/fpga/card/ss_II_ft_M1920/rep3: 13 runs, 795.566 ms/run, card 32.4 W, socket 49 W, server 93 W, ok 1
+[07:25:19] s2/fpga/card/ss_II_ft_M7680/rep3 (614 left)
+[07:25:41]   s2/fpga/card/ss_II_ft_M7680/rep3: 13 runs, 796.372 ms/run, card 32.8 W, socket 49 W, server 93 W, ok 1
+[07:25:41] s2/fpga/card/ss_II_qe_M60/rep3 (613 left)
+[07:26:10]   s2/fpga/card/ss_II_qe_M60/rep3: 7 runs, 1621.474 ms/run, card 32.8 W, socket 49 W, server 93 W, ok 1
+[07:26:10] s2/fpga/card/ss_II_qe_M240/rep3 (612 left)
+[07:26:32]   s2/fpga/card/ss_II_qe_M240/rep3: 7 runs, 1596.722 ms/run, card 34.5 W, socket 49 W, server 93 W, ok 1
+[07:26:32] s2/fpga/card/ss_III_ft_M160/rep3 (611 left)
+[07:27:00]   s2/fpga/card/ss_III_ft_M160/rep3: 13 runs, 800.787 ms/run, card 34.9 W, socket 49 W, server 94 W, ok 1
+[07:27:00] s2/fpga/card/ss_III_ft_M640/rep3 (610 left)
+[07:27:21]   s2/fpga/card/ss_III_ft_M640/rep3: 13 runs, 796.325 ms/run, card 35.3 W, socket 49 W, server 93 W, ok 1
+[07:27:21] s2/fpga/card/ss_III_qe_M20/rep3 (609 left)
+[07:27:49]   s2/fpga/card/ss_III_qe_M20/rep3: 6 runs, 1687.602 ms/run, card 42.1 W, socket 49 W, server 93 W, ok 1
+[07:27:49] s2/fpga/card/ss_III_qe_M40/rep3 (608 left)
+[07:28:11]   s2/fpga/card/ss_III_qe_M40/rep3: 7 runs, 1638.015 ms/run, card 44.6 W, socket 49 W, server 94 W, ok 1
+[07:28:11] s2/fpga/card/ss_P1_ft_M8/rep3 (607 left)
+[07:28:39]   s2/fpga/card/ss_P1_ft_M8/rep3: 11 runs, 913.374 ms/run, card 34.4 W, socket 49 W, server 93 W, ok 1
+[07:28:39] s2/fpga/card/ss_P1_ft_M16/rep3 (606 left)
+[07:29:01]   s2/fpga/card/ss_P1_ft_M16/rep3: 12 runs, 853.941 ms/run, card 34.6 W, socket 50 W, server 94 W, ok 1
+[07:29:01] s2/fpga/card/ss_P1_ft_M64/rep3 (605 left)
+[07:29:23]   s2/fpga/card/ss_P1_ft_M64/rep3: 13 runs, 809.655 ms/run, card 34.8 W, socket 49 W, server 93 W, ok 1
+[07:29:23] s2/fpga/card/ss_P1_qe_M1/rep3 (604 left)
+[07:29:51]   s2/fpga/card/ss_P1_qe_M1/rep3: 5 runs, 2046.099 ms/run, card 28.9 W, socket 50 W, server 94 W, ok 1
+[07:29:51] s2/fpga/card/ss_P1_qe_M4/rep3 (603 left)
+[07:30:13]   s2/fpga/card/ss_P1_qe_M4/rep3: 5 runs, 2084.490 ms/run, card 40.4 W, socket 50 W, server 93 W, ok 1
+[07:30:13] s2/fpga/card/ss_P1_qe_M8/rep3 (602 left)
+[07:30:36]   s2/fpga/card/ss_P1_qe_M8/rep3: 6 runs, 1836.130 ms/run, card 44.0 W, socket 50 W, server 94 W, ok 1
+[07:30:36] s2/avx512/s0_c24/set_I_ft_1pct/rep3 (601 left)
+[07:30:56]   s2/avx512/s0_c24/set_I_ft_1pct/rep3: 1585 runs, 6.312 ms/run, card 21.9 W, socket 157 W, server 225 W, ok 1
+[07:30:56] s2/avx512/s0_c24/set_I_ft_0.3pct/rep3 (600 left)
+[07:31:17]   s2/avx512/s0_c24/set_I_ft_0.3pct/rep3: 60 runs, 168.402 ms/run, card 21.7 W, socket 175 W, server 243 W, ok 1
+[07:31:17] s2/avx512/s0_c24/set_I_ft_0.1pct/rep3 (599 left)
+[07:31:42]   s2/avx512/s0_c24/set_I_ft_0.1pct/rep3: 2 runs, 5705.617 ms/run, card 21.6 W, socket 179 W, server 247 W, ok 1
+[07:31:42] s2/avx512/s0_c24/set_I_qe_1pct/rep3 (598 left)
+[07:32:02]   s2/avx512/s0_c24/set_I_qe_1pct/rep3: 10946 runs, 0.914 ms/run, card 21.6 W, socket 155 W, server 224 W, ok 1
+[07:32:02] s2/avx512/s0_c24/set_I_qe_0.3pct/rep3 (597 left)
+[07:32:22]   s2/avx512/s0_c24/set_I_qe_0.3pct/rep3: 852 runs, 11.737 ms/run, card 21.5 W, socket 170 W, server 238 W, ok 1
+[07:32:22] s2/avx512/s0_c24/set_I_qe_0.1pct/rep3 (596 left)
+[07:32:43]   s2/avx512/s0_c24/set_I_qe_0.1pct/rep3: 26 runs, 393.777 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[07:32:43] s2/avx512/s0_c24/set_II_ft_1pct/rep3 (595 left)
+[07:33:03]   s2/avx512/s0_c24/set_II_ft_1pct/rep3: 546 runs, 18.331 ms/run, card 21.5 W, socket 177 W, server 245 W, ok 1
+[07:33:03] s2/avx512/s0_c24/set_II_ft_0.3pct/rep3 (594 left)
+[07:33:25]   s2/avx512/s0_c24/set_II_ft_0.3pct/rep3: 14 runs, 763.741 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[07:33:25] s2/avx512/s0_c24/set_II_ft_0.1pct/rep3 (593 left)
+[07:34:27]   s2/avx512/s0_c24/set_II_ft_0.1pct/rep3: 1 runs, 27230.631 ms/run, card 21.4 W, socket 167 W, server 221 W, ok 1
+[07:34:27] s2/avx512/s0_c24/set_II_qe_1pct/rep3 (592 left)
+[07:34:47]   s2/avx512/s0_c24/set_II_qe_1pct/rep3: 4094 runs, 2.443 ms/run, card 21.4 W, socket 171 W, server 239 W, ok 1
+[07:34:47] s2/avx512/s0_c24/set_II_qe_0.3pct/rep3 (591 left)
+[07:35:08]   s2/avx512/s0_c24/set_II_qe_0.3pct/rep3: 393 runs, 25.448 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[07:35:08] s2/avx512/s0_c24/set_II_qe_0.1pct/rep3 (590 left)
+[07:35:30]   s2/avx512/s0_c24/set_II_qe_0.1pct/rep3: 12 runs, 908.749 ms/run, card 21.5 W, socket 175 W, server 242 W, ok 1
+[07:35:30] s2/avx512/s0_c24/set_III_ft_1pct/rep3 (589 left)
+[07:35:50]   s2/avx512/s0_c24/set_III_ft_1pct/rep3: 7342 runs, 1.362 ms/run, card 21.5 W, socket 163 W, server 231 W, ok 1
+[07:35:50] s2/avx512/s0_c24/set_III_ft_0.3pct/rep3 (588 left)
+[07:36:11]   s2/avx512/s0_c24/set_III_ft_0.3pct/rep3: 271 runs, 36.911 ms/run, card 21.5 W, socket 179 W, server 246 W, ok 1
+[07:36:11] s2/avx512/s0_c24/set_III_ft_0.1pct/rep3 (587 left)
+[07:36:32]   s2/avx512/s0_c24/set_III_ft_0.1pct/rep3: 8 runs, 1251.130 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[07:36:32] s2/avx512/s0_c24/set_III_qe_1pct/rep3 (586 left)
+[07:36:52]   s2/avx512/s0_c24/set_III_qe_1pct/rep3: 21024 runs, 0.476 ms/run, card 21.5 W, socket 171 W, server 239 W, ok 1
+[07:36:52] s2/avx512/s0_c24/set_III_qe_0.3pct/rep3 (585 left)
+[07:37:13]   s2/avx512/s0_c24/set_III_qe_0.3pct/rep3: 1944 runs, 5.145 ms/run, card 21.5 W, socket 172 W, server 240 W, ok 1
+[07:37:13] s2/avx512/s0_c24/set_III_qe_0.1pct/rep3 (584 left)
+[07:37:33]   s2/avx512/s0_c24/set_III_qe_0.1pct/rep3: 115 runs, 87.398 ms/run, card 21.5 W, socket 174 W, server 241 W, ok 1
+[07:37:33] s2/avx512/s0_c24/set_P1_ft_1pct/rep3 (583 left)
+[07:37:54]   s2/avx512/s0_c24/set_P1_ft_1pct/rep3: 106472 runs, 0.094 ms/run, card 21.5 W, socket 147 W, server 214 W, ok 1
+[07:37:54] s2/avx512/s0_c24/set_P1_ft_0.3pct/rep3 (582 left)
+[07:38:14]   s2/avx512/s0_c24/set_P1_ft_0.3pct/rep3: 16151 runs, 0.619 ms/run, card 21.5 W, socket 170 W, server 238 W, ok 1
+[07:38:14] s2/avx512/s0_c24/set_P1_ft_0.1pct/rep3 (581 left)
+[07:38:34]   s2/avx512/s0_c24/set_P1_ft_0.1pct/rep3: 734 runs, 13.640 ms/run, card 21.5 W, socket 178 W, server 246 W, ok 1
+[07:38:34] s2/avx512/s0_c24/set_P1_qe_1pct/rep3 (580 left)
+[07:38:55]   s2/avx512/s0_c24/set_P1_qe_1pct/rep3: 130993 runs, 0.076 ms/run, card 21.5 W, socket 143 W, server 211 W, ok 1
+[07:38:55] s2/avx512/s0_c24/set_P1_qe_0.3pct/rep3 (579 left)
+[07:39:15]   s2/avx512/s0_c24/set_P1_qe_0.3pct/rep3: 15145 runs, 0.660 ms/run, card 21.5 W, socket 163 W, server 231 W, ok 1
+[07:39:15] s2/avx512/s0_c24/set_P1_qe_0.1pct/rep3 (578 left)
+[07:39:35]   s2/avx512/s0_c24/set_P1_qe_0.1pct/rep3: 1225 runs, 8.167 ms/run, card 21.5 W, socket 171 W, server 238 W, ok 1
+[07:39:35] s2/avx512/s0_c24/ss_I_ft_M1280/rep3 (577 left)
+[07:39:57]   s2/avx512/s0_c24/ss_I_ft_M1280/rep3: 11 runs, 971.391 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[07:39:57] s2/avx512/s0_c24/ss_I_ft_M5120/rep3 (576 left)
+[07:40:18]   s2/avx512/s0_c24/ss_I_ft_M5120/rep3: 11 runs, 971.387 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[07:40:18] s2/avx512/s0_c24/ss_I_qe_M40/rep3 (575 left)
+[07:40:43]   s2/avx512/s0_c24/ss_I_qe_M40/rep3: 3 runs, 4306.584 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[07:40:43] s2/avx512/s0_c24/ss_I_qe_M80/rep3 (574 left)
+[07:41:08]   s2/avx512/s0_c24/ss_I_qe_M80/rep3: 3 runs, 4264.299 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[07:41:08] s2/avx512/s0_c24/ss_I_qe_M320/rep3 (573 left)
+[07:41:32]   s2/avx512/s0_c24/ss_I_qe_M320/rep3: 3 runs, 4248.483 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[07:41:32] s2/avx512/s0_c24/ss_II_ft_M1920/rep3 (572 left)
+[07:41:53]   s2/avx512/s0_c24/ss_II_ft_M1920/rep3: 11 runs, 968.446 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[07:41:53] s2/avx512/s0_c24/ss_II_ft_M7680/rep3 (571 left)
+[07:42:15]   s2/avx512/s0_c24/ss_II_ft_M7680/rep3: 11 runs, 978.900 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[07:42:15] s2/avx512/s0_c24/ss_II_qe_M60/rep3 (570 left)
+[07:42:39]   s2/avx512/s0_c24/ss_II_qe_M60/rep3: 3 runs, 4110.449 ms/run, card 21.5 W, socket 175 W, server 242 W, ok 1
+[07:42:39] s2/avx512/s0_c24/ss_II_qe_M240/rep3 (569 left)
+[07:43:03]   s2/avx512/s0_c24/ss_II_qe_M240/rep3: 3 runs, 4146.086 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[07:43:03] s2/avx512/s0_c24/ss_III_ft_M160/rep3 (568 left)
+[07:43:24]   s2/avx512/s0_c24/ss_III_ft_M160/rep3: 10 runs, 1022.421 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[07:43:24] s2/avx512/s0_c24/ss_III_ft_M640/rep3 (567 left)
+[07:43:46]   s2/avx512/s0_c24/ss_III_ft_M640/rep3: 11 runs, 978.302 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[07:43:46] s2/avx512/s0_c24/ss_III_qe_M20/rep3 (566 left)
+[07:44:12]   s2/avx512/s0_c24/ss_III_qe_M20/rep3: 3 runs, 4752.562 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[07:44:12] s2/avx512/s0_c24/ss_III_qe_M40/rep3 (565 left)
+[07:44:38]   s2/avx512/s0_c24/ss_III_qe_M40/rep3: 3 runs, 4513.921 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[07:44:38] s2/avx512/s0_c24/ss_P1_ft_M8/rep3 (564 left)
+[07:45:01]   s2/avx512/s0_c24/ss_P1_ft_M8/rep3: 5 runs, 2154.098 ms/run, card 21.5 W, socket 172 W, server 239 W, ok 1
+[07:45:01] s2/avx512/s0_c24/ss_P1_ft_M16/rep3 (563 left)
+[07:45:22]   s2/avx512/s0_c24/ss_P1_ft_M16/rep3: 7 runs, 1558.013 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[07:45:22] s2/avx512/s0_c24/ss_P1_ft_M64/rep3 (562 left)
+[07:45:43]   s2/avx512/s0_c24/ss_P1_ft_M64/rep3: 9 runs, 1111.760 ms/run, card 21.4 W, socket 179 W, server 247 W, ok 1
+[07:45:43] s2/avx512/s0_c24/ss_P1_qe_M1/rep3 (561 left)
+[07:46:09]   s2/avx512/s0_c24/ss_P1_qe_M1/rep3: 2 runs, 5942.054 ms/run, card 21.4 W, socket 165 W, server 233 W, ok 1
+[07:46:09] s2/avx512/s0_c24/ss_P1_qe_M4/rep3 (560 left)
+[07:46:36]   s2/avx512/s0_c24/ss_P1_qe_M4/rep3: 2 runs, 6660.095 ms/run, card 21.4 W, socket 170 W, server 238 W, ok 1
+[07:46:36] s2/avx512/s0_c24/ss_P1_qe_M8/rep3 (559 left)
+[07:47:00]   s2/avx512/s0_c24/ss_P1_qe_M8/rep3: 2 runs, 5463.320 ms/run, card 21.4 W, socket 172 W, server 242 W, ok 1
+[07:47:00] s2/avx512/s01_t96/set_I_ft_1pct/rep3 (558 left)
+[07:47:21]   s2/avx512/s01_t96/set_I_ft_1pct/rep3: 1106 runs, 9.046 ms/run, card 21.4 W, socket 141 W, server 263 W, ok 1
+[07:47:21] s2/avx512/s01_t96/set_I_ft_0.3pct/rep3 (557 left)
+[07:47:41]   s2/avx512/s01_t96/set_I_ft_0.3pct/rep3: 143 runs, 70.203 ms/run, card 21.4 W, socket 178 W, server 348 W, ok 1
+[07:47:41] s2/avx512/s01_t96/set_I_ft_0.1pct/rep3 (556 left)
+[07:48:03]   s2/avx512/s01_t96/set_I_ft_0.1pct/rep3: 5 runs, 2085.371 ms/run, card 21.4 W, socket 176 W, server 355 W, ok 1
+[07:48:03] s2/avx512/s01_t96/set_I_qe_1pct/rep3 (555 left)
+[07:48:24]   s2/avx512/s01_t96/set_I_qe_1pct/rep3: 7814 runs, 1.280 ms/run, card 21.4 W, socket 144 W, server 274 W, ok 1
+[07:48:24] s2/avx512/s01_t96/set_I_qe_0.3pct/rep3 (554 left)
+[07:48:44]   s2/avx512/s01_t96/set_I_qe_0.3pct/rep3: 2058 runs, 4.861 ms/run, card 21.4 W, socket 176 W, server 353 W, ok 1
+[07:48:44] s2/avx512/s01_t96/set_I_qe_0.1pct/rep3 (553 left)
+[07:49:05]   s2/avx512/s01_t96/set_I_qe_0.1pct/rep3: 71 runs, 141.463 ms/run, card 21.4 W, socket 178 W, server 357 W, ok 1
+[07:49:05] s2/avx512/s01_t96/set_II_ft_1pct/rep3 (552 left)
+[07:49:25]   s2/avx512/s01_t96/set_II_ft_1pct/rep3: 333 runs, 30.114 ms/run, card 21.4 W, socket 78 W, server 150 W, ok 1
+[07:49:25] s2/avx512/s01_t96/set_II_ft_0.3pct/rep3 (551 left)
+[07:49:46]   s2/avx512/s01_t96/set_II_ft_0.3pct/rep3: 33 runs, 306.409 ms/run, card 21.4 W, socket 168 W, server 340 W, ok 1
+[07:49:46] s2/avx512/s01_t96/set_II_ft_0.1pct/rep3 (550 left)
+[07:50:23]   s2/avx512/s01_t96/set_II_ft_0.1pct/rep3: 2 runs, 9923.694 ms/run, card 21.4 W, socket 172 W, server 344 W, ok 1
+[07:50:23] s2/avx512/s01_t96/set_II_qe_1pct/rep3 (549 left)
+[07:50:43]   s2/avx512/s01_t96/set_II_qe_1pct/rep3: 5397 runs, 1.853 ms/run, card 21.4 W, socket 166 W, server 313 W, ok 1
+[07:50:43] s2/avx512/s01_t96/set_II_qe_0.3pct/rep3 (548 left)
+[07:51:04]   s2/avx512/s01_t96/set_II_qe_0.3pct/rep3: 965 runs, 10.367 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[07:51:04] s2/avx512/s01_t96/set_II_qe_0.1pct/rep3 (547 left)
+[07:51:24]   s2/avx512/s01_t96/set_II_qe_0.1pct/rep3: 32 runs, 319.274 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[07:51:24] s2/avx512/s01_t96/set_III_ft_1pct/rep3 (546 left)
+[07:51:45]   s2/avx512/s01_t96/set_III_ft_1pct/rep3: 7920 runs, 1.263 ms/run, card 21.4 W, socket 148 W, server 294 W, ok 1
+[07:51:45] s2/avx512/s01_t96/set_III_ft_0.3pct/rep3 (545 left)
+[07:52:05]   s2/avx512/s01_t96/set_III_ft_0.3pct/rep3: 723 runs, 13.842 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[07:52:05] s2/avx512/s01_t96/set_III_ft_0.1pct/rep3 (544 left)
+[07:52:26]   s2/avx512/s01_t96/set_III_ft_0.1pct/rep3: 22 runs, 455.960 ms/run, card 21.4 W, socket 178 W, server 357 W, ok 1
+[07:52:26] s2/avx512/s01_t96/set_III_qe_1pct/rep3 (543 left)
+[07:52:46]   s2/avx512/s01_t96/set_III_qe_1pct/rep3: 12713 runs, 0.787 ms/run, card 21.4 W, socket 158 W, server 286 W, ok 1
+[07:52:46] s2/avx512/s01_t96/set_III_qe_0.3pct/rep3 (542 left)
+[07:53:06]   s2/avx512/s01_t96/set_III_qe_0.3pct/rep3: 4960 runs, 2.017 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[07:53:06] s2/avx512/s01_t96/set_III_qe_0.1pct/rep3 (541 left)
+[07:53:27]   s2/avx512/s01_t96/set_III_qe_0.1pct/rep3: 323 runs, 31.016 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[07:53:27] s2/avx512/s01_t96/set_P1_ft_1pct/rep3 (540 left)
+[07:53:47]   s2/avx512/s01_t96/set_P1_ft_1pct/rep3: 49671 runs, 0.201 ms/run, card 21.4 W, socket 141 W, server 265 W, ok 1
+[07:53:47] s2/avx512/s01_t96/set_P1_ft_0.3pct/rep3 (539 left)
+[07:54:08]   s2/avx512/s01_t96/set_P1_ft_0.3pct/rep3: 26790 runs, 0.373 ms/run, card 21.4 W, socket 169 W, server 330 W, ok 1
+[07:54:08] s2/avx512/s01_t96/set_P1_ft_0.1pct/rep3 (538 left)
+[07:54:28]   s2/avx512/s01_t96/set_P1_ft_0.1pct/rep3: 1926 runs, 5.195 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[07:54:28] s2/avx512/s01_t96/set_P1_qe_1pct/rep3 (537 left)
+[07:54:48]   s2/avx512/s01_t96/set_P1_qe_1pct/rep3: 65209 runs, 0.153 ms/run, card 21.4 W, socket 139 W, server 264 W, ok 1
+[07:54:48] s2/avx512/s01_t96/set_P1_qe_0.3pct/rep3 (536 left)
+[07:55:09]   s2/avx512/s01_t96/set_P1_qe_0.3pct/rep3: 26252 runs, 0.381 ms/run, card 21.4 W, socket 163 W, server 319 W, ok 1
+[07:55:09] s2/avx512/s01_t96/set_P1_qe_0.1pct/rep3 (535 left)
+[07:55:29]   s2/avx512/s01_t96/set_P1_qe_0.1pct/rep3: 3285 runs, 3.044 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[07:55:29] s2/avx512/s01_t96/ss_I_ft_M1280/rep3 (534 left)
+[07:55:50]   s2/avx512/s01_t96/ss_I_ft_M1280/rep3: 29 runs, 354.840 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[07:55:50] s2/avx512/s01_t96/ss_I_ft_M5120/rep3 (533 left)
+[07:56:11]   s2/avx512/s01_t96/ss_I_ft_M5120/rep3: 29 runs, 353.827 ms/run, card 21.4 W, socket 180 W, server 358 W, ok 1
+[07:56:11] s2/avx512/s01_t96/ss_I_qe_M40/rep3 (532 left)
+[07:56:32]   s2/avx512/s01_t96/ss_I_qe_M40/rep3: 7 runs, 1503.527 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[07:56:32] s2/avx512/s01_t96/ss_I_qe_M80/rep3 (531 left)
+[07:56:53]   s2/avx512/s01_t96/ss_I_qe_M80/rep3: 7 runs, 1487.724 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[07:56:53] s2/avx512/s01_t96/ss_I_qe_M320/rep3 (530 left)
+[07:57:14]   s2/avx512/s01_t96/ss_I_qe_M320/rep3: 7 runs, 1489.028 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[07:57:14] s2/avx512/s01_t96/ss_II_ft_M1920/rep3 (529 left)
+[07:57:35]   s2/avx512/s01_t96/ss_II_ft_M1920/rep3: 29 runs, 352.293 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[07:57:35] s2/avx512/s01_t96/ss_II_ft_M7680/rep3 (528 left)
+[07:57:55]   s2/avx512/s01_t96/ss_II_ft_M7680/rep3: 28 runs, 366.197 ms/run, card 21.4 W, socket 178 W, server 354 W, ok 1
+[07:57:55] s2/avx512/s01_t96/ss_II_qe_M60/rep3 (527 left)
+[07:58:16]   s2/avx512/s01_t96/ss_II_qe_M60/rep3: 7 runs, 1452.916 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[07:58:16] s2/avx512/s01_t96/ss_II_qe_M240/rep3 (526 left)
+[07:58:37]   s2/avx512/s01_t96/ss_II_qe_M240/rep3: 7 runs, 1457.898 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[07:58:37] s2/avx512/s01_t96/ss_III_ft_M160/rep3 (525 left)
+[07:58:58]   s2/avx512/s01_t96/ss_III_ft_M160/rep3: 28 runs, 365.168 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[07:58:58] s2/avx512/s01_t96/ss_III_ft_M640/rep3 (524 left)
+[07:59:18]   s2/avx512/s01_t96/ss_III_ft_M640/rep3: 29 runs, 353.404 ms/run, card 21.4 W, socket 180 W, server 358 W, ok 1
+[07:59:18] s2/avx512/s01_t96/ss_III_qe_M20/rep3 (523 left)
+[07:59:41]   s2/avx512/s01_t96/ss_III_qe_M20/rep3: 7 runs, 1635.421 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[07:59:41] s2/avx512/s01_t96/ss_III_qe_M40/rep3 (522 left)
+[08:00:02]   s2/avx512/s01_t96/ss_III_qe_M40/rep3: 7 runs, 1564.255 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[08:00:02] s2/avx512/s01_t96/ss_P1_ft_M8/rep3 (521 left)
+[08:00:23]   s2/avx512/s01_t96/ss_P1_ft_M8/rep3: 14 runs, 737.603 ms/run, card 21.5 W, socket 180 W, server 359 W, ok 1
+[08:00:23] s2/avx512/s01_t96/ss_P1_ft_M16/rep3 (520 left)
+[08:00:45]   s2/avx512/s01_t96/ss_P1_ft_M16/rep3: 19 runs, 540.164 ms/run, card 21.5 W, socket 180 W, server 360 W, ok 1
+[08:00:45] s2/avx512/s01_t96/ss_P1_ft_M64/rep3 (519 left)
+[08:01:05]   s2/avx512/s01_t96/ss_P1_ft_M64/rep3: 26 runs, 394.979 ms/run, card 21.5 W, socket 180 W, server 359 W, ok 1
+[08:01:05] s2/avx512/s01_t96/ss_P1_qe_M1/rep3 (518 left)
+[08:01:28]   s2/avx512/s01_t96/ss_P1_qe_M1/rep3: 6 runs, 1919.150 ms/run, card 21.5 W, socket 180 W, server 359 W, ok 1
+[08:01:28] s2/avx512/s01_t96/ss_P1_qe_M4/rep3 (517 left)
+[08:01:51]   s2/avx512/s01_t96/ss_P1_qe_M4/rep3: 5 runs, 2205.853 ms/run, card 21.5 W, socket 180 W, server 359 W, ok 1
+[08:01:51] s2/avx512/s01_t96/ss_P1_qe_M8/rep3 (516 left)
+[08:02:14]   s2/avx512/s01_t96/ss_P1_qe_M8/rep3: 6 runs, 1849.062 ms/run, card 21.5 W, socket 180 W, server 360 W, ok 1
+[08:02:14] s2/native/s0_c24/set_I_ft_1pct/rep3 (515 left)
+[08:02:34]   s2/native/s0_c24/set_I_ft_1pct/rep3: 6475 runs, 1.544 ms/run, card 21.5 W, socket 180 W, server 239 W, ok 1
+[08:02:34] s2/native/s0_c24/set_I_ft_0.3pct/rep3 (514 left)
+[08:02:55]   s2/native/s0_c24/set_I_ft_0.3pct/rep3: 155 runs, 64.924 ms/run, card 21.5 W, socket 180 W, server 233 W, ok 1
+[08:02:55] s2/native/s0_c24/set_I_ft_0.1pct/rep3 (513 left)
+[08:03:19]   s2/native/s0_c24/set_I_ft_0.1pct/rep3: 5 runs, 2339.036 ms/run, card 21.5 W, socket 179 W, server 232 W, ok 1
+[08:03:19] s2/native/s0_c24/set_I_qe_1pct/rep3 (512 left)
+[08:03:39]   s2/native/s0_c24/set_I_qe_1pct/rep3: 55673 runs, 0.180 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[08:03:39] s2/native/s0_c24/set_I_qe_0.3pct/rep3 (511 left)
+[08:03:59]   s2/native/s0_c24/set_I_qe_0.3pct/rep3: 2630 runs, 3.804 ms/run, card 21.5 W, socket 178 W, server 246 W, ok 1
+[08:03:59] s2/native/s0_c24/set_I_qe_0.1pct/rep3 (510 left)
+[08:04:20]   s2/native/s0_c24/set_I_qe_0.1pct/rep3: 72 runs, 138.928 ms/run, card 21.5 W, socket 178 W, server 246 W, ok 1
+[08:04:20] s2/native/s0_c24/set_II_ft_1pct/rep3 (509 left)
+[08:04:40]   s2/native/s0_c24/set_II_ft_1pct/rep3: 1399 runs, 7.151 ms/run, card 21.5 W, socket 180 W, server 233 W, ok 1
+[08:04:40] s2/native/s0_c24/set_II_ft_0.3pct/rep3 (508 left)
+[08:05:01]   s2/native/s0_c24/set_II_ft_0.3pct/rep3: 33 runs, 311.112 ms/run, card 21.5 W, socket 180 W, server 232 W, ok 1
+[08:05:01] s2/native/s0_c24/set_II_ft_0.1pct/rep3 (507 left)
+[08:05:31]   s2/native/s0_c24/set_II_ft_0.1pct/rep3: 1 runs, 11453.347 ms/run, card 21.5 W, socket 172 W, server 220 W, ok 1
+[08:05:31] s2/native/s0_c24/set_II_qe_1pct/rep3 (506 left)
+[08:05:52]   s2/native/s0_c24/set_II_qe_1pct/rep3: 12855 runs, 0.778 ms/run, card 21.5 W, socket 177 W, server 245 W, ok 1
+[08:05:52] s2/native/s0_c24/set_II_qe_0.3pct/rep3 (505 left)
+[08:06:12]   s2/native/s0_c24/set_II_qe_0.3pct/rep3: 1163 runs, 8.605 ms/run, card 21.5 W, socket 178 W, server 246 W, ok 1
+[08:06:12] s2/native/s0_c24/set_II_qe_0.1pct/rep3 (504 left)
+[08:06:33]   s2/native/s0_c24/set_II_qe_0.1pct/rep3: 30 runs, 336.436 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[08:06:33] s2/native/s0_c24/set_III_ft_1pct/rep3 (503 left)
+[08:06:53]   s2/native/s0_c24/set_III_ft_1pct/rep3: 29736 runs, 0.336 ms/run, card 21.5 W, socket 180 W, server 233 W, ok 1
+[08:06:53] s2/native/s0_c24/set_III_ft_0.3pct/rep3 (502 left)
+[08:07:13]   s2/native/s0_c24/set_III_ft_0.3pct/rep3: 699 runs, 14.324 ms/run, card 21.5 W, socket 180 W, server 232 W, ok 1
+[08:07:13] s2/native/s0_c24/set_III_ft_0.1pct/rep3 (501 left)
+[08:07:34]   s2/native/s0_c24/set_III_ft_0.1pct/rep3: 19 runs, 526.550 ms/run, card 21.5 W, socket 178 W, server 231 W, ok 1
+[08:07:34] s2/native/s0_c24/set_III_qe_1pct/rep3 (500 left)
+[08:07:55]   s2/native/s0_c24/set_III_qe_1pct/rep3: 63487 runs, 0.158 ms/run, card 21.5 W, socket 176 W, server 243 W, ok 1
+[08:07:55] s2/native/s0_c24/set_III_qe_0.3pct/rep3 (499 left)
+[08:08:15]   s2/native/s0_c24/set_III_qe_0.3pct/rep3: 5943 runs, 1.683 ms/run, card 21.5 W, socket 177 W, server 245 W, ok 1
+[08:08:15] s2/native/s0_c24/set_III_qe_0.1pct/rep3 (498 left)
+[08:08:35]   s2/native/s0_c24/set_III_qe_0.1pct/rep3: 314 runs, 31.860 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[08:08:35] s2/native/s0_c24/set_P1_ft_1pct/rep3 (497 left)
+[08:08:56]   s2/native/s0_c24/set_P1_ft_1pct/rep3: 663433 runs, 0.015 ms/run, card 21.5 W, socket 171 W, server 239 W, ok 1
+[08:08:56] s2/native/s0_c24/set_P1_ft_0.3pct/rep3 (496 left)
+[08:09:16]   s2/native/s0_c24/set_P1_ft_0.3pct/rep3: 57014 runs, 0.175 ms/run, card 21.5 W, socket 180 W, server 238 W, ok 1
+[08:09:16] s2/native/s0_c24/set_P1_ft_0.1pct/rep3 (495 left)
+[08:09:36]   s2/native/s0_c24/set_P1_ft_0.1pct/rep3: 1929 runs, 5.186 ms/run, card 21.5 W, socket 180 W, server 235 W, ok 1
+[08:09:36] s2/native/s0_c24/set_P1_qe_1pct/rep3 (494 left)
+[08:09:57]   s2/native/s0_c24/set_P1_qe_1pct/rep3: 870152 runs, 0.011 ms/run, card 21.4 W, socket 157 W, server 225 W, ok 1
+[08:09:57] s2/native/s0_c24/set_P1_qe_0.3pct/rep3 (493 left)
+[08:10:17]   s2/native/s0_c24/set_P1_qe_0.3pct/rep3: 79580 runs, 0.126 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[08:10:17] s2/native/s0_c24/set_P1_qe_0.1pct/rep3 (492 left)
+[08:10:37]   s2/native/s0_c24/set_P1_qe_0.1pct/rep3: 5226 runs, 1.914 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[08:10:37] s2/native/s0_c24/ss_I_ft_M1280/rep3 (491 left)
+[08:10:58]   s2/native/s0_c24/ss_I_ft_M1280/rep3: 26 runs, 399.430 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[08:10:58] s2/native/s0_c24/ss_I_ft_M5120/rep3 (490 left)
+[08:11:19]   s2/native/s0_c24/ss_I_ft_M5120/rep3: 26 runs, 398.514 ms/run, card 21.4 W, socket 180 W, server 231 W, ok 1
+[08:11:19] s2/native/s0_c24/ss_I_qe_M40/rep3 (489 left)
+[08:11:40]   s2/native/s0_c24/ss_I_qe_M40/rep3: 7 runs, 1483.890 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[08:11:40] s2/native/s0_c24/ss_I_qe_M80/rep3 (488 left)
+[08:12:01]   s2/native/s0_c24/ss_I_qe_M80/rep3: 7 runs, 1488.545 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[08:12:01] s2/native/s0_c24/ss_I_qe_M320/rep3 (487 left)
+[08:12:23]   s2/native/s0_c24/ss_I_qe_M320/rep3: 7 runs, 1513.620 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[08:12:23] s2/native/s0_c24/ss_II_ft_M1920/rep3 (486 left)
+[08:12:44]   s2/native/s0_c24/ss_II_ft_M1920/rep3: 25 runs, 400.137 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[08:12:44] s2/native/s0_c24/ss_II_ft_M7680/rep3 (485 left)
+[08:13:05]   s2/native/s0_c24/ss_II_ft_M7680/rep3: 26 runs, 398.599 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[08:13:05] s2/native/s0_c24/ss_II_qe_M60/rep3 (484 left)
+[08:13:25]   s2/native/s0_c24/ss_II_qe_M60/rep3: 7 runs, 1434.662 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[08:13:25] s2/native/s0_c24/ss_II_qe_M240/rep3 (483 left)
+[08:13:46]   s2/native/s0_c24/ss_II_qe_M240/rep3: 7 runs, 1478.655 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[08:13:46] s2/native/s0_c24/ss_III_ft_M160/rep3 (482 left)
+[08:14:07]   s2/native/s0_c24/ss_III_ft_M160/rep3: 25 runs, 405.782 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[08:14:07] s2/native/s0_c24/ss_III_ft_M640/rep3 (481 left)
+[08:14:28]   s2/native/s0_c24/ss_III_ft_M640/rep3: 26 runs, 399.398 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[08:14:28] s2/native/s0_c24/ss_III_qe_M20/rep3 (480 left)
+[08:14:50]   s2/native/s0_c24/ss_III_qe_M20/rep3: 7 runs, 1594.100 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[08:14:50] s2/native/s0_c24/ss_III_qe_M40/rep3 (479 left)
+[08:15:12]   s2/native/s0_c24/ss_III_qe_M40/rep3: 7 runs, 1567.117 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[08:15:12] s2/native/s0_c24/ss_P1_ft_M8/rep3 (478 left)
+[08:15:33]   s2/native/s0_c24/ss_P1_ft_M8/rep3: 18 runs, 582.595 ms/run, card 21.4 W, socket 179 W, server 238 W, ok 1
+[08:15:33] s2/native/s0_c24/ss_P1_ft_M16/rep3 (477 left)
+[08:15:54]   s2/native/s0_c24/ss_P1_ft_M16/rep3: 21 runs, 490.293 ms/run, card 21.4 W, socket 180 W, server 236 W, ok 1
+[08:15:54] s2/native/s0_c24/ss_P1_ft_M64/rep3 (476 left)
+[08:16:14]   s2/native/s0_c24/ss_P1_ft_M64/rep3: 24 runs, 419.883 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[08:16:14] s2/native/s0_c24/ss_P1_qe_M1/rep3 (475 left)
+[08:16:36]   s2/native/s0_c24/ss_P1_qe_M1/rep3: 8 runs, 1258.543 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[08:16:36] s2/native/s0_c24/ss_P1_qe_M4/rep3 (474 left)
+[08:16:57]   s2/native/s0_c24/ss_P1_qe_M4/rep3: 7 runs, 1496.394 ms/run, card 21.4 W, socket 177 W, server 246 W, ok 1
+[08:16:57] s2/native/s0_c24/ss_P1_qe_M8/rep3 (473 left)
+[08:17:19]   s2/native/s0_c24/ss_P1_qe_M8/rep3: 8 runs, 1277.559 ms/run, card 21.4 W, socket 179 W, server 246 W, ok 1
+[08:17:19] s2/native/s01_t96/set_I_ft_1pct/rep3 (472 left)
+[08:17:39]   s2/native/s01_t96/set_I_ft_1pct/rep3: 13276 runs, 0.753 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[08:17:39] s2/native/s01_t96/set_I_ft_0.3pct/rep3 (471 left)
+[08:18:00]   s2/native/s01_t96/set_I_ft_0.3pct/rep3: 331 runs, 30.222 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[08:18:00] s2/native/s01_t96/set_I_ft_0.1pct/rep3 (470 left)
+[08:18:21]   s2/native/s01_t96/set_I_ft_0.1pct/rep3: 10 runs, 1060.593 ms/run, card 21.4 W, socket 180 W, server 356 W, ok 1
+[08:18:21] s2/native/s01_t96/set_I_qe_1pct/rep3 (469 left)
+[08:18:41]   s2/native/s01_t96/set_I_qe_1pct/rep3: 88997 runs, 0.112 ms/run, card 21.4 W, socket 166 W, server 321 W, ok 1
+[08:18:41] s2/native/s01_t96/set_I_qe_0.3pct/rep3 (468 left)
+[08:19:02]   s2/native/s01_t96/set_I_qe_0.3pct/rep3: 5186 runs, 1.928 ms/run, card 21.4 W, socket 173 W, server 338 W, ok 1
+[08:19:02] s2/native/s01_t96/set_I_qe_0.1pct/rep3 (467 left)
+[08:19:22]   s2/native/s01_t96/set_I_qe_0.1pct/rep3: 147 runs, 68.203 ms/run, card 21.4 W, socket 175 W, server 343 W, ok 1
+[08:19:22] s2/native/s01_t96/set_II_ft_1pct/rep3 (466 left)
+[08:19:43]   s2/native/s01_t96/set_II_ft_1pct/rep3: 2992 runs, 3.343 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[08:19:43] s2/native/s01_t96/set_II_ft_0.3pct/rep3 (465 left)
+[08:20:03]   s2/native/s01_t96/set_II_ft_0.3pct/rep3: 70 runs, 144.399 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[08:20:03] s2/native/s01_t96/set_II_ft_0.1pct/rep3 (464 left)
+[08:20:26]   s2/native/s01_t96/set_II_ft_0.1pct/rep3: 2 runs, 5086.044 ms/run, card 21.5 W, socket 180 W, server 356 W, ok 1
+[08:20:26] s2/native/s01_t96/set_II_qe_1pct/rep3 (463 left)
+[08:20:46]   s2/native/s01_t96/set_II_qe_1pct/rep3: 24084 runs, 0.415 ms/run, card 21.5 W, socket 171 W, server 336 W, ok 1
+[08:20:46] s2/native/s01_t96/set_II_qe_0.3pct/rep3 (462 left)
+[08:21:07]   s2/native/s01_t96/set_II_qe_0.3pct/rep3: 2373 runs, 4.215 ms/run, card 21.5 W, socket 175 W, server 344 W, ok 1
+[08:21:07] s2/native/s01_t96/set_II_qe_0.1pct/rep3 (461 left)
+[08:21:27]   s2/native/s01_t96/set_II_qe_0.1pct/rep3: 63 runs, 158.778 ms/run, card 21.5 W, socket 175 W, server 343 W, ok 1
+[08:21:27] s2/native/s01_t96/set_III_ft_1pct/rep3 (460 left)
+[08:21:47]   s2/native/s01_t96/set_III_ft_1pct/rep3: 55004 runs, 0.182 ms/run, card 21.5 W, socket 178 W, server 355 W, ok 1
+[08:21:47] s2/native/s01_t96/set_III_ft_0.3pct/rep3 (459 left)
+[08:22:08]   s2/native/s01_t96/set_III_ft_0.3pct/rep3: 1489 runs, 6.718 ms/run, card 21.5 W, socket 179 W, server 357 W, ok 1
+[08:22:08] s2/native/s01_t96/set_III_ft_0.1pct/rep3 (458 left)
+[08:22:28]   s2/native/s01_t96/set_III_ft_0.1pct/rep3: 43 runs, 235.169 ms/run, card 21.5 W, socket 179 W, server 356 W, ok 1
+[08:22:28] s2/native/s01_t96/set_III_qe_1pct/rep3 (457 left)
+[08:22:49]   s2/native/s01_t96/set_III_qe_1pct/rep3: 98458 runs, 0.102 ms/run, card 21.5 W, socket 165 W, server 321 W, ok 1
+[08:22:49] s2/native/s01_t96/set_III_qe_0.3pct/rep3 (456 left)
+[08:23:09]   s2/native/s01_t96/set_III_qe_0.3pct/rep3: 11889 runs, 0.841 ms/run, card 21.5 W, socket 173 W, server 340 W, ok 1
+[08:23:09] s2/native/s01_t96/set_III_qe_0.1pct/rep3 (455 left)
+[08:23:29]   s2/native/s01_t96/set_III_qe_0.1pct/rep3: 664 runs, 15.081 ms/run, card 21.5 W, socket 174 W, server 341 W, ok 1
+[08:23:29] s2/native/s01_t96/set_P1_ft_1pct/rep3 (454 left)
+[08:23:50]   s2/native/s01_t96/set_P1_ft_1pct/rep3: 327815 runs, 0.031 ms/run, card 21.5 W, socket 146 W, server 282 W, ok 1
+[08:23:50] s2/native/s01_t96/set_P1_ft_0.3pct/rep3 (453 left)
+[08:24:10]   s2/native/s01_t96/set_P1_ft_0.3pct/rep3: 98183 runs, 0.102 ms/run, card 21.5 W, socket 178 W, server 351 W, ok 1
+[08:24:10] s2/native/s01_t96/set_P1_ft_0.1pct/rep3 (452 left)
+[08:24:30]   s2/native/s01_t96/set_P1_ft_0.1pct/rep3: 4174 runs, 2.396 ms/run, card 21.5 W, socket 178 W, server 356 W, ok 1
+[08:24:30] s2/native/s01_t96/set_P1_qe_1pct/rep3 (451 left)
+[08:24:51]   s2/native/s01_t96/set_P1_qe_1pct/rep3: 343148 runs, 0.029 ms/run, card 21.5 W, socket 138 W, server 269 W, ok 1
+[08:24:51] s2/native/s01_t96/set_P1_qe_0.3pct/rep3 (450 left)
+[08:25:11]   s2/native/s01_t96/set_P1_qe_0.3pct/rep3: 123723 runs, 0.081 ms/run, card 21.5 W, socket 166 W, server 325 W, ok 1
+[08:25:11] s2/native/s01_t96/set_P1_qe_0.1pct/rep3 (449 left)
+[08:25:31]   s2/native/s01_t96/set_P1_qe_0.1pct/rep3: 10832 runs, 0.923 ms/run, card 21.5 W, socket 176 W, server 346 W, ok 1
+[08:25:31] s2/native/s01_t96/ss_I_ft_M1280/rep3 (448 left)
+[08:25:52]   s2/native/s01_t96/ss_I_ft_M1280/rep3: 56 runs, 181.790 ms/run, card 21.5 W, socket 180 W, server 357 W, ok 1
+[08:25:52] s2/native/s01_t96/ss_I_ft_M5120/rep3 (447 left)
+[08:26:12]   s2/native/s01_t96/ss_I_ft_M5120/rep3: 55 runs, 182.404 ms/run, card 21.5 W, socket 180 W, server 357 W, ok 1
+[08:26:12] s2/native/s01_t96/ss_I_qe_M40/rep3 (446 left)
+[08:26:33]   s2/native/s01_t96/ss_I_qe_M40/rep3: 15 runs, 695.860 ms/run, card 21.4 W, socket 177 W, server 347 W, ok 1
+[08:26:33] s2/native/s01_t96/ss_I_qe_M80/rep3 (445 left)
+[08:26:54]   s2/native/s01_t96/ss_I_qe_M80/rep3: 14 runs, 715.224 ms/run, card 21.4 W, socket 176 W, server 345 W, ok 1
+[08:26:54] s2/native/s01_t96/ss_I_qe_M320/rep3 (444 left)
+[08:27:15]   s2/native/s01_t96/ss_I_qe_M320/rep3: 14 runs, 743.805 ms/run, card 21.5 W, socket 175 W, server 343 W, ok 1
+[08:27:15] s2/native/s01_t96/ss_II_ft_M1920/rep3 (443 left)
+[08:27:36]   s2/native/s01_t96/ss_II_ft_M1920/rep3: 55 runs, 182.785 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[08:27:36] s2/native/s01_t96/ss_II_ft_M7680/rep3 (442 left)
+[08:27:56]   s2/native/s01_t96/ss_II_ft_M7680/rep3: 55 runs, 182.784 ms/run, card 21.5 W, socket 179 W, server 357 W, ok 1
+[08:27:56] s2/native/s01_t96/ss_II_qe_M60/rep3 (441 left)
+[08:28:17]   s2/native/s01_t96/ss_II_qe_M60/rep3: 15 runs, 691.470 ms/run, card 21.5 W, socket 176 W, server 347 W, ok 1
+[08:28:17] s2/native/s01_t96/ss_II_qe_M240/rep3 (440 left)
+[08:28:38]   s2/native/s01_t96/ss_II_qe_M240/rep3: 14 runs, 720.948 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[08:28:38] s2/native/s01_t96/ss_III_ft_M160/rep3 (439 left)
+[08:28:58]   s2/native/s01_t96/ss_III_ft_M160/rep3: 54 runs, 186.255 ms/run, card 21.5 W, socket 180 W, server 357 W, ok 1
+[08:28:58] s2/native/s01_t96/ss_III_ft_M640/rep3 (438 left)
+[08:29:19]   s2/native/s01_t96/ss_III_ft_M640/rep3: 55 runs, 183.921 ms/run, card 21.5 W, socket 179 W, server 356 W, ok 1
+[08:29:19] s2/native/s01_t96/ss_III_qe_M20/rep3 (437 left)
+[08:29:40]   s2/native/s01_t96/ss_III_qe_M20/rep3: 14 runs, 761.121 ms/run, card 21.5 W, socket 176 W, server 346 W, ok 1
+[08:29:40] s2/native/s01_t96/ss_III_qe_M40/rep3 (436 left)
+[08:30:02]   s2/native/s01_t96/ss_III_qe_M40/rep3: 14 runs, 762.963 ms/run, card 21.5 W, socket 175 W, server 344 W, ok 1
+[08:30:02] s2/native/s01_t96/ss_P1_ft_M8/rep3 (435 left)
+[08:30:22]   s2/native/s01_t96/ss_P1_ft_M8/rep3: 40 runs, 251.546 ms/run, card 21.5 W, socket 180 W, server 358 W, ok 1
+[08:30:22] s2/native/s01_t96/ss_P1_ft_M16/rep3 (434 left)
+[08:30:43]   s2/native/s01_t96/ss_P1_ft_M16/rep3: 46 runs, 217.699 ms/run, card 21.5 W, socket 180 W, server 357 W, ok 1
+[08:30:43] s2/native/s01_t96/ss_P1_ft_M64/rep3 (433 left)
+[08:31:03]   s2/native/s01_t96/ss_P1_ft_M64/rep3: 53 runs, 191.225 ms/run, card 21.5 W, socket 179 W, server 357 W, ok 1
+[08:31:03] s2/native/s01_t96/ss_P1_qe_M1/rep3 (432 left)
+[08:31:24]   s2/native/s01_t96/ss_P1_qe_M1/rep3: 20 runs, 504.641 ms/run, card 21.5 W, socket 179 W, server 355 W, ok 1
+[08:31:24] s2/native/s01_t96/ss_P1_qe_M4/rep3 (431 left)
+[08:31:44]   s2/native/s01_t96/ss_P1_qe_M4/rep3: 16 runs, 652.450 ms/run, card 21.5 W, socket 179 W, server 354 W, ok 1
+[08:31:44] s2/native/s01_t96/ss_P1_qe_M8/rep3 (430 left)
+[08:32:05]   s2/native/s01_t96/ss_P1_qe_M8/rep3: 16 runs, 642.124 ms/run, card 21.5 W, socket 172 W, server 339 W, ok 1
+[08:32:05] s2/fpga/card/set_I_ft_1pct/rep4 (429 left)
+[08:32:31]   s2/fpga/card/set_I_ft_1pct/rep4: 2223 runs, 4.499 ms/run, card 30.5 W, socket 61 W, server 117 W, ok 1
+[08:32:31] s2/fpga/card/set_I_ft_0.3pct/rep4 (428 left)
+[08:32:52]   s2/fpga/card/set_I_ft_0.3pct/rep4: 76 runs, 132.135 ms/run, card 33.1 W, socket 51 W, server 95 W, ok 1
+[08:32:52] s2/fpga/card/set_I_ft_0.1pct/rep4 (427 left)
+[08:33:19]   s2/fpga/card/set_I_ft_0.1pct/rep4: 3 runs, 4661.880 ms/run, card 33.8 W, socket 51 W, server 95 W, ok 1
+[08:33:19] s2/fpga/card/set_I_qe_1pct/rep4 (426 left)
+[08:33:46]   s2/fpga/card/set_I_qe_1pct/rep4: 16745 runs, 0.597 ms/run, card 25.5 W, socket 51 W, server 96 W, ok 1
+[08:33:46] s2/fpga/card/set_I_qe_0.3pct/rep4 (425 left)
+[08:34:07]   s2/fpga/card/set_I_qe_0.3pct/rep4: 1935 runs, 5.170 ms/run, card 32.1 W, socket 51 W, server 95 W, ok 1
+[08:34:07] s2/fpga/card/set_I_qe_0.1pct/rep4 (424 left)
+[08:34:28]   s2/fpga/card/set_I_qe_0.1pct/rep4: 68 runs, 147.224 ms/run, card 36.5 W, socket 50 W, server 94 W, ok 1
+[08:34:28] s2/fpga/card/set_II_ft_1pct/rep4 (423 left)
+[08:34:55]   s2/fpga/card/set_II_ft_1pct/rep4: 657 runs, 15.240 ms/run, card 31.7 W, socket 50 W, server 94 W, ok 1
+[08:34:55] s2/fpga/card/set_II_ft_0.3pct/rep4 (422 left)
+[08:35:16]   s2/fpga/card/set_II_ft_0.3pct/rep4: 16 runs, 626.016 ms/run, card 32.8 W, socket 50 W, server 94 W, ok 1
+[08:35:16] s2/fpga/card/set_II_ft_0.1pct/rep4 (421 left)
+[08:36:09]   s2/fpga/card/set_II_ft_0.1pct/rep4: 1 runs, 22371.705 ms/run, card 33.4 W, socket 50 W, server 94 W, ok 1
+[08:36:09] s2/fpga/card/set_II_qe_1pct/rep4 (420 left)
+[08:36:36]   s2/fpga/card/set_II_qe_1pct/rep4: 5745 runs, 1.741 ms/run, card 27.6 W, socket 51 W, server 95 W, ok 1
+[08:36:36] s2/fpga/card/set_II_qe_0.3pct/rep4 (419 left)
+[08:36:57]   s2/fpga/card/set_II_qe_0.3pct/rep4: 938 runs, 10.666 ms/run, card 32.0 W, socket 50 W, server 94 W, ok 1
+[08:36:57] s2/fpga/card/set_II_qe_0.1pct/rep4 (418 left)
+[08:37:18]   s2/fpga/card/set_II_qe_0.1pct/rep4: 29 runs, 350.168 ms/run, card 34.6 W, socket 50 W, server 93 W, ok 1
+[08:37:18] s2/fpga/card/set_III_ft_1pct/rep4 (417 left)
+[08:37:45]   s2/fpga/card/set_III_ft_1pct/rep4: 6248 runs, 1.601 ms/run, card 27.6 W, socket 51 W, server 95 W, ok 1
+[08:37:45] s2/fpga/card/set_III_ft_0.3pct/rep4 (416 left)
+[08:38:06]   s2/fpga/card/set_III_ft_0.3pct/rep4: 336 runs, 29.849 ms/run, card 34.9 W, socket 50 W, server 94 W, ok 1
+[08:38:06] s2/fpga/card/set_III_ft_0.1pct/rep4 (415 left)
+[08:38:28]   s2/fpga/card/set_III_ft_0.1pct/rep4: 10 runs, 1024.001 ms/run, card 35.5 W, socket 50 W, server 93 W, ok 1
+[08:38:28] s2/fpga/card/set_III_qe_1pct/rep4 (414 left)
+[08:38:55]   s2/fpga/card/set_III_qe_1pct/rep4: 16452 runs, 0.608 ms/run, card 27.3 W, socket 51 W, server 95 W, ok 1
+[08:38:55] s2/fpga/card/set_III_qe_0.3pct/rep4 (413 left)
+[08:39:16]   s2/fpga/card/set_III_qe_0.3pct/rep4: 3691 runs, 2.710 ms/run, card 35.0 W, socket 50 W, server 94 W, ok 1
+[08:39:16] s2/fpga/card/set_III_qe_0.1pct/rep4 (412 left)
+[08:39:37]   s2/fpga/card/set_III_qe_0.1pct/rep4: 307 runs, 32.613 ms/run, card 43.8 W, socket 50 W, server 94 W, ok 1
+[08:39:37] s2/fpga/card/set_P1_ft_1pct/rep4 (411 left)
+[08:40:04]   s2/fpga/card/set_P1_ft_1pct/rep4: 66428 runs, 0.151 ms/run, card 22.7 W, socket 52 W, server 96 W, ok 1
+[08:40:04] s2/fpga/card/set_P1_ft_0.3pct/rep4 (410 left)
+[08:40:25]   s2/fpga/card/set_P1_ft_0.3pct/rep4: 10596 runs, 0.944 ms/run, card 25.5 W, socket 51 W, server 95 W, ok 1
+[08:40:25] s2/fpga/card/set_P1_ft_0.1pct/rep4 (409 left)
+[08:40:46]   s2/fpga/card/set_P1_ft_0.1pct/rep4: 949 runs, 10.538 ms/run, card 33.6 W, socket 50 W, server 94 W, ok 1
+[08:40:46] s2/fpga/card/set_P1_qe_1pct/rep4 (408 left)
+[08:41:13]   s2/fpga/card/set_P1_qe_1pct/rep4: 36613 runs, 0.273 ms/run, card 21.8 W, socket 51 W, server 95 W, ok 1
+[08:41:13] s2/fpga/card/set_P1_qe_0.3pct/rep4 (407 left)
+[08:41:34]   s2/fpga/card/set_P1_qe_0.3pct/rep4: 12006 runs, 0.833 ms/run, card 25.3 W, socket 51 W, server 95 W, ok 1
+[08:41:34] s2/fpga/card/set_P1_qe_0.1pct/rep4 (406 left)
+[08:41:55]   s2/fpga/card/set_P1_qe_0.1pct/rep4: 2718 runs, 3.680 ms/run, card 37.6 W, socket 50 W, server 94 W, ok 1
+[08:41:55] s2/fpga/card/ss_I_ft_M1280/rep4 (405 left)
+[08:42:22]   s2/fpga/card/ss_I_ft_M1280/rep4: 13 runs, 795.536 ms/run, card 32.8 W, socket 50 W, server 93 W, ok 1
+[08:42:22] s2/fpga/card/ss_I_ft_M5120/rep4 (404 left)
+[08:42:44]   s2/fpga/card/ss_I_ft_M5120/rep4: 13 runs, 796.411 ms/run, card 33.2 W, socket 50 W, server 93 W, ok 1
+[08:42:44] s2/fpga/card/ss_I_qe_M40/rep4 (403 left)
+[08:43:13]   s2/fpga/card/ss_I_qe_M40/rep4: 7 runs, 1638.131 ms/run, card 33.4 W, socket 50 W, server 94 W, ok 1
+[08:43:13] s2/fpga/card/ss_I_qe_M80/rep4 (402 left)
+[08:43:35]   s2/fpga/card/ss_I_qe_M80/rep4: 7 runs, 1613.333 ms/run, card 34.7 W, socket 50 W, server 93 W, ok 1
+[08:43:35] s2/fpga/card/ss_I_qe_M320/rep4 (401 left)
+[08:43:57]   s2/fpga/card/ss_I_qe_M320/rep4: 7 runs, 1594.586 ms/run, card 36.6 W, socket 50 W, server 94 W, ok 1
+[08:43:57] s2/fpga/card/ss_II_ft_M1920/rep4 (400 left)
+[08:44:25]   s2/fpga/card/ss_II_ft_M1920/rep4: 13 runs, 795.595 ms/run, card 32.4 W, socket 50 W, server 94 W, ok 1
+[08:44:25] s2/fpga/card/ss_II_ft_M7680/rep4 (399 left)
+[08:44:47]   s2/fpga/card/ss_II_ft_M7680/rep4: 13 runs, 796.385 ms/run, card 32.8 W, socket 49 W, server 93 W, ok 1
+[08:44:47] s2/fpga/card/ss_II_qe_M60/rep4 (398 left)
+[08:45:15]   s2/fpga/card/ss_II_qe_M60/rep4: 7 runs, 1621.524 ms/run, card 32.9 W, socket 49 W, server 93 W, ok 1
+[08:45:15] s2/fpga/card/ss_II_qe_M240/rep4 (397 left)
+[08:45:38]   s2/fpga/card/ss_II_qe_M240/rep4: 7 runs, 1596.507 ms/run, card 34.5 W, socket 49 W, server 93 W, ok 1
+[08:45:38] s2/fpga/card/ss_III_ft_M160/rep4 (396 left)
+[08:46:05]   s2/fpga/card/ss_III_ft_M160/rep4: 13 runs, 800.805 ms/run, card 35.0 W, socket 49 W, server 94 W, ok 1
+[08:46:05] s2/fpga/card/ss_III_ft_M640/rep4 (395 left)
+[08:46:27]   s2/fpga/card/ss_III_ft_M640/rep4: 13 runs, 796.314 ms/run, card 35.3 W, socket 49 W, server 93 W, ok 1
+[08:46:27] s2/fpga/card/ss_III_qe_M20/rep4 (394 left)
+[08:46:54]   s2/fpga/card/ss_III_qe_M20/rep4: 6 runs, 1687.703 ms/run, card 42.1 W, socket 49 W, server 93 W, ok 1
+[08:46:54] s2/fpga/card/ss_III_qe_M40/rep4 (393 left)
+[08:47:17]   s2/fpga/card/ss_III_qe_M40/rep4: 7 runs, 1638.101 ms/run, card 44.6 W, socket 49 W, server 93 W, ok 1
+[08:47:17] s2/fpga/card/ss_P1_ft_M8/rep4 (392 left)
+[08:47:45]   s2/fpga/card/ss_P1_ft_M8/rep4: 11 runs, 913.369 ms/run, card 34.4 W, socket 49 W, server 93 W, ok 1
+[08:47:45] s2/fpga/card/ss_P1_ft_M16/rep4 (391 left)
+[08:48:07]   s2/fpga/card/ss_P1_ft_M16/rep4: 12 runs, 854.029 ms/run, card 34.7 W, socket 50 W, server 94 W, ok 1
+[08:48:07] s2/fpga/card/ss_P1_ft_M64/rep4 (390 left)
+[08:48:29]   s2/fpga/card/ss_P1_ft_M64/rep4: 13 runs, 809.539 ms/run, card 34.9 W, socket 49 W, server 93 W, ok 1
+[08:48:29] s2/fpga/card/ss_P1_qe_M1/rep4 (389 left)
+[08:48:57]   s2/fpga/card/ss_P1_qe_M1/rep4: 5 runs, 2046.296 ms/run, card 29.0 W, socket 49 W, server 93 W, ok 1
+[08:48:57] s2/fpga/card/ss_P1_qe_M4/rep4 (388 left)
+[08:49:19]   s2/fpga/card/ss_P1_qe_M4/rep4: 5 runs, 2084.384 ms/run, card 40.4 W, socket 49 W, server 93 W, ok 1
+[08:49:19] s2/fpga/card/ss_P1_qe_M8/rep4 (387 left)
+[08:49:42]   s2/fpga/card/ss_P1_qe_M8/rep4: 6 runs, 1836.118 ms/run, card 44.1 W, socket 49 W, server 93 W, ok 1
+[08:49:42] s2/avx512/s0_c24/set_I_ft_1pct/rep4 (386 left)
+[08:50:02]   s2/avx512/s0_c24/set_I_ft_1pct/rep4: 1566 runs, 6.388 ms/run, card 21.9 W, socket 157 W, server 225 W, ok 1
+[08:50:02] s2/avx512/s0_c24/set_I_ft_0.3pct/rep4 (385 left)
+[08:50:23]   s2/avx512/s0_c24/set_I_ft_0.3pct/rep4: 60 runs, 169.212 ms/run, card 21.8 W, socket 175 W, server 242 W, ok 1
+[08:50:23] s2/avx512/s0_c24/set_I_ft_0.1pct/rep4 (384 left)
+[08:50:48]   s2/avx512/s0_c24/set_I_ft_0.1pct/rep4: 2 runs, 5709.555 ms/run, card 21.7 W, socket 179 W, server 247 W, ok 1
+[08:50:48] s2/avx512/s0_c24/set_I_qe_1pct/rep4 (383 left)
+[08:51:08]   s2/avx512/s0_c24/set_I_qe_1pct/rep4: 10919 runs, 0.916 ms/run, card 21.6 W, socket 154 W, server 222 W, ok 1
+[08:51:08] s2/avx512/s0_c24/set_I_qe_0.3pct/rep4 (382 left)
+[08:51:28]   s2/avx512/s0_c24/set_I_qe_0.3pct/rep4: 852 runs, 11.742 ms/run, card 21.5 W, socket 170 W, server 238 W, ok 1
+[08:51:28] s2/avx512/s0_c24/set_I_qe_0.1pct/rep4 (381 left)
+[08:51:49]   s2/avx512/s0_c24/set_I_qe_0.1pct/rep4: 26 runs, 393.783 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[08:51:49] s2/avx512/s0_c24/set_II_ft_1pct/rep4 (380 left)
+[08:52:09]   s2/avx512/s0_c24/set_II_ft_1pct/rep4: 546 runs, 18.337 ms/run, card 21.5 W, socket 177 W, server 244 W, ok 1
+[08:52:09] s2/avx512/s0_c24/set_II_ft_0.3pct/rep4 (379 left)
+[08:52:31]   s2/avx512/s0_c24/set_II_ft_0.3pct/rep4: 14 runs, 763.822 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[08:52:31] s2/avx512/s0_c24/set_II_ft_0.1pct/rep4 (378 left)
+[08:53:33]   s2/avx512/s0_c24/set_II_ft_0.1pct/rep4: 1 runs, 27211.366 ms/run, card 21.5 W, socket 167 W, server 221 W, ok 1
+[08:53:33] s2/avx512/s0_c24/set_II_qe_1pct/rep4 (377 left)
+[08:53:53]   s2/avx512/s0_c24/set_II_qe_1pct/rep4: 4086 runs, 2.447 ms/run, card 21.5 W, socket 171 W, server 238 W, ok 1
+[08:53:53] s2/avx512/s0_c24/set_II_qe_0.3pct/rep4 (376 left)
+[08:54:14]   s2/avx512/s0_c24/set_II_qe_0.3pct/rep4: 393 runs, 25.450 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[08:54:14] s2/avx512/s0_c24/set_II_qe_0.1pct/rep4 (375 left)
+[08:54:35]   s2/avx512/s0_c24/set_II_qe_0.1pct/rep4: 12 runs, 908.654 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[08:54:35] s2/avx512/s0_c24/set_III_ft_1pct/rep4 (374 left)
+[08:54:55]   s2/avx512/s0_c24/set_III_ft_1pct/rep4: 7341 runs, 1.362 ms/run, card 21.5 W, socket 163 W, server 231 W, ok 1
+[08:54:55] s2/avx512/s0_c24/set_III_ft_0.3pct/rep4 (373 left)
+[08:55:16]   s2/avx512/s0_c24/set_III_ft_0.3pct/rep4: 271 runs, 36.911 ms/run, card 21.5 W, socket 179 W, server 246 W, ok 1
+[08:55:16] s2/avx512/s0_c24/set_III_ft_0.1pct/rep4 (372 left)
+[08:55:37]   s2/avx512/s0_c24/set_III_ft_0.1pct/rep4: 8 runs, 1251.030 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[08:55:37] s2/avx512/s0_c24/set_III_qe_1pct/rep4 (371 left)
+[08:55:57]   s2/avx512/s0_c24/set_III_qe_1pct/rep4: 20961 runs, 0.477 ms/run, card 21.5 W, socket 171 W, server 239 W, ok 1
+[08:55:57] s2/avx512/s0_c24/set_III_qe_0.3pct/rep4 (370 left)
+[08:56:18]   s2/avx512/s0_c24/set_III_qe_0.3pct/rep4: 1944 runs, 5.145 ms/run, card 21.5 W, socket 172 W, server 240 W, ok 1
+[08:56:18] s2/avx512/s0_c24/set_III_qe_0.1pct/rep4 (369 left)
+[08:56:38]   s2/avx512/s0_c24/set_III_qe_0.1pct/rep4: 114 runs, 87.840 ms/run, card 21.5 W, socket 174 W, server 241 W, ok 1
+[08:56:38] s2/avx512/s0_c24/set_P1_ft_1pct/rep4 (368 left)
+[08:56:59]   s2/avx512/s0_c24/set_P1_ft_1pct/rep4: 105982 runs, 0.094 ms/run, card 21.5 W, socket 147 W, server 214 W, ok 1
+[08:56:59] s2/avx512/s0_c24/set_P1_ft_0.3pct/rep4 (367 left)
+[08:57:19]   s2/avx512/s0_c24/set_P1_ft_0.3pct/rep4: 16133 runs, 0.620 ms/run, card 21.5 W, socket 170 W, server 238 W, ok 1
+[08:57:19] s2/avx512/s0_c24/set_P1_ft_0.1pct/rep4 (366 left)
+[08:57:39]   s2/avx512/s0_c24/set_P1_ft_0.1pct/rep4: 734 runs, 13.640 ms/run, card 21.5 W, socket 178 W, server 246 W, ok 1
+[08:57:39] s2/avx512/s0_c24/set_P1_qe_1pct/rep4 (365 left)
+[08:58:00]   s2/avx512/s0_c24/set_P1_qe_1pct/rep4: 129143 runs, 0.077 ms/run, card 21.5 W, socket 143 W, server 211 W, ok 1
+[08:58:00] s2/avx512/s0_c24/set_P1_qe_0.3pct/rep4 (364 left)
+[08:58:20]   s2/avx512/s0_c24/set_P1_qe_0.3pct/rep4: 15125 runs, 0.661 ms/run, card 21.5 W, socket 163 W, server 231 W, ok 1
+[08:58:20] s2/avx512/s0_c24/set_P1_qe_0.1pct/rep4 (363 left)
+[08:58:40]   s2/avx512/s0_c24/set_P1_qe_0.1pct/rep4: 1225 runs, 8.167 ms/run, card 21.5 W, socket 171 W, server 238 W, ok 1
+[08:58:40] s2/avx512/s0_c24/ss_I_ft_M1280/rep4 (362 left)
+[08:59:02]   s2/avx512/s0_c24/ss_I_ft_M1280/rep4: 11 runs, 976.423 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[08:59:02] s2/avx512/s0_c24/ss_I_ft_M5120/rep4 (361 left)
+[08:59:23]   s2/avx512/s0_c24/ss_I_ft_M5120/rep4: 11 runs, 970.984 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[08:59:23] s2/avx512/s0_c24/ss_I_qe_M40/rep4 (360 left)
+[08:59:48]   s2/avx512/s0_c24/ss_I_qe_M40/rep4: 3 runs, 4306.430 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[08:59:48] s2/avx512/s0_c24/ss_I_qe_M80/rep4 (359 left)
+[09:00:12]   s2/avx512/s0_c24/ss_I_qe_M80/rep4: 3 runs, 4262.139 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[09:00:12] s2/avx512/s0_c24/ss_I_qe_M320/rep4 (358 left)
+[09:00:37]   s2/avx512/s0_c24/ss_I_qe_M320/rep4: 3 runs, 4247.230 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[09:00:37] s2/avx512/s0_c24/ss_II_ft_M1920/rep4 (357 left)
+[09:00:58]   s2/avx512/s0_c24/ss_II_ft_M1920/rep4: 11 runs, 969.390 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[09:00:58] s2/avx512/s0_c24/ss_II_ft_M7680/rep4 (356 left)
+[09:01:20]   s2/avx512/s0_c24/ss_II_ft_M7680/rep4: 11 runs, 979.977 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[09:01:20] s2/avx512/s0_c24/ss_II_qe_M60/rep4 (355 left)
+[09:01:44]   s2/avx512/s0_c24/ss_II_qe_M60/rep4: 3 runs, 4110.808 ms/run, card 21.5 W, socket 175 W, server 242 W, ok 1
+[09:01:44] s2/avx512/s0_c24/ss_II_qe_M240/rep4 (354 left)
+[09:02:08]   s2/avx512/s0_c24/ss_II_qe_M240/rep4: 3 runs, 4143.755 ms/run, card 21.5 W, socket 175 W, server 242 W, ok 1
+[09:02:08] s2/avx512/s0_c24/ss_III_ft_M160/rep4 (353 left)
+[09:02:29]   s2/avx512/s0_c24/ss_III_ft_M160/rep4: 10 runs, 1022.707 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[09:02:29] s2/avx512/s0_c24/ss_III_ft_M640/rep4 (352 left)
+[09:02:51]   s2/avx512/s0_c24/ss_III_ft_M640/rep4: 11 runs, 978.450 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[09:02:51] s2/avx512/s0_c24/ss_III_qe_M20/rep4 (351 left)
+[09:03:17]   s2/avx512/s0_c24/ss_III_qe_M20/rep4: 3 runs, 4753.090 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[09:03:17] s2/avx512/s0_c24/ss_III_qe_M40/rep4 (350 left)
+[09:03:43]   s2/avx512/s0_c24/ss_III_qe_M40/rep4: 3 runs, 4513.552 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[09:03:43] s2/avx512/s0_c24/ss_P1_ft_M8/rep4 (349 left)
+[09:04:06]   s2/avx512/s0_c24/ss_P1_ft_M8/rep4: 5 runs, 2153.272 ms/run, card 21.5 W, socket 171 W, server 239 W, ok 1
+[09:04:06] s2/avx512/s0_c24/ss_P1_ft_M16/rep4 (348 left)
+[09:04:28]   s2/avx512/s0_c24/ss_P1_ft_M16/rep4: 7 runs, 1558.601 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[09:04:28] s2/avx512/s0_c24/ss_P1_ft_M64/rep4 (347 left)
+[09:04:49]   s2/avx512/s0_c24/ss_P1_ft_M64/rep4: 9 runs, 1112.080 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[09:04:49] s2/avx512/s0_c24/ss_P1_qe_M1/rep4 (346 left)
+[09:05:14]   s2/avx512/s0_c24/ss_P1_qe_M1/rep4: 2 runs, 5930.346 ms/run, card 21.4 W, socket 165 W, server 233 W, ok 1
+[09:05:14] s2/avx512/s0_c24/ss_P1_qe_M4/rep4 (345 left)
+[09:05:42]   s2/avx512/s0_c24/ss_P1_qe_M4/rep4: 2 runs, 6660.859 ms/run, card 21.4 W, socket 170 W, server 238 W, ok 1
+[09:05:42] s2/avx512/s0_c24/ss_P1_qe_M8/rep4 (344 left)
+[09:06:06]   s2/avx512/s0_c24/ss_P1_qe_M8/rep4: 2 runs, 5469.869 ms/run, card 21.4 W, socket 172 W, server 239 W, ok 1
+[09:06:06] s2/avx512/s01_t96/set_I_ft_1pct/rep4 (343 left)
+[09:06:27]   s2/avx512/s01_t96/set_I_ft_1pct/rep4: 1108 runs, 9.033 ms/run, card 21.4 W, socket 144 W, server 263 W, ok 1
+[09:06:27] s2/avx512/s01_t96/set_I_ft_0.3pct/rep4 (342 left)
+[09:06:47]   s2/avx512/s01_t96/set_I_ft_0.3pct/rep4: 121 runs, 82.772 ms/run, card 21.4 W, socket 163 W, server 325 W, ok 1
+[09:06:47] s2/avx512/s01_t96/set_I_ft_0.1pct/rep4 (341 left)
+[09:07:09]   s2/avx512/s01_t96/set_I_ft_0.1pct/rep4: 5 runs, 2078.713 ms/run, card 21.4 W, socket 177 W, server 355 W, ok 1
+[09:07:09] s2/avx512/s01_t96/set_I_qe_1pct/rep4 (340 left)
+[09:07:30]   s2/avx512/s01_t96/set_I_qe_1pct/rep4: 7824 runs, 1.278 ms/run, card 21.4 W, socket 150 W, server 274 W, ok 1
+[09:07:30] s2/avx512/s01_t96/set_I_qe_0.3pct/rep4 (339 left)
+[09:07:50]   s2/avx512/s01_t96/set_I_qe_0.3pct/rep4: 2071 runs, 4.831 ms/run, card 21.4 W, socket 178 W, server 354 W, ok 1
+[09:07:50] s2/avx512/s01_t96/set_I_qe_0.1pct/rep4 (338 left)
+[09:08:10]   s2/avx512/s01_t96/set_I_qe_0.1pct/rep4: 71 runs, 141.202 ms/run, card 21.4 W, socket 178 W, server 357 W, ok 1
+[09:08:10] s2/avx512/s01_t96/set_II_ft_1pct/rep4 (337 left)
+[09:08:31]   s2/avx512/s01_t96/set_II_ft_1pct/rep4: 373 runs, 26.821 ms/run, card 21.4 W, socket 109 W, server 194 W, ok 1
+[09:08:31] s2/avx512/s01_t96/set_II_ft_0.3pct/rep4 (336 left)
+[09:08:52]   s2/avx512/s01_t96/set_II_ft_0.3pct/rep4: 33 runs, 310.679 ms/run, card 21.4 W, socket 172 W, server 338 W, ok 1
+[09:08:52] s2/avx512/s01_t96/set_II_ft_0.1pct/rep4 (335 left)
+[09:09:29]   s2/avx512/s01_t96/set_II_ft_0.1pct/rep4: 2 runs, 9981.381 ms/run, card 21.4 W, socket 172 W, server 344 W, ok 1
+[09:09:29] s2/avx512/s01_t96/set_II_qe_1pct/rep4 (334 left)
+[09:09:49]   s2/avx512/s01_t96/set_II_qe_1pct/rep4: 5410 runs, 1.849 ms/run, card 21.4 W, socket 165 W, server 315 W, ok 1
+[09:09:49] s2/avx512/s01_t96/set_II_qe_0.3pct/rep4 (333 left)
+[09:10:10]   s2/avx512/s01_t96/set_II_qe_0.3pct/rep4: 966 runs, 10.354 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[09:10:10] s2/avx512/s01_t96/set_II_qe_0.1pct/rep4 (332 left)
+[09:10:31]   s2/avx512/s01_t96/set_II_qe_0.1pct/rep4: 32 runs, 319.892 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:10:31] s2/avx512/s01_t96/set_III_ft_1pct/rep4 (331 left)
+[09:10:51]   s2/avx512/s01_t96/set_III_ft_1pct/rep4: 7997 runs, 1.251 ms/run, card 21.4 W, socket 160 W, server 294 W, ok 1
+[09:10:51] s2/avx512/s01_t96/set_III_ft_0.3pct/rep4 (330 left)
+[09:11:11]   s2/avx512/s01_t96/set_III_ft_0.3pct/rep4: 725 runs, 13.795 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[09:11:11] s2/avx512/s01_t96/set_III_ft_0.1pct/rep4 (329 left)
+[09:11:32]   s2/avx512/s01_t96/set_III_ft_0.1pct/rep4: 22 runs, 458.659 ms/run, card 21.4 W, socket 178 W, server 357 W, ok 1
+[09:11:32] s2/avx512/s01_t96/set_III_qe_1pct/rep4 (328 left)
+[09:11:52]   s2/avx512/s01_t96/set_III_qe_1pct/rep4: 12650 runs, 0.791 ms/run, card 21.4 W, socket 157 W, server 285 W, ok 1
+[09:11:52] s2/avx512/s01_t96/set_III_qe_0.3pct/rep4 (327 left)
+[09:12:13]   s2/avx512/s01_t96/set_III_qe_0.3pct/rep4: 4871 runs, 2.053 ms/run, card 21.4 W, socket 177 W, server 354 W, ok 1
+[09:12:13] s2/avx512/s01_t96/set_III_qe_0.1pct/rep4 (326 left)
+[09:12:33]   s2/avx512/s01_t96/set_III_qe_0.1pct/rep4: 323 runs, 30.980 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[09:12:33] s2/avx512/s01_t96/set_P1_ft_1pct/rep4 (325 left)
+[09:12:53]   s2/avx512/s01_t96/set_P1_ft_1pct/rep4: 49793 runs, 0.201 ms/run, card 21.4 W, socket 140 W, server 266 W, ok 1
+[09:12:53] s2/avx512/s01_t96/set_P1_ft_0.3pct/rep4 (324 left)
+[09:13:14]   s2/avx512/s01_t96/set_P1_ft_0.3pct/rep4: 26474 runs, 0.378 ms/run, card 21.4 W, socket 169 W, server 329 W, ok 1
+[09:13:14] s2/avx512/s01_t96/set_P1_ft_0.1pct/rep4 (323 left)
+[09:13:34]   s2/avx512/s01_t96/set_P1_ft_0.1pct/rep4: 1925 runs, 5.197 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[09:13:34] s2/avx512/s01_t96/set_P1_qe_1pct/rep4 (322 left)
+[09:13:54]   s2/avx512/s01_t96/set_P1_qe_1pct/rep4: 64800 runs, 0.154 ms/run, card 21.4 W, socket 139 W, server 265 W, ok 1
+[09:13:54] s2/avx512/s01_t96/set_P1_qe_0.3pct/rep4 (321 left)
+[09:14:15]   s2/avx512/s01_t96/set_P1_qe_0.3pct/rep4: 26335 runs, 0.380 ms/run, card 21.4 W, socket 163 W, server 319 W, ok 1
+[09:14:15] s2/avx512/s01_t96/set_P1_qe_0.1pct/rep4 (320 left)
+[09:14:35]   s2/avx512/s01_t96/set_P1_qe_0.1pct/rep4: 3280 runs, 3.049 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[09:14:35] s2/avx512/s01_t96/ss_I_ft_M1280/rep4 (319 left)
+[09:14:56]   s2/avx512/s01_t96/ss_I_ft_M1280/rep4: 29 runs, 355.040 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[09:14:56] s2/avx512/s01_t96/ss_I_ft_M5120/rep4 (318 left)
+[09:15:17]   s2/avx512/s01_t96/ss_I_ft_M5120/rep4: 29 runs, 356.697 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[09:15:17] s2/avx512/s01_t96/ss_I_qe_M40/rep4 (317 left)
+[09:15:38]   s2/avx512/s01_t96/ss_I_qe_M40/rep4: 7 runs, 1503.073 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[09:15:38] s2/avx512/s01_t96/ss_I_qe_M80/rep4 (316 left)
+[09:15:59]   s2/avx512/s01_t96/ss_I_qe_M80/rep4: 7 runs, 1493.254 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:15:59] s2/avx512/s01_t96/ss_I_qe_M320/rep4 (315 left)
+[09:16:20]   s2/avx512/s01_t96/ss_I_qe_M320/rep4: 7 runs, 1492.351 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:16:20] s2/avx512/s01_t96/ss_II_ft_M1920/rep4 (314 left)
+[09:16:41]   s2/avx512/s01_t96/ss_II_ft_M1920/rep4: 29 runs, 352.353 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[09:16:41] s2/avx512/s01_t96/ss_II_ft_M7680/rep4 (313 left)
+[09:17:01]   s2/avx512/s01_t96/ss_II_ft_M7680/rep4: 28 runs, 368.263 ms/run, card 21.4 W, socket 176 W, server 354 W, ok 1
+[09:17:01] s2/avx512/s01_t96/ss_II_qe_M60/rep4 (312 left)
+[09:17:22]   s2/avx512/s01_t96/ss_II_qe_M60/rep4: 7 runs, 1458.743 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[09:17:22] s2/avx512/s01_t96/ss_II_qe_M240/rep4 (311 left)
+[09:17:43]   s2/avx512/s01_t96/ss_II_qe_M240/rep4: 7 runs, 1460.697 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:17:43] s2/avx512/s01_t96/ss_III_ft_M160/rep4 (310 left)
+[09:18:04]   s2/avx512/s01_t96/ss_III_ft_M160/rep4: 28 runs, 370.025 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:18:04] s2/avx512/s01_t96/ss_III_ft_M640/rep4 (309 left)
+[09:18:24]   s2/avx512/s01_t96/ss_III_ft_M640/rep4: 29 runs, 351.482 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:18:24] s2/avx512/s01_t96/ss_III_qe_M20/rep4 (308 left)
+[09:18:47]   s2/avx512/s01_t96/ss_III_qe_M20/rep4: 7 runs, 1634.890 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:18:47] s2/avx512/s01_t96/ss_III_qe_M40/rep4 (307 left)
+[09:19:08]   s2/avx512/s01_t96/ss_III_qe_M40/rep4: 7 runs, 1563.719 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:19:08] s2/avx512/s01_t96/ss_P1_ft_M8/rep4 (306 left)
+[09:19:29]   s2/avx512/s01_t96/ss_P1_ft_M8/rep4: 14 runs, 735.573 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:19:29] s2/avx512/s01_t96/ss_P1_ft_M16/rep4 (305 left)
+[09:19:50]   s2/avx512/s01_t96/ss_P1_ft_M16/rep4: 19 runs, 540.152 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[09:19:50] s2/avx512/s01_t96/ss_P1_ft_M64/rep4 (304 left)
+[09:20:11]   s2/avx512/s01_t96/ss_P1_ft_M64/rep4: 26 runs, 394.484 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:20:11] s2/avx512/s01_t96/ss_P1_qe_M1/rep4 (303 left)
+[09:20:34]   s2/avx512/s01_t96/ss_P1_qe_M1/rep4: 6 runs, 1919.705 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:20:34] s2/avx512/s01_t96/ss_P1_qe_M4/rep4 (302 left)
+[09:20:57]   s2/avx512/s01_t96/ss_P1_qe_M4/rep4: 5 runs, 2211.431 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[09:20:57] s2/avx512/s01_t96/ss_P1_qe_M8/rep4 (301 left)
+[09:21:20]   s2/avx512/s01_t96/ss_P1_qe_M8/rep4: 6 runs, 1847.355 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[09:21:20] s2/native/s0_c24/set_I_ft_1pct/rep4 (300 left)
+[09:21:40]   s2/native/s0_c24/set_I_ft_1pct/rep4: 6561 runs, 1.524 ms/run, card 21.4 W, socket 180 W, server 245 W, ok 1
+[09:21:40] s2/native/s0_c24/set_I_ft_0.3pct/rep4 (299 left)
+[09:22:01]   s2/native/s0_c24/set_I_ft_0.3pct/rep4: 154 runs, 65.295 ms/run, card 21.5 W, socket 180 W, server 233 W, ok 1
+[09:22:01] s2/native/s0_c24/set_I_ft_0.1pct/rep4 (298 left)
+[09:22:25]   s2/native/s0_c24/set_I_ft_0.1pct/rep4: 5 runs, 2330.785 ms/run, card 21.5 W, socket 180 W, server 232 W, ok 1
+[09:22:25] s2/native/s0_c24/set_I_qe_1pct/rep4 (297 left)
+[09:22:45]   s2/native/s0_c24/set_I_qe_1pct/rep4: 56942 runs, 0.176 ms/run, card 21.5 W, socket 176 W, server 244 W, ok 1
+[09:22:45] s2/native/s0_c24/set_I_qe_0.3pct/rep4 (296 left)
+[09:23:05]   s2/native/s0_c24/set_I_qe_0.3pct/rep4: 2618 runs, 3.821 ms/run, card 21.5 W, socket 178 W, server 245 W, ok 1
+[09:23:05] s2/native/s0_c24/set_I_qe_0.1pct/rep4 (295 left)
+[09:23:26]   s2/native/s0_c24/set_I_qe_0.1pct/rep4: 73 runs, 138.980 ms/run, card 21.5 W, socket 178 W, server 246 W, ok 1
+[09:23:26] s2/native/s0_c24/set_II_ft_1pct/rep4 (294 left)
+[09:23:46]   s2/native/s0_c24/set_II_ft_1pct/rep4: 1414 runs, 7.076 ms/run, card 21.5 W, socket 180 W, server 233 W, ok 1
+[09:23:46] s2/native/s0_c24/set_II_ft_0.3pct/rep4 (293 left)
+[09:24:07]   s2/native/s0_c24/set_II_ft_0.3pct/rep4: 33 runs, 310.706 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[09:24:07] s2/native/s0_c24/set_II_ft_0.1pct/rep4 (292 left)
+[09:24:38]   s2/native/s0_c24/set_II_ft_0.1pct/rep4: 1 runs, 11520.597 ms/run, card 21.4 W, socket 172 W, server 220 W, ok 1
+[09:24:38] s2/native/s0_c24/set_II_qe_1pct/rep4 (291 left)
+[09:24:58]   s2/native/s0_c24/set_II_qe_1pct/rep4: 12762 runs, 0.784 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[09:24:58] s2/native/s0_c24/set_II_qe_0.3pct/rep4 (290 left)
+[09:25:18]   s2/native/s0_c24/set_II_qe_0.3pct/rep4: 1157 runs, 8.649 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[09:25:18] s2/native/s0_c24/set_II_qe_0.1pct/rep4 (289 left)
+[09:25:39]   s2/native/s0_c24/set_II_qe_0.1pct/rep4: 30 runs, 337.785 ms/run, card 21.4 W, socket 175 W, server 242 W, ok 1
+[09:25:39] s2/native/s0_c24/set_III_ft_1pct/rep4 (288 left)
+[09:25:59]   s2/native/s0_c24/set_III_ft_1pct/rep4: 29645 runs, 0.337 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[09:25:59] s2/native/s0_c24/set_III_ft_0.3pct/rep4 (287 left)
+[09:26:20]   s2/native/s0_c24/set_III_ft_0.3pct/rep4: 696 runs, 14.373 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[09:26:20] s2/native/s0_c24/set_III_ft_0.1pct/rep4 (286 left)
+[09:26:41]   s2/native/s0_c24/set_III_ft_0.1pct/rep4: 20 runs, 511.913 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[09:26:41] s2/native/s0_c24/set_III_qe_1pct/rep4 (285 left)
+[09:27:01]   s2/native/s0_c24/set_III_qe_1pct/rep4: 63152 runs, 0.158 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[09:27:01] s2/native/s0_c24/set_III_qe_0.3pct/rep4 (284 left)
+[09:27:22]   s2/native/s0_c24/set_III_qe_0.3pct/rep4: 5953 runs, 1.680 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[09:27:22] s2/native/s0_c24/set_III_qe_0.1pct/rep4 (283 left)
+[09:27:42]   s2/native/s0_c24/set_III_qe_0.1pct/rep4: 328 runs, 30.503 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[09:27:42] s2/native/s0_c24/set_P1_ft_1pct/rep4 (282 left)
+[09:28:02]   s2/native/s0_c24/set_P1_ft_1pct/rep4: 658334 runs, 0.015 ms/run, card 21.4 W, socket 171 W, server 239 W, ok 1
+[09:28:02] s2/native/s0_c24/set_P1_ft_0.3pct/rep4 (281 left)
+[09:28:23]   s2/native/s0_c24/set_P1_ft_0.3pct/rep4: 57079 runs, 0.175 ms/run, card 21.4 W, socket 180 W, server 238 W, ok 1
+[09:28:23] s2/native/s0_c24/set_P1_ft_0.1pct/rep4 (280 left)
+[09:28:43]   s2/native/s0_c24/set_P1_ft_0.1pct/rep4: 1961 runs, 5.101 ms/run, card 21.4 W, socket 180 W, server 234 W, ok 1
+[09:28:43] s2/native/s0_c24/set_P1_qe_1pct/rep4 (279 left)
+[09:29:04]   s2/native/s0_c24/set_P1_qe_1pct/rep4: 877924 runs, 0.011 ms/run, card 21.4 W, socket 157 W, server 225 W, ok 1
+[09:29:04] s2/native/s0_c24/set_P1_qe_0.3pct/rep4 (278 left)
+[09:29:24]   s2/native/s0_c24/set_P1_qe_0.3pct/rep4: 79625 runs, 0.126 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[09:29:24] s2/native/s0_c24/set_P1_qe_0.1pct/rep4 (277 left)
+[09:29:45]   s2/native/s0_c24/set_P1_qe_0.1pct/rep4: 5262 runs, 1.901 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[09:29:45] s2/native/s0_c24/ss_I_ft_M1280/rep4 (276 left)
+[09:30:05]   s2/native/s0_c24/ss_I_ft_M1280/rep4: 26 runs, 399.417 ms/run, card 21.4 W, socket 180 W, server 231 W, ok 1
+[09:30:05] s2/native/s0_c24/ss_I_ft_M5120/rep4 (275 left)
+[09:30:26]   s2/native/s0_c24/ss_I_ft_M5120/rep4: 26 runs, 397.844 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[09:30:26] s2/native/s0_c24/ss_I_qe_M40/rep4 (274 left)
+[09:30:47]   s2/native/s0_c24/ss_I_qe_M40/rep4: 7 runs, 1503.555 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[09:30:47] s2/native/s0_c24/ss_I_qe_M80/rep4 (273 left)
+[09:31:09]   s2/native/s0_c24/ss_I_qe_M80/rep4: 7 runs, 1478.333 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[09:31:09] s2/native/s0_c24/ss_I_qe_M320/rep4 (272 left)
+[09:31:30]   s2/native/s0_c24/ss_I_qe_M320/rep4: 7 runs, 1521.846 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[09:31:30] s2/native/s0_c24/ss_II_ft_M1920/rep4 (271 left)
+[09:31:51]   s2/native/s0_c24/ss_II_ft_M1920/rep4: 25 runs, 410.124 ms/run, card 21.4 W, socket 178 W, server 232 W, ok 1
+[09:31:51] s2/native/s0_c24/ss_II_ft_M7680/rep4 (270 left)
+[09:32:12]   s2/native/s0_c24/ss_II_ft_M7680/rep4: 26 runs, 398.032 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[09:32:12] s2/native/s0_c24/ss_II_qe_M60/rep4 (269 left)
+[09:32:32]   s2/native/s0_c24/ss_II_qe_M60/rep4: 7 runs, 1443.644 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[09:32:32] s2/native/s0_c24/ss_II_qe_M240/rep4 (268 left)
+[09:32:54]   s2/native/s0_c24/ss_II_qe_M240/rep4: 7 runs, 1520.321 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[09:32:54] s2/native/s0_c24/ss_III_ft_M160/rep4 (267 left)
+[09:33:15]   s2/native/s0_c24/ss_III_ft_M160/rep4: 25 runs, 407.570 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[09:33:15] s2/native/s0_c24/ss_III_ft_M640/rep4 (266 left)
+[09:33:35]   s2/native/s0_c24/ss_III_ft_M640/rep4: 25 runs, 400.995 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[09:33:35] s2/native/s0_c24/ss_III_qe_M20/rep4 (265 left)
+[09:33:58]   s2/native/s0_c24/ss_III_qe_M20/rep4: 7 runs, 1622.167 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[09:33:58] s2/native/s0_c24/ss_III_qe_M40/rep4 (264 left)
+[09:34:19]   s2/native/s0_c24/ss_III_qe_M40/rep4: 7 runs, 1575.500 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[09:34:19] s2/native/s0_c24/ss_P1_ft_M8/rep4 (263 left)
+[09:34:41]   s2/native/s0_c24/ss_P1_ft_M8/rep4: 18 runs, 582.522 ms/run, card 21.4 W, socket 179 W, server 240 W, ok 1
+[09:34:41] s2/native/s0_c24/ss_P1_ft_M16/rep4 (262 left)
+[09:35:02]   s2/native/s0_c24/ss_P1_ft_M16/rep4: 21 runs, 491.671 ms/run, card 21.4 W, socket 179 W, server 236 W, ok 1
+[09:35:02] s2/native/s0_c24/ss_P1_ft_M64/rep4 (261 left)
+[09:35:22]   s2/native/s0_c24/ss_P1_ft_M64/rep4: 24 runs, 419.747 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[09:35:22] s2/native/s0_c24/ss_P1_qe_M1/rep4 (260 left)
+[09:35:44]   s2/native/s0_c24/ss_P1_qe_M1/rep4: 8 runs, 1258.648 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[09:35:44] s2/native/s0_c24/ss_P1_qe_M4/rep4 (259 left)
+[09:36:05]   s2/native/s0_c24/ss_P1_qe_M4/rep4: 7 runs, 1493.771 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[09:36:05] s2/native/s0_c24/ss_P1_qe_M8/rep4 (258 left)
+[09:36:27]   s2/native/s0_c24/ss_P1_qe_M8/rep4: 8 runs, 1278.054 ms/run, card 21.4 W, socket 179 W, server 246 W, ok 1
+[09:36:27] s2/native/s01_t96/set_I_ft_1pct/rep4 (257 left)
+[09:36:47]   s2/native/s01_t96/set_I_ft_1pct/rep4: 13160 runs, 0.760 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[09:36:47] s2/native/s01_t96/set_I_ft_0.3pct/rep4 (256 left)
+[09:37:08]   s2/native/s01_t96/set_I_ft_0.3pct/rep4: 334 runs, 30.026 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[09:37:08] s2/native/s01_t96/set_I_ft_0.1pct/rep4 (255 left)
+[09:37:29]   s2/native/s01_t96/set_I_ft_0.1pct/rep4: 10 runs, 1061.885 ms/run, card 21.4 W, socket 180 W, server 356 W, ok 1
+[09:37:29] s2/native/s01_t96/set_I_qe_1pct/rep4 (254 left)
+[09:37:49]   s2/native/s01_t96/set_I_qe_1pct/rep4: 89167 runs, 0.112 ms/run, card 21.4 W, socket 165 W, server 321 W, ok 1
+[09:37:49] s2/native/s01_t96/set_I_qe_0.3pct/rep4 (253 left)
+[09:38:10]   s2/native/s01_t96/set_I_qe_0.3pct/rep4: 5217 runs, 1.917 ms/run, card 21.4 W, socket 173 W, server 339 W, ok 1
+[09:38:10] s2/native/s01_t96/set_I_qe_0.1pct/rep4 (252 left)
+[09:38:30]   s2/native/s01_t96/set_I_qe_0.1pct/rep4: 146 runs, 68.813 ms/run, card 21.4 W, socket 174 W, server 342 W, ok 1
+[09:38:30] s2/native/s01_t96/set_II_ft_1pct/rep4 (251 left)
+[09:38:51]   s2/native/s01_t96/set_II_ft_1pct/rep4: 2979 runs, 3.358 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[09:38:51] s2/native/s01_t96/set_II_ft_0.3pct/rep4 (250 left)
+[09:39:11]   s2/native/s01_t96/set_II_ft_0.3pct/rep4: 70 runs, 143.285 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[09:39:11] s2/native/s01_t96/set_II_ft_0.1pct/rep4 (249 left)
+[09:39:34]   s2/native/s01_t96/set_II_ft_0.1pct/rep4: 2 runs, 5089.633 ms/run, card 21.4 W, socket 180 W, server 356 W, ok 1
+[09:39:34] s2/native/s01_t96/set_II_qe_1pct/rep4 (248 left)
+[09:39:54]   s2/native/s01_t96/set_II_qe_1pct/rep4: 24271 runs, 0.412 ms/run, card 21.4 W, socket 171 W, server 336 W, ok 1
+[09:39:54] s2/native/s01_t96/set_II_qe_0.3pct/rep4 (247 left)
+[09:40:15]   s2/native/s01_t96/set_II_qe_0.3pct/rep4: 2344 runs, 4.268 ms/run, card 21.4 W, socket 174 W, server 343 W, ok 1
+[09:40:15] s2/native/s01_t96/set_II_qe_0.1pct/rep4 (246 left)
+[09:40:35]   s2/native/s01_t96/set_II_qe_0.1pct/rep4: 63 runs, 159.250 ms/run, card 21.4 W, socket 175 W, server 343 W, ok 1
+[09:40:35] s2/native/s01_t96/set_III_ft_1pct/rep4 (245 left)
+[09:40:55]   s2/native/s01_t96/set_III_ft_1pct/rep4: 55484 runs, 0.180 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[09:40:55] s2/native/s01_t96/set_III_ft_0.3pct/rep4 (244 left)
+[09:41:16]   s2/native/s01_t96/set_III_ft_0.3pct/rep4: 1460 runs, 6.851 ms/run, card 21.4 W, socket 177 W, server 354 W, ok 1
+[09:41:16] s2/native/s01_t96/set_III_ft_0.1pct/rep4 (243 left)
+[09:41:36]   s2/native/s01_t96/set_III_ft_0.1pct/rep4: 43 runs, 233.974 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[09:41:36] s2/native/s01_t96/set_III_qe_1pct/rep4 (242 left)
+[09:41:57]   s2/native/s01_t96/set_III_qe_1pct/rep4: 98049 runs, 0.102 ms/run, card 21.4 W, socket 165 W, server 321 W, ok 1
+[09:41:57] s2/native/s01_t96/set_III_qe_0.3pct/rep4 (241 left)
+[09:42:17]   s2/native/s01_t96/set_III_qe_0.3pct/rep4: 11668 runs, 0.857 ms/run, card 21.4 W, socket 172 W, server 338 W, ok 1
+[09:42:17] s2/native/s01_t96/set_III_qe_0.1pct/rep4 (240 left)
+[09:42:37]   s2/native/s01_t96/set_III_qe_0.1pct/rep4: 669 runs, 14.956 ms/run, card 21.4 W, socket 174 W, server 342 W, ok 1
+[09:42:37] s2/native/s01_t96/set_P1_ft_1pct/rep4 (239 left)
+[09:42:58]   s2/native/s01_t96/set_P1_ft_1pct/rep4: 324839 runs, 0.031 ms/run, card 21.4 W, socket 145 W, server 281 W, ok 1
+[09:42:58] s2/native/s01_t96/set_P1_ft_0.3pct/rep4 (238 left)
+[09:43:18]   s2/native/s01_t96/set_P1_ft_0.3pct/rep4: 96014 runs, 0.104 ms/run, card 21.4 W, socket 176 W, server 348 W, ok 1
+[09:43:18] s2/native/s01_t96/set_P1_ft_0.1pct/rep4 (237 left)
+[09:43:39]   s2/native/s01_t96/set_P1_ft_0.1pct/rep4: 4235 runs, 2.362 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[09:43:39] s2/native/s01_t96/set_P1_qe_1pct/rep4 (236 left)
+[09:43:59]   s2/native/s01_t96/set_P1_qe_1pct/rep4: 334383 runs, 0.030 ms/run, card 21.4 W, socket 137 W, server 267 W, ok 1
+[09:43:59] s2/native/s01_t96/set_P1_qe_0.3pct/rep4 (235 left)
+[09:44:19]   s2/native/s01_t96/set_P1_qe_0.3pct/rep4: 121846 runs, 0.082 ms/run, card 21.4 W, socket 165 W, server 324 W, ok 1
+[09:44:19] s2/native/s01_t96/set_P1_qe_0.1pct/rep4 (234 left)
+[09:44:40]   s2/native/s01_t96/set_P1_qe_0.1pct/rep4: 11025 runs, 0.907 ms/run, card 21.4 W, socket 177 W, server 348 W, ok 1
+[09:44:40] s2/native/s01_t96/ss_I_ft_M1280/rep4 (233 left)
+[09:45:00]   s2/native/s01_t96/ss_I_ft_M1280/rep4: 55 runs, 183.521 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[09:45:00] s2/native/s01_t96/ss_I_ft_M5120/rep4 (232 left)
+[09:45:21]   s2/native/s01_t96/ss_I_ft_M5120/rep4: 55 runs, 182.248 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[09:45:21] s2/native/s01_t96/ss_I_qe_M40/rep4 (231 left)
+[09:45:42]   s2/native/s01_t96/ss_I_qe_M40/rep4: 15 runs, 694.864 ms/run, card 21.4 W, socket 177 W, server 348 W, ok 1
+[09:45:42] s2/native/s01_t96/ss_I_qe_M80/rep4 (230 left)
+[09:46:02]   s2/native/s01_t96/ss_I_qe_M80/rep4: 14 runs, 717.635 ms/run, card 21.4 W, socket 176 W, server 345 W, ok 1
+[09:46:02] s2/native/s01_t96/ss_I_qe_M320/rep4 (229 left)
+[09:46:23]   s2/native/s01_t96/ss_I_qe_M320/rep4: 14 runs, 738.821 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[09:46:23] s2/native/s01_t96/ss_II_ft_M1920/rep4 (228 left)
+[09:46:44]   s2/native/s01_t96/ss_II_ft_M1920/rep4: 55 runs, 183.075 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[09:46:44] s2/native/s01_t96/ss_II_ft_M7680/rep4 (227 left)
+[09:47:04]   s2/native/s01_t96/ss_II_ft_M7680/rep4: 55 runs, 183.292 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[09:47:04] s2/native/s01_t96/ss_II_qe_M60/rep4 (226 left)
+[09:47:26]   s2/native/s01_t96/ss_II_qe_M60/rep4: 15 runs, 696.609 ms/run, card 21.4 W, socket 175 W, server 345 W, ok 1
+[09:47:26] s2/native/s01_t96/ss_II_qe_M240/rep4 (225 left)
+[09:47:46]   s2/native/s01_t96/ss_II_qe_M240/rep4: 14 runs, 721.585 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[09:47:46] s2/native/s01_t96/ss_III_ft_M160/rep4 (224 left)
+[09:48:07]   s2/native/s01_t96/ss_III_ft_M160/rep4: 55 runs, 184.986 ms/run, card 21.4 W, socket 180 W, server 358 W, ok 1
+[09:48:07] s2/native/s01_t96/ss_III_ft_M640/rep4 (223 left)
+[09:48:28]   s2/native/s01_t96/ss_III_ft_M640/rep4: 55 runs, 183.500 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[09:48:28] s2/native/s01_t96/ss_III_qe_M20/rep4 (222 left)
+[09:48:49]   s2/native/s01_t96/ss_III_qe_M20/rep4: 14 runs, 761.943 ms/run, card 21.4 W, socket 176 W, server 346 W, ok 1
+[09:48:49] s2/native/s01_t96/ss_III_qe_M40/rep4 (221 left)
+[09:49:10]   s2/native/s01_t96/ss_III_qe_M40/rep4: 14 runs, 761.834 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[09:49:10] s2/native/s01_t96/ss_P1_ft_M8/rep4 (220 left)
+[09:49:31]   s2/native/s01_t96/ss_P1_ft_M8/rep4: 40 runs, 253.199 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[09:49:31] s2/native/s01_t96/ss_P1_ft_M16/rep4 (219 left)
+[09:49:52]   s2/native/s01_t96/ss_P1_ft_M16/rep4: 47 runs, 216.968 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[09:49:52] s2/native/s01_t96/ss_P1_ft_M64/rep4 (218 left)
+[09:50:12]   s2/native/s01_t96/ss_P1_ft_M64/rep4: 53 runs, 192.023 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[09:50:12] s2/native/s01_t96/ss_P1_qe_M1/rep4 (217 left)
+[09:50:33]   s2/native/s01_t96/ss_P1_qe_M1/rep4: 20 runs, 506.520 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[09:50:33] s2/native/s01_t96/ss_P1_qe_M4/rep4 (216 left)
+[09:50:54]   s2/native/s01_t96/ss_P1_qe_M4/rep4: 16 runs, 650.064 ms/run, card 21.4 W, socket 179 W, server 354 W, ok 1
+[09:50:54] s2/native/s01_t96/ss_P1_qe_M8/rep4 (215 left)
+[09:51:15]   s2/native/s01_t96/ss_P1_qe_M8/rep4: 17 runs, 590.004 ms/run, card 21.4 W, socket 179 W, server 353 W, ok 1
+[09:51:15] s2/fpga/card/set_I_ft_1pct/rep5 (214 left)
+[09:51:40]   s2/fpga/card/set_I_ft_1pct/rep5: 2221 runs, 4.503 ms/run, card 30.4 W, socket 51 W, server 95 W, ok 1
+[09:51:40] s2/fpga/card/set_I_ft_0.3pct/rep5 (213 left)
+[09:52:02]   s2/fpga/card/set_I_ft_0.3pct/rep5: 76 runs, 132.143 ms/run, card 33.0 W, socket 50 W, server 94 W, ok 1
+[09:52:02] s2/fpga/card/set_I_ft_0.1pct/rep5 (212 left)
+[09:52:28]   s2/fpga/card/set_I_ft_0.1pct/rep5: 3 runs, 4661.770 ms/run, card 33.7 W, socket 50 W, server 94 W, ok 1
+[09:52:28] s2/fpga/card/set_I_qe_1pct/rep5 (211 left)
+[09:52:55]   s2/fpga/card/set_I_qe_1pct/rep5: 17455 runs, 0.573 ms/run, card 25.4 W, socket 51 W, server 96 W, ok 1
+[09:52:55] s2/fpga/card/set_I_qe_0.3pct/rep5 (210 left)
+[09:53:16]   s2/fpga/card/set_I_qe_0.3pct/rep5: 1965 runs, 5.090 ms/run, card 32.2 W, socket 50 W, server 94 W, ok 1
+[09:53:16] s2/fpga/card/set_I_qe_0.1pct/rep5 (209 left)
+[09:53:37]   s2/fpga/card/set_I_qe_0.1pct/rep5: 68 runs, 147.381 ms/run, card 36.4 W, socket 50 W, server 94 W, ok 1
+[09:53:37] s2/fpga/card/set_II_ft_1pct/rep5 (208 left)
+[09:54:04]   s2/fpga/card/set_II_ft_1pct/rep5: 655 runs, 15.272 ms/run, card 31.6 W, socket 50 W, server 94 W, ok 1
+[09:54:04] s2/fpga/card/set_II_ft_0.3pct/rep5 (207 left)
+[09:54:25]   s2/fpga/card/set_II_ft_0.3pct/rep5: 16 runs, 626.001 ms/run, card 32.7 W, socket 49 W, server 93 W, ok 1
+[09:54:25] s2/fpga/card/set_II_ft_0.1pct/rep5 (206 left)
+[09:55:18]   s2/fpga/card/set_II_ft_0.1pct/rep5: 1 runs, 22372.155 ms/run, card 33.4 W, socket 49 W, server 93 W, ok 1
+[09:55:18] s2/fpga/card/set_II_qe_1pct/rep5 (205 left)
+[09:55:45]   s2/fpga/card/set_II_qe_1pct/rep5: 5594 runs, 1.788 ms/run, card 27.4 W, socket 51 W, server 95 W, ok 1
+[09:55:45] s2/fpga/card/set_II_qe_0.3pct/rep5 (204 left)
+[09:56:06]   s2/fpga/card/set_II_qe_0.3pct/rep5: 935 runs, 10.704 ms/run, card 31.9 W, socket 49 W, server 94 W, ok 1
+[09:56:06] s2/fpga/card/set_II_qe_0.1pct/rep5 (203 left)
+[09:56:27]   s2/fpga/card/set_II_qe_0.1pct/rep5: 29 runs, 350.162 ms/run, card 34.5 W, socket 49 W, server 94 W, ok 1
+[09:56:27] s2/fpga/card/set_III_ft_1pct/rep5 (202 left)
+[09:56:54]   s2/fpga/card/set_III_ft_1pct/rep5: 10005 runs, 1.000 ms/run, card 31.3 W, socket 81 W, server 149 W, ok 1
+[09:56:54] s2/fpga/card/set_III_ft_0.3pct/rep5 (201 left)
+[09:57:15]   s2/fpga/card/set_III_ft_0.3pct/rep5: 336 runs, 29.810 ms/run, card 34.9 W, socket 49 W, server 94 W, ok 1
+[09:57:15] s2/fpga/card/set_III_ft_0.1pct/rep5 (200 left)
+[09:57:37]   s2/fpga/card/set_III_ft_0.1pct/rep5: 10 runs, 1023.948 ms/run, card 35.5 W, socket 49 W, server 93 W, ok 1
+[09:57:37] s2/fpga/card/set_III_qe_1pct/rep5 (199 left)
+[09:58:04]   s2/fpga/card/set_III_qe_1pct/rep5: 15670 runs, 0.638 ms/run, card 27.1 W, socket 51 W, server 96 W, ok 1
+[09:58:04] s2/fpga/card/set_III_qe_0.3pct/rep5 (198 left)
+[09:58:24]   s2/fpga/card/set_III_qe_0.3pct/rep5: 3636 runs, 2.750 ms/run, card 34.7 W, socket 50 W, server 94 W, ok 1
+[09:58:24] s2/fpga/card/set_III_qe_0.1pct/rep5 (197 left)
+[09:58:46]   s2/fpga/card/set_III_qe_0.1pct/rep5: 307 runs, 32.574 ms/run, card 43.7 W, socket 50 W, server 94 W, ok 1
+[09:58:46] s2/fpga/card/set_P1_ft_1pct/rep5 (196 left)
+[09:59:12]   s2/fpga/card/set_P1_ft_1pct/rep5: 56149 runs, 0.178 ms/run, card 22.5 W, socket 51 W, server 96 W, ok 1
+[09:59:12] s2/fpga/card/set_P1_ft_0.3pct/rep5 (195 left)
+[09:59:33]   s2/fpga/card/set_P1_ft_0.3pct/rep5: 9771 runs, 1.024 ms/run, card 25.2 W, socket 51 W, server 95 W, ok 1
+[09:59:33] s2/fpga/card/set_P1_ft_0.1pct/rep5 (194 left)
+[09:59:55]   s2/fpga/card/set_P1_ft_0.1pct/rep5: 952 runs, 10.512 ms/run, card 33.6 W, socket 50 W, server 94 W, ok 1
+[09:59:55] s2/fpga/card/set_P1_qe_1pct/rep5 (193 left)
+[10:00:22]   s2/fpga/card/set_P1_qe_1pct/rep5: 29881 runs, 0.335 ms/run, card 21.7 W, socket 51 W, server 95 W, ok 1
+[10:00:22] s2/fpga/card/set_P1_qe_0.3pct/rep5 (192 left)
+[10:00:43]   s2/fpga/card/set_P1_qe_0.3pct/rep5: 13349 runs, 0.749 ms/run, card 25.7 W, socket 51 W, server 95 W, ok 1
+[10:00:43] s2/fpga/card/set_P1_qe_0.1pct/rep5 (191 left)
+[10:01:04]   s2/fpga/card/set_P1_qe_0.1pct/rep5: 2773 runs, 3.606 ms/run, card 37.9 W, socket 50 W, server 95 W, ok 1
+[10:01:04] s2/fpga/card/ss_I_ft_M1280/rep5 (190 left)
+[10:01:31]   s2/fpga/card/ss_I_ft_M1280/rep5: 13 runs, 795.540 ms/run, card 32.7 W, socket 50 W, server 93 W, ok 1
+[10:01:31] s2/fpga/card/ss_I_ft_M5120/rep5 (189 left)
+[10:01:53]   s2/fpga/card/ss_I_ft_M5120/rep5: 13 runs, 796.451 ms/run, card 33.1 W, socket 50 W, server 94 W, ok 1
+[10:01:53] s2/fpga/card/ss_I_qe_M40/rep5 (188 left)
+[10:02:21]   s2/fpga/card/ss_I_qe_M40/rep5: 7 runs, 1638.078 ms/run, card 33.4 W, socket 55 W, server 102 W, ok 1
+[10:02:21] s2/fpga/card/ss_I_qe_M80/rep5 (187 left)
+[10:02:44]   s2/fpga/card/ss_I_qe_M80/rep5: 7 runs, 1613.240 ms/run, card 34.6 W, socket 50 W, server 94 W, ok 1
+[10:02:44] s2/fpga/card/ss_I_qe_M320/rep5 (186 left)
+[10:03:06]   s2/fpga/card/ss_I_qe_M320/rep5: 7 runs, 1594.692 ms/run, card 36.6 W, socket 50 W, server 94 W, ok 1
+[10:03:06] s2/fpga/card/ss_II_ft_M1920/rep5 (185 left)
+[10:03:34]   s2/fpga/card/ss_II_ft_M1920/rep5: 13 runs, 795.665 ms/run, card 32.4 W, socket 55 W, server 103 W, ok 1
+[10:03:34] s2/fpga/card/ss_II_ft_M7680/rep5 (184 left)
+[10:03:55]   s2/fpga/card/ss_II_ft_M7680/rep5: 13 runs, 796.067 ms/run, card 32.8 W, socket 50 W, server 94 W, ok 1
+[10:03:55] s2/fpga/card/ss_II_qe_M60/rep5 (183 left)
+[10:04:23]   s2/fpga/card/ss_II_qe_M60/rep5: 7 runs, 1621.456 ms/run, card 32.8 W, socket 49 W, server 93 W, ok 1
+[10:04:23] s2/fpga/card/ss_II_qe_M240/rep5 (182 left)
+[10:04:46]   s2/fpga/card/ss_II_qe_M240/rep5: 7 runs, 1596.728 ms/run, card 34.5 W, socket 49 W, server 93 W, ok 1
+[10:04:46] s2/fpga/card/ss_III_ft_M160/rep5 (181 left)
+[10:05:13]   s2/fpga/card/ss_III_ft_M160/rep5: 13 runs, 800.738 ms/run, card 34.9 W, socket 49 W, server 94 W, ok 1
+[10:05:13] s2/fpga/card/ss_III_ft_M640/rep5 (180 left)
+[10:05:35]   s2/fpga/card/ss_III_ft_M640/rep5: 13 runs, 796.260 ms/run, card 35.3 W, socket 50 W, server 94 W, ok 1
+[10:05:35] s2/fpga/card/ss_III_qe_M20/rep5 (179 left)
+[10:06:02]   s2/fpga/card/ss_III_qe_M20/rep5: 6 runs, 1687.725 ms/run, card 42.0 W, socket 50 W, server 94 W, ok 1
+[10:06:02] s2/fpga/card/ss_III_qe_M40/rep5 (178 left)
+[10:06:24]   s2/fpga/card/ss_III_qe_M40/rep5: 7 runs, 1638.135 ms/run, card 44.6 W, socket 50 W, server 94 W, ok 1
+[10:06:24] s2/fpga/card/ss_P1_ft_M8/rep5 (177 left)
+[10:06:52]   s2/fpga/card/ss_P1_ft_M8/rep5: 11 runs, 913.053 ms/run, card 34.4 W, socket 50 W, server 94 W, ok 1
+[10:06:52] s2/fpga/card/ss_P1_ft_M16/rep5 (176 left)
+[10:07:14]   s2/fpga/card/ss_P1_ft_M16/rep5: 12 runs, 853.842 ms/run, card 34.6 W, socket 50 W, server 94 W, ok 1
+[10:07:14] s2/fpga/card/ss_P1_ft_M64/rep5 (175 left)
+[10:07:36]   s2/fpga/card/ss_P1_ft_M64/rep5: 13 runs, 809.397 ms/run, card 34.8 W, socket 50 W, server 94 W, ok 1
+[10:07:36] s2/fpga/card/ss_P1_qe_M1/rep5 (174 left)
+[10:08:04]   s2/fpga/card/ss_P1_qe_M1/rep5: 5 runs, 2046.402 ms/run, card 28.9 W, socket 50 W, server 94 W, ok 1
+[10:08:04] s2/fpga/card/ss_P1_qe_M4/rep5 (173 left)
+[10:08:26]   s2/fpga/card/ss_P1_qe_M4/rep5: 5 runs, 2084.480 ms/run, card 40.4 W, socket 50 W, server 94 W, ok 1
+[10:08:26] s2/fpga/card/ss_P1_qe_M8/rep5 (172 left)
+[10:08:49]   s2/fpga/card/ss_P1_qe_M8/rep5: 6 runs, 1836.339 ms/run, card 44.0 W, socket 50 W, server 94 W, ok 1
+[10:08:49] s2/avx512/s0_c24/set_I_ft_1pct/rep5 (171 left)
+[10:09:09]   s2/avx512/s0_c24/set_I_ft_1pct/rep5: 1594 runs, 6.277 ms/run, card 21.9 W, socket 158 W, server 225 W, ok 1
+[10:09:09] s2/avx512/s0_c24/set_I_ft_0.3pct/rep5 (170 left)
+[10:09:30]   s2/avx512/s0_c24/set_I_ft_0.3pct/rep5: 60 runs, 168.248 ms/run, card 21.8 W, socket 176 W, server 243 W, ok 1
+[10:09:30] s2/avx512/s0_c24/set_I_ft_0.1pct/rep5 (169 left)
+[10:09:55]   s2/avx512/s0_c24/set_I_ft_0.1pct/rep5: 2 runs, 5704.786 ms/run, card 21.6 W, socket 179 W, server 247 W, ok 1
+[10:09:55] s2/avx512/s0_c24/set_I_qe_1pct/rep5 (168 left)
+[10:10:15]   s2/avx512/s0_c24/set_I_qe_1pct/rep5: 10947 runs, 0.914 ms/run, card 21.6 W, socket 155 W, server 222 W, ok 1
+[10:10:15] s2/avx512/s0_c24/set_I_qe_0.3pct/rep5 (167 left)
+[10:10:35]   s2/avx512/s0_c24/set_I_qe_0.3pct/rep5: 852 runs, 11.750 ms/run, card 21.5 W, socket 170 W, server 238 W, ok 1
+[10:10:35] s2/avx512/s0_c24/set_I_qe_0.1pct/rep5 (166 left)
+[10:10:56]   s2/avx512/s0_c24/set_I_qe_0.1pct/rep5: 26 runs, 393.805 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[10:10:56] s2/avx512/s0_c24/set_II_ft_1pct/rep5 (165 left)
+[10:11:17]   s2/avx512/s0_c24/set_II_ft_1pct/rep5: 545 runs, 18.359 ms/run, card 21.5 W, socket 177 W, server 245 W, ok 1
+[10:11:17] s2/avx512/s0_c24/set_II_ft_0.3pct/rep5 (164 left)
+[10:11:38]   s2/avx512/s0_c24/set_II_ft_0.3pct/rep5: 14 runs, 764.382 ms/run, card 21.4 W, socket 179 W, server 247 W, ok 1
+[10:11:38] s2/avx512/s0_c24/set_II_ft_0.1pct/rep5 (163 left)
+[10:12:40]   s2/avx512/s0_c24/set_II_ft_0.1pct/rep5: 1 runs, 27203.097 ms/run, card 21.4 W, socket 167 W, server 220 W, ok 1
+[10:12:40] s2/avx512/s0_c24/set_II_qe_1pct/rep5 (162 left)
+[10:13:01]   s2/avx512/s0_c24/set_II_qe_1pct/rep5: 4077 runs, 2.453 ms/run, card 21.4 W, socket 171 W, server 238 W, ok 1
+[10:13:01] s2/avx512/s0_c24/set_II_qe_0.3pct/rep5 (161 left)
+[10:13:21]   s2/avx512/s0_c24/set_II_qe_0.3pct/rep5: 392 runs, 25.563 ms/run, card 21.4 W, socket 173 W, server 241 W, ok 1
+[10:13:21] s2/avx512/s0_c24/set_II_qe_0.1pct/rep5 (160 left)
+[10:13:42]   s2/avx512/s0_c24/set_II_qe_0.1pct/rep5: 12 runs, 908.826 ms/run, card 21.4 W, socket 175 W, server 242 W, ok 1
+[10:13:42] s2/avx512/s0_c24/set_III_ft_1pct/rep5 (159 left)
+[10:14:03]   s2/avx512/s0_c24/set_III_ft_1pct/rep5: 7339 runs, 1.363 ms/run, card 21.4 W, socket 163 W, server 231 W, ok 1
+[10:14:03] s2/avx512/s0_c24/set_III_ft_0.3pct/rep5 (158 left)
+[10:14:23]   s2/avx512/s0_c24/set_III_ft_0.3pct/rep5: 271 runs, 36.910 ms/run, card 21.4 W, socket 179 W, server 246 W, ok 1
+[10:14:23] s2/avx512/s0_c24/set_III_ft_0.1pct/rep5 (157 left)
+[10:14:45]   s2/avx512/s0_c24/set_III_ft_0.1pct/rep5: 8 runs, 1251.545 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[10:14:45] s2/avx512/s0_c24/set_III_qe_1pct/rep5 (156 left)
+[10:15:05]   s2/avx512/s0_c24/set_III_qe_1pct/rep5: 20961 runs, 0.477 ms/run, card 21.5 W, socket 171 W, server 239 W, ok 1
+[10:15:05] s2/avx512/s0_c24/set_III_qe_0.3pct/rep5 (155 left)
+[10:15:26]   s2/avx512/s0_c24/set_III_qe_0.3pct/rep5: 1944 runs, 5.145 ms/run, card 21.5 W, socket 172 W, server 240 W, ok 1
+[10:15:26] s2/avx512/s0_c24/set_III_qe_0.1pct/rep5 (154 left)
+[10:15:46]   s2/avx512/s0_c24/set_III_qe_0.1pct/rep5: 115 runs, 87.241 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[10:15:46] s2/avx512/s0_c24/set_P1_ft_1pct/rep5 (153 left)
+[10:16:07]   s2/avx512/s0_c24/set_P1_ft_1pct/rep5: 105539 runs, 0.095 ms/run, card 21.5 W, socket 146 W, server 214 W, ok 1
+[10:16:07] s2/avx512/s0_c24/set_P1_ft_0.3pct/rep5 (152 left)
+[10:16:27]   s2/avx512/s0_c24/set_P1_ft_0.3pct/rep5: 16151 runs, 0.619 ms/run, card 21.5 W, socket 170 W, server 238 W, ok 1
+[10:16:27] s2/avx512/s0_c24/set_P1_ft_0.1pct/rep5 (151 left)
+[10:16:47]   s2/avx512/s0_c24/set_P1_ft_0.1pct/rep5: 734 runs, 13.642 ms/run, card 21.5 W, socket 179 W, server 246 W, ok 1
+[10:16:47] s2/avx512/s0_c24/set_P1_qe_1pct/rep5 (150 left)
+[10:17:08]   s2/avx512/s0_c24/set_P1_qe_1pct/rep5: 130910 runs, 0.076 ms/run, card 21.5 W, socket 143 W, server 211 W, ok 1
+[10:17:08] s2/avx512/s0_c24/set_P1_qe_0.3pct/rep5 (149 left)
+[10:17:28]   s2/avx512/s0_c24/set_P1_qe_0.3pct/rep5: 15134 runs, 0.661 ms/run, card 21.5 W, socket 163 W, server 231 W, ok 1
+[10:17:28] s2/avx512/s0_c24/set_P1_qe_0.1pct/rep5 (148 left)
+[10:17:49]   s2/avx512/s0_c24/set_P1_qe_0.1pct/rep5: 1225 runs, 8.167 ms/run, card 21.4 W, socket 171 W, server 239 W, ok 1
+[10:17:49] s2/avx512/s0_c24/ss_I_ft_M1280/rep5 (147 left)
+[10:18:10]   s2/avx512/s0_c24/ss_I_ft_M1280/rep5: 11 runs, 970.529 ms/run, card 21.4 W, socket 180 W, server 248 W, ok 1
+[10:18:10] s2/avx512/s0_c24/ss_I_ft_M5120/rep5 (146 left)
+[10:18:31]   s2/avx512/s0_c24/ss_I_ft_M5120/rep5: 11 runs, 971.227 ms/run, card 21.4 W, socket 180 W, server 247 W, ok 1
+[10:18:31] s2/avx512/s0_c24/ss_I_qe_M40/rep5 (145 left)
+[10:18:56]   s2/avx512/s0_c24/ss_I_qe_M40/rep5: 3 runs, 4306.208 ms/run, card 21.4 W, socket 174 W, server 242 W, ok 1
+[10:18:56] s2/avx512/s0_c24/ss_I_qe_M80/rep5 (144 left)
+[10:19:21]   s2/avx512/s0_c24/ss_I_qe_M80/rep5: 3 runs, 4259.355 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[10:19:21] s2/avx512/s0_c24/ss_I_qe_M320/rep5 (143 left)
+[10:19:46]   s2/avx512/s0_c24/ss_I_qe_M320/rep5: 3 runs, 4246.788 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[10:19:46] s2/avx512/s0_c24/ss_II_ft_M1920/rep5 (142 left)
+[10:20:07]   s2/avx512/s0_c24/ss_II_ft_M1920/rep5: 11 runs, 968.957 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[10:20:07] s2/avx512/s0_c24/ss_II_ft_M7680/rep5 (141 left)
+[10:20:28]   s2/avx512/s0_c24/ss_II_ft_M7680/rep5: 11 runs, 978.302 ms/run, card 21.5 W, socket 179 W, server 247 W, ok 1
+[10:20:28] s2/avx512/s0_c24/ss_II_qe_M60/rep5 (140 left)
+[10:20:53]   s2/avx512/s0_c24/ss_II_qe_M60/rep5: 3 runs, 4110.589 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[10:20:53] s2/avx512/s0_c24/ss_II_qe_M240/rep5 (139 left)
+[10:21:17]   s2/avx512/s0_c24/ss_II_qe_M240/rep5: 3 runs, 4149.823 ms/run, card 21.5 W, socket 175 W, server 242 W, ok 1
+[10:21:17] s2/avx512/s0_c24/ss_III_ft_M160/rep5 (138 left)
+[10:21:38]   s2/avx512/s0_c24/ss_III_ft_M160/rep5: 10 runs, 1024.750 ms/run, card 21.5 W, socket 180 W, server 248 W, ok 1
+[10:21:38] s2/avx512/s0_c24/ss_III_ft_M640/rep5 (137 left)
+[10:21:59]   s2/avx512/s0_c24/ss_III_ft_M640/rep5: 11 runs, 980.855 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[10:21:59] s2/avx512/s0_c24/ss_III_qe_M20/rep5 (136 left)
+[10:22:26]   s2/avx512/s0_c24/ss_III_qe_M20/rep5: 3 runs, 4751.842 ms/run, card 21.5 W, socket 173 W, server 241 W, ok 1
+[10:22:26] s2/avx512/s0_c24/ss_III_qe_M40/rep5 (135 left)
+[10:22:52]   s2/avx512/s0_c24/ss_III_qe_M40/rep5: 3 runs, 4516.939 ms/run, card 21.5 W, socket 174 W, server 242 W, ok 1
+[10:22:52] s2/avx512/s0_c24/ss_P1_ft_M8/rep5 (134 left)
+[10:23:15]   s2/avx512/s0_c24/ss_P1_ft_M8/rep5: 5 runs, 2153.010 ms/run, card 21.5 W, socket 172 W, server 239 W, ok 1
+[10:23:15] s2/avx512/s0_c24/ss_P1_ft_M16/rep5 (133 left)
+[10:23:36]   s2/avx512/s0_c24/ss_P1_ft_M16/rep5: 7 runs, 1557.545 ms/run, card 21.5 W, socket 175 W, server 243 W, ok 1
+[10:23:36] s2/avx512/s0_c24/ss_P1_ft_M64/rep5 (132 left)
+[10:23:57]   s2/avx512/s0_c24/ss_P1_ft_M64/rep5: 9 runs, 1111.726 ms/run, card 21.5 W, socket 180 W, server 247 W, ok 1
+[10:23:57] s2/avx512/s0_c24/ss_P1_qe_M1/rep5 (131 left)
+[10:24:23]   s2/avx512/s0_c24/ss_P1_qe_M1/rep5: 2 runs, 5932.091 ms/run, card 21.5 W, socket 165 W, server 233 W, ok 1
+[10:24:23] s2/avx512/s0_c24/ss_P1_qe_M4/rep5 (130 left)
+[10:24:50]   s2/avx512/s0_c24/ss_P1_qe_M4/rep5: 2 runs, 6661.625 ms/run, card 21.5 W, socket 170 W, server 238 W, ok 1
+[10:24:50] s2/avx512/s0_c24/ss_P1_qe_M8/rep5 (129 left)
+[10:25:14]   s2/avx512/s0_c24/ss_P1_qe_M8/rep5: 2 runs, 5463.955 ms/run, card 21.4 W, socket 172 W, server 239 W, ok 1
+[10:25:14] s2/avx512/s01_t96/set_I_ft_1pct/rep5 (128 left)
+[10:25:35]   s2/avx512/s01_t96/set_I_ft_1pct/rep5: 1103 runs, 9.075 ms/run, card 21.4 W, socket 146 W, server 261 W, ok 1
+[10:25:35] s2/avx512/s01_t96/set_I_ft_0.3pct/rep5 (127 left)
+[10:25:55]   s2/avx512/s01_t96/set_I_ft_0.3pct/rep5: 122 runs, 82.543 ms/run, card 21.4 W, socket 171 W, server 317 W, ok 1
+[10:25:55] s2/avx512/s01_t96/set_I_ft_0.1pct/rep5 (126 left)
+[10:26:17]   s2/avx512/s01_t96/set_I_ft_0.1pct/rep5: 5 runs, 2080.766 ms/run, card 21.4 W, socket 176 W, server 355 W, ok 1
+[10:26:17] s2/avx512/s01_t96/set_I_qe_1pct/rep5 (125 left)
+[10:26:38]   s2/avx512/s01_t96/set_I_qe_1pct/rep5: 7788 runs, 1.284 ms/run, card 21.4 W, socket 147 W, server 274 W, ok 1
+[10:26:38] s2/avx512/s01_t96/set_I_qe_0.3pct/rep5 (124 left)
+[10:26:58]   s2/avx512/s01_t96/set_I_qe_0.3pct/rep5: 2058 runs, 4.860 ms/run, card 21.4 W, socket 175 W, server 352 W, ok 1
+[10:26:58] s2/avx512/s01_t96/set_I_qe_0.1pct/rep5 (123 left)
+[10:27:19]   s2/avx512/s01_t96/set_I_qe_0.1pct/rep5: 71 runs, 141.359 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[10:27:19] s2/avx512/s01_t96/set_II_ft_1pct/rep5 (122 left)
+[10:27:39]   s2/avx512/s01_t96/set_II_ft_1pct/rep5: 379 runs, 26.412 ms/run, card 21.4 W, socket 106 W, server 182 W, ok 1
+[10:27:39] s2/avx512/s01_t96/set_II_ft_0.3pct/rep5 (121 left)
+[10:28:00]   s2/avx512/s01_t96/set_II_ft_0.3pct/rep5: 29 runs, 354.330 ms/run, card 21.4 W, socket 165 W, server 321 W, ok 1
+[10:28:00] s2/avx512/s01_t96/set_II_ft_0.1pct/rep5 (120 left)
+[10:28:37]   s2/avx512/s01_t96/set_II_ft_0.1pct/rep5: 2 runs, 9903.398 ms/run, card 21.4 W, socket 173 W, server 346 W, ok 1
+[10:28:37] s2/avx512/s01_t96/set_II_qe_1pct/rep5 (119 left)
+[10:28:58]   s2/avx512/s01_t96/set_II_qe_1pct/rep5: 5269 runs, 1.898 ms/run, card 21.4 W, socket 173 W, server 311 W, ok 1
+[10:28:58] s2/avx512/s01_t96/set_II_qe_0.3pct/rep5 (118 left)
+[10:29:18]   s2/avx512/s01_t96/set_II_qe_0.3pct/rep5: 963 runs, 10.393 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[10:29:18] s2/avx512/s01_t96/set_II_qe_0.1pct/rep5 (117 left)
+[10:29:39]   s2/avx512/s01_t96/set_II_qe_0.1pct/rep5: 32 runs, 319.536 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[10:29:39] s2/avx512/s01_t96/set_III_ft_1pct/rep5 (116 left)
+[10:29:59]   s2/avx512/s01_t96/set_III_ft_1pct/rep5: 7916 runs, 1.263 ms/run, card 21.4 W, socket 159 W, server 293 W, ok 1
+[10:29:59] s2/avx512/s01_t96/set_III_ft_0.3pct/rep5 (115 left)
+[10:30:20]   s2/avx512/s01_t96/set_III_ft_0.3pct/rep5: 722 runs, 13.858 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[10:30:20] s2/avx512/s01_t96/set_III_ft_0.1pct/rep5 (114 left)
+[10:30:40]   s2/avx512/s01_t96/set_III_ft_0.1pct/rep5: 22 runs, 456.224 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[10:30:40] s2/avx512/s01_t96/set_III_qe_1pct/rep5 (113 left)
+[10:31:00]   s2/avx512/s01_t96/set_III_qe_1pct/rep5: 11920 runs, 0.839 ms/run, card 21.4 W, socket 152 W, server 282 W, ok 1
+[10:31:00] s2/avx512/s01_t96/set_III_qe_0.3pct/rep5 (112 left)
+[10:31:21]   s2/avx512/s01_t96/set_III_qe_0.3pct/rep5: 4904 runs, 2.039 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[10:31:21] s2/avx512/s01_t96/set_III_qe_0.1pct/rep5 (111 left)
+[10:31:41]   s2/avx512/s01_t96/set_III_qe_0.1pct/rep5: 323 runs, 31.038 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[10:31:41] s2/avx512/s01_t96/set_P1_ft_1pct/rep5 (110 left)
+[10:32:01]   s2/avx512/s01_t96/set_P1_ft_1pct/rep5: 48160 runs, 0.208 ms/run, card 21.4 W, socket 139 W, server 266 W, ok 1
+[10:32:01] s2/avx512/s01_t96/set_P1_ft_0.3pct/rep5 (109 left)
+[10:32:22]   s2/avx512/s01_t96/set_P1_ft_0.3pct/rep5: 21519 runs, 0.465 ms/run, card 21.4 W, socket 157 W, server 307 W, ok 1
+[10:32:22] s2/avx512/s01_t96/set_P1_ft_0.1pct/rep5 (108 left)
+[10:32:42]   s2/avx512/s01_t96/set_P1_ft_0.1pct/rep5: 1917 runs, 5.218 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[10:32:42] s2/avx512/s01_t96/set_P1_qe_1pct/rep5 (107 left)
+[10:33:02]   s2/avx512/s01_t96/set_P1_qe_1pct/rep5: 63741 runs, 0.157 ms/run, card 21.3 W, socket 139 W, server 264 W, ok 1
+[10:33:02] s2/avx512/s01_t96/set_P1_qe_0.3pct/rep5 (106 left)
+[10:33:23]   s2/avx512/s01_t96/set_P1_qe_0.3pct/rep5: 26431 runs, 0.378 ms/run, card 21.3 W, socket 164 W, server 320 W, ok 1
+[10:33:23] s2/avx512/s01_t96/set_P1_qe_0.1pct/rep5 (105 left)
+[10:33:43]   s2/avx512/s01_t96/set_P1_qe_0.1pct/rep5: 3263 runs, 3.065 ms/run, card 21.3 W, socket 178 W, server 355 W, ok 1
+[10:33:43] s2/avx512/s01_t96/ss_I_ft_M1280/rep5 (104 left)
+[10:34:04]   s2/avx512/s01_t96/ss_I_ft_M1280/rep5: 29 runs, 356.703 ms/run, card 21.3 W, socket 180 W, server 358 W, ok 1
+[10:34:04] s2/avx512/s01_t96/ss_I_ft_M5120/rep5 (103 left)
+[10:34:25]   s2/avx512/s01_t96/ss_I_ft_M5120/rep5: 28 runs, 369.898 ms/run, card 21.3 W, socket 176 W, server 351 W, ok 1
+[10:34:25] s2/avx512/s01_t96/ss_I_qe_M40/rep5 (102 left)
+[10:34:46]   s2/avx512/s01_t96/ss_I_qe_M40/rep5: 7 runs, 1503.451 ms/run, card 21.3 W, socket 180 W, server 359 W, ok 1
+[10:34:46] s2/avx512/s01_t96/ss_I_qe_M80/rep5 (101 left)
+[10:35:07]   s2/avx512/s01_t96/ss_I_qe_M80/rep5: 7 runs, 1488.538 ms/run, card 21.3 W, socket 180 W, server 359 W, ok 1
+[10:35:07] s2/avx512/s01_t96/ss_I_qe_M320/rep5 (100 left)
+[10:35:28]   s2/avx512/s01_t96/ss_I_qe_M320/rep5: 7 runs, 1488.357 ms/run, card 21.3 W, socket 180 W, server 360 W, ok 1
+[10:35:28] s2/avx512/s01_t96/ss_II_ft_M1920/rep5 (99 left)
+[10:35:49]   s2/avx512/s01_t96/ss_II_ft_M1920/rep5: 29 runs, 351.807 ms/run, card 21.3 W, socket 179 W, server 358 W, ok 1
+[10:35:49] s2/avx512/s01_t96/ss_II_ft_M7680/rep5 (98 left)
+[10:36:09]   s2/avx512/s01_t96/ss_II_ft_M7680/rep5: 27 runs, 374.544 ms/run, card 21.3 W, socket 176 W, server 352 W, ok 1
+[10:36:09] s2/avx512/s01_t96/ss_II_qe_M60/rep5 (97 left)
+[10:36:30]   s2/avx512/s01_t96/ss_II_qe_M60/rep5: 7 runs, 1451.783 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[10:36:30] s2/avx512/s01_t96/ss_II_qe_M240/rep5 (96 left)
+[10:36:51]   s2/avx512/s01_t96/ss_II_qe_M240/rep5: 7 runs, 1460.907 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[10:36:51] s2/avx512/s01_t96/ss_III_ft_M160/rep5 (95 left)
+[10:37:11]   s2/avx512/s01_t96/ss_III_ft_M160/rep5: 28 runs, 367.251 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[10:37:11] s2/avx512/s01_t96/ss_III_ft_M640/rep5 (94 left)
+[10:37:32]   s2/avx512/s01_t96/ss_III_ft_M640/rep5: 29 runs, 353.260 ms/run, card 21.4 W, socket 180 W, server 358 W, ok 1
+[10:37:32] s2/avx512/s01_t96/ss_III_qe_M20/rep5 (93 left)
+[10:37:55]   s2/avx512/s01_t96/ss_III_qe_M20/rep5: 7 runs, 1642.630 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[10:37:55] s2/avx512/s01_t96/ss_III_qe_M40/rep5 (92 left)
+[10:38:16]   s2/avx512/s01_t96/ss_III_qe_M40/rep5: 7 runs, 1564.212 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[10:38:16] s2/avx512/s01_t96/ss_P1_ft_M8/rep5 (91 left)
+[10:38:37]   s2/avx512/s01_t96/ss_P1_ft_M8/rep5: 14 runs, 735.332 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[10:38:37] s2/avx512/s01_t96/ss_P1_ft_M16/rep5 (90 left)
+[10:38:58]   s2/avx512/s01_t96/ss_P1_ft_M16/rep5: 19 runs, 542.102 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[10:38:58] s2/avx512/s01_t96/ss_P1_ft_M64/rep5 (89 left)
+[10:39:19]   s2/avx512/s01_t96/ss_P1_ft_M64/rep5: 26 runs, 394.584 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[10:39:19] s2/avx512/s01_t96/ss_P1_qe_M1/rep5 (88 left)
+[10:39:42]   s2/avx512/s01_t96/ss_P1_qe_M1/rep5: 6 runs, 1919.829 ms/run, card 21.4 W, socket 180 W, server 359 W, ok 1
+[10:39:42] s2/avx512/s01_t96/ss_P1_qe_M4/rep5 (87 left)
+[10:40:05]   s2/avx512/s01_t96/ss_P1_qe_M4/rep5: 5 runs, 2208.692 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[10:40:05] s2/avx512/s01_t96/ss_P1_qe_M8/rep5 (86 left)
+[10:40:28]   s2/avx512/s01_t96/ss_P1_qe_M8/rep5: 6 runs, 1849.668 ms/run, card 21.4 W, socket 180 W, server 360 W, ok 1
+[10:40:28] s2/native/s0_c24/set_I_ft_1pct/rep5 (85 left)
+[10:40:48]   s2/native/s0_c24/set_I_ft_1pct/rep5: 6474 runs, 1.545 ms/run, card 21.4 W, socket 180 W, server 242 W, ok 1
+[10:40:48] s2/native/s0_c24/set_I_ft_0.3pct/rep5 (84 left)
+[10:41:08]   s2/native/s0_c24/set_I_ft_0.3pct/rep5: 155 runs, 64.924 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[10:41:08] s2/native/s0_c24/set_I_ft_0.1pct/rep5 (83 left)
+[10:41:33]   s2/native/s0_c24/set_I_ft_0.1pct/rep5: 5 runs, 2338.666 ms/run, card 21.4 W, socket 179 W, server 232 W, ok 1
+[10:41:33] s2/native/s0_c24/set_I_qe_1pct/rep5 (82 left)
+[10:41:53]   s2/native/s0_c24/set_I_qe_1pct/rep5: 55584 runs, 0.180 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[10:41:53] s2/native/s0_c24/set_I_qe_0.3pct/rep5 (81 left)
+[10:42:13]   s2/native/s0_c24/set_I_qe_0.3pct/rep5: 2620 runs, 3.818 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[10:42:13] s2/native/s0_c24/set_I_qe_0.1pct/rep5 (80 left)
+[10:42:34]   s2/native/s0_c24/set_I_qe_0.1pct/rep5: 72 runs, 139.691 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[10:42:34] s2/native/s0_c24/set_II_ft_1pct/rep5 (79 left)
+[10:42:54]   s2/native/s0_c24/set_II_ft_1pct/rep5: 1410 runs, 7.096 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[10:42:54] s2/native/s0_c24/set_II_ft_0.3pct/rep5 (78 left)
+[10:43:15]   s2/native/s0_c24/set_II_ft_0.3pct/rep5: 33 runs, 312.177 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[10:43:15] s2/native/s0_c24/set_II_ft_0.1pct/rep5 (77 left)
+[10:43:45]   s2/native/s0_c24/set_II_ft_0.1pct/rep5: 1 runs, 11370.677 ms/run, card 21.4 W, socket 173 W, server 221 W, ok 1
+[10:43:45] s2/native/s0_c24/set_II_qe_1pct/rep5 (76 left)
+[10:44:06]   s2/native/s0_c24/set_II_qe_1pct/rep5: 12797 runs, 0.781 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[10:44:06] s2/native/s0_c24/set_II_qe_0.3pct/rep5 (75 left)
+[10:44:26]   s2/native/s0_c24/set_II_qe_0.3pct/rep5: 1158 runs, 8.640 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[10:44:26] s2/native/s0_c24/set_II_qe_0.1pct/rep5 (74 left)
+[10:44:47]   s2/native/s0_c24/set_II_qe_0.1pct/rep5: 31 runs, 329.606 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[10:44:47] s2/native/s0_c24/set_III_ft_1pct/rep5 (73 left)
+[10:45:08]   s2/native/s0_c24/set_III_ft_1pct/rep5: 29769 runs, 0.336 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[10:45:08] s2/native/s0_c24/set_III_ft_0.3pct/rep5 (72 left)
+[10:45:28]   s2/native/s0_c24/set_III_ft_0.3pct/rep5: 696 runs, 14.386 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[10:45:28] s2/native/s0_c24/set_III_ft_0.1pct/rep5 (71 left)
+[10:45:49]   s2/native/s0_c24/set_III_ft_0.1pct/rep5: 20 runs, 524.506 ms/run, card 21.4 W, socket 178 W, server 231 W, ok 1
+[10:45:49] s2/native/s0_c24/set_III_qe_1pct/rep5 (70 left)
+[10:46:10]   s2/native/s0_c24/set_III_qe_1pct/rep5: 63459 runs, 0.158 ms/run, card 21.4 W, socket 176 W, server 243 W, ok 1
+[10:46:10] s2/native/s0_c24/set_III_qe_0.3pct/rep5 (69 left)
+[10:46:30]   s2/native/s0_c24/set_III_qe_0.3pct/rep5: 5915 runs, 1.691 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[10:46:30] s2/native/s0_c24/set_III_qe_0.1pct/rep5 (68 left)
+[10:46:50]   s2/native/s0_c24/set_III_qe_0.1pct/rep5: 329 runs, 30.467 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[10:46:50] s2/native/s0_c24/set_P1_ft_1pct/rep5 (67 left)
+[10:47:11]   s2/native/s0_c24/set_P1_ft_1pct/rep5: 658158 runs, 0.015 ms/run, card 21.4 W, socket 171 W, server 239 W, ok 1
+[10:47:11] s2/native/s0_c24/set_P1_ft_0.3pct/rep5 (66 left)
+[10:47:31]   s2/native/s0_c24/set_P1_ft_0.3pct/rep5: 56846 runs, 0.176 ms/run, card 21.4 W, socket 180 W, server 238 W, ok 1
+[10:47:31] s2/native/s0_c24/set_P1_ft_0.1pct/rep5 (65 left)
+[10:47:52]   s2/native/s0_c24/set_P1_ft_0.1pct/rep5: 1979 runs, 5.053 ms/run, card 21.4 W, socket 180 W, server 233 W, ok 1
+[10:47:52] s2/native/s0_c24/set_P1_qe_1pct/rep5 (64 left)
+[10:48:12]   s2/native/s0_c24/set_P1_qe_1pct/rep5: 884684 runs, 0.011 ms/run, card 21.4 W, socket 157 W, server 225 W, ok 1
+[10:48:12] s2/native/s0_c24/set_P1_qe_0.3pct/rep5 (63 left)
+[10:48:32]   s2/native/s0_c24/set_P1_qe_0.3pct/rep5: 79347 runs, 0.126 ms/run, card 21.4 W, socket 176 W, server 244 W, ok 1
+[10:48:32] s2/native/s0_c24/set_P1_qe_0.1pct/rep5 (62 left)
+[10:48:53]   s2/native/s0_c24/set_P1_qe_0.1pct/rep5: 5350 runs, 1.869 ms/run, card 21.4 W, socket 179 W, server 246 W, ok 1
+[10:48:53] s2/native/s0_c24/ss_I_ft_M1280/rep5 (61 left)
+[10:49:14]   s2/native/s0_c24/ss_I_ft_M1280/rep5: 26 runs, 399.501 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[10:49:14] s2/native/s0_c24/ss_I_ft_M5120/rep5 (60 left)
+[10:49:35]   s2/native/s0_c24/ss_I_ft_M5120/rep5: 26 runs, 398.532 ms/run, card 21.4 W, socket 180 W, server 231 W, ok 1
+[10:49:35] s2/native/s0_c24/ss_I_qe_M40/rep5 (59 left)
+[10:49:56]   s2/native/s0_c24/ss_I_qe_M40/rep5: 7 runs, 1452.174 ms/run, card 21.4 W, socket 179 W, server 246 W, ok 1
+[10:49:56] s2/native/s0_c24/ss_I_qe_M80/rep5 (58 left)
+[10:50:17]   s2/native/s0_c24/ss_I_qe_M80/rep5: 7 runs, 1483.341 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[10:50:17] s2/native/s0_c24/ss_I_qe_M320/rep5 (57 left)
+[10:50:38]   s2/native/s0_c24/ss_I_qe_M320/rep5: 7 runs, 1511.398 ms/run, card 21.4 W, socket 178 W, server 245 W, ok 1
+[10:50:38] s2/native/s0_c24/ss_II_ft_M1920/rep5 (56 left)
+[10:50:59]   s2/native/s0_c24/ss_II_ft_M1920/rep5: 25 runs, 401.863 ms/run, card 21.4 W, socket 179 W, server 232 W, ok 1
+[10:50:59] s2/native/s0_c24/ss_II_ft_M7680/rep5 (55 left)
+[10:51:20]   s2/native/s0_c24/ss_II_ft_M7680/rep5: 26 runs, 398.527 ms/run, card 21.4 W, socket 180 W, server 231 W, ok 1
+[10:51:20] s2/native/s0_c24/ss_II_qe_M60/rep5 (54 left)
+[10:51:40]   s2/native/s0_c24/ss_II_qe_M60/rep5: 7 runs, 1432.946 ms/run, card 21.4 W, socket 179 W, server 246 W, ok 1
+[10:51:40] s2/native/s0_c24/ss_II_qe_M240/rep5 (53 left)
+[10:52:01]   s2/native/s0_c24/ss_II_qe_M240/rep5: 7 runs, 1522.392 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[10:52:01] s2/native/s0_c24/ss_III_ft_M160/rep5 (52 left)
+[10:52:22]   s2/native/s0_c24/ss_III_ft_M160/rep5: 25 runs, 405.722 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[10:52:22] s2/native/s0_c24/ss_III_ft_M640/rep5 (51 left)
+[10:52:43]   s2/native/s0_c24/ss_III_ft_M640/rep5: 25 runs, 400.689 ms/run, card 21.4 W, socket 180 W, server 232 W, ok 1
+[10:52:43] s2/native/s0_c24/ss_III_qe_M20/rep5 (50 left)
+[10:53:05]   s2/native/s0_c24/ss_III_qe_M20/rep5: 7 runs, 1609.519 ms/run, card 21.4 W, socket 177 W, server 244 W, ok 1
+[10:53:05] s2/native/s0_c24/ss_III_qe_M40/rep5 (49 left)
+[10:53:27]   s2/native/s0_c24/ss_III_qe_M40/rep5: 7 runs, 1574.607 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[10:53:27] s2/native/s0_c24/ss_P1_ft_M8/rep5 (48 left)
+[10:53:48]   s2/native/s0_c24/ss_P1_ft_M8/rep5: 18 runs, 583.578 ms/run, card 21.4 W, socket 179 W, server 240 W, ok 1
+[10:53:48] s2/native/s0_c24/ss_P1_ft_M16/rep5 (47 left)
+[10:54:09]   s2/native/s0_c24/ss_P1_ft_M16/rep5: 21 runs, 490.557 ms/run, card 21.4 W, socket 179 W, server 236 W, ok 1
+[10:54:09] s2/native/s0_c24/ss_P1_ft_M64/rep5 (46 left)
+[10:54:30]   s2/native/s0_c24/ss_P1_ft_M64/rep5: 24 runs, 421.346 ms/run, card 21.4 W, socket 179 W, server 233 W, ok 1
+[10:54:30] s2/native/s0_c24/ss_P1_qe_M1/rep5 (45 left)
+[10:54:51]   s2/native/s0_c24/ss_P1_qe_M1/rep5: 8 runs, 1258.053 ms/run, card 21.4 W, socket 175 W, server 243 W, ok 1
+[10:54:51] s2/native/s0_c24/ss_P1_qe_M4/rep5 (44 left)
+[10:55:12]   s2/native/s0_c24/ss_P1_qe_M4/rep5: 7 runs, 1495.783 ms/run, card 21.4 W, socket 177 W, server 245 W, ok 1
+[10:55:12] s2/native/s0_c24/ss_P1_qe_M8/rep5 (43 left)
+[10:55:34]   s2/native/s0_c24/ss_P1_qe_M8/rep5: 8 runs, 1281.197 ms/run, card 21.4 W, socket 178 W, server 246 W, ok 1
+[10:55:34] s2/native/s01_t96/set_I_ft_1pct/rep5 (42 left)
+[10:55:54]   s2/native/s01_t96/set_I_ft_1pct/rep5: 13313 runs, 0.751 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[10:55:54] s2/native/s01_t96/set_I_ft_0.3pct/rep5 (41 left)
+[10:56:15]   s2/native/s01_t96/set_I_ft_0.3pct/rep5: 331 runs, 30.260 ms/run, card 21.4 W, socket 179 W, server 358 W, ok 1
+[10:56:15] s2/native/s01_t96/set_I_ft_0.1pct/rep5 (40 left)
+[10:56:36]   s2/native/s01_t96/set_I_ft_0.1pct/rep5: 10 runs, 1061.259 ms/run, card 21.4 W, socket 180 W, server 356 W, ok 1
+[10:56:36] s2/native/s01_t96/set_I_qe_1pct/rep5 (39 left)
+[10:56:56]   s2/native/s01_t96/set_I_qe_1pct/rep5: 88867 runs, 0.113 ms/run, card 21.4 W, socket 165 W, server 321 W, ok 1
+[10:56:56] s2/native/s01_t96/set_I_qe_0.3pct/rep5 (38 left)
+[10:57:17]   s2/native/s01_t96/set_I_qe_0.3pct/rep5: 5229 runs, 1.913 ms/run, card 21.4 W, socket 173 W, server 340 W, ok 1
+[10:57:17] s2/native/s01_t96/set_I_qe_0.1pct/rep5 (37 left)
+[10:57:37]   s2/native/s01_t96/set_I_qe_0.1pct/rep5: 147 runs, 68.196 ms/run, card 21.4 W, socket 175 W, server 343 W, ok 1
+[10:57:37] s2/native/s01_t96/set_II_ft_1pct/rep5 (36 left)
+[10:57:58]   s2/native/s01_t96/set_II_ft_1pct/rep5: 2975 runs, 3.362 ms/run, card 21.4 W, socket 178 W, server 356 W, ok 1
+[10:57:58] s2/native/s01_t96/set_II_ft_0.3pct/rep5 (35 left)
+[10:58:18]   s2/native/s01_t96/set_II_ft_0.3pct/rep5: 70 runs, 143.461 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[10:58:18] s2/native/s01_t96/set_II_ft_0.1pct/rep5 (34 left)
+[10:58:41]   s2/native/s01_t96/set_II_ft_0.1pct/rep5: 2 runs, 5083.167 ms/run, card 21.4 W, socket 180 W, server 356 W, ok 1
+[10:58:41] s2/native/s01_t96/set_II_qe_1pct/rep5 (33 left)
+[10:59:01]   s2/native/s01_t96/set_II_qe_1pct/rep5: 24024 runs, 0.416 ms/run, card 21.4 W, socket 171 W, server 336 W, ok 1
+[10:59:01] s2/native/s01_t96/set_II_qe_0.3pct/rep5 (32 left)
+[10:59:22]   s2/native/s01_t96/set_II_qe_0.3pct/rep5: 2365 runs, 4.229 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[10:59:22] s2/native/s01_t96/set_II_qe_0.1pct/rep5 (31 left)
+[10:59:42]   s2/native/s01_t96/set_II_qe_0.1pct/rep5: 63 runs, 159.335 ms/run, card 21.4 W, socket 175 W, server 343 W, ok 1
+[10:59:42] s2/native/s01_t96/set_III_ft_1pct/rep5 (30 left)
+[11:00:02]   s2/native/s01_t96/set_III_ft_1pct/rep5: 54516 runs, 0.183 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[11:00:02] s2/native/s01_t96/set_III_ft_0.3pct/rep5 (29 left)
+[11:00:23]   s2/native/s01_t96/set_III_ft_0.3pct/rep5: 1473 runs, 6.794 ms/run, card 21.4 W, socket 178 W, server 354 W, ok 1
+[11:00:23] s2/native/s01_t96/set_III_ft_0.1pct/rep5 (28 left)
+[11:00:43]   s2/native/s01_t96/set_III_ft_0.1pct/rep5: 43 runs, 235.132 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[11:00:43] s2/native/s01_t96/set_III_qe_1pct/rep5 (27 left)
+[11:01:04]   s2/native/s01_t96/set_III_qe_1pct/rep5: 98252 runs, 0.102 ms/run, card 21.4 W, socket 165 W, server 321 W, ok 1
+[11:01:04] s2/native/s01_t96/set_III_qe_0.3pct/rep5 (26 left)
+[11:01:24]   s2/native/s01_t96/set_III_qe_0.3pct/rep5: 11335 runs, 0.882 ms/run, card 21.4 W, socket 169 W, server 329 W, ok 1
+[11:01:24] s2/native/s01_t96/set_III_qe_0.1pct/rep5 (25 left)
+[11:01:44]   s2/native/s01_t96/set_III_qe_0.1pct/rep5: 665 runs, 15.043 ms/run, card 21.4 W, socket 174 W, server 341 W, ok 1
+[11:01:44] s2/native/s01_t96/set_P1_ft_1pct/rep5 (24 left)
+[11:02:05]   s2/native/s01_t96/set_P1_ft_1pct/rep5: 316854 runs, 0.032 ms/run, card 21.4 W, socket 145 W, server 280 W, ok 1
+[11:02:05] s2/native/s01_t96/set_P1_ft_0.3pct/rep5 (23 left)
+[11:02:25]   s2/native/s01_t96/set_P1_ft_0.3pct/rep5: 82640 runs, 0.121 ms/run, card 21.4 W, socket 169 W, server 329 W, ok 1
+[11:02:25] s2/native/s01_t96/set_P1_ft_0.1pct/rep5 (22 left)
+[11:02:46]   s2/native/s01_t96/set_P1_ft_0.1pct/rep5: 4154 runs, 2.408 ms/run, card 21.4 W, socket 178 W, server 355 W, ok 1
+[11:02:46] s2/native/s01_t96/set_P1_qe_1pct/rep5 (21 left)
+[11:03:06]   s2/native/s01_t96/set_P1_qe_1pct/rep5: 349189 runs, 0.029 ms/run, card 21.4 W, socket 139 W, server 269 W, ok 1
+[11:03:06] s2/native/s01_t96/set_P1_qe_0.3pct/rep5 (20 left)
+[11:03:26]   s2/native/s01_t96/set_P1_qe_0.3pct/rep5: 121642 runs, 0.082 ms/run, card 21.4 W, socket 165 W, server 324 W, ok 1
+[11:03:26] s2/native/s01_t96/set_P1_qe_0.1pct/rep5 (19 left)
+[11:03:47]   s2/native/s01_t96/set_P1_qe_0.1pct/rep5: 10823 runs, 0.924 ms/run, card 21.4 W, socket 176 W, server 346 W, ok 1
+[11:03:47] s2/native/s01_t96/ss_I_ft_M1280/rep5 (18 left)
+[11:04:07]   s2/native/s01_t96/ss_I_ft_M1280/rep5: 55 runs, 182.408 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[11:04:07] s2/native/s01_t96/ss_I_ft_M5120/rep5 (17 left)
+[11:04:28]   s2/native/s01_t96/ss_I_ft_M5120/rep5: 55 runs, 182.470 ms/run, card 21.3 W, socket 180 W, server 357 W, ok 1
+[11:04:28] s2/native/s01_t96/ss_I_qe_M40/rep5 (16 left)
+[11:04:49]   s2/native/s01_t96/ss_I_qe_M40/rep5: 15 runs, 694.506 ms/run, card 21.4 W, socket 177 W, server 348 W, ok 1
+[11:04:49] s2/native/s01_t96/ss_I_qe_M80/rep5 (15 left)
+[11:05:09]   s2/native/s01_t96/ss_I_qe_M80/rep5: 14 runs, 715.191 ms/run, card 21.3 W, socket 176 W, server 345 W, ok 1
+[11:05:09] s2/native/s01_t96/ss_I_qe_M320/rep5 (14 left)
+[11:05:30]   s2/native/s01_t96/ss_I_qe_M320/rep5: 14 runs, 742.947 ms/run, card 21.4 W, socket 175 W, server 343 W, ok 1
+[11:05:30] s2/native/s01_t96/ss_II_ft_M1920/rep5 (13 left)
+[11:05:51]   s2/native/s01_t96/ss_II_ft_M1920/rep5: 55 runs, 183.286 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[11:05:51] s2/native/s01_t96/ss_II_ft_M7680/rep5 (12 left)
+[11:06:11]   s2/native/s01_t96/ss_II_ft_M7680/rep5: 55 runs, 183.217 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[11:06:11] s2/native/s01_t96/ss_II_qe_M60/rep5 (11 left)
+[11:06:32]   s2/native/s01_t96/ss_II_qe_M60/rep5: 15 runs, 690.334 ms/run, card 21.4 W, socket 176 W, server 347 W, ok 1
+[11:06:32] s2/native/s01_t96/ss_II_qe_M240/rep5 (10 left)
+[11:06:53]   s2/native/s01_t96/ss_II_qe_M240/rep5: 14 runs, 721.401 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[11:06:53] s2/native/s01_t96/ss_III_ft_M160/rep5 (9 left)
+[11:07:13]   s2/native/s01_t96/ss_III_ft_M160/rep5: 54 runs, 186.560 ms/run, card 21.4 W, socket 179 W, server 356 W, ok 1
+[11:07:13] s2/native/s01_t96/ss_III_ft_M640/rep5 (8 left)
+[11:07:34]   s2/native/s01_t96/ss_III_ft_M640/rep5: 55 runs, 183.184 ms/run, card 21.4 W, socket 180 W, server 357 W, ok 1
+[11:07:34] s2/native/s01_t96/ss_III_qe_M20/rep5 (7 left)
+[11:07:55]   s2/native/s01_t96/ss_III_qe_M20/rep5: 14 runs, 762.403 ms/run, card 21.4 W, socket 176 W, server 345 W, ok 1
+[11:07:55] s2/native/s01_t96/ss_III_qe_M40/rep5 (6 left)
+[11:08:17]   s2/native/s01_t96/ss_III_qe_M40/rep5: 14 runs, 762.699 ms/run, card 21.4 W, socket 175 W, server 344 W, ok 1
+[11:08:17] s2/native/s01_t96/ss_P1_ft_M8/rep5 (5 left)
+[11:08:37]   s2/native/s01_t96/ss_P1_ft_M8/rep5: 40 runs, 252.577 ms/run, card 21.4 W, socket 179 W, server 357 W, ok 1
+[11:08:37] s2/native/s01_t96/ss_P1_ft_M16/rep5 (4 left)
+[11:08:58]   s2/native/s01_t96/ss_P1_ft_M16/rep5: 46 runs, 220.555 ms/run, card 21.4 W, socket 178 W, server 354 W, ok 1
+[11:08:58] s2/native/s01_t96/ss_P1_ft_M64/rep5 (3 left)
+[11:09:18]   s2/native/s01_t96/ss_P1_ft_M64/rep5: 52 runs, 192.744 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[11:09:18] s2/native/s01_t96/ss_P1_qe_M1/rep5 (2 left)
+[11:09:39]   s2/native/s01_t96/ss_P1_qe_M1/rep5: 20 runs, 506.119 ms/run, card 21.4 W, socket 179 W, server 355 W, ok 1
+[11:09:39] s2/native/s01_t96/ss_P1_qe_M4/rep5 (1 left)
+[11:10:00]   s2/native/s01_t96/ss_P1_qe_M4/rep5: 16 runs, 651.532 ms/run, card 21.4 W, socket 179 W, server 354 W, ok 1
+[11:10:00] s2/native/s01_t96/ss_P1_qe_M8/rep5 (0 left)
+[11:10:21]   s2/native/s01_t96/ss_P1_qe_M8/rep5: 17 runs, 588.396 ms/run, card 21.4 W, socket 179 W, server 353 W, ok 1
+[11:10:22] PHASE 5 SESSION 2 FINISHED

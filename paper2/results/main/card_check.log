@@ -1,0 +1,29 @@
+card_check started 2026-10-14T14:24:13Z
+[PASS] build hq_cpu and hq_fpga (XRT /opt/xilinx/xrt)
+[PASS] build/qe/hq_qe.xclbin present (225000000 Hz)
+[PASS] build/ft/hq_ft.xclbin present (225000000 Hz)
+[PASS] results/settings.csv present
+
+=== 1. card == CPU, bit for bit (16 settings)
+[PASS] I ft 1% (M 1280, 14464 pairs): card h187093e20056feba, cpu h187093e20056feba, verify 1 (14464 pairs), price K100 13.1992071466
+[PASS] I ft 0.3% (M 5120, 159488 pairs): card h876a94628c23b742, cpu h876a94628c23b742, verify 1 (65536 pairs), price K100 13.1255352666
+[PASS] I qe 1% (M 40, 14336 pairs): card h75708e9dabd572c8, cpu h75708e9dabd572c8, verify 1 (14336 pairs), price K100 13.0440946791
+[PASS] I qe 0.3% (M 80, 158976 pairs): card h72f5f9ef4e20bacf, cpu h72f5f9ef4e20bacf, verify 1 (158976 pairs), price K100 13.0624240742
+[PASS] II ft 1% (M 1920, 46016 pairs): card hcd1d8377a2093cd0, cpu hcd1d8377a2093cd0, verify 1 (46016 pairs), price K100 16.6691749610
+[PASS] II ft 0.3% (M 7680, 509632 pairs): card h7387ec18539be817, cpu h7387ec18539be817, verify 1 (65536 pairs), price K100 16.6524974529
+[PASS] II qe 1% (M 60, 44672 pairs): card h24a499a8c4a9acb3, cpu h24a499a8c4a9acb3, verify 1 (44672 pairs), price K100 16.7393450346
+[PASS] II qe 0.3% (M 60, 495808 pairs): card h305a0cb3bb665b46, cpu h305a0cb3bb665b46, verify 1 (65536 pairs), price K100 16.6945669941
+[PASS] III ft 1% (M 160, 25280 pairs): card he8f0d5b705cf87c8, cpu he8f0d5b705cf87c8, verify 1 (25280 pairs), price K100 21.8302199306
+[PASS] III ft 0.3% (M 640, 279808 pairs): card h69e090af3794cc76, cpu h69e090af3794cc76, verify 1 (65536 pairs), price K100 21.8416920546
+[PASS] III qe 1% (M 20, 23552 pairs): card h49f384a53ea2c130, cpu h49f384a53ea2c130, verify 1 (23552 pairs), price K100 21.8231616351
+[PASS] III qe 0.3% (M 20, 261248 pairs): card he40c97617c323d30, cpu he40c97617c323d30, verify 1 (261248 pairs), price K100 21.8076587485
+[PASS] P1 ft 1% (M 8, 10304 pairs): card h759fd39d2158bf25, cpu h759fd39d2158bf25, verify 1 (10304 pairs), price K100 8.1263154388
+[PASS] P1 ft 0.3% (M 16, 108032 pairs): card hd0a39798fd69ec86, cpu hd0a39798fd69ec86, verify 1 (108032 pairs), price K100 8.1095962119
+[PASS] P1 qe 1% (M 1, 9472 pairs): card hc6e631e8ef989251, cpu hc6e631e8ef989251, verify 1 (9472 pairs), price K100 8.0545540135
+[PASS] P1 qe 0.3% (M 4, 100864 pairs): card h36847a78a5e7eeda, cpu h36847a78a5e7eeda, verify 1 (100864 pairs), price K100 8.0520046603
+
+=== 2. timing look (3 s window each; for information, not a measurement)
+  II qe M=16 N=4556096: 116 runs, 0.0260536607 s/run, kernel 5.72248892 G path-steps/s (peak: ft 12.6, qe 6.3), ok 1
+  II ft M=512 N=509632: 71 runs, 0.0426113545 s/run, kernel 12.3935933 G path-steps/s (peak: ft 12.6, qe 6.3), ok 1
+
+CARD CHECK: ALL PASS

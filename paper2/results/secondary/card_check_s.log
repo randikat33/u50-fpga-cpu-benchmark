@@ -1,0 +1,25 @@
+card_check_s started 2026-10-18T07:30:11Z
+[PASS] build hs_cpu and hs_fpga (XRT /opt/xilinx/xrt)
+[PASS] build/bft/hb_ft.xclbin present (225000000 Hz)
+[PASS] build/bqe/hb_qe.xclbin present (200000000 Hz)
+[PASS] build/asian/ha_asian.xclbin present (200000000 Hz)
+[PASS] results/settings_s.csv present
+[PASS] results/beta_A.csv present
+[PASS] results/reference_s.csv present
+
+=== 1. card == CPU, bit for bit (8 settings)
+[PASS] B ft 1% (M 8, 7168 pairs): card hedd94c71c9c6de81, cpu hedd94c71c9c6de81, verify 1 (7168 pairs), price K100 3.4613063837
+[PASS] B ft 0.3% (M 16, 78912 pairs): card h86200360f6f947ee, cpu h86200360f6f947ee, verify 1 (78912 pairs), price K100 3.4309575706
+[PASS] B qe 1% (M 1, 6912 pairs): card h5ad201076354948a, cpu h5ad201076354948a, verify 1 (6912 pairs), price K100 3.4237356885
+[PASS] B qe 0.3% (M 2, 77760 pairs): card hb3bdc127586fc629, cpu hb3bdc127586fc629, verify 1 (77760 pairs), price K100 3.4335367302
+[PASS] A plain 1% (M 250, 9280 pairs): card hda0a5252d9667d85, cpu hda0a5252d9667d85, verify 1 (9280 pairs), price K100 5.7956423595
+[PASS] A plain 0.3% (M 250, 102464 pairs): card h8ee8bb28f55a10fb, cpu h8ee8bb28f55a10fb, verify 1 (65536 pairs), price K100 5.7588619882
+[PASS] A cv 1% (M 250, 64 pairs): card h0b9d9cfab92bf50b, cpu h0b9d9cfab92bf50b, verify 1 (64 pairs), price K100 5.7678175189
+[PASS] A cv 0.3% (M 250, 256 pairs): card hebb68ea251274325, cpu hebb68ea251274325, verify 1 (256 pairs), price K100 5.7765835837
+
+=== 2. timing look (3 s window each; for information, not a measurement)
+  B ft M=64 N=708288: 52 runs, 0.0585610866 s/run, kernel 1.56341715 G path-steps/s (peak 1.575), ok 1
+  B qe M=8 N=704768: 177 runs, 0.0170136573 s/run, kernel 0.681607488 G path-steps/s (peak 0.700), ok 1
+  A plain M=250 N=922176: 71 runs, 0.0425125762 s/run, kernel 11.004395 G path-steps/s (peak 11.2), ok 1
+
+CARD CHECK S: ALL PASS
