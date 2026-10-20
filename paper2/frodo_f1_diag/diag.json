@@ -1,0 +1,284 @@
+{
+ "info": {
+  "xrt_version": {
+   "BUILD_VERSION": "2.16.204",
+   "BUILD_VERSION_DATE": "Wed, 11 Oct 2023 23:45:57 -0700",
+   "BUILD_BRANCH": "2023.2",
+   "VERSION_HASH": "fa4c0045003fed0acea4593788dce5ef6d0b66ee",
+   "VERSION_HASH_DATE": "Wed, 11 Oct 2023 20:43:32 -0700"
+  },
+  "0000:4b:00.1": {
+   "kds_stat": "CU to host interrupt capability: 0\nInterrupt mode: ert\nNumber of CUs: 0\nNumber of SCUs: 0",
+   "kds_interrupt": "ert",
+   "kds_interval": "0",
+   "ert_disable": "1",
+   "kds_echo": "0"
+  }
+ },
+ "hashes": [
+  {
+   "case": "I",
+   "xclbin": "ft",
+   "cpu": "h3475e637ae1d907b",
+   "xrt": "h3475e637ae1d907b",
+   "callback": "h3475e637ae1d907b",
+   "equal": true
+  },
+  {
+   "case": "P1",
+   "xclbin": "qe",
+   "cpu": "h4b1ad44b01911be8",
+   "xrt": "h4b1ad44b01911be8",
+   "callback": "h4b1ad44b01911be8",
+   "equal": true
+  },
+  {
+   "case": "B",
+   "xclbin": "bft",
+   "cpu": "h52f13a96074868e9",
+   "xrt": "h52f13a96074868e9",
+   "callback": "h52f13a96074868e9",
+   "equal": true
+  },
+  {
+   "case": "A",
+   "xclbin": "asian",
+   "cpu": "hecebed1dcb3ace20",
+   "xrt": "hecebed1dcb3ace20",
+   "callback": "hecebed1dcb3ace20",
+   "equal": true
+  }
+ ],
+ "windows": [
+  {
+   "seconds": 20.119335651397705,
+   "power_W": {
+    "pkg1": 31.29593784356679,
+    "pkg0": 38.64410587265027,
+    "dram0": 0.897287928030857,
+    "dram1": 0.6560083905694517
+   },
+   "socket0_W": 39.54139380068113,
+   "socket1_W": 31.95194623413624,
+   "busy_cores_socket0": 0.04978290713634157,
+   "busy_cores_socket1": 0.047256515738030185,
+   "host_process_cores": 0,
+   "top_threads": [],
+   "label": "idle"
+  },
+  {
+   "seconds": 20.679463386535645,
+   "power_W": {
+    "pkg1": 42.6648878894244,
+    "pkg0": 49.33946853109951,
+    "dram0": 0.8297446446880229,
+    "dram1": 0.5594226399284744
+   },
+   "socket0_W": 50.16921317578753,
+   "socket1_W": 43.22431052935288,
+   "busy_cores_socket0": 0.10539579718202607,
+   "busy_cores_socket1": 0.05604566220631978,
+   "host_process_cores": 0,
+   "top_threads": [
+    {
+     "pid": 9,
+     "tid": 9,
+     "comm": "kworker/u192:0+mailbox.m.9437184",
+     "cores": 0.06286430047534206,
+     "host": false
+    },
+    {
+     "pid": 1935,
+     "tid": 1935,
+     "comm": "kworker/u192:4+mailbox.u.9437184",
+     "cores": 0.06286430047533931,
+     "host": false
+    },
+    {
+     "pid": 1810,
+     "tid": 1810,
+     "comm": "kipmi0",
+     "cores": 0.014507146263538148,
+     "host": false
+    }
+   ],
+   "runs": 26,
+   "t_per_run_s": 0.795363,
+   "host_cpu_frac": 0.0248522228,
+   "mom_hash": "hd621a4f18dae9988",
+   "wait": "xrt",
+   "label": "long run (I FT, 1280 steps), wait xrt"
+  },
+  {
+   "seconds": 20.67937469482422,
+   "power_W": {
+    "pkg1": 42.70726542911587,
+    "pkg0": 49.06703906544912,
+    "dram0": 0.8213292834357812,
+    "dram1": 0.555912892418226
+   },
+   "socket0_W": 49.8883683488849,
+   "socket1_W": 43.2631783215341,
+   "busy_cores_socket0": 0.12728697803761924,
+   "busy_cores_socket1": 0.02850755450451487,
+   "host_process_cores": 0,
+   "top_threads": [
+    {
+     "pid": 9,
+     "tid": 9,
+     "comm": "kworker/u192:0+mailbox.m.9437184",
+     "cores": 0.06286457009386191,
+     "host": false
+    },
+    {
+     "pid": 1935,
+     "tid": 1935,
+     "comm": "kworker/u192:4+mailbox.u.9437184",
+     "cores": 0.06286457009386191,
+     "host": false
+    }
+   ],
+   "runs": 26,
+   "t_per_run_s": 0.79535975,
+   "host_cpu_frac": 0.0249429461,
+   "mom_hash": "hd621a4f18dae9988",
+   "wait": "callback",
+   "label": "long run (I FT, 1280 steps), wait callback"
+  },
+  {
+   "seconds": 20.000154495239258,
+   "power_W": {
+    "pkg1": 43.13142587000203,
+    "pkg0": 50.43258067031915,
+    "dram0": 0.8566564325329747,
+    "dram1": 0.5684388089455105
+   },
+   "socket0_W": 51.28923710285212,
+   "socket1_W": 43.69986467894754,
+   "busy_cores_socket0": 0.8925774869826181,
+   "busy_cores_socket1": 0.24531800219013752,
+   "host_process_cores": 0.23949814993380122,
+   "top_threads": [
+    {
+     "pid": 283965,
+     "tid": 283965,
+     "comm": "hq_qe_2",
+     "cores": 0.2969977057634195,
+     "host": false
+    },
+    {
+     "pid": 283966,
+     "tid": 283966,
+     "comm": "hq_qe_1",
+     "cores": 0.2869977830104424,
+     "host": false
+    },
+    {
+     "pid": 283958,
+     "tid": 283958,
+     "comm": "hq_fpga",
+     "cores": 0.23949814993380122,
+     "host": true
+    },
+    {
+     "pid": 9,
+     "tid": 9,
+     "comm": "kworker/u192:0+mailbox.m.9437184",
+     "cores": 0.06449950175670323,
+     "host": false
+    },
+    {
+     "pid": 1935,
+     "tid": 1935,
+     "comm": "kworker/u192:4+mailbox.u.9437184",
+     "cores": 0.06299951334375803,
+     "host": false
+    },
+    {
+     "pid": 1810,
+     "tid": 1810,
+     "comm": "kipmi0",
+     "cores": 0.02249982619420072,
+     "host": false
+    }
+   ],
+   "runs": 38604,
+   "t_per_run_s": 0.000518082523,
+   "host_cpu_frac": 0.265450684,
+   "mom_hash": "h6c632855b5ba6e94",
+   "wait": "xrt",
+   "label": "short run (P1 QE, 1 step), wait xrt"
+  },
+  {
+   "seconds": 20.000266075134277,
+   "power_W": {
+    "pkg1": 42.8830782439599,
+    "pkg0": 50.390374968710695,
+    "dram0": 0.8307644477119012,
+    "dram1": 0.5544508737204662
+   },
+   "socket0_W": 51.221139416422595,
+   "socket1_W": 43.43752911768037,
+   "busy_cores_socket0": 0.9136747076858425,
+   "busy_cores_socket1": 0.03198576860534074,
+   "host_process_cores": 0.3274956430776397,
+   "top_threads": [
+    {
+     "pid": 283965,
+     "tid": 283965,
+     "comm": "hq_qe_2",
+     "cores": 0.21749710647140952,
+     "host": false
+    },
+    {
+     "pid": 283966,
+     "tid": 283966,
+     "comm": "hq_qe_1",
+     "cores": 0.21299716633751828,
+     "host": false
+    },
+    {
+     "pid": 283974,
+     "tid": 283974,
+     "comm": "hq_fpga",
+     "cores": 0.20899721955183723,
+     "host": true
+    },
+    {
+     "pid": 283974,
+     "tid": 283977,
+     "comm": "hq_fpga",
+     "cores": 0.09399874946350574,
+     "host": true
+    },
+    {
+     "pid": 9,
+     "tid": 9,
+     "comm": "kworker/u192:0+mailbox.m.9437184",
+     "cores": 0.06499913526731836,
+     "host": false
+    },
+    {
+     "pid": 1935,
+     "tid": 1935,
+     "comm": "kworker/u192:4+mailbox.u.9437184",
+     "cores": 0.0629991618744768,
+     "host": false
+    },
+    {
+     "pid": 283974,
+     "tid": 283976,
+     "comm": "hq_fpga",
+     "cores": 0.0244996740622967,
+     "host": true
+    }
+   ],
+   "runs": 28407,
+   "t_per_run_s": 0.00070405722,
+   "host_cpu_frac": 0.328585179,
+   "mom_hash": "h6c632855b5ba6e94",
+   "wait": "callback",
+   "label": "short run (P1 QE, 1 step), wait callback"
+  }
+ ]
+}

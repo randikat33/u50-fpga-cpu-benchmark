@@ -16,6 +16,7 @@
 #include <thread>
 #include <vector>
 #include "bench_common.hpp"
+#include "wait_mode.hpp"
 #include "hq_model.hpp"
 #include "mc_cli.hpp"      // mc::median, mc::append_json
 
@@ -37,6 +38,7 @@ static Phases run_all(std::vector<Cu>& cus, uint32_t steps, const mc::Keys& keys
     double t0 = bench::now_s();
     for (auto& c : cus) c.fpar.sync(XCL_BO_SYNC_BO_TO_DEVICE, HQ_FPAR_N * sizeof(float), 0);
     double t1 = bench::now_s();
+    hw::arm();
     for (auto& c : cus) {
         c.run.set_arg(A_FPAR, c.fpar);
         c.run.set_arg(A_OUT, c.out);
@@ -47,7 +49,7 @@ static Phases run_all(std::vector<Cu>& cus, uint32_t steps, const mc::Keys& keys
         c.run.set_arg(A_KEYHI, (uint64_t)mc::keys_hi(keys));
         c.run.start();
     }
-    for (auto& c : cus) c.run.wait();
+    hw::wait_all(cus);
     double t2 = bench::now_s();
     for (auto& c : cus) c.out.sync(XCL_BO_SYNC_BO_FROM_DEVICE, HQ_OUT_N * sizeof(uint64_t), 0);
     double t3 = bench::now_s();
@@ -83,7 +85,7 @@ int main(int argc, char** argv) {
     if (A.has("help") || A.has("h") || !A.has("xclbin")) {
         std::printf("usage: %s --xclbin PATH --case I|II|III|P1 --scheme ft|qe (--steps-per-year S | --steps M)\n"
                     "          [--a0 A] (--a1 B | --pairs N) [--seed S] [--runs R] [--warmup W] [--warmup-s S] [--window-s S] [--cus K]\n"
-                    "          [--verify [--verify-pairs N]] [--out FILE] [--device N]\n", argv[0]);
+                    "          [--verify [--verify-pairs N]] [--out FILE] [--device N] [--wait xrt|callback]\n", argv[0]);
         return A.has("xclbin") || A.has("help") || A.has("h") ? 0 : 1;
     }
     int rc = 0;
@@ -101,6 +103,8 @@ int main(int argc, char** argv) {
         uint64_t seed = (uint64_t)A.i64("seed", 20261011);
         int runs = std::max<int>(1, (int)A.i64("runs", 1)), warm = std::max<int>(0, (int)A.i64("warmup", 1));
         double warm_s = A.f64("warmup-s", 0.0), win_s = A.f64("window-s", 0.0);
+        hw::set_mode(A.str("wait", "xrt"));
+        R.set("wait", std::string(hw::mode_name()));
 
         R.set("project", "heston_accuracy");
         R.set("platform", "fpga");
@@ -144,6 +148,7 @@ int main(int argc, char** argv) {
             cu.fpar = xrt::bo(dev, 4096, xrt::bo::flags::normal, cu.k.group_id(A_FPAR));
             cu.out = xrt::bo(dev, 4096, xrt::bo::flags::normal, cu.k.group_id(A_OUT));
             cu.run = xrt::run(cu.k);
+            hw::attach(cu.run);
         }
         R.set("t_alloc_s", bench::now_s() - t0);
 
@@ -165,12 +170,16 @@ int main(int argc, char** argv) {
         std::vector<Phases> ph;
         bench::mark("start");
         const double tw0 = bench::now_s();
+        const double c0 = hw::host_cpu_s();
         for (int i = 0; i < runs || bench::now_s() - tw0 < win_s; ++i) ph.push_back(run_all(cus, (uint32_t)M, keys));
         const double twin = bench::now_s() - tw0;
+        const double cpu_win = hw::host_cpu_s() - c0;
         bench::mark("end");
         R.set("runs", (long long)ph.size());
         R.set("t_window_s", twin);
         R.set("t_per_run_s", twin / (double)ph.size());
+        R.set("host_cpu_s", cpu_win);
+        R.set("host_cpu_frac", cpu_win / twin);
         std::vector<double> win;
         for (auto& p : ph) win.push_back(p.window);
         double med = mc::median(win);
