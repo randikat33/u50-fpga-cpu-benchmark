@@ -1,0 +1,5 @@
+fbddf8db898f232d7889f96ad7ed86ecc03b0b562c642bfb2454c8bd946f4bf9  build/hs_gpu
+8d2591e5667f62b97c5d7a1cf9a1f04f81ec3967589d4453effae1d56f2cfc76  build/gpu_ubench
+Cuda compilation tools, release 12.8, V12.8.93
+Build cuda_12.8.r12.8/compiler.35583870_0
+Tesla V100-PCIE-16GB, 580.178.04, 88.00.4F.00.04
