@@ -1,0 +1,13 @@
+2026-10-22 17:43:12 v0.8 scheduling CHECK: 10 of 10 jobs left; prediction sha256 645553f9edbb9cc7b1d4c7b766d88e02472ebffa339d9b6a5c103a4518313fda
+2026-10-22 17:43:13 waiting: other processes use 0.0 cores
+2026-10-22 17:44:27 rep1 alone_card: 1 passes, T 25.260 s, E 4699.9 J (predicted 25.105 s, 4729.5 J), error max 1.33 eps
+2026-10-22 17:44:47 rep1 alone_fcpu: 2 passes, T 2.375 s, E 748.4 J (predicted 2.541 s, 763.6 J), error max 1.61 eps
+2026-10-22 17:45:03 rep1 alone_gpu: 15 passes, T 0.204 s, E 54.2 J (predicted 0.244 s, 54.9 J), error max 1.33 eps
+2026-10-22 17:45:36 rep1 alone_scpu: 1 passes, T 9.854 s, E 2146.2 J (predicted 10.181 s, 2097.0 J), error max 1.61 eps
+2026-10-22 17:46:36 rep1 round_robin: 1 passes, T 24.645 s, E 4555.1 J (predicted 21.358 s, 4140.7 J), error max 1.61 eps
+2026-10-22 17:46:59 rep1 model_E: 18 passes, T 0.170 s, E 50.1 J (predicted 0.177 s, 47.7 J), error max 1.61 eps
+2026-10-22 17:47:15 rep1 model_T: 19 passes, T 0.159 s, E 60.0 J (predicted 0.162 s, 63.8 J), error max 1.61 eps
+2026-10-22 17:47:32 rep1 model_M: 19 passes, T 0.163 s, E 52.3 J (predicted 0.167 s, 52.6 J), error max 1.61 eps
+2026-10-22 17:47:48 rep1 model_dev: 15 passes, T 0.202 s, E 47.6 J (predicted 0.244 s, 54.9 J), error max 1.33 eps
+2026-10-22 17:48:09 rep1 oracle: 18 passes, T 0.176 s, E 49.1 J (with measured costs 42.2 J), error max 1.61 eps
+2026-10-22 17:48:09 SCHED CHECK FINISHED: 10 of 10 jobs, 0 not done

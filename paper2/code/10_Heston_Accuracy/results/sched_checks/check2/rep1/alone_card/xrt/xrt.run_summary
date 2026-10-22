@@ -1,0 +1,27 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "4",
+        "patch": "0"
+    },
+    "generation": {
+        "this_file": "\/home\/cse\/Desktop\/Thesis_and_jounal_data\/v2_projects\/10_Heston_Accuracy\/results\/sched_check\/rep1\/alone_card\/work\/xrt.run_summary",
+        "source": "vp",
+        "PID": "2530899",
+        "timestamp": "1792688115872",
+        "target": "TT_HW",
+        "flags": [
+            ""
+        ]
+    },
+    "files": [
+        {
+            "name": "power_profile_xilinx_u50_gen3x16_xdma_base_5-0.csv",
+            "type": "XRT_POWER_PROFILE"
+        },
+        {
+            "name": "summary.csv",
+            "type": "PROFILE_SUMMARY"
+        }
+    ]
+}
