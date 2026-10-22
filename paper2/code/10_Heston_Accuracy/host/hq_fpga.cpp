@@ -15,6 +15,7 @@
 #include <string>
 #include <thread>
 #include <vector>
+#include <iostream>
 #include "bench_common.hpp"
 #include "wait_mode.hpp"
 #include "hq_model.hpp"
@@ -85,7 +86,7 @@ int main(int argc, char** argv) {
     if (A.has("help") || A.has("h") || !A.has("xclbin")) {
         std::printf("usage: %s --xclbin PATH --case I|II|III|P1 --scheme ft|qe (--steps-per-year S | --steps M)\n"
                     "          [--a0 A] (--a1 B | --pairs N) [--seed S] [--runs R] [--warmup W] [--warmup-s S] [--window-s S] [--cus K]\n"
-                    "          [--verify [--verify-pairs N]] [--out FILE] [--device N] [--wait xrt|callback]\n", argv[0]);
+                    "          [--verify [--verify-pairs N]] [--out FILE] [--device N] [--wait xrt|callback] [--serve]\n", argv[0]);
         return A.has("xclbin") || A.has("help") || A.has("h") ? 0 : 1;
     }
     int rc = 0;
@@ -160,6 +161,38 @@ int main(int argc, char** argv) {
         for (uint64_t i = 0; i < ncu; ++i) {
             cus[i].base = a0 + n * i / ncu;
             cus[i].n = a0 + n * (i + 1) / ncu - cus[i].base;
+        }
+
+        // serve mode (addendum v0.7, co-execution): after the one-time setup, one pricing part per command
+        //   stdin "R <id> <a0> <a1>" (pairs [a0, a1)), "Q" quit; stdout "READY", then "D <id> <seconds> <pairs> <price0..2> <ok>"
+        if (A.has("serve")) {
+            std::printf("READY\n");
+            std::fflush(stdout);
+            std::string line;
+            while (std::getline(std::cin, line)) {
+                if (line.empty()) continue;
+                if (line[0] == 'Q') break;
+                unsigned long long id = 0, x0 = 0, x1 = 0;
+                if (std::sscanf(line.c_str(), "R %llu %llu %llu", &id, &x0, &x1) != 3 || x1 <= x0 || x1 > (1ull << 32)) {
+                    std::printf("ERROR bad command\n"); std::fflush(stdout); continue;
+                }
+                const uint64_t nn = x1 - x0;
+                std::vector<Cu> act;
+                for (uint64_t i = 0; i < ncu; ++i) {
+                    Cu cu = cus[i];
+                    cu.base = x0 + nn * i / ncu;
+                    cu.n = x0 + nn * (i + 1) / ncu - cu.base;
+                    if (cu.n) act.push_back(cu);
+                }
+                const double s0 = bench::now_s();
+                Phases p = run_all(act, (uint32_t)M, keys);
+                const double ds = bench::now_s() - s0;
+                std::printf("D %llu %.6f %llu", id, ds, (unsigned long long)p.mom.pairs);
+                for (int j = 0; j < HQ_NK; ++j) std::printf(" %.10f", hq::finalize_k(c, p.mom, j).price);
+                std::printf(" %d\n", (p.mom.ovf == 0 && p.mom.pairs == nn) ? 1 : 0);
+                std::fflush(stdout);
+            }
+            return 0;
         }
 
         // steady-clock protocol, as hq_cpu: untimed calls (>= --warmup and >= --warmup-s seconds), then timed

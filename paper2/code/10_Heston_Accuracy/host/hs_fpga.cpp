@@ -15,6 +15,7 @@
 #include <thread>
 #include <type_traits>
 #include <vector>
+#include <iostream>
 #include "bench_common.hpp"
 #include "wait_mode.hpp"
 #include "hb_model.hpp"
@@ -208,6 +209,42 @@ static int run(bench::Args& A, bench::Report& R) {
         cus[i].n = a0 + n * (i + 1) / ncu - cus[i].base;
     }
 
+    // serve mode (addendum v0.7, co-execution): one pricing part per command, as host/hq_fpga.cpp
+    if (A.has("serve")) {
+        std::printf("READY\n");
+        std::fflush(stdout);
+        std::string line;
+        while (std::getline(std::cin, line)) {
+            if (line.empty()) continue;
+            if (line[0] == 'Q') break;
+            unsigned long long id = 0, x0 = 0, x1 = 0;
+            if (std::sscanf(line.c_str(), "R %llu %llu %llu", &id, &x0, &x1) != 3 || x1 <= x0 || x1 > amax) {
+                std::printf("ERROR bad command\n"); std::fflush(stdout); continue;
+            }
+            const uint64_t nn = x1 - x0;
+            std::vector<Cu> act;
+            for (uint64_t i = 0; i < ncu; ++i) {
+                Cu cu = cus[i];
+                cu.base = x0 + nn * i / ncu;
+                cu.n = x0 + nn * (i + 1) / ncu - cu.base;
+                if (cu.n) act.push_back(cu);
+            }
+            const double s0 = bench::now_s();
+            Phases<KF> p = run_all<KF>(act, (uint32_t)M, keys);
+            const double ds = bench::now_s() - s0;
+            std::printf("D %llu %.6f %llu", id, ds, (unsigned long long)p.mom.pairs);
+            for (int j = 0; j < HQ_NK; ++j) {
+                double pr;
+                if constexpr (std::is_same<KF, BasketK>::value) pr = hb::finalize_k(bc, p.mom, j).price;
+                else { ha::APrice q = ha::finalize_k(ac, p.mom, j, beta[j]); pr = est == "cv" ? q.cv : q.plain; }
+                std::printf(" %.10f", pr);
+            }
+            std::printf(" %d\n", (p.mom.ovf == 0 && p.mom.pairs == nn) ? 1 : 0);
+            std::fflush(stdout);
+        }
+        return 0;
+    }
+
     Phases<KF> res;
     const double tw = bench::now_s();
     for (int i = 0; i < warm || bench::now_s() - tw < warm_s; ++i) res = run_all<KF>(cus, (uint32_t)M, keys);
@@ -323,7 +360,7 @@ int main(int argc, char** argv) {
         std::printf("usage: %s --xclbin PATH --case B --scheme ft|qe (--steps-per-year S | --steps M)\n"
                     "       %s --xclbin PATH --case A [--steps M] [--estimator plain|cv] [--beta b | b0,b1,b2]\n"
                     "          [--a0 A] (--a1 B | --pairs N) [--seed S] [--runs R] [--warmup W] [--warmup-s S] [--window-s S] [--cus K]\n"
-                    "          [--verify [--verify-pairs N]] [--out FILE] [--device N] [--wait xrt|callback]\n", argv[0], argv[0]);
+                    "          [--verify [--verify-pairs N]] [--out FILE] [--device N] [--wait xrt|callback] [--serve]\n", argv[0], argv[0]);
         return A.has("xclbin") || A.has("help") || A.has("h") ? 0 : 1;
     }
     int rc = 0;

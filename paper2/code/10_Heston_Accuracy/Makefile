@@ -67,7 +67,7 @@ BUILD     := build/$(SCHEME)
 HLS_EXTRA_CFLAGS := -DHQ_SCHEME=$(SCHEME_ID) -DHQ_LANES=$(LANES) -DHA_LANES=$(LANES) -I$(MC_COMMON)
 include ../common/fpga_flow.mk
 
-.PHONY: cpu native test sim_test host tables clean scpu snative shost s_sim_test
+.PHONY: cpu native test sim_test host tables clean scpu snative shost s_sim_test qem serve
 cpu: build/hq_cpu
 # secondary cases (protocol v0.5): build/hs_cpu, build/hs_native, build/hs_fpga
 scpu: build/hs_cpu
@@ -79,13 +79,26 @@ build/hs_cpu: cpu/hs_cpu.cpp $(HS_HDRS)
 build/hs_native: cpu/hs_native.cpp $(HS_HDRS)
 	@mkdir -p build
 	$(CXX) $(CPU_FLAGS) $< -o $@
-build/hs_fpga: host/hs_fpga.cpp $(HS_HDRS)
+build/hs_fpga: host/hs_fpga.cpp host/wait_mode.hpp $(HS_HDRS)
 	@mkdir -p build
 	$(CXX) -std=c++17 -O2 -march=native -ffp-contract=off -Wall $(INC) -I$(XILINX_XRT)/include $< -o $@ \
 	    -L$(XILINX_XRT)/lib -lxrt_coreutil -l:libuuid.so.1 -pthread
 s_sim_test: build/hs_cpu build/hs_native
 	SHIM=$(SHIM) V2_ROOT=$(V2_ROOT) bash test/run_sim_tests_s.sh
 native: build/hq_native
+# QE and QE-M in double precision (addendum v0.6.1, Section 24 sensitivity; calibration only)
+# co-execution (addendum v0.7): serve modes of the CPU-native programs (the originals included unchanged)
+serve: build/hq_native_serve build/hs_native_serve
+build/hq_native_serve: cpu/native_serve.cpp cpu/hq_native.cpp $(HDRS)
+	@mkdir -p build
+	$(CXX) $(CPU_FLAGS) -DNATIVE_SRC='"hq_native.cpp"' $< -o $@
+build/hs_native_serve: cpu/native_serve.cpp cpu/hs_native.cpp $(HS_HDRS)
+	@mkdir -p build
+	$(CXX) $(CPU_FLAGS) -DNATIVE_SRC='"hs_native.cpp"' $< -o $@
+qem: build/hq_qem
+build/hq_qem: cpu/hq_qem.cpp $(HS_HDRS)
+	@mkdir -p build
+	$(CXX) $(CPU_FLAGS) $< -o $@
 build/hq_native: cpu/hq_native.cpp $(HDRS)
 	@mkdir -p build
 	$(CXX) $(CPU_FLAGS) $< -o $@
@@ -105,7 +118,7 @@ sim_test: build/hq_cpu
 	SHIM=$(SHIM) V2_ROOT=$(V2_ROOT) bash test/run_sim_tests.sh
 
 host: build/hq_fpga
-build/hq_fpga: host/hq_fpga.cpp $(HDRS)
+build/hq_fpga: host/hq_fpga.cpp host/wait_mode.hpp $(HDRS)
 	@mkdir -p build
 	$(CXX) -std=c++17 -O2 -march=native -ffp-contract=off -Wall $(INC) -I$(XILINX_XRT)/include $< -o $@ \
 	    -L$(XILINX_XRT)/lib -lxrt_coreutil -l:libuuid.so.1 -pthread
