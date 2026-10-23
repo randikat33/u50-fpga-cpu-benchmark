@@ -1,0 +1,9 @@
+{
+ "others_cores_mean": 0.13945497418104777,
+ "others_cores_peak": 1.069589859523591,
+ "cmd": [
+  "/usr/bin/python3",
+  "-c",
+  "import time; print('MARK start %.6f' % time.time(), flush=True); time.sleep(30); print('MARK end %.6f' % time.time(), flush=True); print('RESULT runs=1'); print('RESULT path_steps=1'); print('RESULT ok=1')"
+ ]
+}

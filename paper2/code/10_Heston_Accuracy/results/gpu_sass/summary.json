@@ -1,0 +1,220 @@
+[
+ {
+  "kernel": "asian_plain",
+  "loop": 0,
+  "start": "0x790",
+  "end": "0x1520",
+  "n": 218,
+  "classes": {
+   "int": 177,
+   "ctrl": 14,
+   "conv": 4,
+   "fp32": 15,
+   "sfu": 6,
+   "fp64": 2
+  },
+  "mufu": {
+   "MUFU.LG2": 1,
+   "MUFU.SIN": 1,
+   "MUFU.COS": 1,
+   "MUFU.SQRT": 1,
+   "MUFU.EX2": 2
+  },
+  "imad_wide": 40,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "asian_plain",
+  "loop": 1,
+  "start": "0x59a0",
+  "end": "0x59a0",
+  "n": 1,
+  "classes": {
+   "ctrl": 1
+  },
+  "mufu": {},
+  "imad_wide": 0,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "asian_cv",
+  "loop": 0,
+  "start": "0x8e0",
+  "end": "0x1470",
+  "n": 186,
+  "classes": {
+   "int": 139,
+   "ctrl": 14,
+   "conv": 6,
+   "fp32": 17,
+   "sfu": 6,
+   "fp64": 4
+  },
+  "mufu": {
+   "MUFU.LG2": 1,
+   "MUFU.SIN": 1,
+   "MUFU.SQRT": 1,
+   "MUFU.COS": 1,
+   "MUFU.EX2": 2
+  },
+  "imad_wide": 40,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "asian_cv",
+  "loop": 1,
+  "start": "0x6340",
+  "end": "0x6340",
+  "n": 1,
+  "classes": {
+   "ctrl": 1
+  },
+  "mufu": {},
+  "imad_wide": 0,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "basket_qe",
+  "loop": 0,
+  "start": "0x800",
+  "end": "0x1f90",
+  "n": 378,
+  "classes": {
+   "int": 204,
+   "ctrl": 37,
+   "conv": 3,
+   "fp32": 106,
+   "sfu": 28
+  },
+  "mufu": {
+   "MUFU.LG2": 5,
+   "MUFU.SIN": 1,
+   "MUFU.COS": 1,
+   "MUFU.SQRT": 7,
+   "MUFU.RSQ": 1,
+   "MUFU.RCP": 13
+  },
+  "imad_wide": 60,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "basket_qe",
+  "loop": 1,
+  "start": "0x6150",
+  "end": "0x6150",
+  "n": 1,
+  "classes": {
+   "ctrl": 1
+  },
+  "mufu": {},
+  "imad_wide": 0,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "basket_ft",
+  "loop": 0,
+  "start": "0x7b0",
+  "end": "0x13e0",
+  "n": 196,
+  "classes": {
+   "int": 150,
+   "ctrl": 13,
+   "conv": 2,
+   "fp32": 25,
+   "sfu": 6
+  },
+  "mufu": {
+   "MUFU.SQRT": 3,
+   "MUFU.LG2": 1,
+   "MUFU.COS": 1,
+   "MUFU.SIN": 1
+  },
+  "imad_wide": 40,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "basket_ft",
+  "loop": 1,
+  "start": "0x5500",
+  "end": "0x5500",
+  "n": 1,
+  "classes": {
+   "ctrl": 1
+  },
+  "mufu": {},
+  "imad_wide": 0,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "heston_qe",
+  "loop": 0,
+  "start": "0x710",
+  "end": "0x1f70",
+  "n": 391,
+  "classes": {
+   "int": 217,
+   "ctrl": 37,
+   "conv": 3,
+   "fp32": 106,
+   "sfu": 28
+  },
+  "mufu": {
+   "MUFU.LG2": 5,
+   "MUFU.SIN": 1,
+   "MUFU.COS": 1,
+   "MUFU.SQRT": 7,
+   "MUFU.RSQ": 1,
+   "MUFU.RCP": 13
+  },
+  "imad_wide": 60,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "heston_qe",
+  "loop": 1,
+  "start": "0x6080",
+  "end": "0x6080",
+  "n": 1,
+  "classes": {
+   "ctrl": 1
+  },
+  "mufu": {},
+  "imad_wide": 0,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "heston_ft",
+  "loop": 0,
+  "start": "0x720",
+  "end": "0x1490",
+  "n": 216,
+  "classes": {
+   "int": 170,
+   "ctrl": 13,
+   "conv": 2,
+   "fp32": 25,
+   "sfu": 6
+  },
+  "mufu": {
+   "MUFU.SQRT": 3,
+   "MUFU.LG2": 1,
+   "MUFU.COS": 1,
+   "MUFU.SIN": 1
+  },
+  "imad_wide": 40,
+  "imad_hi": 0
+ },
+ {
+  "kernel": "heston_ft",
+  "loop": 1,
+  "start": "0x5580",
+  "end": "0x5580",
+  "n": 1,
+  "classes": {
+   "ctrl": 1
+  },
+  "mufu": {},
+  "imad_wide": 0,
+  "imad_hi": 0
+ }
+]

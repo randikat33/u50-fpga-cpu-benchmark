@@ -1,0 +1,18 @@
+1. prices at the 1% settings (pairs cut to <= 1e7 path-steps)
+  I   ft    steps  1280 pairs     3906  z = -0.37 +0.58 -0.23   regs 47  PASS
+  I   qe    steps    40 pairs    57344  z = -1.24 -0.20 -1.51   regs 61  PASS
+  II  ft    steps  1920 pairs     2604  z = -1.25 -1.18 -1.07   regs 47  PASS
+  II  qe    steps    60 pairs    83333  z = -0.29 -0.35 -0.07   regs 61  PASS
+  III ft    steps   160 pairs    31250  z = -0.92 -1.26 -1.37   regs 47  PASS
+  III qe    steps    20 pairs    94208  z = +0.51 +0.14 +0.28   regs 61  PASS
+  P1  ft    steps     8 pairs    41216  z = +2.60 +1.45 +1.27   regs 47  PASS
+  P1  qe    steps     1 pairs    37888  z = +0.07 -0.82 -0.76   regs 61  PASS
+  B   ft    steps     8 pairs    28672  z = -1.36 +0.16 -0.04   regs 56  PASS
+  B   qe    steps     1 pairs    27648  z = +0.91 +1.81 +1.20   regs 64  PASS
+  A   plain steps   250 pairs    20000  z = +0.70 +0.55 +0.86   regs 46  PASS
+  A   cv    steps   250 pairs      256  z = -0.11 +0.24 +0.83   regs 80  PASS
+2. reproducibility and 3. launch shape (Case I QE, Case B FT, Case A CV)
+  I   qe   : same run twice identical PASS; tpb 128 vs 256 PASS
+  B   ft   : same run twice identical PASS; tpb 128 vs 256 PASS
+  A   cv   : same run twice identical PASS; tpb 128 vs 256 PASS
+GPU FUNCTIONAL TEST: ALL PASS

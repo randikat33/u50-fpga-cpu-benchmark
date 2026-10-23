@@ -1,0 +1,147 @@
+2026-10-22 07:41:34 replicates: 72 setting-code pairs left
+2026-10-22 07:41:39 I_ft_1pct matched: 200 replicates (0.1 min)
+2026-10-22 07:41:41 I_ft_1pct native: 200 replicates (0.0 min)
+2026-10-22 07:42:00 I_ft_0.3pct matched: 200 replicates (0.3 min)
+2026-10-22 07:42:08 I_ft_0.3pct native: 200 replicates (0.1 min)
+2026-10-22 07:49:19 I_ft_0.1pct matched: 200 replicates (7.2 min)
+2026-10-22 07:53:13 I_ft_0.1pct native: 200 replicates (3.9 min)
+2026-10-22 07:53:15 I_qe_1pct matched: 200 replicates (0.0 min)
+2026-10-22 07:53:17 I_qe_1pct native: 200 replicates (0.0 min)
+2026-10-22 07:53:20 I_qe_0.3pct matched: 200 replicates (0.0 min)
+2026-10-22 07:53:22 I_qe_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 07:53:53 I_qe_0.1pct matched: 200 replicates (0.5 min)
+2026-10-22 07:54:09 I_qe_0.1pct native: 200 replicates (0.3 min)
+2026-10-22 07:54:16 II_ft_1pct matched: 200 replicates (0.1 min)
+2026-10-22 07:54:19 II_ft_1pct native: 200 replicates (0.0 min)
+2026-10-22 07:55:32 II_ft_0.3pct matched: 200 replicates (1.2 min)
+2026-10-22 07:56:06 II_ft_0.3pct native: 200 replicates (0.6 min)
+2026-10-22 08:29:41 II_ft_0.1pct matched: 200 replicates (33.6 min)
+2026-10-22 08:48:02 II_ft_0.1pct native: 200 replicates (18.4 min)
+2026-10-22 08:48:04 II_qe_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:48:06 II_qe_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:48:10 II_qe_0.3pct matched: 200 replicates (0.1 min)
+2026-10-22 08:48:13 II_qe_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:49:20 II_qe_0.1pct matched: 200 replicates (1.1 min)
+2026-10-22 08:49:56 II_qe_0.1pct native: 200 replicates (0.6 min)
+2026-10-22 08:49:58 III_ft_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:50:00 III_ft_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:50:05 III_ft_0.3pct matched: 200 replicates (0.1 min)
+2026-10-22 08:50:08 III_ft_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:51:43 III_ft_0.1pct matched: 200 replicates (1.6 min)
+2026-10-22 08:52:36 III_ft_0.1pct native: 200 replicates (0.9 min)
+2026-10-22 08:52:39 III_qe_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:52:41 III_qe_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:52:44 III_qe_0.3pct matched: 200 replicates (0.0 min)
+2026-10-22 08:52:46 III_qe_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:52:55 III_qe_0.1pct matched: 200 replicates (0.1 min)
+2026-10-22 08:52:59 III_qe_0.1pct native: 200 replicates (0.1 min)
+2026-10-22 08:53:01 P1_ft_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:03 P1_ft_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:05 P1_ft_0.3pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:07 P1_ft_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:10 P1_ft_0.1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:13 P1_ft_0.1pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:15 P1_qe_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:17 P1_qe_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:19 P1_qe_0.3pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:21 P1_qe_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:24 P1_qe_0.1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:27 P1_qe_0.1pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:29 B_ft_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:31 B_ft_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:34 B_ft_0.3pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:36 B_ft_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:44 B_ft_0.1pct matched: 200 replicates (0.1 min)
+2026-10-22 08:53:48 B_ft_0.1pct native: 200 replicates (0.1 min)
+2026-10-22 08:53:50 B_qe_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:52 B_qe_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:53:55 B_qe_0.3pct matched: 200 replicates (0.0 min)
+2026-10-22 08:53:57 B_qe_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:54:02 B_qe_0.1pct matched: 200 replicates (0.1 min)
+2026-10-22 08:54:05 B_qe_0.1pct native: 200 replicates (0.0 min)
+2026-10-22 08:54:07 A_plain_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:54:10 A_plain_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:54:13 A_plain_0.3pct matched: 200 replicates (0.1 min)
+2026-10-22 08:54:16 A_plain_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:54:25 A_plain_0.1pct matched: 200 replicates (0.2 min)
+2026-10-22 08:54:28 A_plain_0.1pct native: 200 replicates (0.1 min)
+2026-10-22 08:54:30 A_cv_1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:54:33 A_cv_1pct native: 200 replicates (0.0 min)
+2026-10-22 08:54:35 A_cv_0.3pct matched: 200 replicates (0.0 min)
+2026-10-22 08:54:37 A_cv_0.3pct native: 200 replicates (0.0 min)
+2026-10-22 08:54:40 A_cv_0.1pct matched: 200 replicates (0.0 min)
+2026-10-22 08:54:43 A_cv_0.1pct native: 200 replicates (0.0 min)
+    I ft    1%    matched 200 reps  RMSE/eps max 0.795
+    I ft    1%    native  200 reps  RMSE/eps max 0.803
+    I ft    0.3%  matched 200 reps  RMSE/eps max 0.738
+    I ft    0.3%  native  200 reps  RMSE/eps max 0.708
+    I ft    0.1%  matched 200 reps  RMSE/eps max 0.766
+    I ft    0.1%  native  200 reps  RMSE/eps max 0.669
+    I qe    1%    matched 200 reps  RMSE/eps max 0.722
+    I qe    1%    native  200 reps  RMSE/eps max 0.688
+    I qe    0.3%  matched 200 reps  RMSE/eps max 0.717
+    I qe    0.3%  native  200 reps  RMSE/eps max 0.781
+    I qe    0.1%  matched 200 reps  RMSE/eps max 0.662
+    I qe    0.1%  native  200 reps  RMSE/eps max 0.714
+   II ft    1%    matched 200 reps  RMSE/eps max 0.772
+   II ft    1%    native  200 reps  RMSE/eps max 0.755
+   II ft    0.3%  matched 200 reps  RMSE/eps max 0.728
+   II ft    0.3%  native  200 reps  RMSE/eps max 0.746
+   II ft    0.1%  matched 200 reps  RMSE/eps max 0.715
+   II ft    0.1%  native  200 reps  RMSE/eps max 0.667
+   II qe    1%    matched 200 reps  RMSE/eps max 0.755
+   II qe    1%    native  200 reps  RMSE/eps max 0.729
+   II qe    0.3%  matched 200 reps  RMSE/eps max 0.783
+   II qe    0.3%  native  200 reps  RMSE/eps max 0.749
+   II qe    0.1%  matched 200 reps  RMSE/eps max 0.781
+   II qe    0.1%  native  200 reps  RMSE/eps max 0.704
+  III ft    1%    matched 200 reps  RMSE/eps max 0.836
+  III ft    1%    native  200 reps  RMSE/eps max 0.815
+  III ft    0.3%  matched 200 reps  RMSE/eps max 0.720
+  III ft    0.3%  native  200 reps  RMSE/eps max 0.836
+  III ft    0.1%  matched 200 reps  RMSE/eps max 0.732
+  III ft    0.1%  native  200 reps  RMSE/eps max 0.768
+  III qe    1%    matched 200 reps  RMSE/eps max 0.677
+  III qe    1%    native  200 reps  RMSE/eps max 0.721
+  III qe    0.3%  matched 200 reps  RMSE/eps max 0.891
+  III qe    0.3%  native  200 reps  RMSE/eps max 0.975
+  III qe    0.1%  matched 200 reps  RMSE/eps max 0.715
+  III qe    0.1%  native  200 reps  RMSE/eps max 0.720
+   P1 ft    1%    matched 200 reps  RMSE/eps max 0.888
+   P1 ft    1%    native  200 reps  RMSE/eps max 0.825
+   P1 ft    0.3%  matched 200 reps  RMSE/eps max 0.842
+   P1 ft    0.3%  native  200 reps  RMSE/eps max 0.880
+   P1 ft    0.1%  matched 200 reps  RMSE/eps max 0.700
+   P1 ft    0.1%  native  200 reps  RMSE/eps max 0.781
+   P1 qe    1%    matched 200 reps  RMSE/eps max 0.712
+   P1 qe    1%    native  200 reps  RMSE/eps max 0.748
+   P1 qe    0.3%  matched 200 reps  RMSE/eps max 0.796
+   P1 qe    0.3%  native  200 reps  RMSE/eps max 0.743
+   P1 qe    0.1%  matched 200 reps  RMSE/eps max 0.808
+   P1 qe    0.1%  native  200 reps  RMSE/eps max 0.729
+    B ft    1%    matched 200 reps  RMSE/eps max 0.757
+    B ft    1%    native  200 reps  RMSE/eps max 0.764
+    B ft    0.3%  matched 200 reps  RMSE/eps max 0.866
+    B ft    0.3%  native  200 reps  RMSE/eps max 0.732
+    B ft    0.1%  matched 200 reps  RMSE/eps max 0.686
+    B ft    0.1%  native  200 reps  RMSE/eps max 0.704
+    B qe    1%    matched 200 reps  RMSE/eps max 0.777
+    B qe    1%    native  200 reps  RMSE/eps max 0.771
+    B qe    0.3%  matched 200 reps  RMSE/eps max 0.887
+    B qe    0.3%  native  200 reps  RMSE/eps max 0.782
+    B qe    0.1%  matched 200 reps  RMSE/eps max 0.729
+    B qe    0.1%  native  200 reps  RMSE/eps max 0.771
+    A plain 1%    matched 200 reps  RMSE/eps max 0.745
+    A plain 1%    native  200 reps  RMSE/eps max 0.746
+    A plain 0.3%  matched 200 reps  RMSE/eps max 0.761
+    A plain 0.3%  native  200 reps  RMSE/eps max 0.715
+    A plain 0.1%  matched 200 reps  RMSE/eps max 0.707
+    A plain 0.1%  native  200 reps  RMSE/eps max 0.697
+    A cv    1%    matched 200 reps  RMSE/eps max 0.441
+    A cv    1%    native  200 reps  RMSE/eps max 0.455
+    A cv    0.3%  matched 200 reps  RMSE/eps max 0.706
+    A cv    0.3%  native  200 reps  RMSE/eps max 0.696
+    A cv    0.1%  matched 200 reps  RMSE/eps max 0.743
+    A cv    0.1%  native  200 reps  RMSE/eps max 0.719
+72 rows -> /home/cse/Desktop/Thesis_and_jounal_data/v2_projects/10_Heston_Accuracy/results/replicates_summary.csv
+REPLICATES FINISHED

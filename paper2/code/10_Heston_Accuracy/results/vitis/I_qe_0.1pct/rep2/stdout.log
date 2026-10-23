@@ -1,0 +1,20 @@
+Found Platform
+Platform Name: Xilinx
+INFO: Importing /home/cse/vitis_libraries_2023.1/quantitative_finance/L2/tests/MCEuropeanHestonEngine/build_dir.hw.xilinx_u50_gen3x16_xdma_5_202210_1/kernel_mc.xclbin
+Loading: '/home/cse/vitis_libraries_2023.1/quantitative_finance/L2/tests/MCEuropeanHestonEngine/build_dir.hw.xilinx_u50_gen3x16_xdma_5_202210_1/kernel_mc.xclbin'
+MARK start 1792767440.805529
+MARK end 1792767459.203654
+RESULT engine=heston
+RESULT runs=2
+RESULT t_window_s=18.398124
+RESULT t_per_run_s=9.199062109
+RESULT steps=320
+RESULT samples=2866816
+RESULT path_steps=2752143360.0
+RESULT price0=35.8237035025
+RESULT se0=nan
+RESULT price1=12.8449462414
+RESULT se1=nan
+RESULT price2=0.3049962348
+RESULT se2=nan
+RESULT ok=1

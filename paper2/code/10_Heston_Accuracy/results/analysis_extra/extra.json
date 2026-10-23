@@ -1,0 +1,1129 @@
+{
+ "prediction": {
+  "card_n": 72,
+  "card_within20": 60,
+  "card_within20_steady": 70,
+  "winner_rules": {
+   "primary": {
+    "n": 36,
+    "registered model": 36,
+    "better method on the card": 14,
+    "better method on CPU-native": 22
+   },
+   "steady": {
+    "n": 36,
+    "registered model": 35,
+    "better method on the card": 28,
+    "better method on CPU-native": 8
+   }
+  }
+ },
+ "breakeven": {
+  "t0_0.53ms": {
+   "correct": 36,
+   "n": 36,
+   "rows": [
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 1152000.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 1152000.0,
+     "Wstar": 23052273.245349497,
+     "W_over_Wstar": 0.049973379533508756,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 128000.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 128000.0,
+     "Wstar": 23052273.245349497,
+     "W_over_Wstar": 0.005552597725945417,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "server",
+     "W": 32000.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 32000.0,
+     "Wstar": 23052273.245349497,
+     "W_over_Wstar": 0.0013881494314863542,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 11276288.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 11276288.0,
+     "Wstar": 1768159.7506503006,
+     "W_over_Wstar": 6.377414708061736,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 311040.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 311040.0,
+     "Wstar": 608233.1029153017,
+     "W_over_Wstar": 0.5113828867734502,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "server",
+     "W": 13824.0,
+     "Wstar": 1236707.8518847013,
+     "W_over_Wstar": 0.011178064390011504,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 13824.0,
+     "Wstar": 301565.7061877095,
+     "W_over_Wstar": 0.045840756148165115,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "I",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 917381120.0,
+     "Wstar": 14464492.086697495,
+     "W_over_Wstar": 63.422974999840086,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "I",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 917381120.0,
+     "Wstar": 3364096.6893832786,
+     "W_over_Wstar": 272.6976079180942,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "I",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 25436160.0,
+     "Wstar": 16628318.492745249,
+     "W_over_Wstar": 1.5296892473582049,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "I",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 25436160.0,
+     "Wstar": 3461348.03346649,
+     "W_over_Wstar": 7.348628266810273,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "I",
+     "target": "1%",
+     "boundary": "server",
+     "W": 1146880.0,
+     "Wstar": 20089932.011448,
+     "W_over_Wstar": 0.057087301208708155,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "I",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 1146880.0,
+     "Wstar": 3514804.1879432024,
+     "W_over_Wstar": 0.3262998274367975,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "II",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 2186926080.0,
+     "Wstar": 15157343.692572374,
+     "W_over_Wstar": 144.281618491746,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "II",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 2186926080.0,
+     "Wstar": 3343945.88855493,
+     "W_over_Wstar": 653.9956545005784,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "II",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 59496960.0,
+     "Wstar": 19121697.406538285,
+     "W_over_Wstar": 3.111489463255296,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "II",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 59496960.0,
+     "Wstar": 3531690.294616409,
+     "W_over_Wstar": 16.846596115943456,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "II",
+     "target": "1%",
+     "boundary": "server",
+     "W": 5360640.0,
+     "Wstar": 19121697.406538285,
+     "W_over_Wstar": 0.28034331294077663,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "II",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 5360640.0,
+     "Wstar": 3531690.294616409,
+     "W_over_Wstar": 1.517868089444757,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "III",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 192675840.0,
+     "Wstar": 20000535.456586335,
+     "W_over_Wstar": 9.633534083036277,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "III",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 192675840.0,
+     "Wstar": 3905015.352455462,
+     "W_over_Wstar": 49.340610115359986,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "III",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 10449920.0,
+     "Wstar": 20655602.51892892,
+     "W_over_Wstar": 0.5059121364493546,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "III",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 10449920.0,
+     "Wstar": 3757468.958822963,
+     "W_over_Wstar": 2.781106142064701,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "III",
+     "target": "1%",
+     "boundary": "server",
+     "W": 942080.0,
+     "Wstar": 20655602.51892892,
+     "W_over_Wstar": 0.04560893341826617,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "III",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 942080.0,
+     "Wstar": 3757468.958822963,
+     "W_over_Wstar": 0.2507219647917222,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 14635008.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 14635008.0,
+     "Wstar": 8336847.733835264,
+     "W_over_Wstar": 1.755460632992435,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "P1",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 806912.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 806912.0,
+     "Wstar": 6053173.857524862,
+     "W_over_Wstar": 0.13330395243759705,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "1%",
+     "boundary": "server",
+     "W": 18944.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 18944.0,
+     "Wstar": 3386549.4437835356,
+     "W_over_Wstar": 0.005593894409182256,
+     "predicted": "cpu",
+     "measured": "cpu"
+    }
+   ]
+  },
+  "t0_0.70ms": {
+   "correct": 36,
+   "n": 36,
+   "rows": [
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 1152000.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 1152000.0,
+     "Wstar": 30446398.625933304,
+     "W_over_Wstar": 0.03783698736108519,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 128000.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 128000.0,
+     "Wstar": 30446398.625933304,
+     "W_over_Wstar": 0.0042041097067872435,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "server",
+     "W": 32000.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "A",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 32000.0,
+     "Wstar": 30446398.625933304,
+     "W_over_Wstar": 0.0010510274266968109,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 11276288.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 11276288.0,
+     "Wstar": 2335305.3310475666,
+     "W_over_Wstar": 4.828613993246744,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 311040.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 311040.0,
+     "Wstar": 803326.7396994551,
+     "W_over_Wstar": 0.38718989998561226,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "server",
+     "W": 13824.0,
+     "Wstar": 1633387.7289043225,
+     "W_over_Wstar": 0.008463391609580139,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "B",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 13824.0,
+     "Wstar": 398294.32892716356,
+     "W_over_Wstar": 0.034708001083610725,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "I",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 917381120.0,
+     "Wstar": 19104046.152241975,
+     "W_over_Wstar": 48.02025249987892,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "I",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 917381120.0,
+     "Wstar": 4443146.570883575,
+     "W_over_Wstar": 206.4710459951285,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "I",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 25436160.0,
+     "Wstar": 21961930.08475788,
+     "W_over_Wstar": 1.1581932872854979,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "I",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 25436160.0,
+     "Wstar": 4571591.742314232,
+     "W_over_Wstar": 5.5639614020134935,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "I",
+     "target": "1%",
+     "boundary": "server",
+     "W": 1146880.0,
+     "Wstar": 26533872.46795019,
+     "W_over_Wstar": 0.043223242343736167,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "I",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 1146880.0,
+     "Wstar": 4642194.210491022,
+     "W_over_Wstar": 0.24705558363071808,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "II",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 2186926080.0,
+     "Wstar": 20019133.178869177,
+     "W_over_Wstar": 109.24179685803625,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "II",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 2186926080.0,
+     "Wstar": 4416532.305638587,
+     "W_over_Wstar": 495.16813840758084,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "II",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 59496960.0,
+     "Wstar": 25255072.046371322,
+     "W_over_Wstar": 2.3558420221790097,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "II",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 59496960.0,
+     "Wstar": 4664496.6155311065,
+     "W_over_Wstar": 12.755279916357189,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "II",
+     "target": "1%",
+     "boundary": "server",
+     "W": 5360640.0,
+     "Wstar": 25255072.046371322,
+     "W_over_Wstar": 0.21225993694087375,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "II",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 5360640.0,
+     "Wstar": 4664496.6155311065,
+     "W_over_Wstar": 1.149242982008173,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "III",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 192675840.0,
+     "Wstar": 26415801.54643478,
+     "W_over_Wstar": 7.293961520013183,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "III",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 192675840.0,
+     "Wstar": 5157567.446639289,
+     "W_over_Wstar": 37.35789051591542,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "III",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 10449920.0,
+     "Wstar": 27280984.458962724,
+     "W_over_Wstar": 0.38304776045451133,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "III",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 10449920.0,
+     "Wstar": 4962694.851275612,
+     "W_over_Wstar": 2.1056946504204164,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "III",
+     "target": "1%",
+     "boundary": "server",
+     "W": 942080.0,
+     "Wstar": 27280984.458962724,
+     "W_over_Wstar": 0.03453247815954438,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "III",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 942080.0,
+     "Wstar": 4962694.851275612,
+     "W_over_Wstar": 0.18983234477087538,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "0.1%",
+     "boundary": "server",
+     "W": 14635008.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "0.1%",
+     "boundary": "socket",
+     "W": 14635008.0,
+     "Wstar": 11010930.969216388,
+     "W_over_Wstar": 1.3291344792657007,
+     "predicted": "card",
+     "measured": "card"
+    },
+    {
+     "case": "P1",
+     "target": "0.3%",
+     "boundary": "server",
+     "W": 806912.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "0.3%",
+     "boundary": "socket",
+     "W": 806912.0,
+     "Wstar": 7994757.925032837,
+     "W_over_Wstar": 0.10093013541703776,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "1%",
+     "boundary": "server",
+     "W": 18944.0,
+     "Wstar": Infinity,
+     "W_over_Wstar": 0,
+     "predicted": "cpu",
+     "measured": "cpu"
+    },
+    {
+     "case": "P1",
+     "target": "1%",
+     "boundary": "socket",
+     "W": 18944.0,
+     "Wstar": 4472801.152166935,
+     "W_over_Wstar": 0.004235377195523708,
+     "predicted": "cpu",
+     "measured": "cpu"
+    }
+   ]
+  }
+ },
+ "sensitivity": [
+  {
+   "case": "I",
+   "target": "1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 128,
+    "qe": 4
+   },
+   "spy_alt": {
+    "ft": 128,
+    "qe": 4
+   },
+   "W_alt_over_reg": {
+    "ft": 0.5575221238938053,
+    "qe": 0.5044642857142857
+   },
+   "method_gain_reg": 15.590442908630477,
+   "method_gain_alt": 17.230192679661158,
+   "platform_gain": 1.9323372329832094,
+   "margin_reg": 8.068179116210171,
+   "margin_alt": 8.916762760432137
+  },
+  {
+   "case": "I",
+   "target": "0.3%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 512,
+    "qe": 8
+   },
+   "spy_alt": {
+    "ft": 256,
+    "qe": 8
+   },
+   "W_alt_over_reg": {
+    "ft": 0.5206661316211878,
+    "qe": 0.5305958132045089
+   },
+   "method_gain_reg": 31.194807361680216,
+   "method_gain_alt": 30.61102117934346,
+   "platform_gain": 1.94913409762984,
+   "margin_reg": 16.00444392184884,
+   "margin_alt": 15.704933394047472
+  },
+  {
+   "case": "I",
+   "target": "0.1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 2048,
+    "qe": 32
+   },
+   "spy_alt": {
+    "ft": 2048,
+    "qe": 8
+   },
+   "W_alt_over_reg": {
+    "ft": 0.6715938016344394,
+    "qe": 0.25692056971915883
+   },
+   "method_gain_reg": 30.906469097951895,
+   "method_gain_alt": 80.78992312402224,
+   "platform_gain": 1.963511225514872,
+   "margin_reg": 15.740408659923807,
+   "margin_alt": 41.145638524596414
+  },
+  {
+   "case": "II",
+   "target": "1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 128,
+    "qe": 4
+   },
+   "spy_alt": {
+    "ft": 64,
+    "qe": 2
+   },
+   "W_alt_over_reg": {
+    "ft": 0.521557719054242,
+    "qe": 0.3467048710601719
+   },
+   "method_gain_reg": 16.17655688065055,
+   "method_gain_alt": 24.33484157007714,
+   "platform_gain": 1.9350774340458237,
+   "margin_reg": 8.359643183285389,
+   "margin_alt": 12.575642267295892
+  },
+  {
+   "case": "II",
+   "target": "0.3%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 512,
+    "qe": 4
+   },
+   "spy_alt": {
+    "ft": 256,
+    "qe": 4
+   },
+   "W_alt_over_reg": {
+    "ft": 0.36167273640587716,
+    "qe": 0.6335355621530915
+   },
+   "method_gain_reg": 64.69476879580621,
+   "method_gain_alt": 36.93294498260646,
+   "platform_gain": 1.9350774340458237,
+   "margin_reg": 33.43265114747558,
+   "margin_alt": 19.086029495671266
+  },
+  {
+   "case": "II",
+   "target": "0.1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 2048,
+    "qe": 16
+   },
+   "spy_alt": {
+    "ft": 1024,
+    "qe": 16
+   },
+   "W_alt_over_reg": {
+    "ft": 0.7402513089005236,
+    "qe": 0.6065684305159506
+   },
+   "method_gain_reg": 63.29180655620534,
+   "method_gain_alt": 77.2408194835615,
+   "platform_gain": 1.9798177088317241,
+   "margin_reg": 31.968502086767053,
+   "margin_alt": 39.01410677306283
+  },
+  {
+   "case": "III",
+   "target": "1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 32,
+    "qe": 4
+   },
+   "spy_alt": {
+    "ft": 32,
+    "qe": 4
+   },
+   "W_alt_over_reg": {
+    "ft": 0.6658227848101266,
+    "qe": 0.5190217391304348
+   },
+   "method_gain_reg": 3.7621436850274375,
+   "method_gain_alt": 4.826235196655782,
+   "platform_gain": 1.8474698330138386,
+   "margin_reg": 2.0363762470156974,
+   "margin_alt": 2.6123485809684834
+  },
+  {
+   "case": "III",
+   "target": "0.3%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 128,
+    "qe": 4
+   },
+   "spy_alt": {
+    "ft": 128,
+    "qe": 4
+   },
+   "W_alt_over_reg": {
+    "ft": 0.651875571820677,
+    "qe": 0.8138167564919158
+   },
+   "method_gain_reg": 14.987609522503824,
+   "method_gain_alt": 12.005229002438533,
+   "platform_gain": 1.8474698330138388,
+   "margin_reg": 8.11250568462817,
+   "margin_alt": 6.498200288799306
+  },
+  {
+   "case": "III",
+   "target": "0.1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 512,
+    "qe": 8
+   },
+   "spy_alt": {
+    "ft": 512,
+    "qe": 8
+   },
+   "W_alt_over_reg": {
+    "ft": 0.6188258645698145,
+    "qe": 0.7322225765306123
+   },
+   "method_gain_reg": 29.304113311956268,
+   "method_gain_alt": 24.765889275970725,
+   "platform_gain": 1.8174027321814168,
+   "margin_reg": 16.124171485525792,
+   "margin_alt": 13.627078268031648
+  },
+  {
+   "case": "P1",
+   "target": "1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 8,
+    "qe": 1
+   },
+   "spy_alt": {
+    "ft": 8,
+    "qe": 1
+   },
+   "W_alt_over_reg": {
+    "ft": 0.6770186335403726,
+    "qe": 0.5135135135135135
+   },
+   "method_gain_reg": 1.7833535937499931,
+   "method_gain_alt": 2.35118177299566,
+   "platform_gain": 1.3764072923541928,
+   "margin_reg": 1.2956583444859286,
+   "margin_alt": 1.708202060579193
+  },
+  {
+   "case": "P1",
+   "target": "0.3%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 16,
+    "qe": 4
+   },
+   "spy_alt": {
+    "ft": 16,
+    "qe": 4
+   },
+   "W_alt_over_reg": {
+    "ft": 0.8364928909952607,
+    "qe": 0.6630710659898477
+   },
+   "method_gain_reg": 1.6456034312797063,
+   "method_gain_alt": 2.0760000583164615,
+   "platform_gain": 1.4200648877537259,
+   "margin_reg": 1.1588227027306757,
+   "margin_alt": 1.461905069422779
+  },
+  {
+   "case": "P1",
+   "target": "0.1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 64,
+    "qe": 8
+   },
+   "spy_alt": {
+    "ft": 64,
+    "qe": 8
+   },
+   "W_alt_over_reg": {
+    "ft": 0.9579270371633141,
+    "qe": 0.5852924713126224
+   },
+   "method_gain_reg": 3.2581836412798837,
+   "method_gain_alt": 5.332551425145774,
+   "platform_gain": 1.3323763036632241,
+   "margin_reg": 2.445392966177694,
+   "margin_alt": 4.002286298911578
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 8,
+    "qe": 1
+   },
+   "spy_alt": {
+    "ft": 8,
+    "qe": 1
+   },
+   "W_alt_over_reg": {
+    "ft": 0.5892857142857143,
+    "qe": 0.5462962962962963
+   },
+   "method_gain_reg": 3.8022889851604265,
+   "method_gain_alt": 4.101500588108886,
+   "platform_gain": 2.3095497108939007,
+   "margin_reg": 1.6463334680459283,
+   "margin_alt": 1.7758875545144333
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 16,
+    "qe": 2
+   },
+   "spy_alt": {
+    "ft": 16,
+    "qe": 2
+   },
+   "W_alt_over_reg": {
+    "ft": 0.6545012165450121,
+    "qe": 0.7588477366255144
+   },
+   "method_gain_reg": 3.46795670750869,
+   "method_gain_alt": 2.991090009813118,
+   "platform_gain": 1.6097411939114277,
+   "margin_reg": 2.1543566882835865,
+   "margin_alt": 1.858118572803136
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "reproduced": true,
+   "spy_reg": {
+    "ft": 64,
+    "qe": 8
+   },
+   "spy_alt": {
+    "ft": 64,
+    "qe": 8
+   },
+   "W_alt_over_reg": {
+    "ft": 0.5948314809794886,
+    "qe": 0.7431892480929895
+   },
+   "method_gain_reg": 3.248530772292184,
+   "method_gain_alt": 2.6000488775212,
+   "platform_gain": 1.1989973668449867,
+   "margin_reg": 2.7093727326860533,
+   "margin_alt": 2.1685192556868635
+  }
+ ],
+ "resources": [
+  {
+   "design": "Heston FT",
+   "MHz": 225,
+   "LUT": "362473 [ 48.83%]",
+   "REG": "464232 [ 29.61%]",
+   "BRAM": "332 [ 28.55%]",
+   "DSP": "4018 [ 67.55%]"
+  },
+  {
+   "design": "Heston QE",
+   "MHz": 225,
+   "LUT": "405656 [ 54.65%]",
+   "REG": "471852 [ 30.09%]",
+   "BRAM": "214 [ 18.40%]",
+   "DSP": "3830 [ 64.39%]"
+  },
+  {
+   "design": "Basket FT",
+   "MHz": 225,
+   "LUT": "415976 [ 56.03%]",
+   "REG": "545396 [ 34.78%]",
+   "BRAM": "332 [ 28.55%]",
+   "DSP": "4354 [ 73.20%]"
+  },
+  {
+   "design": "Basket QE",
+   "MHz": 200,
+   "LUT": "428239 [ 57.69%]",
+   "REG": "511345 [ 32.61%]",
+   "BRAM": "214 [ 18.40%]",
+   "DSP": "3998 [ 67.22%]"
+  },
+  {
+   "design": "Asian",
+   "MHz": 200,
+   "LUT": "462069 [ 62.32%]",
+   "REG": "530428 [ 33.83%]",
+   "BRAM": "436 [ 37.49%]",
+   "DSP": "4460 [ 74.98%]"
+  }
+ ]
+}

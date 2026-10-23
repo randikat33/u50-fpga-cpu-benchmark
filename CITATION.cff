@@ -33,7 +33,7 @@ references:
   - type: article
     status: submitted
     title: "Slower can be greener: predicting when a PCIe FPGA card beats its host server in time and energy"
-    journal: "Journal of Systems Architecture"
+    journal: "Sustainable Computing: Informatics and Systems"
     year: 2026
     authors:
       - family-names: "Pathirana Godauda Pathiranage"

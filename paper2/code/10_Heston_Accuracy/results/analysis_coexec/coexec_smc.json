@@ -1,0 +1,319 @@
+{
+ "HC1": {
+  "per": [
+   {
+    "case": "I",
+    "scheme": "ft",
+    "policy": "static_M",
+    "T_ratio": 0.9921578914748238,
+    "E_ratio": 0.9979248032390965
+   },
+   {
+    "case": "I",
+    "scheme": "ft",
+    "policy": "static_T",
+    "T_ratio": 0.9947240111062938,
+    "E_ratio": 0.9925329823535424
+   },
+   {
+    "case": "I",
+    "scheme": "qe",
+    "policy": "static_M",
+    "T_ratio": 0.9995545417317534,
+    "E_ratio": 0.9906560512497821
+   },
+   {
+    "case": "I",
+    "scheme": "qe",
+    "policy": "static_T",
+    "T_ratio": 0.9994023240762376,
+    "E_ratio": 0.9935554257011514
+   },
+   {
+    "case": "II",
+    "scheme": "ft",
+    "policy": "static_M",
+    "T_ratio": 0.9922889548155646,
+    "E_ratio": 1.0028280015653555
+   },
+   {
+    "case": "II",
+    "scheme": "ft",
+    "policy": "static_T",
+    "T_ratio": 0.9953348099119214,
+    "E_ratio": 1.003862479895353
+   },
+   {
+    "case": "II",
+    "scheme": "qe",
+    "policy": "static_M",
+    "T_ratio": 0.9995747534795334,
+    "E_ratio": 0.9904132619890399
+   },
+   {
+    "case": "II",
+    "scheme": "qe",
+    "policy": "static_T",
+    "T_ratio": 0.9995190822549839,
+    "E_ratio": 0.993372220580641
+   },
+   {
+    "case": "III",
+    "scheme": "ft",
+    "policy": "static_M",
+    "T_ratio": 0.9941789455919319,
+    "E_ratio": 0.9940802798315422
+   },
+   {
+    "case": "III",
+    "scheme": "ft",
+    "policy": "static_T",
+    "T_ratio": 0.9959957365042864,
+    "E_ratio": 0.9967390361178866
+   },
+   {
+    "case": "III",
+    "scheme": "qe",
+    "policy": "static_M",
+    "T_ratio": 0.9934842075229106,
+    "E_ratio": 1.0066745313968721
+   },
+   {
+    "case": "III",
+    "scheme": "qe",
+    "policy": "static_T",
+    "T_ratio": 0.9947795355238063,
+    "E_ratio": 1.0024183233316661
+   },
+   {
+    "case": "P1",
+    "scheme": "ft",
+    "policy": "static_M",
+    "T_ratio": 0.9989951917812765,
+    "E_ratio": 0.9903110859470535
+   },
+   {
+    "case": "P1",
+    "scheme": "ft",
+    "policy": "static_T",
+    "T_ratio": 0.9987427469162214,
+    "E_ratio": 0.9935870807291866
+   },
+   {
+    "case": "P1",
+    "scheme": "qe",
+    "policy": "static_M",
+    "T_ratio": 0.9926032170218243,
+    "E_ratio": 0.9924796727843918
+   },
+   {
+    "case": "P1",
+    "scheme": "qe",
+    "policy": "static_T",
+    "T_ratio": 1.0011285745900973,
+    "E_ratio": 0.983164465739293
+   },
+   {
+    "case": "B",
+    "scheme": "ft",
+    "policy": "static_M",
+    "T_ratio": 0.9999065235945545,
+    "E_ratio": 0.9909724433135613
+   },
+   {
+    "case": "B",
+    "scheme": "ft",
+    "policy": "static_T",
+    "T_ratio": 0.9998692247369211,
+    "E_ratio": 0.9952860000441809
+   },
+   {
+    "case": "B",
+    "scheme": "qe",
+    "policy": "static_M",
+    "T_ratio": 0.9995849341966014,
+    "E_ratio": 0.9892648680343654
+   },
+   {
+    "case": "B",
+    "scheme": "qe",
+    "policy": "static_T",
+    "T_ratio": 0.9993907008706534,
+    "E_ratio": 0.9902692012021479
+   },
+   {
+    "case": "A",
+    "scheme": "plain",
+    "policy": "static_M",
+    "T_ratio": 0.9980103287503393,
+    "E_ratio": 1.0078133027438032
+   },
+   {
+    "case": "A",
+    "scheme": "plain",
+    "policy": "static_T",
+    "T_ratio": 0.9978715765578139,
+    "E_ratio": 1.009248053672564
+   },
+   {
+    "case": "A",
+    "scheme": "cv",
+    "policy": "static_M",
+    "T_ratio": 1.0014573186302584,
+    "E_ratio": 1.0023307654010525
+   },
+   {
+    "case": "A",
+    "scheme": "cv",
+    "policy": "static_T",
+    "T_ratio": 1.00150232605862,
+    "E_ratio": 1.0027685365367554
+   }
+  ],
+  "holds": true,
+  "within": 24,
+  "n": 24
+ },
+ "HC2": {
+  "per": [
+   {
+    "case": "I",
+    "scheme": "ft",
+    "E_T_over_acc": 1.1628955979455988,
+    "T_T_over_acc": 0.9855973997064535
+   },
+   {
+    "case": "I",
+    "scheme": "qe",
+    "E_T_over_acc": 1.1991433561557696,
+    "T_T_over_acc": 0.9863679307097738
+   },
+   {
+    "case": "II",
+    "scheme": "ft",
+    "E_T_over_acc": 1.1740080902445442,
+    "T_T_over_acc": 0.9808300029737621
+   },
+   {
+    "case": "II",
+    "scheme": "qe",
+    "E_T_over_acc": 1.2005414897907636,
+    "T_T_over_acc": 0.9861285565467258
+   },
+   {
+    "case": "III",
+    "scheme": "ft",
+    "E_T_over_acc": 1.1757897605661136,
+    "T_T_over_acc": 0.976079393896366
+   },
+   {
+    "case": "III",
+    "scheme": "qe",
+    "E_T_over_acc": 1.1818489672821397,
+    "T_T_over_acc": 0.9876059036362633
+   },
+   {
+    "case": "P1",
+    "scheme": "ft",
+    "E_T_over_acc": 1.1812232753989111,
+    "T_T_over_acc": 0.9786439080903114
+   },
+   {
+    "case": "P1",
+    "scheme": "qe",
+    "E_T_over_acc": 1.1779788138726615,
+    "T_T_over_acc": 0.986637524965143
+   },
+   {
+    "case": "B",
+    "scheme": "ft",
+    "E_T_over_acc": 1.1829608958929008,
+    "T_T_over_acc": 0.9793667342234046
+   },
+   {
+    "case": "B",
+    "scheme": "qe",
+    "E_T_over_acc": 1.184184683813991,
+    "T_T_over_acc": 0.9836628057706851
+   },
+   {
+    "case": "A",
+    "scheme": "plain",
+    "E_T_over_acc": 1.1932852403902534,
+    "T_T_over_acc": 0.9837270154513191
+   },
+   {
+    "case": "A",
+    "scheme": "cv",
+    "E_T_over_acc": 1.1980738939760391,
+    "T_T_over_acc": 0.9890870095784267
+   }
+  ],
+  "holds": true
+ },
+ "HC4_part": {
+  "per": [
+   {
+    "case": "I",
+    "scheme": "ft",
+    "ratio": 1.4681582527045796
+   },
+   {
+    "case": "I",
+    "scheme": "qe",
+    "ratio": 1.1451880528800369
+   },
+   {
+    "case": "II",
+    "scheme": "ft",
+    "ratio": 1.4750260771320403
+   },
+   {
+    "case": "II",
+    "scheme": "qe",
+    "ratio": 1.1356649429802952
+   },
+   {
+    "case": "III",
+    "scheme": "ft",
+    "ratio": 1.4741720706736847
+   },
+   {
+    "case": "III",
+    "scheme": "qe",
+    "ratio": 1.1466119697942008
+   },
+   {
+    "case": "P1",
+    "scheme": "ft",
+    "ratio": 1.4863666149250603
+   },
+   {
+    "case": "P1",
+    "scheme": "qe",
+    "ratio": 1.9665507433168152
+   },
+   {
+    "case": "B",
+    "scheme": "ft",
+    "ratio": 1.5214223325120126
+   },
+   {
+    "case": "B",
+    "scheme": "qe",
+    "ratio": 1.9581182075847687
+   },
+   {
+    "case": "A",
+    "scheme": "plain",
+    "ratio": 1.9437009182586937
+   },
+   {
+    "case": "A",
+    "scheme": "cv",
+    "ratio": 1.8601230412487324
+   }
+  ],
+  "holds_on_machine": true
+ }
+}

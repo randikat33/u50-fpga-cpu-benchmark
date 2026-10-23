@@ -1,0 +1,19 @@
+{
+ "HF2": {
+  "holds": true,
+  "ok": 108,
+  "n": 108,
+  "rmse_max": 0.8912609185886833,
+  "hi95_max": 0.9780866067778134,
+  "worst": "P1 ft 1% strike 1"
+ },
+ "native": {
+  "rmse_native_max": 0.9751914808454958,
+  "n_native_over_1": 0,
+  "abs_z_vs_matched_max": 2.318752373356055,
+  "n_abs_z_gt2": 2.0,
+  "n_abs_z_gt3": 0.0,
+  "abs_z_vs_partA_max": 2.2954934876147934,
+  "abs_bias_max": 0.6418768987400982
+ }
+}

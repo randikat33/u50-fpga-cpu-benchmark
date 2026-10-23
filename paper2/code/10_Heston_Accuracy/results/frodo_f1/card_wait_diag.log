@@ -1,0 +1,13 @@
+1. card == matched CPU (mom_hash), both wait modes
+  I ft: cpu h3475e637ae1d907b  xrt h3475e637ae1d907b  callback h3475e637ae1d907b  EQUAL
+  P1 qe: cpu h4b1ad44b01911be8  xrt h4b1ad44b01911be8  callback h4b1ad44b01911be8  EQUAL
+  B bft: cpu h52f13a96074868e9  xrt h52f13a96074868e9  callback h52f13a96074868e9  EQUAL
+  A asian: cpu hecebed1dcb3ace20  xrt hecebed1dcb3ace20  callback hecebed1dcb3ace20  EQUAL
+2. where the host's time goes (20 s windows)
+  idle: socket0 39.5 W, socket1 32.0 W, busy cores 0.05 / 0.05
+  long run (I FT, 1280 steps), wait xrt: 795.36 ms/run; host process 0.000 cores (getrusage 0.025); socket0 50.2 W, socket1 43.2 W; busy cores 0.11 / 0.06; top threads: kworker/u192:0+mailbox.m.9437184 0.06, kworker/u192:4+mailbox.u.9437184 0.06, kipmi0 0.01
+  long run (I FT, 1280 steps), wait callback: 795.36 ms/run; host process 0.000 cores (getrusage 0.025); socket0 49.9 W, socket1 43.3 W; busy cores 0.13 / 0.03; top threads: kworker/u192:0+mailbox.m.9437184 0.06, kworker/u192:4+mailbox.u.9437184 0.06
+  short run (P1 QE, 1 step), wait xrt: 0.52 ms/run; host process 0.239 cores (getrusage 0.265); socket0 51.3 W, socket1 43.7 W; busy cores 0.89 / 0.25; top threads: hq_qe_2 0.30, hq_qe_1 0.29, hq_fpga 0.24, kworker/u192:0+mailbox.m.9437184 0.06
+  short run (P1 QE, 1 step), wait callback: 0.70 ms/run; host process 0.327 cores (getrusage 0.329); socket0 51.2 W, socket1 43.4 W; busy cores 0.91 / 0.03; top threads: hq_qe_2 0.22, hq_qe_1 0.21, hq_fpga 0.21, hq_fpga 0.09
+
+CARD WAIT DIAG FINISHED: hashes all equal; results/card_wait_diag/diag.json

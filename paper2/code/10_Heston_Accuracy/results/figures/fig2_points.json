@@ -1,0 +1,110 @@
+[
+ {
+  "case": "I",
+  "target": "1%",
+  "platform_gain": 1.9323372329832094,
+  "method_gain": 15.590442908630477
+ },
+ {
+  "case": "I",
+  "target": "0.3%",
+  "platform_gain": 1.94913409762984,
+  "method_gain": 31.194807361680216
+ },
+ {
+  "case": "I",
+  "target": "0.1%",
+  "platform_gain": 1.963511225514872,
+  "method_gain": 30.906469097951895
+ },
+ {
+  "case": "II",
+  "target": "1%",
+  "platform_gain": 1.9350774340458237,
+  "method_gain": 16.17655688065055
+ },
+ {
+  "case": "II",
+  "target": "0.3%",
+  "platform_gain": 1.9350774340458237,
+  "method_gain": 64.69476879580621
+ },
+ {
+  "case": "II",
+  "target": "0.1%",
+  "platform_gain": 1.9798177088317241,
+  "method_gain": 63.29180655620534
+ },
+ {
+  "case": "III",
+  "target": "1%",
+  "platform_gain": 1.8474698330138386,
+  "method_gain": 3.7621436850274375
+ },
+ {
+  "case": "III",
+  "target": "0.3%",
+  "platform_gain": 1.8474698330138388,
+  "method_gain": 14.987609522503824
+ },
+ {
+  "case": "III",
+  "target": "0.1%",
+  "platform_gain": 1.8174027321814168,
+  "method_gain": 29.304113311956268
+ },
+ {
+  "case": "P1",
+  "target": "1%",
+  "platform_gain": 1.3764072923541928,
+  "method_gain": 1.7833535937499931
+ },
+ {
+  "case": "P1",
+  "target": "0.3%",
+  "platform_gain": 1.4200648877537259,
+  "method_gain": 1.6456034312797063
+ },
+ {
+  "case": "P1",
+  "target": "0.1%",
+  "platform_gain": 1.3323763036632241,
+  "method_gain": 3.2581836412798837
+ },
+ {
+  "case": "B",
+  "target": "1%",
+  "platform_gain": 2.3095497108939007,
+  "method_gain": 3.8022889851604265
+ },
+ {
+  "case": "B",
+  "target": "0.3%",
+  "platform_gain": 1.6097411939114277,
+  "method_gain": 3.46795670750869
+ },
+ {
+  "case": "B",
+  "target": "0.1%",
+  "platform_gain": 1.1989973668449867,
+  "method_gain": 3.248530772292184
+ },
+ {
+  "case": "A",
+  "target": "1%",
+  "platform_gain": 1.2561070141111343,
+  "method_gain": 144.81410043596912
+ },
+ {
+  "case": "A",
+  "target": "0.3%",
+  "platform_gain": 1.2561070141111343,
+  "method_gain": 399.7368530999768
+ },
+ {
+  "case": "A",
+  "target": "0.1%",
+  "platform_gain": 1.2561070141111343,
+  "method_gain": 399.7368530999768
+ }
+]

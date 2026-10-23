@@ -1,0 +1,27 @@
+{
+ "others_cores_mean": 0.09358074464067699,
+ "others_cores_peak": 0.565058658211396,
+ "cmd": [
+  "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/10_Heston_Accuracy/build/hq_native",
+  "--case",
+  "III",
+  "--scheme",
+  "qe",
+  "--steps",
+  "20",
+  "--a0",
+  "0",
+  "--a1",
+  "261248",
+  "--seed",
+  "20262303",
+  "--runs",
+  "1",
+  "--warmup-s",
+  "3.0",
+  "--window-s",
+  "10.0",
+  "--threads",
+  "48"
+ ]
+}

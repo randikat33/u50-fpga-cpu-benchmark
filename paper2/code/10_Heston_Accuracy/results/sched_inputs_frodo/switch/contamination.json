@@ -1,0 +1,8 @@
+{
+ "others_cores_mean": 0.09919438376948769,
+ "others_cores_peak": 1.3337516280012118,
+ "cmd": [
+  "/usr/bin/python3",
+  "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/10_Heston_Accuracy/scripts/card_switch.py"
+ ]
+}

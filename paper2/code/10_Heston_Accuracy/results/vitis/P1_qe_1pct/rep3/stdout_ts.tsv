@@ -1,0 +1,21 @@
+t_unix	line
+1792768001.1830	Found Platform
+1792768001.1830	Platform Name: Xilinx
+1792768001.2014	INFO: Importing /home/cse/vitis_libraries_2023.1/quantitative_finance/L2/tests/MCEuropeanHestonEngine/build_dir.hw.xilinx_u50_gen3x16_xdma_5_202210_1/kernel_mc.xclbin
+1792768004.3495	Loading: '/home/cse/vitis_libraries_2023.1/quantitative_finance/L2/tests/MCEuropeanHestonEngine/build_dir.hw.xilinx_u50_gen3x16_xdma_5_202210_1/kernel_mc.xclbin'
+1792768004.3495	MARK start 1792768004.349382
+1792768014.3510	MARK end 1792768014.350876
+1792768014.4310	RESULT engine=heston
+1792768014.4310	RESULT runs=4559
+1792768014.4310	RESULT t_window_s=10.001494
+1792768014.4310	RESULT t_per_run_s=0.002193791
+1792768014.4310	RESULT steps=1
+1792768014.4310	RESULT samples=18944
+1792768014.4310	RESULT path_steps=56832.0
+1792768014.4310	RESULT price0=31.1206433958
+1792768014.4310	RESULT se0=nan
+1792768014.4310	RESULT price1=7.8005429461
+1792768014.4310	RESULT se1=nan
+1792768014.4310	RESULT price2=0.1381313539
+1792768014.4310	RESULT se2=nan
+1792768014.4310	RESULT ok=1

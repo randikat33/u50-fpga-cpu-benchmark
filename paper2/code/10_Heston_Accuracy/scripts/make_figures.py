@@ -164,6 +164,63 @@ def fig3(rows):
     save(fig, "fig3_predicted_vs_measured")
 
 
+def fig_case(rows, case, name):
+    """one figure per case: (a) one pricing run, (b) steady state; socket boundary"""
+    fig, axes = plt.subplots(1, 2, figsize=(6.6, 2.9))
+    for ax, (field, title) in zip(axes, (("E_meas_J", "(a) One pricing run"), ("Ess_meas_J", "(b) Steady state"))):
+        style_ax(ax)
+        for plat in PLAT_COL:
+            for i, m in enumerate(METHODS[case]):
+                ys = [next(x for x in rows if x["case"] == case and x["target"] == t and x["boundary"] == "socket"
+                           and x["combo"] == f"{plat}_{m}")[field] for t in TARGETS]
+                ax.plot([TX[t] for t in TARGETS], ys, color=PLAT_COL[plat], linestyle="-" if i == 0 else "--",
+                        marker="o" if i == 0 else "s", markersize=4.5, linewidth=1.5,
+                        markerfacecolor=PLAT_COL[plat] if i == 0 else "white", markeredgewidth=1.1)
+        ax.set_xscale("log")
+        ax.set_yscale("log")
+        ax.set_xlim(1.3, 0.077)
+        ax.set_xticks([1, 0.3, 0.1])
+        ax.set_xticklabels(["1%", "0.3%", "0.1%"])
+        ax.xaxis.set_minor_locator(plt.NullLocator())
+        ax.set_title(title, fontsize=9, color=INK)
+        ax.set_xlabel("RMSE target", fontsize=8.5)
+        ax.set_ylabel("Energy to target (J)", fontsize=8.5)
+        ax.tick_params(labelsize=8)
+    a, b = METHODS[case]
+    h = [Line2D([], [], color=c, linewidth=1.8, label=PLAT_LAB[p]) for p, c in PLAT_COL.items()]
+    h += [Line2D([], [], color=INK2, linestyle="-", marker="o", markersize=4.5, label=MLAB[a]),
+          Line2D([], [], color=INK2, linestyle="--", marker="s", markersize=4.5, markerfacecolor="white", label=MLAB[b])]
+    fig.legend(handles=h, loc="lower center", ncol=5, fontsize=7.5, bbox_to_anchor=(0.5, -0.01), handlelength=2.2,
+               columnspacing=1.2)
+    fig.tight_layout(rect=(0, 0.1, 1, 1), w_pad=2.0)
+    save(fig, f"fig_case_{case}")
+
+
+def fig_pred_single(rows, fm, fp, title, fname):
+    fig, ax = plt.subplots(figsize=(4.2, 3.8))
+    style_ax(ax)
+    lo, hi = 1e-4, 3e4
+    ax.fill_between([lo, hi], [lo / 1.2, hi / 1.2], [lo * 1.2, hi * 1.2], color="#e2e0d8", linewidth=0)
+    ax.plot([lo, hi], [lo, hi], color=INK2, linewidth=0.8)
+    for plat, mk in (("cpu_native", "^"), ("cpu_matched", "s"), ("card", "o")):
+        sel = [r for r in rows if r["combo"].startswith(plat)]
+        ax.scatter([r[fp] for r in sel], [r[fm] for r in sel], s=16, marker=mk, color=PLAT_COL[plat],
+                   edgecolor="white", linewidth=0.4, label=PLAT_LAB[plat], zorder=3)
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlim(lo, hi)
+    ax.set_ylim(lo, hi)
+    ax.set_aspect("equal")
+    ax.set_title(title, fontsize=9, color=INK)
+    ax.set_xlabel("Predicted energy (J)", fontsize=8.5)
+    ax.set_ylabel("Measured energy (J)", fontsize=8.5)
+    ax.tick_params(labelsize=8)
+    ax.legend(loc="upper left", fontsize=7.5)
+    ax.text(1.5e2, 3e-3, "band: ±20%", fontsize=7.5, color=INK2)
+    fig.tight_layout()
+    save(fig, fname)
+
+
 def save(fig, name):
     os.makedirs(OUT, exist_ok=True)
     for ext in ("pdf", "png"):
@@ -177,5 +234,9 @@ if __name__ == "__main__":
     fig1(rows)
     pts = fig2(rows)
     fig3(rows)
+    for case, name in CASES:
+        fig_case(rows, case, name)
+    fig_pred_single(rows, "E_meas_J", "E_pred_J", "One pricing run", "fig_pred_one_run")
+    fig_pred_single(rows, "Ess_meas_J", "Ess_pred_J", "Steady state", "fig_pred_steady")
     json.dump([dict(case=c, target=t, platform_gain=p, method_gain=a) for c, t, p, a in pts],
               open(os.path.join(OUT, "fig2_points.json"), "w"), indent=1)

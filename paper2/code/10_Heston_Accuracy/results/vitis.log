@@ -1,0 +1,57 @@
+nohup: ignoring input
+2026-10-23 14:49:49 asian 249 steps 1%: [12.5907539218, 5.7556480784, 1.9820168662]
+2026-10-23 14:49:49 asian 249 steps 0.3%: [12.5937885895, 5.7589522055, 1.9861373857]
+2026-10-23 14:49:55 asian 249 steps 0.1%: [12.5939402398, 5.759213586, 1.9866734809]
+2026-10-23 14:49:59 heston P1 8 steps: [31.2357621026, 8.0139555808, 0.141909284]
+2026-10-23 14:50:00 heston P1 16 steps: [31.2470148551, 8.0571203189, 0.1418582909]
+2026-10-23 14:50:02 heston P1 32 steps: [31.2474586692, 8.0770196406, 0.1417208262]
+2026-10-23 14:50:05 heston P1 64 steps: [31.2539165098, 8.0897058112, 0.1417979835]
+2026-10-23 14:50:10 heston P1 128 steps: [31.2559206543, 8.089327978, 0.1413183432]
+2026-10-23 14:50:10 Vitis engines: 45 of 45 jobs left
+2026-10-23 14:50:31 I_qe_1pct/rep1: 703 runs, 0.0142 s/run, card 20.6 W, socket 50 W, ok 1
+2026-10-23 14:50:52 I_qe_0.3pct/rep1: 39 runs, 0.2598 s/run, card 21.6 W, socket 49 W, ok 1
+2026-10-23 14:51:27 I_qe_0.1pct/rep1: 2 runs, 9.1989 s/run, card 21.9 W, socket 49 W, ok 1
+2026-10-23 14:51:48 II_qe_1pct/rep1: 175 runs, 0.0572 s/run, card 21.2 W, socket 49 W, ok 1
+2026-10-23 14:52:10 II_qe_0.3pct/rep1: 17 runs, 0.6053 s/run, card 21.4 W, socket 49 W, ok 1
+2026-10-23 14:53:01 II_qe_0.1pct/rep1: 1 runs, 21.9400 s/run, card 21.7 W, socket 49 W, ok 1
+2026-10-23 14:53:22 III_qe_1pct/rep1: 823 runs, 0.0122 s/run, card 21.5 W, socket 50 W, ok 1
+2026-10-23 14:53:43 III_qe_0.3pct/rep1: 91 runs, 0.1110 s/run, card 22.6 W, socket 49 W, ok 1
+2026-10-23 14:54:07 III_qe_0.1pct/rep1: 6 runs, 1.9651 s/run, card 23.0 W, socket 49 W, ok 1
+2026-10-23 14:54:28 P1_qe_1pct/rep1: 4629 runs, 0.0022 s/run, card 17.2 W, socket 51 W, ok 1
+2026-10-23 14:54:49 P1_qe_0.3pct/rep1: 835 runs, 0.0120 s/run, card 20.9 W, socket 50 W, ok 1
+2026-10-23 14:55:10 P1_qe_0.1pct/rep1: 62 runs, 0.1624 s/run, card 22.6 W, socket 49 W, ok 1
+2026-10-23 14:55:35 A_plain_1pct/rep1: 356 runs, 0.0281 s/run, card 21.3 W, socket 49 W, ok 1
+2026-10-23 14:55:56 A_plain_0.3pct/rep1: 39 runs, 0.2617 s/run, card 21.6 W, socket 49 W, ok 1
+2026-10-23 14:56:20 A_plain_0.1pct/rep1: 5 runs, 2.3133 s/run, card 21.7 W, socket 49 W, ok 1
+2026-10-23 14:56:45 I_qe_1pct/rep2: 707 runs, 0.0141 s/run, card 20.8 W, socket 50 W, ok 1
+2026-10-23 14:57:07 I_qe_0.3pct/rep2: 39 runs, 0.2598 s/run, card 21.7 W, socket 49 W, ok 1
+2026-10-23 14:57:42 I_qe_0.1pct/rep2: 2 runs, 9.1991 s/run, card 22.1 W, socket 49 W, ok 1
+2026-10-23 14:58:03 II_qe_1pct/rep2: 175 runs, 0.0574 s/run, card 21.3 W, socket 49 W, ok 1
+2026-10-23 14:58:24 II_qe_0.3pct/rep2: 17 runs, 0.6051 s/run, card 21.5 W, socket 49 W, ok 1
+2026-10-23 14:59:16 II_qe_0.1pct/rep2: 1 runs, 21.9403 s/run, card 21.8 W, socket 49 W, ok 1
+2026-10-23 14:59:37 III_qe_1pct/rep2: 821 runs, 0.0122 s/run, card 21.6 W, socket 49 W, ok 1
+2026-10-23 14:59:58 III_qe_0.3pct/rep2: 91 runs, 0.1105 s/run, card 22.7 W, socket 49 W, ok 1
+2026-10-23 15:00:21 III_qe_0.1pct/rep2: 6 runs, 1.9649 s/run, card 23.1 W, socket 49 W, ok 1
+2026-10-23 15:00:42 P1_qe_1pct/rep2: 4503 runs, 0.0022 s/run, card 17.2 W, socket 51 W, ok 1
+2026-10-23 15:01:03 P1_qe_0.3pct/rep2: 845 runs, 0.0118 s/run, card 21.0 W, socket 50 W, ok 1
+2026-10-23 15:01:24 P1_qe_0.1pct/rep2: 62 runs, 0.1623 s/run, card 22.7 W, socket 49 W, ok 1
+2026-10-23 15:01:49 A_plain_1pct/rep2: 355 runs, 0.0282 s/run, card 21.3 W, socket 49 W, ok 1
+2026-10-23 15:02:11 A_plain_0.3pct/rep2: 39 runs, 0.2615 s/run, card 21.7 W, socket 49 W, ok 1
+2026-10-23 15:02:35 A_plain_0.1pct/rep2: 5 runs, 2.3131 s/run, card 21.7 W, socket 49 W, ok 1
+2026-10-23 15:03:00 I_qe_1pct/rep3: 710 runs, 0.0141 s/run, card 20.8 W, socket 50 W, ok 1
+2026-10-23 15:03:21 I_qe_0.3pct/rep3: 39 runs, 0.2598 s/run, card 21.8 W, socket 49 W, ok 1
+2026-10-23 15:03:56 I_qe_0.1pct/rep3: 2 runs, 9.1991 s/run, card 22.1 W, socket 49 W, ok 1
+2026-10-23 15:04:17 II_qe_1pct/rep3: 175 runs, 0.0572 s/run, card 21.4 W, socket 49 W, ok 1
+2026-10-23 15:04:39 II_qe_0.3pct/rep3: 17 runs, 0.6051 s/run, card 21.6 W, socket 49 W, ok 1
+2026-10-23 15:05:30 II_qe_0.1pct/rep3: 1 runs, 21.9400 s/run, card 21.9 W, socket 49 W, ok 1
+2026-10-23 15:05:51 III_qe_1pct/rep3: 815 runs, 0.0123 s/run, card 21.6 W, socket 50 W, ok 1
+2026-10-23 15:06:13 III_qe_0.3pct/rep3: 91 runs, 0.1108 s/run, card 22.6 W, socket 49 W, ok 1
+2026-10-23 15:06:36 III_qe_0.1pct/rep3: 6 runs, 1.9649 s/run, card 23.1 W, socket 49 W, ok 1
+2026-10-23 15:06:57 P1_qe_1pct/rep3: 4559 runs, 0.0022 s/run, card 17.2 W, socket 51 W, ok 1
+2026-10-23 15:07:18 P1_qe_0.3pct/rep3: 835 runs, 0.0120 s/run, card 21.0 W, socket 52 W, ok 1
+2026-10-23 15:07:39 P1_qe_0.1pct/rep3: 62 runs, 0.1624 s/run, card 22.7 W, socket 49 W, ok 1
+2026-10-23 15:08:05 A_plain_1pct/rep3: 358 runs, 0.0280 s/run, card 21.3 W, socket 49 W, ok 1
+2026-10-23 15:08:26 A_plain_0.3pct/rep3: 39 runs, 0.2615 s/run, card 21.7 W, socket 49 W, ok 1
+2026-10-23 15:08:50 A_plain_0.1pct/rep3: 5 runs, 2.3128 s/run, card 21.7 W, socket 49 W, ok 1
+15 settings -> /home/cse/Desktop/Thesis_and_jounal_data/v2_projects/10_Heston_Accuracy/results/vitis_summary.csv
+2026-10-23 15:08:50 VITIS FINISHED: 45 of 45 jobs

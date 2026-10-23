@@ -1,0 +1,20 @@
+Found Platform
+Platform Name: Xilinx
+INFO: Importing /home/cse/vitis_libraries_2023.1/quantitative_finance/L2/tests/MCAsianAPEngine/build_dir.hw.xilinx_u50_gen3x16_xdma_5_202210_1/kernel_MCAsianAP.xclbin
+Loading: '/home/cse/vitis_libraries_2023.1/quantitative_finance/L2/tests/MCAsianAPEngine/build_dir.hw.xilinx_u50_gen3x16_xdma_5_202210_1/kernel_MCAsianAP.xclbin'
+MARK start 1792767322.102564
+MARK end 1792767332.111306
+RESULT engine=asian
+RESULT runs=356
+RESULT t_window_s=10.008742
+RESULT t_per_run_s=0.028114443
+RESULT steps=250
+RESULT samples=18560
+RESULT path_steps=13920000.0
+RESULT price0=12.5907713603
+RESULT se0=nan
+RESULT price1=5.7559616492
+RESULT se1=nan
+RESULT price2=1.9822766528
+RESULT se2=nan
+RESULT ok=1

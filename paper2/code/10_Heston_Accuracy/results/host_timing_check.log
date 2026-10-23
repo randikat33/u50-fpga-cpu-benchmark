@@ -1,0 +1,22 @@
+  P1 ft 1% hq_fpga_partA     0.342 ms/run  (h2d 0.034, kernel 0.071, d2h 0.129 ms)
+  P1 ft 1% hq_fpga           0.471 ms/run  (h2d 0.127, kernel 0.176, d2h 0.126 ms)
+  P1 ft 1% hq_fpga_partA     0.475 ms/run  (h2d 0.063, kernel 0.247, d2h 0.142 ms)
+  P1 ft 1% hq_fpga           0.481 ms/run  (h2d 0.063, kernel 0.258, d2h 0.142 ms)
+  P1 ft 1% hq_fpga_partA     0.483 ms/run  (h2d 0.124, kernel 0.180, d2h 0.137 ms)
+  P1 ft 1% hq_fpga           0.474 ms/run  (h2d 0.139, kernel 0.250, d2h 0.067 ms)
+  P1 qe 1% hq_fpga_partA     0.237 ms/run  (h2d 0.035, kernel 0.064, d2h 0.036 ms)
+  P1 qe 1% hq_fpga           0.479 ms/run  (h2d 0.127, kernel 0.172, d2h 0.134 ms)
+  P1 qe 1% hq_fpga_partA     0.485 ms/run  (h2d 0.128, kernel 0.254, d2h 0.069 ms)
+  P1 qe 1% hq_fpga           0.555 ms/run  (h2d 0.140, kernel 0.270, d2h 0.142 ms)
+  P1 qe 1% hq_fpga_partA     0.477 ms/run  (h2d 0.125, kernel 0.168, d2h 0.127 ms)
+  P1 qe 1% hq_fpga           0.612 ms/run  (h2d 0.061, kernel 0.169, d2h 0.368 ms)
+  I qe 1% hq_fpga_partA     0.743 ms/run  (h2d 0.370, kernel 0.347, d2h 0.050 ms)
+  I qe 1% hq_fpga           0.734 ms/run  (h2d 0.035, kernel 0.355, d2h 0.382 ms)
+  I qe 1% hq_fpga_partA     0.799 ms/run  (h2d 0.369, kernel 0.399, d2h 0.056 ms)
+  I qe 1% hq_fpga           0.778 ms/run  (h2d 0.362, kernel 0.378, d2h 0.051 ms)
+  I qe 1% hq_fpga_partA     0.718 ms/run  (h2d 0.363, kernel 0.345, d2h 0.052 ms)
+  I qe 1% hq_fpga           0.793 ms/run  (h2d 0.063, kernel 0.439, d2h 0.309 ms)
+P1 ft 1%: Part A host 0.475 ms, current host 0.474 ms, ratio 0.999
+P1 qe 1%: Part A host 0.477 ms, current host 0.555 ms, ratio 1.164
+I qe 1%: Part A host 0.743 ms, current host 0.778 ms, ratio 1.047
+HOST TIMING CHECK FINISHED

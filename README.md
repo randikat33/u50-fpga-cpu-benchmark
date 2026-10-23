@@ -1,6 +1,6 @@
 # FPGA vs. CPU, whole-system: AMD Alveo U50 against a dual-socket Xeon Gold 5318Y
 
-Code for the paper *"Slower can be greener: predicting when a PCIe FPGA card beats its host server in time and energy"* (submitted to the Journal of Systems Architecture).
+Code for the paper *"Slower can be greener: predicting when a PCIe FPGA card beats its host server in time and energy"* (submitted to the Sustainable Computing: Informatics and Systems).
 
 - **Data (raw measurements, 3,011 runs):** Zenodo, DOI [10.5281/zenodo.23133623](https://doi.org/10.5281/zenodo.23133623)
 - **Code DOI (this repository, archived by Zenodo):** created by the first GitHub release (`v1.0.0`); it will be added here

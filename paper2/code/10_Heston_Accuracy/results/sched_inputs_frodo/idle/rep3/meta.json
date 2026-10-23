@@ -1,0 +1,42 @@
+{
+ "label": "idle rep3",
+ "cmd": [
+  "/usr/bin/python3",
+  "-c",
+  "import time; print('MARK start %.6f' % time.time(), flush=True); time.sleep(30); print('MARK end %.6f' % time.time(), flush=True); print('RESULT runs=1'); print('RESULT path_steps=1'); print('RESULT ok=1')"
+ ],
+ "cwd": "/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/10_Heston_Accuracy/results/sched_inputs_frodo/idle/rep3/work",
+ "host": "frodo",
+ "cores": "0",
+ "node": "0",
+ "pinned": true,
+ "xclbin": null,
+ "env_extra": [],
+ "timeout_s": 3600.0,
+ "bitstream_state": "n/a",
+ "t_launch": 1792664448.0097318,
+ "t_exit": 1792664478.0909648,
+ "wall_s": 30.081233024597168,
+ "t_start_marker": 1792664448.0543272,
+ "t_end_marker": 1792664478.0627387,
+ "proc_s": 30.008411407470703,
+ "launch_to_end_s": 30.053006887435913,
+ "exit_code": 0,
+ "killed_after_end": false,
+ "timed_out": false,
+ "ok": true,
+ "idle_s": 3.0,
+ "fpga_temp_pre": 56.0,
+ "cpu_temp_pre": 35.0,
+ "fpga_temp_post": 55.0,
+ "cpu_temp_post": 36.0,
+ "loadavg": [
+  0.265625,
+  1.16796875,
+  21.4208984375
+ ],
+ "xrt_files": [],
+ "cpu_util_run_pct": 1.1310711909514304,
+ "cpu_util_proc_pct": 1.0333333333333334,
+ "finished": "2026-10-22 10:21:21"
+}
