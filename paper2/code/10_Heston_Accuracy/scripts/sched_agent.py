@@ -2,13 +2,16 @@
 """sched_agent.py - the Supermicro's agent for the two-machine scheduler (addendum v0.8). It runs on the Supermicro,
 listens on a TCP port, and serves one coordinator (on frodo) at a time with JSON lines:
   {"op": "hello"} / {"op": "ping"}      -> {"t": <agent wall time>}  (clock offset and round-trip time)
-  {"op": "run", "id", "dev": "gpu"|"cpu", "case", "scheme", "steps", "a0", "a1", "seed"}
+  {"op": "run", "id", "dev": "gpu"|"cpu", "case", "scheme", "steps", "a0", "a1", "seed"[, "threads"]}
                                          -> {"id", "dev", "t0", "t1", "busy", "pairs", "prices", "ok", "switch"}
        gpu: build/hs_coexec on CPU 10 (block wait); an option class change is the serve command C (same CUDA context)
-       cpu: the CPU-native serve program on all of socket 0 (20 threads); a class change restarts it
+       cpu: the CPU-native serve program on all of socket 0 (20 threads); a class change restarts it.
+            v0.9: "threads" n (optional) runs it on n CPUs of socket 0, one per core first (n = 10: one thread per core);
+            a change of n is a class change. Without it, all of socket 0 as in v0.8.
        The two devices run concurrently; each runs its options in the order received.
   {"op": "energy", "t0", "t1"}           -> energies (J) of pkg0, dram0, pkg1, dram1 and the GPU over [t0, t1] (agent clock)
-                                            from its own 20 Hz sampler, and other users' CPU (cores, mean and peak)
+                                            from its own 20 Hz sampler, and other users' CPU (cores, mean and peak);
+                                            v0.9: also the most GPU compute processes not ours seen in the window
   {"op": "stop"}                         -> stops the workers (the agent keeps listening)
 The sampler (RAPL of both sockets, NVML energy, temperature and SM clock) runs while the agent runs.
 Usage (Supermicro, from the project folder; GPU clock locked at 1245 MHz, RAPL readable):
@@ -45,6 +48,10 @@ class Sampler(threading.Thread):
                 pass
             if t - last >= 1.0:
                 r["other_cpu_s"] = GR.busy_cpus_other(self.own)
+                try:                                                  # v0.9: GPU compute processes that are not ours
+                    r["gpu_other_procs"] = sum(1 for x in nv.nvmlDeviceGetComputeRunningProcesses(self.h) if x.pid not in self.own)
+                except Exception:
+                    pass
                 last = t
             with self.lock:
                 self.rows.append(r)
@@ -61,7 +68,8 @@ class Sampler(threading.Thread):
         per = [(b["other_cpu_s"] - a["other_cpu_s"]) / (b["t_unix"] - a["t_unix"]) for a, b in zip(oth, oth[1:]) if b["t_unix"] > a["t_unix"]]
         inw = [r for r in rows if t0 <= r["t_unix"] <= t1]
         sm = sorted(r["sm_mhz"] for r in inw if "sm_mhz" in r)
-        return dict(E_J=E, other_mean=(sum(per) / len(per)) if per else 0.0, other_max=max(per, default=0.0),
+        gp = [r["gpu_other_procs"] for r in rows if "gpu_other_procs" in r and t0 - 1 <= r["t_unix"] <= t1 + 1]
+        return dict(E_J=E, other_mean=(sum(per) / len(per)) if per else 0.0, other_max=max(per, default=0.0), gpu_other_procs=max(gp, default=None),
                     sm_mhz_median=sm[len(sm) // 2] if sm else None, temp_max=max((r.get("temp", 0) for r in inw), default=0), samples=len(inw))
 
 
@@ -75,12 +83,16 @@ class Device:
         threading.Thread(target=self.loop, daemon=True).start()
 
     def start(self, cls):
-        case, sc, M, seed = cls
+        case, sc, M, seed, nthr = cls
         if self.name == "gpu":
             cmd = ["numactl", "--physcpubind=10", "--membind=1", os.path.join(B, "hs_coexec")] + CR.gpu_args(case, sc, M) + ["--seed", str(seed), "--sync", "block"]
             env = dict(os.environ)
         else:
             cpus = CR.cpulist(0)
+            if nthr and nthr < len(cpus):                     # v0.9: n CPUs, one per core first
+                first = [c for c in cpus if c == min(CR.siblings(c))]
+                rest = [c for c in cpus if c not in first]
+                cpus = sorted((first + rest)[:nthr])
             prog = "hq_native_serve" if case in CR.MAIN else "hs_native_serve"
             cmd = ["numactl", f"--physcpubind={','.join(map(str, cpus))}", "--membind=0", os.path.join(B, prog)] + CR.case_args(case, sc, M) + \
                   ["--seed", str(seed), "--threads", str(len(cpus))]
@@ -114,7 +126,7 @@ class Device:
                     self.cv.wait()
                 j = self.q.pop(0)
             t0 = time.time()
-            cls = (j["case"], j["scheme"], int(j["steps"]), int(j["seed"]))
+            cls = (j["case"], j["scheme"], int(j["steps"]), int(j["seed"]), int(j["threads"]) if j.get("threads") and self.name == "cpu" else None)
             sw = 0.0
             try:
                 if self.cls != cls:
@@ -194,13 +206,19 @@ def main():
     print(time.strftime("%Y-%m-%d %H:%M:%S"), f"agent ({a.role}: {', '.join(names)}) listening on port {a.port}, pinned to CPUs {','.join(map(str, own))}", flush=True)
     while True:
         conn, addr = srv.accept()
+        # v0.9: no Nagle delay on the replies (v0.8 passes: the Supermicro CPU's replies reached frodo in bursts, and the
+        # pass ended up to 50 ms late; step 5: ~40 ms stalls at the end of a batch)
+        conn.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
         print(time.strftime("%Y-%m-%d %H:%M:%S"), f"coordinator {addr[0]} connected on port {a.port}", flush=True)
-        f = conn.makefile("rw", buffering=1)
+        # v0.9: separate reader and writer: on Python 3.10 (both servers) a write to a "rw" text file discards the
+        # lines it has already read ahead, so commands that arrived together were lost (step 5 check, 26 Oct 2026)
+        f = conn.makefile("r", buffering=1)
+        fw = conn.makefile("w", buffering=1)
         lock = threading.Lock()
 
         def reply(d):
             with lock:
-                f.write(json.dumps(d) + "\n"); f.flush()
+                fw.write(json.dumps(d) + "\n"); fw.flush()
         devs = {n: Device(n, reply, smp) for n in names}
         try:
             for line in f:
@@ -223,6 +241,11 @@ def main():
             print(f"connection ended: {e}", flush=True)
         for d in devs.values():
             d.stop()
+        for x in (fw, f):
+            try:
+                x.close()
+            except Exception:
+                pass
         conn.close()
         print(time.strftime("%Y-%m-%d %H:%M:%S"), f"coordinator disconnected from port {a.port}", flush=True)
 

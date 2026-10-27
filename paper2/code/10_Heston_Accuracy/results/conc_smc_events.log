@@ -1,0 +1,38 @@
+2026-10-26 13:28:23 concurrency matrix (Supermicro + cross-server): 36 of 36 jobs left
+2026-10-26 13:30:01 rep1 idle: frodo 95.2 W, Supermicro 63.0 W (GPU 35.7); 
+2026-10-26 13:31:39 rep1 gpu: frodo 116.7 W, Supermicro 151.7 W (GPU 88.4); gpu 2049.15 options/s; V100 1245 MHz
+2026-10-26 13:33:17 rep1 scpu: frodo 114.1 W, Supermicro 114.0 W (GPU 36.2); scpu 997.67 options/s
+2026-10-26 13:34:56 rep1 gpu+scpu: frodo 116.7 W, Supermicro 176.3 W (GPU 95.3); gpu 2298.81 options/s, scpu 1007.13 options/s; V100 1245 MHz
+2026-10-26 13:36:34 rep1 scpu_half: frodo 113.4 W, Supermicro 113.4 W (GPU 36.3); scpu 951.23 options/s
+2026-10-26 13:38:12 rep1 gpu+scpu_half: frodo 116.8 W, Supermicro 176.7 W (GPU 95.8); gpu 2321.81 options/s, scpu 943.50 options/s; V100 1245 MHz
+2026-10-26 13:39:51 rep1 card: frodo 125.0 W, Supermicro 63.4 W (GPU 36.3); card 93.29 options/s
+2026-10-26 13:41:29 rep1 fcpu: frodo 262.9 W, Supermicro 63.1 W (GPU 35.9); fcpu 34.16 options/s
+2026-10-26 13:43:09 rep1 card+gpu: frodo 126.8 W, Supermicro 151.7 W (GPU 88.5); card 93.81 options/s, gpu 2048.19 options/s; V100 1245 MHz
+2026-10-26 13:44:47 rep1 card+scpu: frodo 126.6 W, Supermicro 114.1 W (GPU 36.2); card 94.64 options/s, scpu 1004.20 options/s
+2026-10-26 13:46:26 rep1 fcpu+gpu: frodo 263.3 W, Supermicro 151.5 W (GPU 88.2); fcpu 34.17 options/s, gpu 2040.24 options/s; V100 1245 MHz
+2026-10-26 13:48:04 rep1 fcpu+scpu: frodo 263.1 W, Supermicro 113.9 W (GPU 36.2); fcpu 34.17 options/s, scpu 996.63 options/s
+2026-10-26 13:49:43 rep2 idle: frodo 95.7 W, Supermicro 62.8 W (GPU 35.8); 
+2026-10-26 13:51:21 rep2 gpu: frodo 116.2 W, Supermicro 151.9 W (GPU 88.6); gpu 2055.55 options/s; V100 1245 MHz
+2026-10-26 13:53:00 rep2 scpu: frodo 112.1 W, Supermicro 113.8 W (GPU 36.2); scpu 995.34 options/s
+2026-10-26 13:54:38 rep2 gpu+scpu: frodo 114.9 W, Supermicro 177.2 W (GPU 95.2); gpu 2300.23 options/s, scpu 1014.25 options/s; V100 1245 MHz
+2026-10-26 13:56:17 rep2 scpu_half: frodo 113.3 W, Supermicro 113.4 W (GPU 36.3); scpu 954.91 options/s
+2026-10-26 13:57:55 rep2 gpu+scpu_half: frodo 116.4 W, Supermicro 176.7 W (GPU 95.7); gpu 2320.40 options/s, scpu 944.34 options/s; V100 1245 MHz
+2026-10-26 13:59:34 rep2 card: frodo 125.2 W, Supermicro 63.6 W (GPU 36.3); card 93.32 options/s
+2026-10-26 14:01:13 rep2 fcpu: frodo 263.0 W, Supermicro 63.0 W (GPU 35.9); fcpu 34.12 options/s
+2026-10-26 14:02:52 rep2 card+gpu: frodo 126.9 W, Supermicro 151.7 W (GPU 88.4); card 94.44 options/s, gpu 2048.37 options/s; V100 1245 MHz
+2026-10-26 14:04:31 rep2 card+scpu: frodo 126.4 W, Supermicro 114.1 W (GPU 36.2); card 94.14 options/s, scpu 1001.31 options/s
+2026-10-26 14:06:10 rep2 fcpu+gpu: frodo 263.3 W, Supermicro 151.2 W (GPU 88.1); fcpu 34.10 options/s, gpu 2033.93 options/s; V100 1245 MHz
+2026-10-26 14:07:48 rep2 fcpu+scpu: frodo 263.2 W, Supermicro 113.9 W (GPU 36.2); fcpu 34.10 options/s, scpu 1001.36 options/s
+2026-10-26 14:09:27 rep3 idle: frodo 95.5 W, Supermicro 63.0 W (GPU 35.8); 
+2026-10-26 14:11:06 rep3 gpu: frodo 118.1 W, Supermicro 151.7 W (GPU 88.4); gpu 2048.48 options/s; V100 1245 MHz
+2026-10-26 14:12:44 rep3 scpu: frodo 114.3 W, Supermicro 114.0 W (GPU 36.2); scpu 1003.36 options/s
+2026-10-26 14:14:23 rep3 gpu+scpu: frodo 115.5 W, Supermicro 175.2 W (GPU 93.9); gpu 2250.45 options/s, scpu 1017.41 options/s; V100 1245 MHz
+2026-10-26 14:16:02 rep3 scpu_half: frodo 113.7 W, Supermicro 113.4 W (GPU 36.3); scpu 948.45 options/s
+2026-10-26 14:17:41 rep3 gpu+scpu_half: frodo 117.0 W, Supermicro 175.3 W (GPU 94.9); gpu 2286.34 options/s, scpu 946.81 options/s; V100 1245 MHz
+2026-10-26 14:19:20 rep3 card: frodo 124.9 W, Supermicro 63.5 W (GPU 36.3); card 92.92 options/s
+2026-10-26 14:20:59 rep3 fcpu: frodo 262.9 W, Supermicro 63.2 W (GPU 35.9); fcpu 34.13 options/s
+2026-10-26 14:22:38 rep3 card+gpu: frodo 126.9 W, Supermicro 151.8 W (GPU 88.5); card 94.33 options/s, gpu 2053.30 options/s; V100 1245 MHz
+2026-10-26 14:24:18 rep3 card+scpu: frodo 126.2 W, Supermicro 114.1 W (GPU 36.2); card 94.21 options/s, scpu 1005.80 options/s
+2026-10-26 14:25:57 rep3 fcpu+gpu: frodo 263.5 W, Supermicro 151.4 W (GPU 88.1); fcpu 34.10 options/s, gpu 2035.09 options/s; V100 1245 MHz
+2026-10-26 14:27:36 rep3 fcpu+scpu: frodo 263.1 W, Supermicro 114.0 W (GPU 36.2); fcpu 34.10 options/s, scpu 1000.05 options/s
+2026-10-26 14:27:36 CONC SMC FINISHED: 36 of 36 jobs

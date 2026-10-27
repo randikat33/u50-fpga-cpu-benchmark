@@ -1,0 +1,49 @@
+{
+ "rapl_domains": {
+  "pkg0": "intel-rapl:0",
+  "dram0": null,
+  "pkg1": null,
+  "dram1": null
+ },
+ "cmd": [
+  "build/gpu_ubench",
+  "--bench",
+  "fp32",
+  "--window-s",
+  "10",
+  "--clock-mhz",
+  "2340"
+ ],
+ "returncode": 0,
+ "t_start": 1792997040.9220238,
+ "t_end": 1792997054.1104217,
+ "samples": 280,
+ "mark_clock": "printed",
+ "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+ "driver": "580.196.07",
+ "gpu_energy_source": "nvml_total_energy",
+ "window_s": 10.000189065933228,
+ "E_J": {
+  "pkg0": 381.9705297449646,
+  "dram0": 0.0,
+  "pkg1": 0.0,
+  "dram1": 0.0,
+  "gpu": 1263.1089293629825
+ },
+ "P_W": {
+  "pkg0": 38.196330812003374,
+  "dram0": 0.0,
+  "pkg1": 0.0,
+  "dram1": 0.0,
+  "gpu": 126.30850487276342
+ },
+ "E_gpu_socket_J": 1645.079459107947,
+ "E_gpu_server_J": 1645.079459107947,
+ "sm_mhz_median": 2340,
+ "temp_max_c": 57,
+ "throttle_or": 0,
+ "other_cores_avg": 0.0,
+ "other_cores_max": 0.0,
+ "runs": 48833,
+ "disturbed": 0
+}

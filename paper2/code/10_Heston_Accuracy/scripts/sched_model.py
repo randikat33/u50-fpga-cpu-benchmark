@@ -37,7 +37,7 @@ Optimiser: start with every option on its least-dE (device, method); then repeat
 move one option, or all of a device's options of one class, to another (device, method). The objective is E, or with
 a deadline (T - D)+ x 1e6 + E. Ties: the first in the fixed order (devices card, fcpu, gpu, scpu; options by id).
 """
-import csv, json, math, os, random, statistics as st
+import csv, itertools, json, math, os, random, statistics as st
 from collections import defaultdict
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -167,7 +167,7 @@ def serve_inputs():
 CHECKS = ("check2", "check3", "check4", "check5_final")
 
 
-def check_gaps(opts=None):
+def check_gaps(opts=None, sources=None):
     """per device, the time between consecutive results of one class beyond the part's own time, in the alone runs
     of the pre-registration checks 2-5 (results/sched_checks/<check>/rep1/alone_<d>): the median per check, then the
     median over the checks. The serve-mode input runs priced each class in a short burst and overstated it (GPU 0.45 and
@@ -177,8 +177,8 @@ def check_gaps(opts=None):
     out = {}
     for d in DEVICES:
         per = []
-        for c in CHECKS:
-            f = os.path.join(RES, "sched_checks", c, "rep1", f"alone_{d}", "sched_result.json")
+        for c in (sources or [os.path.join(RES, "sched_checks", c, "rep1") for c in CHECKS]):
+            f = os.path.join(c, f"alone_{d}", "sched_result.json")
             if not os.path.exists(f):
                 continue
             r = json.load(open(f))
@@ -230,15 +230,25 @@ def apply_serve(C, rows, gaps=None):
 
 
 class Model:
-    def __init__(self, C=None, CH=None, P=None, latency=None):
+    def __init__(self, C=None, CH=None, P=None, latency=None, conc=None, devices=DEVICES, boundary=("frodo", "smc"), gaps=None):
+        """conc (addendum v0.9): the measured concurrency matrix, {"C_W": {"a+b": W}, "s": {"a|b": stretch}} for devices
+        a < b in DEVICES order (results/concurrency/C_matrix.json); None gives the additive model of v0.8.
+        devices, boundary: the devices a plan may use and the servers whose idle power is in E (v0.9 R3: card and fcpu,
+        frodo only)."""
         self.CH = CH or changes()
         self.P = P or idle()
-        self.Pidle = self.P["frodo"] + self.P["smc"]
+        self.devices = tuple(devices)
+        self.boundary = tuple(boundary)
+        self.conc = conc
+        self.Pidle = sum(self.P[b] for b in self.boundary)
         if C is None:
             C = costs()
             sv = serve_inputs()
             if sv:
-                C, latency = apply_serve(C, sv, check_gaps())
+                g = check_gaps()
+                if gaps:                         # v0.9: gaps re-measured for some devices (scripts/conc_timing.py)
+                    g = dict(g, **gaps)
+                C, latency = apply_serve(C, sv, g)
         self.C = C
         self.latency = latency
         if latency is not None:          # pipelined serve mode: one latency per class batch (local) or per pass (agent)
@@ -251,7 +261,8 @@ class Model:
         """the registered model, rebuilt from predictions_sched.json (costs, changes, idle powers, overheads)"""
         C = {(c["device"], c["case"], c["target"], c["method"]): {k: v for k, v in c.items() if k not in ("device", "case", "target", "method")}
              for c in pred["costs"]}
-        M = cls(C=C, CH=pred["changes"], P=pred["idle_W"], latency=pred.get("latency_s"))
+        M = cls(C=C, CH=pred["changes"], P=pred["idle_W"], latency=pred.get("latency_s"), conc=pred.get("concurrency"),
+                devices=pred.get("devices", DEVICES), boundary=pred.get("boundary", ("frodo", "smc")))
         M.t_ov = dict(pred["t_ov_s"])
         return M
 
@@ -261,21 +272,93 @@ class Model:
     def device_load(self, d, items):
         """items: list of (option, method) on device d -> (busy time, energy above idle)"""
         t = sum(self.cost(d, o, m)["t"] + self.t_ov[d] for o, m in items)
-        e = sum(self.cost(d, o, m)["dE"] for o, m in items)
+        e = sum(self.cost(d, o, m)["dE"] for o, m in items) + (self.overhead(d) + self.coord(d)) * len(items)
         ct, ce = self.class_cost(d, {ckey(o, m) for o, m in items})
-        return t + ct, e + ce
+        return t + ct, e + ce, len(items)
 
     def evaluate(self, plan, opts):
-        """plan: {option id: (device, method)} -> T, E and the per-device loads"""
-        per = {d: [] for d in DEVICES}
+        """plan: {option id: (device, method)} -> T, E and the per-device loads (busy: alone, before any stretch;
+        finish: the device's finish time in the pass with the concurrency stretch; overlap: time both busy, per pair)"""
+        per = {d: [] for d in self.devices}
         for o in opts:
             d, m = plan[o["id"]]
             per[d].append((o, m))
-        loads = {d: self.device_load(d, per[d]) for d in DEVICES}
-        T = max(v[0] for v in loads.values())
-        E = sum(v[1] for v in loads.values()) + self.Pidle * T
-        return dict(T=T, E=E, busy={d: loads[d][0] for d in DEVICES}, dE={d: loads[d][1] for d in DEVICES},
-                    n={d: len(per[d]) for d in DEVICES})
+        loads = {d: self.device_load(d, per[d]) for d in self.devices}
+        T, E, fin, ov, Ec, Ee = self.combine(loads, detail=True)
+        return dict(T=T, E=E, busy={d: loads[d][0] for d in self.devices}, dE={d: loads[d][1] for d in self.devices},
+                    n={d: len(per[d]) for d in self.devices}, finish=fin, overlap=ov, E_conc=Ec, E_engaged=Ee)
+
+    # ---------------------------------------------------------- v0.9: the concurrency term
+    def C_pair(self, a, b):
+        if not self.conc:
+            return 0.0
+        a, b = sorted((a, b), key=DEVICES.index)
+        return self.conc["C_W"].get(f"{a}+{b}", 0.0)
+
+    def stretch(self, d, other):
+        return self.conc["s"].get(f"{d}|{other}", 1.0) if self.conc else 1.0
+
+    def engaged(self, d):
+        """v0.9 (step 5b): power above idle while d has options in the plan but has finished them, and no other device
+        of its server is busy (that device already keeps the server awake: card_f10+fcpu)"""
+        return (self.conc or {}).get("engaged_W", {}).get(d, 0.0)
+
+    def overhead(self, d):
+        """v0.9 (step 5b): energy per option through the agent beyond the single-run inputs, at the Supermicro
+        (remote devices)"""
+        return (self.conc or {}).get("overhead_J", {}).get(d, 0.0)
+
+    def coord(self, d):
+        """v0.9 (step 5b): frodo's energy per remote option (the coordinator keeps frodo's sockets awake); not paid
+        while frodo is awake anyway: the card has options in the plan, or fcpu is busy"""
+        return (self.conc or {}).get("coord_J", {}).get(d, 0.0)
+
+    def combine(self, loads, detail=False):
+        """pass time and energy from the devices' loads {d: (busy alone, energy above idle)}.
+        v0.8 (conc None): T = max busy, E = sum of energies above idle + P_idle T.
+        v0.9: every device starts at the start of the pass and draws its alone power above idle, dE / busy, while it
+        works; while a set A of devices is busy, device d works at 1 / prod_{d' in A, d' != d} s(d|d') of its alone
+        rate, and the servers draw C(d, d') more for every pair in A. E = integral of that power + P_idle T; T = the
+        last finish. (C and s from the pair measurements of step 5; a pair not measured has C = 0 and s = 1.)"""
+        if not self.conc:
+            T = max(v[0] for v in loads.values())
+            E = sum(v[1] for v in loads.values()) + self.Pidle * T
+            return (T, E, {d: v[0] for d, v in loads.items()}, {}, 0.0, 0.0) if detail else (T, E)
+        w = {d: v[0] for d, v in loads.items() if v[0] > 0}
+        pw = {d: loads[d][1] / loads[d][0] for d in w}
+        b0 = dict(w)
+        nn = {d: (loads[d][2] if len(loads[d]) > 2 else 0) for d in w}
+        used = set(w)
+        fin = {d: 0.0 for d in loads}
+        ov = defaultdict(float)
+        A = sorted(w, key=DEVICES.index)
+        t = E = Ec = Ee = 0.0
+        while A:
+            sig = {d: math.prod(self.stretch(d, x) for x in A if x != d) for d in A}
+            dt = min(w[d] * sig[d] for d in A)
+            pairs = list(itertools.combinations(A, 2))
+            c = sum(self.C_pair(a, b) for a, b in pairs)
+            busy_srv = {MACHINE[x] for x in A}
+            eg = sum(self.engaged(d) for d in used if d not in A and MACHINE[d] not in busy_srv)
+            if "card" in used or "fcpu" in A:          # frodo awake anyway: the remote options' frodo part is not paid
+                eg -= sum(self.coord(d) * nn[d] * (dt / sig[d]) / b0[d] for d in A if d in ("gpu", "scpu")) / dt
+            E += (sum(pw[d] for d in A) + c + eg) * dt
+            Ec += c * dt
+            Ee += eg * dt
+            if detail:
+                for a, b in pairs:
+                    ov[f"{a}+{b}"] += dt
+            t += dt
+            nxt = []
+            for d in A:
+                w[d] -= dt / sig[d]
+                if w[d] * sig[d] <= dt * 1e-12 + 1e-15:
+                    fin[d] = t
+                else:
+                    nxt.append(d)
+            A = nxt
+        E += self.Pidle * t
+        return (t, E, fin, dict(ov), Ec, Ee) if detail else (t, E)
 
     # ---------------------------------------------------------- policies
     def best_method(self, d, o):
@@ -285,7 +368,8 @@ class Model:
         return {o["id"]: (d, self.best_method(d, o)) for o in opts}
 
     def round_robin(self, opts):
-        return {o["id"]: (DEVICES[k % 4], self.best_method(DEVICES[k % 4], o)) for k, o in enumerate(opts)}
+        D = self.devices
+        return {o["id"]: (D[k % len(D)], self.best_method(D[k % len(D)], o)) for k, o in enumerate(opts)}
 
     def objective(self, plan, opts, deadline=None):
         ev = self.evaluate(plan, opts)
@@ -294,7 +378,7 @@ class Model:
     def optimise(self, opts, deadline=None, inits=()):
         """best local optimum over several starting plans: every option on its least-dE (device, method); each alone
         policy; round robin; and any plans given (inits). Ties: the first start in this order."""
-        starts = [None] + [self.alone(d, opts) for d in DEVICES] + [self.round_robin(opts)] + [dict(p) for p in inits]
+        starts = [None] + [self.alone(d, opts) for d in self.devices] + [self.round_robin(opts)] + [dict(p) for p in inits]
         best, bv = None, None
         for st0 in starts:
             p = self.descend(opts, deadline, st0)
@@ -325,14 +409,14 @@ class Model:
         if init:
             plan = dict(init)
         else:
-            plan = {o["id"]: min(((d, m) for d in DEVICES for m in METHODS[o["case"]]), key=lambda x: self.cost(x[0], o, x[1])["dE"]) for o in opts}
+            plan = {o["id"]: min(((d, m) for d in self.devices for m in METHODS[o["case"]]), key=lambda x: self.cost(x[0], o, x[1])["dE"]) for o in opts}
         c = {}
         for o in opts:
-            for d in DEVICES:
+            for d in self.devices:
                 for m in METHODS[o["case"]]:
                     x = self.cost(d, o, m)
-                    c[(o["id"], d, m)] = (x["t"] + self.t_ov[d], x["dE"], ckey(o, m))
-        st_ = {d: dict(t=0.0, e=0.0, cls=defaultdict(int)) for d in DEVICES}
+                    c[(o["id"], d, m)] = (x["t"] + self.t_ov[d], x["dE"] + self.overhead(d) + self.coord(d), ckey(o, m))
+        st_ = {d: dict(t=0.0, e=0.0, cls=defaultdict(int)) for d in self.devices}
         for i, (d, m) in plan.items():
             t, e, k = c[(i, d, m)]
             st_[d]["t"] += t; st_[d]["e"] += e; st_[d]["cls"][k] += 1
@@ -346,13 +430,12 @@ class Model:
             for k in add:
                 cl[k] = cl.get(k, 0) + 1
             ct, ce = self.class_cost(d, cl.keys())
-            return st_[d]["t"] + dt + ct, st_[d]["e"] + de + ce
+            return st_[d]["t"] + dt + ct, st_[d]["e"] + de + ce, sum(cl.values())
 
-        base = {d: dev_load(d) for d in DEVICES}
+        base = {d: dev_load(d) for d in self.devices}
 
         def obj(loads):
-            T = max(v[0] for v in loads.values())
-            E = sum(v[1] for v in loads.values()) + self.Pidle * T
+            T, E = self.combine(loads)
             return (max(0.0, T - deadline) * 1e6 if deadline else 0.0) + E
 
         def try_move(ids, d1, m1):
@@ -379,7 +462,7 @@ class Model:
                 t, e, k = c[(i, d1, m1)]
                 st_[d1]["t"] += t; st_[d1]["e"] += e; st_[d1]["cls"][k] += 1
                 plan[i] = (d1, m1)
-            for d in DEVICES:
+            for d in self.devices:
                 base[d] = dev_load(d)
 
         cur = obj(base)
@@ -387,7 +470,7 @@ class Model:
             best = None
             for o in opts:
                 d0 = plan[o["id"]]
-                for d in DEVICES:
+                for d in self.devices:
                     for m in METHODS[o["case"]]:
                         if (d, m) == d0:
                             continue
@@ -400,7 +483,7 @@ class Model:
             for (d0, k), ids in sorted(groups.items(), key=lambda x: (DEVICES.index(x[0][0]), str(x[0][1]))):
                 if len(ids) < 2:
                     continue
-                for d in DEVICES:
+                for d in self.devices:
                     for m in METHODS[k[0]]:
                         if d == d0 and m == k[1]:
                             continue
@@ -437,10 +520,11 @@ def device_order(plan, opts):
     return out
 
 
-def measured_pass(res, E_frodo_J):
-    """a job's measured pass: T = window / passes, E = (frodo + Supermicro energy in the window) / passes"""
+def measured_pass(res, E_frodo_J, smc=True):
+    """a job's measured pass: T = window / passes, E = (frodo + Supermicro energy in the window) / passes
+    (smc False, v0.9 R3: frodo's energy only)"""
     n = len(res["passes"])
-    E = (E_frodo_J + sum(res["smc_energy"]["E_J"].values())) / n
+    E = (E_frodo_J + (sum(res["smc_energy"]["E_J"].values()) if smc else 0.0)) / n
     return dict(T=(res["t_end"] - res["t_start"]) / n, E=E, passes=n)
 
 
@@ -469,17 +553,17 @@ def corrected(M, opts, alone):
         for k in list(C):
             if k[0] == d and k not in eff:
                 C[k] = dict(M.C[k], t=M.C[k]["t"] * rt)
-        mp = measured_pass(res, Ef)
+        mp = measured_pass(res, Ef, smc="smc" in M.boundary)
         plan = M.alone(d, opts)
         ev = M.evaluate(plan, opts)
         items = [(o, plan[o["id"]][1]) for o in opts]
-        e_opts = sum(M.cost(d, o, m)["dE"] for o, m in items)
+        e_opts = sum(M.cost(d, o, m)["dE"] + M.overhead(d) + M.coord(d) for o, m in items)
         e_change = ev["dE"][d] - e_opts
         r = max(1e-6, (mp["E"] - M.Pidle * mp["T"] - e_change)) / e_opts
         for k in list(C):
             if k[0] == d:
                 C[k] = dict(C[k], dE=M.C[k]["dE"] * r)
-    N = Model(C=C, CH=M.CH, P=M.P, latency=M.latency)
+    N = Model(C=C, CH=M.CH, P=M.P, latency=M.latency, conc=M.conc, devices=M.devices, boundary=M.boundary)
     N.t_ov = dict(M.t_ov)
     return N
 

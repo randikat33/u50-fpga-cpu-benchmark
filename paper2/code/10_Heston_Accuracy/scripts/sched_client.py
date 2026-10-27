@@ -19,7 +19,9 @@ class Agent:
         self.s = socket.create_connection((host, port), timeout=timeout)
         self.s.settimeout(None)
         self.s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
-        self.f = self.s.makefile("rw", buffering=1)
+        # v0.9: separate reader and writer (Python 3.10 drops read-ahead lines when a "rw" text file is written)
+        self.f = self.s.makefile("r", buffering=1)
+        self.fw = self.s.makefile("w", buffering=1)
         self.runs = runs if runs is not None else queue.Queue()
         self.ctl = queue.Queue()
         self.wlock = threading.Lock()
@@ -39,7 +41,7 @@ class Agent:
 
     def send(self, d):
         with self.wlock:
-            self.f.write(json.dumps(d) + "\n"); self.f.flush()
+            self.fw.write(json.dumps(d) + "\n"); self.fw.flush()
 
     def call(self, d, timeout=60):
         self.send(d)
@@ -72,7 +74,7 @@ class Agent:
         return self.call(dict(op="stop"), timeout=120)[1]
 
     def close(self):
-        for f in (lambda: self.s.shutdown(socket.SHUT_RDWR), self.f.close, self.s.close):
+        for f in (lambda: self.s.shutdown(socket.SHUT_RDWR), self.f.close, self.fw.close, self.s.close):
             try:
                 f()
             except Exception:

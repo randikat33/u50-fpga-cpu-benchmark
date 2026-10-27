@@ -1,0 +1,20 @@
+GPU: NVIDIA GeForce RTX 4070 Ti SUPER | driver: 580.196.07 | CUDA driver API: 13000
+persistence mode: 1
+power limit (W): 285.0
+power limit range (W): [100.0, 314.0]
+default power limit (W): 285.0
+SM count: 66
+max SM clock (MHz): 3105
+max memory clock (MHz): 10501
+current SM clock (MHz): 210
+temperature (C): 33
+PCIe link: gen 1 x16
+ECC mode: not available (Not Supported)
+supported SM clocks at memory 10501 MHz: 194 values, 3105..210; e.g. [3105, 3090, 3075, 3060, 3045, 3030, 3015, 3000]
+supported SM clocks at memory 10251 MHz: 194 values, 3105..210; e.g. [3105, 3090, 3075, 3060, 3045, 3030, 3015, 3000]
+NVML total energy counter: WORKS (idle 13.6 W over 1 s)
+power now (W): 13.629
+throttle reasons now: 0x1
+RAPL domains:
+  intel-rapl:0: package-0, readable, 6.0 W now
+  intel-rapl:0:0: core, readable, 1.1 W now

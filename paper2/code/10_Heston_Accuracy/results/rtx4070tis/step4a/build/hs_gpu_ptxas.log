@@ -1,0 +1,121 @@
+ptxas info    : 218048 bytes gmem, 72 bytes cmem[3], 64 bytes cmem[4]
+ptxas info    : Compiling entry function '_Z12price_kernelILi512ELi2ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi512ELi2ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 44 registers, used 1 barriers, 4096 bytes smem, 528 bytes cmem[0]
+ptxas info    : Compile time = 32.609 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi512ELi2ELi0ELi1EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi512ELi2ELi0ELi1EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 64 registers, used 1 barriers, 4096 bytes smem, 528 bytes cmem[0], 88 bytes cmem[2]
+ptxas info    : Compile time = 33.846 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi512ELi1ELi1ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi512ELi1ELi1ELi0EEv3JobPd
+    8 bytes stack frame, 24 bytes spill stores, 16 bytes spill loads
+ptxas info    : Used 64 registers, used 1 barriers, 8 bytes cumulative stack size, 4096 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 29.629 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi512ELi1ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi512ELi1ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 57 registers, used 1 barriers, 4096 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 25.503 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi512ELi0ELi1ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi512ELi0ELi1ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 60 registers, used 1 barriers, 4096 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 28.838 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi512ELi0ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi512ELi0ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 1 barriers, 4096 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 25.052 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi256ELi2ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi256ELi2ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 44 registers, used 1 barriers, 2048 bytes smem, 528 bytes cmem[0]
+ptxas info    : Compile time = 25.735 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi256ELi2ELi0ELi1EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi256ELi2ELi0ELi1EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 1 barriers, 2048 bytes smem, 528 bytes cmem[0], 88 bytes cmem[2]
+ptxas info    : Compile time = 30.988 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi256ELi1ELi1ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi256ELi1ELi1ELi0EEv3JobPd
+    8 bytes stack frame, 24 bytes spill stores, 16 bytes spill loads
+ptxas info    : Used 64 registers, used 1 barriers, 8 bytes cumulative stack size, 2048 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 26.925 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi256ELi1ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi256ELi1ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 57 registers, used 1 barriers, 2048 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 22.339 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi256ELi0ELi1ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi256ELi0ELi1ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 60 registers, used 1 barriers, 2048 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 25.947 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi256ELi0ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi256ELi0ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 1 barriers, 2048 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 21.971 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi128ELi2ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi128ELi2ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 44 registers, used 1 barriers, 1024 bytes smem, 528 bytes cmem[0]
+ptxas info    : Compile time = 23.345 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi128ELi2ELi0ELi1EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi128ELi2ELi0ELi1EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 72 registers, used 1 barriers, 1024 bytes smem, 528 bytes cmem[0], 88 bytes cmem[2]
+ptxas info    : Compile time = 28.194 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi128ELi1ELi1ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi128ELi1ELi1ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 67 registers, used 1 barriers, 1024 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 23.754 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi128ELi1ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi128ELi1ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 56 registers, used 1 barriers, 1024 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 20.429 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi128ELi0ELi1ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi128ELi0ELi1ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 60 registers, used 1 barriers, 1024 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 23.159 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi128ELi0ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi128ELi0ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 40 registers, used 1 barriers, 1024 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 20.630 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi64ELi2ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi64ELi2ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 44 registers, used 1 barriers, 512 bytes smem, 528 bytes cmem[0]
+ptxas info    : Compile time = 20.492 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi64ELi2ELi0ELi1EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi64ELi2ELi0ELi1EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 72 registers, used 1 barriers, 512 bytes smem, 528 bytes cmem[0], 88 bytes cmem[2]
+ptxas info    : Compile time = 25.214 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi64ELi1ELi1ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi64ELi1ELi1ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 67 registers, used 1 barriers, 512 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 21.018 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi64ELi1ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi64ELi1ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 56 registers, used 1 barriers, 512 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 17.874 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi64ELi0ELi1ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi64ELi0ELi1ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 62 registers, used 1 barriers, 512 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 20.558 ms
+ptxas info    : Compiling entry function '_Z12price_kernelILi64ELi0ELi0ELi0EEv3JobPd' for 'sm_89'
+ptxas info    : Function properties for _Z12price_kernelILi64ELi0ELi0ELi0EEv3JobPd
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 48 registers, used 1 barriers, 512 bytes smem, 528 bytes cmem[0], 8 bytes cmem[2]
+ptxas info    : Compile time = 17.362 ms

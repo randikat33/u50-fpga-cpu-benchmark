@@ -1,0 +1,40 @@
+
+==============NVSMI LOG==============
+
+Timestamp                                              : Mon Oct 26 11:32:50 2026
+Driver Version                                         : 580.196.07
+CUDA Version                                           : 13.0
+
+Attached GPUs                                          : 1
+GPU 00000000:01:00.0
+    Supported Clocks
+        Memory                                         : 10501 MHz
+            Graphics                                   : 3105 MHz
+            Graphics                                   : 3090 MHz
+            Graphics                                   : 3075 MHz
+            Graphics                                   : 3060 MHz
+            Graphics                                   : 3045 MHz
+            Graphics                                   : 3030 MHz
+            Graphics                                   : 3015 MHz
+            Graphics                                   : 3000 MHz
+            Graphics                                   : 2985 MHz
+            Graphics                                   : 2970 MHz
+            Graphics                                   : 2955 MHz
+            Graphics                                   : 2940 MHz
+            Graphics                                   : 2925 MHz
+            Graphics                                   : 2910 MHz
+            Graphics                                   : 2895 MHz
+            Graphics                                   : 2880 MHz
+            Graphics                                   : 2865 MHz
+            Graphics                                   : 2850 MHz
+            Graphics                                   : 2835 MHz
+            Graphics                                   : 2820 MHz
+            Graphics                                   : 2805 MHz
+            Graphics                                   : 2790 MHz
+            Graphics                                   : 2775 MHz
+            Graphics                                   : 2760 MHz
+            Graphics                                   : 2745 MHz
+            Graphics                                   : 2730 MHz
+            Graphics                                   : 2715 MHz
+            Graphics                                   : 2700 MHz
+            Graphics                                   : 2685 MHz

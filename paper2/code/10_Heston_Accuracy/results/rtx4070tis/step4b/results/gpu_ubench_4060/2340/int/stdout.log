@@ -1,0 +1,17 @@
+MARK start 1792997058.150823
+MARK end 1792997068.151158
+RESULT project=heston_accuracy
+RESULT platform=gpu
+RESULT impl=ubench
+RESULT bench=int
+RESULT tpb=256
+RESULT blocks=396
+RESULT blocks_per_sm_occupancy=6
+RESULT sync=spin
+RESULT runs=7303
+RESULT t_window_s=10.000327
+RESULT t_per_run_s=0.001369345
+RESULT warp_instr_per_s=4.548555e+11
+RESULT clock_mhz_assumed=2340
+RESULT thread_instr_per_sm_per_clk=94.2462
+RESULT ok=1

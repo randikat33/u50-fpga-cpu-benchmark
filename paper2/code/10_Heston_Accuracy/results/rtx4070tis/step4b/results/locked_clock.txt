@@ -1,0 +1,5 @@
+LOCKED_CLOCK_MHZ=2340
+2340 MHz:
+  fp32: GPU 126.3 W, SM 2340 MHz, throttle 0x0, disturbed 0 -> ok
+  int: GPU 139.0 W, SM 2340.0 MHz, throttle 0x0, disturbed 0 -> ok
+  sfu: GPU 56.1 W, SM 2340.0 MHz, throttle 0x0, disturbed 0 -> ok

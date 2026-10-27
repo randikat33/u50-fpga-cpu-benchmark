@@ -1,0 +1,2 @@
+clocks.current.sm [MHz], clocks.max.sm [MHz]
+210 MHz, 3105 MHz
