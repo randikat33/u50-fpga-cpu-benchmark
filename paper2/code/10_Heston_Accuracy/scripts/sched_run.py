@@ -126,7 +126,7 @@ def main():
     ap.add_argument("--xrt-ini", default=os.path.abspath(os.path.join(ROOT, "..", "..", "common", "xrt_timing.ini")))
     a = ap.parse_args()
     P = json.load(open(a.plan))
-    opts = S.book()
+    opts = S.book(tuple(P["mix"]) if P.get("mix") else None)     # v0.10: the plan file names its book; v0.8/v0.9 plans have none
     byid = {o["id"]: o for o in opts}
     plan = {int(i): tuple(x) for i, x in P["plan"].items()}
     order = S.device_order(plan, opts)
@@ -203,8 +203,8 @@ def main():
             t.join()
         T = time.time() - t0
         n = sum(len(v) for v in res.values())
-        if n != len(opts):
-            raise RuntimeError(f"pass incomplete: {n} of {len(opts)} options")
+        if n != len(plan):              # v0.11 calibration plans price a subset of the book; full plans: len(plan) == len(opts)
+            raise RuntimeError(f"pass incomplete: {n} of {len(plan)} options")
         return T, res, {d: (max(x["t1"] for x in res[d]) - t0) for d in used}
 
     for _ in range(a.warmup_passes):

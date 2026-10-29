@@ -70,11 +70,21 @@ def settings():
     return S
 
 
-def book():
+def book_mix(mix=None):
+    """options per case at 1% / 0.3% / 0.1%: the argument, else the SCHED_BOOK environment variable ("20,0,0"),
+    else MIX (8 / 8 / 4, the v0.8 and v0.9 book). Addendum v0.10 prices other books with the same model."""
+    if mix is None and os.environ.get("SCHED_BOOK"):
+        mix = tuple(int(x) for x in os.environ["SCHED_BOOK"].split(","))
+    if mix is None:
+        return MIX
+    return tuple(zip(("1%", "0.3%", "0.1%"), mix))
+
+
+def book(mix=None):
     S = settings()
     opts = []
     for c in CASES:
-        for t, n in MIX:
+        for t, n in book_mix(mix):
             for _ in range(n):
                 opts.append(dict(case=c, target=t))
     random.Random(BOOK_SEED).shuffle(opts)
