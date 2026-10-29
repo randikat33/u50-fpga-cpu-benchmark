@@ -1,0 +1,12 @@
+2026-10-28 17:12:23 v0.10 scheduling CHECK: 8 of 8 jobs left; prediction sha256 cbcd75721e61220f59f81789b9fdb29cc0c55994cdcbc9ddd335cda92974e393
+2026-10-28 17:12:24 waiting: other processes use 0.0 cores
+2026-10-28 17:12:50 S rep1 alone_gpu: 156 passes, T 19.3 ms, E 4.35 J (predicted 26.6 ms, 7.30 J), error max 0.79 eps
+2026-10-28 17:13:07 S rep1 model_E: 250 passes, T 12.0 ms, E 3.66 J (predicted 14.1 ms, 4.44 J), error max 1.05 eps
+2026-10-28 17:13:24 S2 rep1 alone_gpu: 126 passes, T 24.0 ms, E 6.11 J (predicted 31.8 ms, 8.56 J), error max 1.65 eps
+2026-10-28 17:13:48 S2 rep1 model_E: 178 passes, T 16.9 ms, E 5.23 J (predicted 21.2 ms, 6.00 J), error max 1.65 eps
+2026-10-28 17:14:04 M rep1 alone_gpu: 18 passes, T 175.1 ms, E 45.51 J (predicted 181.8 ms, 47.13 J), error max 1.33 eps
+2026-10-28 17:14:26 M rep1 model_E: 19 passes, T 162.0 ms, E 46.87 J (predicted 162.8 ms, 43.70 J), error max 1.61 eps
+2026-10-28 17:14:43 L rep1 alone_gpu: 4 passes, T 750.7 ms, E 197.74 J (predicted 749.2 ms, 193.65 J), error max 1.68 eps
+2026-10-28 17:15:00 L rep1 model_E: 5 passes, T 748.0 ms, E 195.69 J (predicted 744.1 ms, 193.24 J), error max 1.29 eps
+2026-10-28 17:15:00 CHECK: every job ran; the check is not a result
+2026-10-28 17:15:00 SCHED CHECK FINISHED: 8 of 8 jobs, 0 not done

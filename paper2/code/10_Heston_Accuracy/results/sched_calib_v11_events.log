@@ -1,0 +1,19 @@
+2026-10-28 18:09:36 v0.11 calibration: 16 of 16 jobs left (input measurements, before registration)
+2026-10-28 18:09:37 waiting: other processes use 0.0 cores
+2026-10-28 18:10:44 K1_alone_fcpu rep1: 186 passes, T 161.9 ms, E 29.97 J (frodo 19.76, Supermicro 10.21 J per pass), error max 1.54 eps
+2026-10-28 18:11:49 K1_alone_gpu rep1: 2992 passes, T 10.0 ms, E 2.26 J (frodo 1.15, Supermicro 1.11 J per pass), error max 1.51 eps
+2026-10-28 18:12:47 K1_alone_scpu rep1: 273 passes, T 110.0 ms, E 23.55 J (frodo 11.29, Supermicro 12.26 J per pass), error max 1.54 eps
+2026-10-28 18:13:45 K2_alone_fcpu rep1: 101 passes, T 297.8 ms, E 65.46 J (frodo 46.64, Supermicro 18.82 J per pass), error max 0.76 eps
+2026-10-28 18:14:46 K2_alone_gpu rep1: 1351 passes, T 22.2 ms, E 5.75 J (frodo 2.54, Supermicro 3.21 J per pass), error max 1.14 eps
+2026-10-28 18:15:45 K2_alone_scpu rep1: 43 passes, T 709.0 ms, E 149.94 J (frodo 69.70, Supermicro 80.25 J per pass), error max 0.76 eps
+2026-10-28 18:16:47 K_card_qe rep1: 9 passes, T 3447.7 ms, E 625.17 J (frodo 406.45, Supermicro 218.72 J per pass), error max 1.31 eps
+2026-10-28 18:17:54 K_card_asian rep1: 2890 passes, T 10.4 ms, E 1.87 J (frodo 1.21, Supermicro 0.66 J per pass), error max 0.93 eps
+2026-10-28 18:18:53 K1_alone_fcpu rep2: 186 passes, T 161.7 ms, E 29.94 J (frodo 19.73, Supermicro 10.22 J per pass), error max 1.54 eps
+2026-10-28 18:19:57 K1_alone_gpu rep2: 2937 passes, T 10.2 ms, E 2.30 J (frodo 1.18, Supermicro 1.12 J per pass), error max 1.51 eps
+2026-10-28 18:20:55 K1_alone_scpu rep2: 273 passes, T 110.1 ms, E 23.69 J (frodo 11.42, Supermicro 12.27 J per pass), error max 1.54 eps
+2026-10-28 18:21:54 K2_alone_fcpu rep2: 101 passes, T 298.1 ms, E 65.57 J (frodo 46.69, Supermicro 18.88 J per pass), error max 0.76 eps
+2026-10-28 18:22:54 K2_alone_gpu rep2: 1349 passes, T 22.2 ms, E 5.74 J (frodo 2.53, Supermicro 3.21 J per pass), error max 1.14 eps
+2026-10-28 18:23:53 K2_alone_scpu rep2: 43 passes, T 708.4 ms, E 147.96 J (frodo 67.89, Supermicro 80.07 J per pass), error max 0.76 eps
+2026-10-28 18:25:01 K_card_qe rep2: 9 passes, T 3482.9 ms, E 631.65 J (frodo 411.41, Supermicro 220.24 J per pass), error max 1.31 eps
+2026-10-28 18:26:08 K_card_asian rep2: 2662 passes, T 11.3 ms, E 2.03 J (frodo 1.32, Supermicro 0.71 J per pass), error max 0.93 eps
+2026-10-28 18:26:12 CALIBRATION FINISHED: 16 of 16 jobs, 0 not done
