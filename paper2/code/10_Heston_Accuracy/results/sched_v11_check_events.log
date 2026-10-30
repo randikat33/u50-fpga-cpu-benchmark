@@ -1,0 +1,13 @@
+2026-10-29 09:01:37 v0.11 scheduling CHECK: 9 of 9 jobs left; prediction sha256 22292d48526f0ab4fed84b68900db18b904db582097e43e778237d3d45eee829
+2026-10-29 09:01:38 waiting: other processes use 0.0 cores
+2026-10-29 09:02:04 N3 rep1 alone_gpu: ran (97 passes, every option ok)
+2026-10-29 09:02:20 N3 rep1 model_E: ran (96 passes, every option ok)
+2026-10-29 09:02:37 N3 rep1 plan_v09: ran (96 passes, every option ok)
+2026-10-29 09:02:53 N2 rep1 alone_gpu: ran (28 passes, every option ok)
+2026-10-29 09:03:09 N2 rep1 model_E: ran (29 passes, every option ok)
+2026-10-29 09:03:32 N2 rep1 plan_v09: ran (32 passes, every option ok)
+2026-10-29 09:03:49 S rep1 alone_gpu: ran (157 passes, every option ok)
+2026-10-29 09:04:12 S rep1 model_E: ran (206 passes, every option ok)
+2026-10-29 09:04:34 S rep1 plan_v09: ran (263 passes, every option ok)
+2026-10-29 09:04:34 CHECK: every job ran; the check is not a result
+2026-10-29 09:04:34 SCHED CHECK FINISHED: 9 of 9 jobs, 0 not done

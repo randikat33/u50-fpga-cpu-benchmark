@@ -1,0 +1,438 @@
+{
+ "platform": "v100",
+ "sass": "/tmp/claude-0/b2sass/build/hs_gpu.sass",
+ "fp64_rate": 32.0,
+ "cvt_rate": 32.0,
+ "e_fp64_pJ": 20.0,
+ "e_cvt_pJ": 20.0,
+ "conversions_64bit": {
+  "asian_plain": [
+   2.0,
+   4.0,
+   0
+  ],
+  "asian_cv": [
+   4.0,
+   4.0,
+   0
+  ],
+  "basket_qe": [
+   0,
+   15.0,
+   3.0
+  ],
+  "basket_ft": [
+   0,
+   15.0,
+   3.0
+  ],
+  "heston_qe": [
+   0,
+   18.0,
+   0
+  ],
+  "heston_ft": [
+   0,
+   18.0,
+   0
+  ]
+ },
+ "rows": [
+  {
+   "case": "A",
+   "target": "0.1%",
+   "scheme": "cv",
+   "rate_registered": 347840267088.62,
+   "bind_registered": "xu",
+   "rate_shared": 415430517995.9558,
+   "bind_shared": "fma",
+   "rate_separate": 415430517995.9558,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "A",
+   "target": "0.1%",
+   "scheme": "plain",
+   "rate_registered": 434896635152.88153,
+   "bind_registered": "issue",
+   "rate_shared": 434896635152.88153,
+   "bind_shared": "issue",
+   "rate_separate": 434896635152.88153,
+   "bind_separate": "issue"
+  },
+  {
+   "case": "A",
+   "target": "0.3%",
+   "scheme": "cv",
+   "rate_registered": 347840267088.62,
+   "bind_registered": "xu",
+   "rate_shared": 415430517995.9558,
+   "bind_shared": "fma",
+   "rate_separate": 415430517995.9558,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "A",
+   "target": "0.3%",
+   "scheme": "plain",
+   "rate_registered": 434896635152.88153,
+   "bind_registered": "issue",
+   "rate_shared": 434896635152.88153,
+   "bind_shared": "issue",
+   "rate_separate": 434896635152.88153,
+   "bind_separate": "issue"
+  },
+  {
+   "case": "A",
+   "target": "1%",
+   "scheme": "cv",
+   "rate_registered": 347840267088.62,
+   "bind_registered": "xu",
+   "rate_shared": 415430517995.9558,
+   "bind_shared": "fma",
+   "rate_separate": 415430517995.9558,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "A",
+   "target": "1%",
+   "scheme": "plain",
+   "rate_registered": 434896635152.88153,
+   "bind_registered": "issue",
+   "rate_shared": 434896635152.88153,
+   "bind_shared": "issue",
+   "rate_separate": 434896635152.88153,
+   "bind_separate": "issue"
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "scheme": "ft",
+   "rate_registered": 29789010068.52737,
+   "bind_registered": "fma",
+   "rate_shared": 29789010068.52737,
+   "bind_shared": "fma",
+   "rate_separate": 29789010068.52737,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "B",
+   "target": "0.1%",
+   "scheme": "qe",
+   "rate_registered": 11925763387.309765,
+   "bind_registered": "fma",
+   "rate_shared": 11925763387.309765,
+   "bind_shared": "fma",
+   "rate_separate": 11925763387.309765,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "scheme": "ft",
+   "rate_registered": 27837238088.057957,
+   "bind_registered": "fma",
+   "rate_shared": 27837238088.057957,
+   "bind_shared": "fma",
+   "rate_separate": 27837238088.057957,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "B",
+   "target": "0.3%",
+   "scheme": "qe",
+   "rate_registered": 9810127376.56336,
+   "bind_registered": "fma",
+   "rate_shared": 9810127376.56336,
+   "bind_shared": "fma",
+   "rate_separate": 9810127376.56336,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "scheme": "ft",
+   "rate_registered": 25600760212.635933,
+   "bind_registered": "fma",
+   "rate_shared": 25600760212.635933,
+   "bind_shared": "fma",
+   "rate_separate": 25600760212.635933,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "B",
+   "target": "1%",
+   "scheme": "qe",
+   "rate_registered": 7933568920.061657,
+   "bind_registered": "fma",
+   "rate_shared": 7933568920.061657,
+   "bind_shared": "fma",
+   "rate_separate": 7933568920.061657,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "I",
+   "target": "0.1%",
+   "scheme": "ft",
+   "rate_registered": 241641032811.42163,
+   "bind_registered": "fma",
+   "rate_shared": 241641032811.42163,
+   "bind_shared": "fma",
+   "rate_separate": 241641032811.42163,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "I",
+   "target": "0.1%",
+   "scheme": "qe",
+   "rate_registered": 101171566222.2213,
+   "bind_registered": "fma",
+   "rate_shared": 101171566222.2213,
+   "bind_shared": "fma",
+   "rate_separate": 101171566222.2213,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "I",
+   "target": "0.3%",
+   "scheme": "ft",
+   "rate_registered": 241558024895.49426,
+   "bind_registered": "fma",
+   "rate_shared": 241558024895.49426,
+   "bind_shared": "fma",
+   "rate_separate": 241558024895.49426,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "I",
+   "target": "0.3%",
+   "scheme": "qe",
+   "rate_registered": 100353548966.88094,
+   "bind_registered": "fma",
+   "rate_shared": 100353548966.88094,
+   "bind_shared": "fma",
+   "rate_separate": 100353548966.88094,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "I",
+   "target": "1%",
+   "scheme": "ft",
+   "rate_registered": 241226562742.62036,
+   "bind_registered": "fma",
+   "rate_shared": 241226562742.62036,
+   "bind_shared": "fma",
+   "rate_separate": 241226562742.62036,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "I",
+   "target": "1%",
+   "scheme": "qe",
+   "rate_registered": 99283216823.05087,
+   "bind_registered": "fma",
+   "rate_shared": 99283216823.05087,
+   "bind_shared": "fma",
+   "rate_separate": 99283216823.05087,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "II",
+   "target": "0.1%",
+   "scheme": "ft",
+   "rate_registered": 241650259434.86505,
+   "bind_registered": "fma",
+   "rate_shared": 241650259434.86505,
+   "bind_shared": "fma",
+   "rate_separate": 241650259434.86505,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "II",
+   "target": "0.1%",
+   "scheme": "qe",
+   "rate_registered": 101080017449.24725,
+   "bind_registered": "fma",
+   "rate_shared": 101080017449.24725,
+   "bind_shared": "fma",
+   "rate_separate": 101080017449.24725,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "II",
+   "target": "0.3%",
+   "scheme": "ft",
+   "rate_registered": 241594910260.83893,
+   "bind_registered": "fma",
+   "rate_shared": 241594910260.83893,
+   "bind_shared": "fma",
+   "rate_separate": 241594910260.83893,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "II",
+   "target": "0.3%",
+   "scheme": "qe",
+   "rate_registered": 99994216585.45982,
+   "bind_registered": "fma",
+   "rate_shared": 99994216585.45982,
+   "bind_shared": "fma",
+   "rate_separate": 99994216585.45982,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "II",
+   "target": "1%",
+   "scheme": "ft",
+   "rate_registered": 241373766883.46686,
+   "bind_registered": "fma",
+   "rate_shared": 241373766883.46686,
+   "bind_shared": "fma",
+   "rate_separate": 241373766883.46686,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "II",
+   "target": "1%",
+   "scheme": "qe",
+   "rate_registered": 99994216585.45982,
+   "bind_registered": "fma",
+   "rate_shared": 99994216585.45982,
+   "bind_shared": "fma",
+   "rate_separate": 99994216585.45982,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "III",
+   "target": "0.1%",
+   "scheme": "ft",
+   "rate_registered": 241447436345.94815,
+   "bind_registered": "fma",
+   "rate_shared": 241447436345.94815,
+   "bind_shared": "fma",
+   "rate_separate": 241447436345.94815,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "III",
+   "target": "0.1%",
+   "scheme": "qe",
+   "rate_registered": 99283216823.05087,
+   "bind_registered": "fma",
+   "rate_shared": 99283216823.05087,
+   "bind_shared": "fma",
+   "rate_separate": 99283216823.05087,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "III",
+   "target": "0.3%",
+   "scheme": "ft",
+   "rate_registered": 240786025639.2343,
+   "bind_registered": "fma",
+   "rate_shared": 240786025639.2343,
+   "bind_shared": "fma",
+   "rate_separate": 240786025639.2343,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "III",
+   "target": "0.3%",
+   "scheme": "qe",
+   "rate_registered": 97209616471.68953,
+   "bind_registered": "fma",
+   "rate_shared": 97209616471.68953,
+   "bind_shared": "fma",
+   "rate_separate": 97209616471.68953,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "III",
+   "target": "1%",
+   "scheme": "ft",
+   "rate_registered": 238176226853.87662,
+   "bind_registered": "fma",
+   "rate_shared": 238176226853.87662,
+   "bind_shared": "fma",
+   "rate_separate": 238176226853.87662,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "III",
+   "target": "1%",
+   "scheme": "qe",
+   "rate_registered": 97209616471.68953,
+   "bind_registered": "fma",
+   "rate_shared": 97209616471.68953,
+   "bind_shared": "fma",
+   "rate_separate": 97209616471.68953,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "P1",
+   "target": "0.1%",
+   "scheme": "ft",
+   "rate_registered": 233122748649.32477,
+   "bind_registered": "fma",
+   "rate_shared": 233122748649.32477,
+   "bind_shared": "fma",
+   "rate_separate": 233122748649.32477,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "P1",
+   "target": "0.1%",
+   "scheme": "qe",
+   "rate_registered": 91477875664.25961,
+   "bind_registered": "fma",
+   "rate_shared": 91477875664.25961,
+   "bind_shared": "fma",
+   "rate_separate": 91477875664.25961,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "P1",
+   "target": "0.3%",
+   "scheme": "ft",
+   "rate_registered": 210763491310.31723,
+   "bind_registered": "fma",
+   "rate_shared": 210763491310.31723,
+   "bind_shared": "fma",
+   "rate_separate": 210763491310.31723,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "P1",
+   "target": "0.3%",
+   "scheme": "qe",
+   "rate_registered": 83292614212.94226,
+   "bind_registered": "fma",
+   "rate_shared": 83292614212.94226,
+   "bind_shared": "fma",
+   "rate_separate": 83292614212.94226,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "P1",
+   "target": "1%",
+   "scheme": "ft",
+   "rate_registered": 186866515529.7794,
+   "bind_registered": "fma",
+   "rate_shared": 186866515529.7794,
+   "bind_shared": "fma",
+   "rate_separate": 186866515529.7794,
+   "bind_separate": "fma"
+  },
+  {
+   "case": "P1",
+   "target": "1%",
+   "scheme": "qe",
+   "rate_registered": 54196326336.93871,
+   "bind_registered": "fma",
+   "rate_shared": 54196326336.93871,
+   "bind_shared": "fma",
+   "rate_separate": 54196326336.93871,
+   "bind_separate": "fma"
+  }
+ ]
+}

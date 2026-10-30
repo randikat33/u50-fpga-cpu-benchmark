@@ -1,0 +1,13 @@
+NVIDIA GeForce RTX 4070 Ti SUPER, 66 SMs, clock 2340 MHz, 528 blocks x 256 threads, idle 38.98 W
+RESULT DFMA rep=1 time_s=2.924 ops_per_sm_per_clk=1.684 gpu_W=59.40 idle_W=38.98 pJ_per_op_above_idle=78.51
+RESULT DFMA rep=2 time_s=2.924 ops_per_sm_per_clk=1.684 gpu_W=61.99 idle_W=38.98 pJ_per_op_above_idle=88.45
+RESULT DFMA rep=3 time_s=2.924 ops_per_sm_per_clk=1.684 gpu_W=59.79 idle_W=38.98 pJ_per_op_above_idle=79.98
+RESULT DFMA rep=4 time_s=2.924 ops_per_sm_per_clk=1.684 gpu_W=60.12 idle_W=38.98 pJ_per_op_above_idle=81.25
+RESULT DADD rep=1 time_s=2.990 ops_per_sm_per_clk=1.684 gpu_W=57.26 idle_W=38.98 pJ_per_op_above_idle=70.26
+RESULT DADD rep=2 time_s=2.990 ops_per_sm_per_clk=1.684 gpu_W=57.59 idle_W=38.98 pJ_per_op_above_idle=71.54
+RESULT DADD rep=3 time_s=2.990 ops_per_sm_per_clk=1.684 gpu_W=57.44 idle_W=38.98 pJ_per_op_above_idle=70.97
+RESULT DADD rep=4 time_s=2.990 ops_per_sm_per_clk=1.684 gpu_W=57.63 idle_W=38.98 pJ_per_op_above_idle=71.67
+RESULT F2F64 rep=1 time_s=2.998 ops_per_sm_per_clk=1.855 gpu_W=55.43 idle_W=38.98 pJ_per_op_above_idle=57.39
+RESULT F2F64 rep=2 time_s=2.999 ops_per_sm_per_clk=1.855 gpu_W=55.42 idle_W=38.98 pJ_per_op_above_idle=57.37
+RESULT F2F64 rep=3 time_s=2.999 ops_per_sm_per_clk=1.855 gpu_W=55.46 idle_W=38.98 pJ_per_op_above_idle=57.51
+RESULT F2F64 rep=4 time_s=2.998 ops_per_sm_per_clk=1.855 gpu_W=55.69 idle_W=38.98 pJ_per_op_above_idle=58.32

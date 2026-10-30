@@ -1,0 +1,110 @@
+2026-10-29 09:05:13 v0.11 scheduling runs: 27 of 27 jobs left; prediction sha256 22292d48526f0ab4fed84b68900db18b904db582097e43e778237d3d45eee829
+2026-10-29 09:05:14 waiting: other processes use 0.0 cores
+2026-10-29 09:06:59 N3 rep1 alone_gpu: 1915 passes, T 31.3 ms, E 7.83 J (predicted 31.1 ms, 7.77 J), error max 1.78 eps
+2026-10-29 09:08:36 N3 rep1 model_E: 1893 passes, T 31.7 ms, E 8.29 J (predicted 27.5 ms, 7.15 J), error max 1.78 eps
+2026-10-29 09:10:19 N3 rep1 plan_v09: 1914 passes, T 31.4 ms, E 8.65 J (predicted 24.7 ms, 7.90 J), error max 1.81 eps
+2026-10-29 09:11:49 N2 rep1 alone_gpu: 561 passes, T 107.1 ms, E 27.97 J (predicted 106.8 ms, 27.36 J), error max 1.56 eps
+2026-10-29 09:13:20 N2 rep1 model_E: 574 passes, T 104.6 ms, E 28.17 J (predicted 103.1 ms, 26.75 J), error max 1.61 eps
+2026-10-29 09:14:57 N2 rep1 plan_v09: 636 passes, T 94.4 ms, E 29.33 J (predicted 93.9 ms, 29.47 J), error max 1.61 eps
+2026-10-29 09:16:37 S rep1 alone_gpu: 3079 passes, T 19.5 ms, E 4.44 J (predicted 18.9 ms, 4.27 J), error max 0.79 eps
+2026-10-29 09:18:25 S rep1 model_E: 3996 passes, T 15.0 ms, E 4.72 J (predicted 12.9 ms, 3.28 J), error max 0.79 eps
+2026-10-29 09:20:16 S rep1 plan_v09: 5507 passes, T 10.9 ms, E 3.93 J (predicted 11.6 ms, 3.66 J), error max 1.05 eps
+2026-10-29 09:21:52 N3 rep2 model_E: 1899 passes, T 31.6 ms, E 8.28 J (predicted 27.5 ms, 7.15 J), error max 1.78 eps
+2026-10-29 09:23:35 N3 rep2 plan_v09: 1913 passes, T 31.4 ms, E 8.66 J (predicted 24.7 ms, 7.90 J), error max 1.81 eps
+2026-10-29 09:25:11 N3 rep2 alone_gpu: 1914 passes, T 31.4 ms, E 7.85 J (predicted 31.1 ms, 7.77 J), error max 1.78 eps
+2026-10-29 09:26:42 N2 rep2 model_E: 572 passes, T 105.0 ms, E 28.00 J (predicted 103.1 ms, 26.75 J), error max 1.61 eps
+2026-10-29 09:28:20 N2 rep2 plan_v09: 635 passes, T 94.5 ms, E 29.27 J (predicted 93.9 ms, 29.47 J), error max 1.61 eps
+2026-10-29 09:29:51 N2 rep2 alone_gpu: 560 passes, T 107.3 ms, E 28.10 J (predicted 106.8 ms, 27.36 J), error max 1.56 eps
+2026-10-29 09:31:38 S rep2 model_E: 3888 passes, T 15.4 ms, E 4.86 J (predicted 12.9 ms, 3.28 J), error max 0.79 eps
+2026-10-29 09:33:29 S rep2 plan_v09: 5722 passes, T 10.5 ms, E 3.80 J (predicted 11.6 ms, 3.66 J), error max 1.05 eps
+2026-10-29 09:35:08 S rep2 alone_gpu: 3072 passes, T 19.5 ms, E 4.41 J (predicted 18.9 ms, 4.27 J), error max 0.79 eps
+2026-10-29 09:36:51 N3 rep3 plan_v09: 1862 passes, T 32.2 ms, E 8.85 J (predicted 24.7 ms, 7.90 J), error max 1.81 eps
+2026-10-29 09:38:27 N3 rep3 alone_gpu: 1915 passes, T 31.3 ms, E 7.84 J (predicted 31.1 ms, 7.77 J), error max 1.78 eps
+2026-10-29 09:40:04 N3 rep3 model_E: 1896 passes, T 31.6 ms, E 8.29 J (predicted 27.5 ms, 7.15 J), error max 1.78 eps
+2026-10-29 09:41:41 N2 rep3 plan_v09: 638 passes, T 94.1 ms, E 29.34 J (predicted 93.9 ms, 29.47 J), error max 1.61 eps
+2026-10-29 09:43:12 N2 rep3 alone_gpu: 561 passes, T 107.0 ms, E 28.05 J (predicted 106.8 ms, 27.36 J), error max 1.56 eps
+2026-10-29 09:44:43 N2 rep3 model_E: 570 passes, T 105.4 ms, E 28.34 J (predicted 103.1 ms, 26.75 J), error max 1.61 eps
+2026-10-29 09:46:28 S rep3 plan_v09: 5708 passes, T 10.5 ms, E 3.79 J (predicted 11.6 ms, 3.66 J), error max 1.05 eps
+2026-10-29 09:48:08 S rep3 alone_gpu: 3072 passes, T 19.5 ms, E 4.42 J (predicted 18.9 ms, 4.27 J), error max 0.79 eps
+2026-10-29 09:49:56 S rep3 model_E: 3994 passes, T 15.0 ms, E 4.71 J (predicted 12.9 ms, 3.28 J), error max 0.79 eps
+2026-10-29 09:50:42 SCHED FINISHED: 27 of 27 jobs, 0 not done
+2026-10-29 09:58:44 v0.11 scheduling runs: 18 of 18 jobs left; prediction sha256 22292d48526f0ab4fed84b68900db18b904db582097e43e778237d3d45eee829
+2026-10-29 09:58:45 waiting: other processes use 0.0 cores
+2026-10-29 10:00:30 N3 rep4 alone_gpu: 1915 passes, T 31.3 ms, E 7.81 J (predicted 31.1 ms, 7.77 J), error max 1.78 eps
+2026-10-29 10:02:07 N3 rep4 model_E: 1887 passes, T 31.8 ms, E 8.31 J (predicted 27.5 ms, 7.15 J), error max 1.78 eps
+2026-10-29 10:03:50 N3 rep4 plan_v09: 1884 passes, T 31.9 ms, E 8.76 J (predicted 24.7 ms, 7.90 J), error max 1.81 eps
+2026-10-29 10:05:21 N2 rep4 alone_gpu: 561 passes, T 107.1 ms, E 28.03 J (predicted 106.8 ms, 27.36 J), error max 1.56 eps
+2026-10-29 10:06:53 N2 rep4 model_E: 576 passes, T 104.2 ms, E 28.11 J (predicted 103.1 ms, 26.75 J), error max 1.61 eps
+2026-10-29 10:08:30 N2 rep4 plan_v09: 636 passes, T 94.4 ms, E 29.24 J (predicted 93.9 ms, 29.47 J), error max 1.61 eps
+2026-10-29 10:10:10 S rep4 alone_gpu: 3066 passes, T 19.6 ms, E 4.45 J (predicted 18.9 ms, 4.27 J), error max 0.79 eps
+2026-10-29 10:11:58 S rep4 model_E: 3846 passes, T 15.6 ms, E 4.89 J (predicted 12.9 ms, 3.28 J), error max 0.79 eps
+2026-10-29 10:13:49 S rep4 plan_v09: 5680 passes, T 10.6 ms, E 3.82 J (predicted 11.6 ms, 3.66 J), error max 1.05 eps
+2026-10-29 10:15:26 N3 rep5 model_E: 1899 passes, T 31.6 ms, E 8.28 J (predicted 27.5 ms, 7.15 J), error max 1.78 eps
+2026-10-29 10:17:09 N3 rep5 plan_v09: 1902 passes, T 31.5 ms, E 8.71 J (predicted 24.7 ms, 7.90 J), error max 1.81 eps
+2026-10-29 10:30:20 v0.11 scheduling runs: 7 of 18 jobs left; prediction sha256 22292d48526f0ab4fed84b68900db18b904db582097e43e778237d3d45eee829
+2026-10-29 10:30:21 waiting: other processes use 0.0 cores
+2026-10-29 10:35:21 waiting: other processes use 3.0 cores
+2026-10-29 10:40:21 waiting: other processes use 3.1 cores
+2026-10-29 10:45:22 waiting: other processes use 3.1 cores
+2026-10-29 10:50:22 waiting: other processes use 3.3 cores
+2026-10-29 10:55:08 N3 rep5 alone_gpu: try 1 set aside: failed (rc 1) 
+2026-10-29 10:56:46 N3 rep5 alone_gpu: try 2 set aside: failed (rc 1) 
+2026-10-29 10:57:33 N3 rep5 alone_gpu: try 3 set aside: failed (rc 1) 
+2026-10-29 10:58:21 N3 rep5 alone_gpu: try 4 set aside: failed (rc 1) 
+2026-10-29 10:59:08 N3 rep5 alone_gpu: try 5 set aside: failed (rc 1) 
+2026-10-29 10:59:56 N2 rep5 model_E: try 1 set aside: failed (rc 1) 
+2026-10-29 11:00:44 N2 rep5 model_E: try 2 set aside: failed (rc 1) 
+2026-10-29 11:00:55 waiting: other processes use 0.5 cores
+2026-10-29 11:01:34 N2 rep5 model_E: try 3 set aside: failed (rc 1) 
+2026-10-29 11:02:22 N2 rep5 model_E: try 4 set aside: failed (rc 1) 
+2026-10-29 11:03:09 N2 rep5 model_E: try 5 set aside: failed (rc 1) 
+2026-10-29 11:03:57 N2 rep5 plan_v09: try 1 set aside: failed (rc 1) 
+2026-10-29 11:04:45 N2 rep5 plan_v09: try 2 set aside: failed (rc 1) 
+2026-10-29 11:05:32 N2 rep5 plan_v09: try 3 set aside: failed (rc 1) 
+2026-10-29 11:06:20 N2 rep5 plan_v09: try 4 set aside: failed (rc 1) 
+2026-10-29 11:07:07 N2 rep5 plan_v09: try 5 set aside: failed (rc 1) 
+2026-10-29 11:07:55 N2 rep5 alone_gpu: try 1 set aside: failed (rc 1) 
+2026-10-29 11:08:42 N2 rep5 alone_gpu: try 2 set aside: failed (rc 1) 
+2026-10-29 11:09:30 N2 rep5 alone_gpu: try 3 set aside: failed (rc 1) 
+2026-10-29 11:10:18 N2 rep5 alone_gpu: try 4 set aside: failed (rc 1) 
+2026-10-29 11:11:05 N2 rep5 alone_gpu: try 5 set aside: failed (rc 1) 
+2026-10-29 11:11:53 S rep5 model_E: try 1 set aside: failed (rc 1) 
+2026-10-29 11:12:40 S rep5 model_E: try 2 set aside: failed (rc 1) 
+2026-10-29 11:13:28 S rep5 model_E: try 3 set aside: failed (rc 1) 
+2026-10-29 11:14:16 S rep5 model_E: try 4 set aside: failed (rc 1) 
+2026-10-29 11:15:03 S rep5 model_E: try 5 set aside: failed (rc 1) 
+2026-10-29 11:15:51 S rep5 plan_v09: try 1 set aside: failed (rc 1) 
+2026-10-29 11:16:38 S rep5 plan_v09: try 2 set aside: failed (rc 1) 
+2026-10-29 11:17:26 S rep5 plan_v09: try 3 set aside: failed (rc 1) 
+2026-10-29 11:18:13 S rep5 plan_v09: try 4 set aside: failed (rc 1) 
+2026-10-29 11:19:01 S rep5 plan_v09: try 5 set aside: failed (rc 1) 
+2026-10-29 11:19:49 S rep5 alone_gpu: try 1 set aside: failed (rc 1) 
+2026-10-29 11:20:36 S rep5 alone_gpu: try 2 set aside: failed (rc 1) 
+2026-10-29 11:21:24 S rep5 alone_gpu: try 3 set aside: failed (rc 1) 
+2026-10-29 11:22:11 S rep5 alone_gpu: try 4 set aside: failed (rc 1) 
+2026-10-29 11:22:59 S rep5 alone_gpu: try 5 set aside: failed (rc 1) 
+2026-10-29 11:24:08 SCHED INCOMPLETE: 11 of 18 jobs, 7 not done
+2026-10-29 14:48:33 v0.11 scheduling runs: 7 of 18 jobs left; prediction sha256 22292d48526f0ab4fed84b68900db18b904db582097e43e778237d3d45eee829
+2026-10-29 14:48:34 waiting: other processes use 0.0 cores
+2026-10-29 14:50:19 N3 rep5 alone_gpu: 1913 passes, T 31.4 ms, E 7.58 J (predicted 31.1 ms, 7.77 J), error max 1.78 eps
+2026-10-29 14:51:50 N2 rep5 model_E: 575 passes, T 104.5 ms, E 26.89 J (predicted 103.1 ms, 26.75 J), error max 1.61 eps
+2026-10-29 14:53:26 N2 rep5 plan_v09: 636 passes, T 94.5 ms, E 29.20 J (predicted 93.9 ms, 29.47 J), error max 1.61 eps
+2026-10-29 14:54:57 N2 rep5 alone_gpu: 561 passes, T 107.1 ms, E 27.94 J (predicted 106.8 ms, 27.36 J), error max 1.56 eps
+2026-10-29 14:56:46 S rep5 model_E: 3890 passes, T 15.4 ms, E 4.85 J (predicted 12.9 ms, 3.28 J), error max 0.79 eps
+2026-10-29 14:58:37 S rep5 plan_v09: 5767 passes, T 10.4 ms, E 3.76 J (predicted 11.6 ms, 3.66 J), error max 1.05 eps
+2026-10-29 15:00:17 S rep5 alone_gpu: 3077 passes, T 19.5 ms, E 4.40 J (predicted 18.9 ms, 4.27 J), error max 0.79 eps
+2026-10-29 15:01:31 SCHED FINISHED: 18 of 18 jobs, 0 not done
+2026-10-29 21:08:04 v0.11 scheduling runs: 0 of 18 jobs left; prediction sha256 22292d48526f0ab4fed84b68900db18b904db582097e43e778237d3d45eee829
+2026-10-29 21:08:18 v0.11 scheduling runs: 9 of 9 jobs left; prediction sha256 22292d48526f0ab4fed84b68900db18b904db582097e43e778237d3d45eee829
+2026-10-29 21:08:19 waiting: other processes use 0.0 cores
+2026-10-29 21:09:10 SCHED FINISHED: 18 of 18 jobs, 0 not done
+2026-10-29 21:10:58 N3 rep6 plan_v09: 1912 passes, T 31.4 ms, E 8.66 J (predicted 24.7 ms, 7.90 J), error max 1.81 eps
+2026-10-29 21:12:36 N3 rep6 alone_gpu: 1910 passes, T 31.4 ms, E 7.90 J (predicted 31.1 ms, 7.77 J), error max 1.78 eps
+2026-10-29 21:14:13 N3 rep6 model_E: 1901 passes, T 31.6 ms, E 8.26 J (predicted 27.5 ms, 7.15 J), error max 1.78 eps
+2026-10-29 21:15:52 N2 rep6 plan_v09: 638 passes, T 94.1 ms, E 29.29 J (predicted 93.9 ms, 29.47 J), error max 1.61 eps
+2026-10-29 21:17:25 N2 rep6 alone_gpu: 560 passes, T 107.2 ms, E 28.00 J (predicted 106.8 ms, 27.36 J), error max 1.56 eps
+2026-10-29 21:18:57 N2 rep6 model_E: 576 passes, T 104.3 ms, E 28.02 J (predicted 103.1 ms, 26.75 J), error max 1.61 eps
+2026-10-29 21:20:44 S rep6 plan_v09: 5729 passes, T 10.5 ms, E 3.78 J (predicted 11.6 ms, 3.66 J), error max 1.05 eps
+2026-10-29 21:22:25 S rep6 alone_gpu: 3078 passes, T 19.5 ms, E 4.40 J (predicted 18.9 ms, 4.27 J), error max 0.79 eps
+2026-10-29 21:24:14 S rep6 model_E: 4024 passes, T 14.9 ms, E 4.70 J (predicted 12.9 ms, 3.28 J), error max 0.79 eps
+2026-10-29 21:25:30 SCHED FINISHED: 9 of 9 jobs, 0 not done

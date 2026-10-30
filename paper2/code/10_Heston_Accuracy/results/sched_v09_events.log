@@ -1,0 +1,108 @@
+2026-10-27 15:10:28 v0.9 scheduling runs: 36 of 36 jobs left; prediction sha256 d4ad8c03b807be53e3f4b75763cb013c70dc75ea600dd97b66f0e233c66a778f
+2026-10-27 15:10:29 waiting: other processes use 0.0 cores
+2026-10-27 15:12:11 rep1 alone_fcpu: 22 passes, T 2.758 s, E 811.9 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 15:12:12 waiting: other processes use 0.9 cores
+2026-10-27 15:14:55 rep1 alone_card: 3 passes, T 31.621 s, E 5847.0 J (predicted 29.836 s, 5633.2 J), error max 1.33 eps
+2026-10-27 15:16:43 rep1 alone_scpu: 7 passes, T 9.762 s, E 2025.2 J (predicted 9.913 s, 2052.0 J), error max 1.61 eps
+2026-10-27 15:18:14 rep1 alone_gpu: 343 passes, T 0.175 s, E 45.3 J (predicted 0.182 s, 47.1 J), error max 1.33 eps
+2026-10-27 15:19:52 rep1 model_E: 369 passes, T 0.163 s, E 47.5 J (predicted 0.163 s, 43.7 J), error max 1.61 eps
+2026-10-27 15:21:25 rep1 model_T: 410 passes, T 0.146 s, E 69.6 J (predicted 0.148 s, 68.0 J), error max 1.61 eps
+2026-10-27 15:22:57 rep1 model_M: 385 passes, T 0.156 s, E 50.0 J (predicted 0.156 s, 46.1 J), error max 1.61 eps
+2026-10-27 15:24:35 rep1 model_dev: 339 passes, T 0.177 s, E 49.2 J (predicted 0.184 s, 46.1 J), error max 1.33 eps
+2026-10-27 15:26:13 rep1 model_E_f: 43 passes, T 1.401 s, E 251.6 J (predicted 1.384 s, 292.1 J), error max 1.61 eps
+2026-10-27 15:27:56 rep1 oracle: 373 passes, T 0.161 s, E 48.9 J (with measured costs 38.6 J), error max 1.61 eps
+2026-10-27 15:29:41 rep1 oracle_M: 381 passes, T 0.158 s, E 48.5 J (with measured costs 39.4 J), error max 1.61 eps
+2026-10-27 15:29:43 waiting: other processes use 0.5 cores
+2026-10-27 15:31:15 rep1 oracle_f: 43 passes, T 1.401 s, E 252.0 J (with measured costs 286.3 J), error max 1.61 eps
+2026-10-27 15:32:48 rep2 alone_fcpu: 22 passes, T 2.747 s, E 828.3 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 15:35:34 rep2 alone_card: 3 passes, T 34.044 s, E 6521.0 J (predicted 29.836 s, 5633.2 J), error max 1.33 eps
+2026-10-27 15:37:21 rep2 alone_scpu: 7 passes, T 9.762 s, E 2036.6 J (predicted 9.913 s, 2052.0 J), error max 1.61 eps
+2026-10-27 15:38:53 rep2 alone_gpu: 343 passes, T 0.175 s, E 45.4 J (predicted 0.182 s, 47.1 J), error max 1.33 eps
+2026-10-27 15:40:32 rep2 model_E: 370 passes, T 0.162 s, E 47.5 J (predicted 0.163 s, 43.7 J), error max 1.61 eps
+2026-10-27 15:42:04 rep2 model_T: 411 passes, T 0.146 s, E 69.8 J (predicted 0.148 s, 68.0 J), error max 1.61 eps
+2026-10-27 15:43:36 rep2 model_M: 386 passes, T 0.156 s, E 50.2 J (predicted 0.156 s, 46.1 J), error max 1.61 eps
+2026-10-27 15:45:14 rep2 model_dev: 337 passes, T 0.178 s, E 49.3 J (predicted 0.184 s, 46.1 J), error max 1.33 eps
+2026-10-27 15:46:53 rep2 model_E_f: 43 passes, T 1.402 s, E 251.5 J (predicted 1.384 s, 292.1 J), error max 1.61 eps
+2026-10-27 15:48:42 rep2 oracle: 353 passes, T 0.170 s, E 49.1 J (with measured costs 44.0 J), error max 1.61 eps
+2026-10-27 15:50:29 rep2 oracle_M: 376 passes, T 0.160 s, E 48.2 J (with measured costs 50.0 J), error max 1.61 eps
+2026-10-27 15:52:03 rep2 oracle_f: 43 passes, T 1.401 s, E 251.2 J (with measured costs 455.4 J), error max 1.61 eps
+2026-10-27 15:53:36 rep3 alone_fcpu: 22 passes, T 2.748 s, E 831.8 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 15:56:14 rep3 alone_card: 3 passes, T 31.830 s, E 5956.9 J (predicted 29.836 s, 5633.2 J), error max 1.33 eps
+2026-10-27 15:58:02 rep3 alone_scpu: 7 passes, T 9.760 s, E 2038.0 J (predicted 9.913 s, 2052.0 J), error max 1.61 eps
+2026-10-27 15:59:33 rep3 alone_gpu: 344 passes, T 0.175 s, E 45.2 J (predicted 0.182 s, 47.1 J), error max 1.33 eps
+2026-10-27 16:01:12 rep3 model_E: 370 passes, T 0.162 s, E 47.5 J (predicted 0.163 s, 43.7 J), error max 1.61 eps
+2026-10-27 16:02:45 rep3 model_T: 412 passes, T 0.146 s, E 69.8 J (predicted 0.148 s, 68.0 J), error max 1.61 eps
+2026-10-27 16:04:17 rep3 model_M: 386 passes, T 0.156 s, E 50.2 J (predicted 0.156 s, 46.1 J), error max 1.61 eps
+2026-10-27 16:05:55 rep3 model_dev: 338 passes, T 0.178 s, E 49.1 J (predicted 0.184 s, 46.1 J), error max 1.33 eps
+2026-10-27 16:07:33 rep3 model_E_f: 43 passes, T 1.401 s, E 251.7 J (predicted 1.384 s, 292.1 J), error max 1.61 eps
+2026-10-27 16:09:25 rep3 oracle: 368 passes, T 0.163 s, E 48.6 J (with measured costs 42.6 J), error max 1.61 eps
+2026-10-27 16:11:13 rep3 oracle_M: 376 passes, T 0.160 s, E 48.8 J (with measured costs 42.7 J), error max 1.61 eps
+2026-10-27 16:12:46 rep3 oracle_f: 43 passes, T 1.401 s, E 251.5 J (with measured costs 339.1 J), error max 1.61 eps
+2026-10-27 16:12:51 SCHED FINISHED: 36 of 36 jobs, 0 not done
+2026-10-27 17:24:29 v0.9 scheduling runs: 24 of 24 jobs left; prediction sha256 d4ad8c03b807be53e3f4b75763cb013c70dc75ea600dd97b66f0e233c66a778f
+2026-10-27 17:24:30 waiting: other processes use 0.0 cores
+2026-10-27 17:25:49 v0.9 scheduling runs: 24 of 24 jobs left; prediction sha256 d4ad8c03b807be53e3f4b75763cb013c70dc75ea600dd97b66f0e233c66a778f
+2026-10-27 17:25:50 waiting: other processes use 0.0 cores
+2026-10-27 17:27:32 rep4 alone_fcpu: 22 passes, T 2.763 s, E 829.5 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 17:55:58 v0.9 scheduling runs: 24 of 24 jobs left; prediction sha256 d4ad8c03b807be53e3f4b75763cb013c70dc75ea600dd97b66f0e233c66a778f
+2026-10-27 17:55:59 waiting: other processes use 0.0 cores
+2026-10-27 17:57:42 rep4 alone_fcpu: 26 passes, T 2.361 s, E 746.4 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 18:00:20 rep4 alone_card: 3 passes, T 32.364 s, E 6023.4 J (predicted 29.836 s, 5633.2 J), error max 1.33 eps
+2026-10-27 18:02:08 rep4 alone_scpu: 7 passes, T 9.762 s, E 2029.0 J (predicted 9.913 s, 2052.0 J), error max 1.61 eps
+2026-10-27 18:03:39 rep4 alone_gpu: 342 passes, T 0.176 s, E 45.4 J (predicted 0.182 s, 47.1 J), error max 1.33 eps
+2026-10-27 18:05:18 rep4 model_E: 371 passes, T 0.162 s, E 47.3 J (predicted 0.163 s, 43.7 J), error max 1.61 eps
+2026-10-27 18:06:50 rep4 model_T: 412 passes, T 0.146 s, E 69.7 J (predicted 0.148 s, 68.0 J), error max 1.61 eps
+2026-10-27 18:08:22 rep4 model_M: 389 passes, T 0.154 s, E 49.9 J (predicted 0.156 s, 46.1 J), error max 1.61 eps
+2026-10-27 18:10:00 rep4 model_dev: 338 passes, T 0.178 s, E 49.1 J (predicted 0.184 s, 46.1 J), error max 1.33 eps
+2026-10-27 18:11:39 rep4 model_E_f: 43 passes, T 1.402 s, E 251.8 J (predicted 1.384 s, 292.1 J), error max 1.61 eps
+2026-10-27 18:13:24 rep4 oracle: 369 passes, T 0.163 s, E 47.7 J (with measured costs 41.9 J), error max 1.61 eps
+2026-10-27 18:15:09 rep4 oracle_M: 379 passes, T 0.159 s, E 47.8 J (with measured costs 42.0 J), error max 1.61 eps
+2026-10-27 18:16:43 rep4 oracle_f: 43 passes, T 1.402 s, E 251.9 J (with measured costs 313.1 J), error max 1.61 eps
+2026-10-27 18:18:17 rep5 alone_fcpu: 22 passes, T 2.763 s, E 840.8 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 18:20:55 rep5 alone_card: 3 passes, T 32.015 s, E 5896.3 J (predicted 29.836 s, 5633.2 J), error max 1.33 eps
+2026-10-27 18:22:43 rep5 alone_scpu: 7 passes, T 9.764 s, E 2034.6 J (predicted 9.913 s, 2052.0 J), error max 1.61 eps
+2026-10-27 18:24:15 rep5 alone_gpu: 345 passes, T 0.174 s, E 45.4 J (predicted 0.182 s, 47.1 J), error max 1.33 eps
+2026-10-27 18:25:53 rep5 model_E: 371 passes, T 0.162 s, E 47.4 J (predicted 0.163 s, 43.7 J), error max 1.61 eps
+2026-10-27 18:27:25 rep5 model_T: 413 passes, T 0.146 s, E 69.6 J (predicted 0.148 s, 68.0 J), error max 1.61 eps
+2026-10-27 18:28:58 rep5 model_M: 387 passes, T 0.155 s, E 50.2 J (predicted 0.156 s, 46.1 J), error max 1.61 eps
+2026-10-27 18:30:36 rep5 model_dev: 339 passes, T 0.177 s, E 49.4 J (predicted 0.184 s, 46.1 J), error max 1.33 eps
+2026-10-27 18:32:14 rep5 model_E_f: 43 passes, T 1.401 s, E 251.9 J (predicted 1.384 s, 292.1 J), error max 1.61 eps
+2026-10-27 18:34:00 rep5 oracle: 374 passes, T 0.161 s, E 49.0 J (with measured costs 38.7 J), error max 1.61 eps
+2026-10-27 18:35:46 rep5 oracle_M: 374 passes, T 0.161 s, E 49.9 J (with measured costs 39.0 J), error max 1.61 eps
+2026-10-27 18:37:20 rep5 oracle_f: 43 passes, T 1.401 s, E 252.6 J (with measured costs 286.7 J), error max 1.61 eps
+2026-10-27 18:37:27 SCHED FINISHED: 24 of 24 jobs, 0 not done
+2026-10-27 18:42:50 v0.9 scheduling runs: 24 of 24 jobs left; prediction sha256 d4ad8c03b807be53e3f4b75763cb013c70dc75ea600dd97b66f0e233c66a778f
+2026-10-27 18:42:51 waiting: other processes use 0.0 cores
+2026-10-27 18:44:33 rep4 alone_fcpu: 22 passes, T 2.763 s, E 833.9 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 18:45:46 v0.9 scheduling runs: 23 of 24 jobs left; prediction sha256 d4ad8c03b807be53e3f4b75763cb013c70dc75ea600dd97b66f0e233c66a778f
+2026-10-27 18:45:47 waiting: other processes use 0.0 cores
+2026-10-27 18:48:13 v0.9 scheduling runs: 24 of 24 jobs left; prediction sha256 d4ad8c03b807be53e3f4b75763cb013c70dc75ea600dd97b66f0e233c66a778f
+2026-10-27 18:48:14 waiting: other processes use 0.0 cores
+2026-10-27 18:50:15 rep4 alone_fcpu: 22 passes, T 2.760 s, E 826.1 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 18:50:16 waiting: other processes use 1.1 cores
+2026-10-27 18:54:50 rep4 alone_card: try 1 set aside: frodo others 1.04 cores (peak 1.8)
+2026-10-27 18:55:01 waiting: other processes use 1.1 cores
+2026-10-27 18:58:34 rep4 alone_card: 3 passes, T 34.562 s, E 6523.0 J (predicted 29.836 s, 5633.2 J), error max 1.33 eps
+2026-10-27 19:00:22 rep4 alone_scpu: 7 passes, T 9.763 s, E 2060.4 J (predicted 9.913 s, 2052.0 J), error max 1.61 eps
+2026-10-27 19:01:54 rep4 alone_gpu: 342 passes, T 0.176 s, E 45.6 J (predicted 0.182 s, 47.1 J), error max 1.33 eps
+2026-10-27 19:03:32 rep4 model_E: 371 passes, T 0.162 s, E 47.4 J (predicted 0.163 s, 43.7 J), error max 1.61 eps
+2026-10-27 19:05:05 rep4 model_T: 410 passes, T 0.147 s, E 69.6 J (predicted 0.148 s, 68.0 J), error max 1.61 eps
+2026-10-27 19:06:37 rep4 model_M: 386 passes, T 0.156 s, E 49.9 J (predicted 0.156 s, 46.1 J), error max 1.61 eps
+2026-10-27 19:08:16 rep4 model_dev: 339 passes, T 0.177 s, E 49.1 J (predicted 0.184 s, 46.1 J), error max 1.33 eps
+2026-10-27 19:09:54 rep4 model_E_f: 43 passes, T 1.402 s, E 251.4 J (predicted 1.384 s, 292.1 J), error max 1.61 eps
+2026-10-27 19:11:48 rep4 oracle: 344 passes, T 0.175 s, E 49.4 J (with measured costs 44.1 J), error max 1.33 eps
+2026-10-27 19:13:40 rep4 oracle_M: 376 passes, T 0.160 s, E 48.4 J (with measured costs 47.3 J), error max 1.61 eps
+2026-10-27 19:15:14 rep4 oracle_f: 43 passes, T 1.401 s, E 252.1 J (with measured costs 402.2 J), error max 1.61 eps
+2026-10-27 19:16:48 rep5 alone_fcpu: 26 passes, T 2.364 s, E 749.5 J (predicted 2.532 s, 762.1 J), error max 1.61 eps
+2026-10-27 19:19:24 rep5 alone_card: 3 passes, T 31.169 s, E 5776.1 J (predicted 29.836 s, 5633.2 J), error max 1.33 eps
+2026-10-27 19:21:12 rep5 alone_scpu: 7 passes, T 9.764 s, E 2054.6 J (predicted 9.913 s, 2052.0 J), error max 1.61 eps
+2026-10-27 19:22:44 rep5 alone_gpu: 342 passes, T 0.176 s, E 45.6 J (predicted 0.182 s, 47.1 J), error max 1.33 eps
+2026-10-27 19:24:22 rep5 model_E: 374 passes, T 0.161 s, E 47.2 J (predicted 0.163 s, 43.7 J), error max 1.61 eps
+2026-10-27 19:25:54 rep5 model_T: 411 passes, T 0.146 s, E 69.7 J (predicted 0.148 s, 68.0 J), error max 1.61 eps
+2026-10-27 19:27:27 rep5 model_M: 386 passes, T 0.155 s, E 50.2 J (predicted 0.156 s, 46.1 J), error max 1.61 eps
+2026-10-27 19:29:05 rep5 model_dev: 337 passes, T 0.178 s, E 49.2 J (predicted 0.184 s, 46.1 J), error max 1.33 eps
+2026-10-27 19:30:44 rep5 model_E_f: 43 passes, T 1.402 s, E 253.2 J (predicted 1.384 s, 292.1 J), error max 1.61 eps
+2026-10-27 19:32:27 rep5 oracle: 372 passes, T 0.161 s, E 48.5 J (with measured costs 38.7 J), error max 1.61 eps
+2026-10-27 19:34:12 rep5 oracle_M: 379 passes, T 0.159 s, E 48.5 J (with measured costs 39.4 J), error max 1.61 eps
+2026-10-27 19:35:46 rep5 oracle_f: 43 passes, T 1.402 s, E 252.4 J (with measured costs 283.7 J), error max 1.61 eps
+2026-10-27 19:35:54 SCHED FINISHED: 24 of 24 jobs, 0 not done

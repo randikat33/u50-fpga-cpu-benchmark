@@ -1,0 +1,86 @@
+{
+ "C_W": {
+  "card+fcpu": -19.019636853790885,
+  "card+gpu": 0.0,
+  "card+scpu": 0.0,
+  "fcpu+gpu": 0.0,
+  "fcpu+scpu": 0.0,
+  "gpu+scpu": 37.5
+ },
+ "definition": "C = P(a+b) - P(a) - P(b) + P(idle); s(a|b) = rate of a alone / rate of a with b busy",
+ "not_measured": [],
+ "per_load": [
+  {
+   "C_W": -19.12223577872173,
+   "P_a_W": 125.22767287862791,
+   "P_ab_W": 273.57681581174677,
+   "P_b_W": 263.0411725637406,
+   "P_idle_W": 95.5697938519,
+   "dC_card_W": 0.08813452630451835,
+   "dC_dram0_W": 0.09530009862308453,
+   "dC_dram1_W": 0.08672417563353252,
+   "dC_pkg0_W": -8.591923745736942,
+   "dC_pkg1_W": -10.798102495748921,
+   "load": "fcpu III QE 0.1%, 48 threads",
+   "pair": "card+fcpu",
+   "primary": true,
+   "repeats": 3,
+   "s_a": 0.9859008907347053,
+   "s_b": 0.9980283791798051,
+   "source": "conc_frodo_summary.csv"
+  },
+  {
+   "C_W": -18.91703792886004,
+   "P_a_W": 125.22767287862791,
+   "P_ab_W": 254.66545956060477,
+   "P_b_W": 243.9246184627369,
+   "P_idle_W": 95.5697938519,
+   "dC_card_W": 0.10023957681559281,
+   "dC_dram0_W": 0.09455701254877735,
+   "dC_dram1_W": 0.08519301381715183,
+   "dC_pkg0_W": -8.202812223476187,
+   "dC_pkg1_W": -10.925735087563098,
+   "load": "fcpu II FT 1%, 48 threads",
+   "pair": "card+fcpu",
+   "primary": true,
+   "repeats": 3,
+   "s_a": 0.9938375608211185,
+   "s_b": 0.9989591028735554,
+   "source": "conc_frodo_summary.csv"
+  },
+  {
+   "C_W": -18.72851648168954,
+   "P_a_W": 125.22767287862791,
+   "P_ab_W": 272.73829161544654,
+   "P_b_W": 261.80892907040817,
+   "P_idle_W": 95.5697938519,
+   "dC_card_W": 0.1440297125002452,
+   "dC_dram0_W": 0.09485075759835138,
+   "dC_dram1_W": 0.08310445454297855,
+   "dC_pkg0_W": -8.17067146416958,
+   "dC_pkg1_W": -10.892793340609686,
+   "load": "fcpu III QE 0.1%, 24 threads",
+   "pair": "card+fcpu",
+   "primary": false,
+   "repeats": 3,
+   "s_a": 0.9902826973056671,
+   "s_b": 0.9994945355836536,
+   "source": "conc_frodo_summary.csv"
+  }
+ ],
+ "provisional": true,
+ "s": {
+  "card|fcpu": 0.9898692257779119,
+  "fcpu|card": 0.9984937410266803,
+  "gpu|scpu": 1.0,
+  "scpu|gpu": 1.0
+ },
+ "source": {
+  "card+fcpu": "measured: conc_frodo_summary.csv",
+  "card+gpu": "PROVISIONAL: assumed 0",
+  "card+scpu": "PROVISIONAL: assumed 0",
+  "fcpu+gpu": "PROVISIONAL: assumed 0",
+  "fcpu+scpu": "PROVISIONAL: assumed 0",
+  "gpu+scpu": "PROVISIONAL: v0.8 estimate 35-40 W; stretch not measured"
+ }
+}

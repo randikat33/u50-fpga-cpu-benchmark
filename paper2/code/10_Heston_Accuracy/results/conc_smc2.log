@@ -1,0 +1,58 @@
+2026-10-26 16:38:16 concurrency matrix (Supermicro + cross-server, feed batch): 36 of 36 jobs left
+2026-10-26 16:39:54 rep1 idle: frodo 95.0 W, Supermicro 62.7 W (GPU 35.7); 
+2026-10-26 16:41:32 rep1 gpu: frodo 97.9 W, Supermicro 102.2 W (GPU 57.7); gpu 864.76 options/s; V100 1245 MHz
+2026-10-26 16:43:10 rep1 scpu: frodo 97.2 W, Supermicro 105.4 W (GPU 35.8); scpu 624.77 options/s
+2026-10-26 16:44:48 rep1 gpu+scpu: frodo 99.8 W, Supermicro 131.5 W (GPU 58.4); gpu 885.99 options/s, scpu 624.59 options/s; V100 1245 MHz
+2026-10-26 16:46:26 rep1 scpu_half: frodo 98.3 W, Supermicro 104.4 W (GPU 35.9); scpu 611.47 options/s
+2026-10-26 16:48:04 rep1 gpu+scpu_half: frodo 100.6 W, Supermicro 132.5 W (GPU 59.8); gpu 940.63 options/s, scpu 611.40 options/s; V100 1245 MHz
+2026-10-26 16:49:42 rep1 card: frodo 124.4 W, Supermicro 63.0 W (GPU 35.9); card 93.26 options/s
+2026-10-26 16:51:20 rep1 fcpu: frodo 262.8 W, Supermicro 62.8 W (GPU 35.7); fcpu 34.12 options/s
+2026-10-26 16:52:59 rep1 card+gpu: frodo 125.1 W, Supermicro 102.2 W (GPU 57.7); card 93.40 options/s, gpu 860.54 options/s; V100 1245 MHz
+2026-10-26 16:54:38 rep1 card+scpu: frodo 125.5 W, Supermicro 105.3 W (GPU 35.8); card 93.09 options/s, scpu 624.32 options/s
+2026-10-26 16:56:16 rep1 fcpu+gpu: frodo 263.1 W, Supermicro 102.1 W (GPU 57.8); fcpu 34.10 options/s, gpu 866.35 options/s; V100 1245 MHz
+2026-10-26 16:57:54 rep1 fcpu+scpu: frodo 263.1 W, Supermicro 105.3 W (GPU 35.8); fcpu 34.11 options/s, scpu 624.75 options/s
+2026-10-26 16:59:32 rep2 idle: frodo 95.4 W, Supermicro 62.7 W (GPU 35.7); 
+2026-10-26 17:01:10 rep2 gpu: frodo 98.3 W, Supermicro 102.3 W (GPU 57.8); gpu 868.39 options/s; V100 1245 MHz
+2026-10-26 17:02:48 rep2 scpu: frodo 97.5 W, Supermicro 104.9 W (GPU 35.8); scpu 621.45 options/s
+2026-10-26 17:04:26 rep2 gpu+scpu: frodo 100.4 W, Supermicro 131.6 W (GPU 58.4); gpu 889.61 options/s, scpu 625.77 options/s; V100 1245 MHz
+2026-10-26 17:06:04 rep2 scpu_half: frodo 97.1 W, Supermicro 104.3 W (GPU 35.8); scpu 610.59 options/s
+2026-10-26 17:07:43 rep2 gpu+scpu_half: frodo 100.4 W, Supermicro 131.0 W (GPU 58.8); gpu 900.35 options/s, scpu 611.94 options/s; V100 1245 MHz
+2026-10-26 17:09:21 rep2 card: frodo 124.6 W, Supermicro 62.8 W (GPU 35.8); card 93.16 options/s
+2026-10-26 17:10:59 rep2 fcpu: frodo 262.9 W, Supermicro 62.9 W (GPU 35.7); fcpu 34.10 options/s
+2026-10-26 17:12:38 rep2 card+gpu: frodo 125.5 W, Supermicro 102.1 W (GPU 57.6); card 93.44 options/s, gpu 858.51 options/s; V100 1245 MHz
+2026-10-26 17:14:17 rep2 card+scpu: frodo 125.6 W, Supermicro 105.0 W (GPU 35.8); card 93.37 options/s, scpu 620.29 options/s
+2026-10-26 17:15:56 rep2 fcpu+gpu: frodo 263.1 W, Supermicro 102.3 W (GPU 57.9); fcpu 34.09 options/s, gpu 868.84 options/s; V100 1245 MHz
+2026-10-26 17:17:34 rep2 fcpu+scpu: frodo 263.0 W, Supermicro 105.4 W (GPU 35.8); fcpu 34.17 options/s, scpu 627.77 options/s
+2026-10-26 17:19:12 rep3 idle: frodo 95.7 W, Supermicro 62.8 W (GPU 35.7); 
+2026-10-26 17:20:50 rep3 gpu: frodo 98.4 W, Supermicro 102.2 W (GPU 57.7); gpu 866.55 options/s; V100 1245 MHz
+2026-10-26 17:22:29 rep3 scpu: frodo 98.2 W, Supermicro 105.1 W (GPU 35.8); scpu 619.67 options/s
+2026-10-26 17:24:07 rep3 gpu+scpu: frodo 100.0 W, Supermicro 132.1 W (GPU 58.8); gpu 901.06 options/s, scpu 630.25 options/s; V100 1245 MHz
+2026-10-26 17:25:45 rep3 scpu_half: frodo 100.1 W, Supermicro 104.4 W (GPU 35.8); scpu 609.80 options/s
+2026-10-26 17:27:24 rep3 gpu+scpu_half: frodo 100.7 W, Supermicro 132.1 W (GPU 59.7); gpu 938.49 options/s, scpu 612.06 options/s; V100 1245 MHz
+2026-10-26 17:29:03 rep3 card: frodo 124.9 W, Supermicro 63.0 W (GPU 35.9); card 93.37 options/s
+2026-10-26 17:30:42 rep3 fcpu: frodo 262.8 W, Supermicro 62.8 W (GPU 35.7); fcpu 34.15 options/s
+2026-10-26 17:32:21 rep3 card+gpu: frodo 123.2 W, Supermicro 102.2 W (GPU 57.7); card 92.92 options/s, gpu 864.38 options/s; V100 1245 MHz
+2026-10-26 17:34:00 rep3 card+scpu: frodo 125.2 W, Supermicro 105.0 W (GPU 35.8); card 93.02 options/s, scpu 621.67 options/s
+2026-10-26 17:35:39 rep3 fcpu+gpu: frodo 263.0 W, Supermicro 102.7 W (GPU 57.9); fcpu 34.09 options/s, gpu 868.73 options/s; V100 1245 MHz
+2026-10-26 17:37:17 rep3 fcpu+scpu: frodo 263.1 W, Supermicro 105.1 W (GPU 35.8); fcpu 34.11 options/s, scpu 620.53 options/s
+job              frodo (W) Supermicro (W)   Supermicro domains (W)                      rates (options/s)
+idle                  95.4           62.7   dram0 0.3  dram1 1.3  gpu 35.7  pkg0 13.8  pkg1 11.6   
+gpu                   98.3          102.2   dram0 0.9  dram1 2.9  gpu 57.7  pkg0 20.7  pkg1 20.0   gpu 866.5
+scpu                  97.5          105.1   dram0 1.7  dram1 3.7  gpu 35.8  pkg0 39.4  pkg1 24.5   scpu 621.5
+gpu+scpu             100.0          131.6   dram0 1.8  dram1 4.1  gpu 58.4  pkg0 40.5  pkg1 26.7   gpu 889.6, scpu 625.8
+scpu_half             98.3          104.4   dram0 1.7  dram1 3.8  gpu 35.8  pkg0 38.5  pkg1 24.5   scpu 610.6
+gpu+scpu_half        100.6          132.1   dram0 1.8  dram1 4.2  gpu 59.7  pkg0 39.6  pkg1 26.7   gpu 938.5, scpu 611.9
+card                 124.6           63.0   dram0 0.3  dram1 1.3  gpu 35.9  pkg0 13.8  pkg1 11.7   card 93.3
+fcpu                 262.8           62.8   dram0 0.3  dram1 1.3  gpu 35.7  pkg0 13.8  pkg1 11.7   fcpu 34.1
+card+gpu             125.1          102.2   dram0 0.9  dram1 2.9  gpu 57.7  pkg0 20.7  pkg1 20.0   card 93.4, gpu 860.5
+card+scpu            125.5          105.0   dram0 1.7  dram1 3.7  gpu 35.8  pkg0 39.4  pkg1 24.4   card 93.1, scpu 621.7
+fcpu+gpu             263.1          102.3   dram0 0.9  dram1 2.9  gpu 57.9  pkg0 20.7  pkg1 20.0   fcpu 34.1, gpu 868.7
+fcpu+scpu            263.1          105.3   dram0 1.7  dram1 3.7  gpu 35.8  pkg0 39.5  pkg1 24.5   fcpu 34.1, scpu 624.7
+model comparison not available: [Errno 2] No such file or directory: '/home/cse/Desktop/Thesis_and_jounal_data/v2_projects/10_Heston_Accuracy/results/sched_inputs_smc_summary.json'
+gpu+scpu         C =  -13.1 W   slowdown gpu 0.974, scpu 0.993
+gpu+scpu_half    C =  -11.8 W   slowdown gpu 0.923, scpu 0.998
+card+gpu         C =   -2.8 W   slowdown card 0.999, gpu 1.007
+card+scpu        C =   -1.5 W   slowdown card 1.002, scpu 1.000
+fcpu+gpu         C =   -2.8 W   slowdown fcpu 1.001, gpu 0.997
+fcpu+scpu        C =   -1.8 W   slowdown fcpu 1.000, scpu 0.995
+2026-10-26 17:37:17 CONC SMC FINISHED: 36 of 36 jobs
